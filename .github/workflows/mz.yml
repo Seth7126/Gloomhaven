@@ -1,0 +1,104 @@
+# .github/workflows/unzip_multivolume.yml
+
+name: 自动解压多分卷 Zip 文件
+on:
+  push:
+    # 仅在 main 分支（或你的主分支）上触发
+    branches:
+      - main 
+    # 关键：只有当推送的提交中包含 .zip.001 文件时才触发
+    # 这是 7-Zip 分卷的第一个文件
+    paths:
+      - '**.zip.001'
+  
+  # 同样允许手动触发
+  workflow_dispatch:
+
+# 授予工作流对仓库内容的写权限
+permissions:
+  contents: write
+
+jobs:
+  unzip_multi_volume:
+    runs-on: ubuntu-22.04
+    # 判断触发者不是 GitHub Actions 自身，防止无限循环
+    if: github.actor != 'github-actions[bot]'
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 p7zip-full (7-Zip 命令行工具)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full
+
+      - name: 查找、原地解压并删除所有分卷
+        run: |
+          echo "开始查找 .zip.001 文件..."
+          
+          # 查找所有类型为 'f' (文件) 且名称以 '.zip.001' 结尾的文件
+          FIRST_PART_FILES=$(find . -type f -name "*.zip.001" -not -path "./.git/*")
+
+          if [ -z "$FIRST_PART_FILES" ]; then
+            echo "未在此次检出的代码中找到 .zip.001 文件。"
+            exit 0
+          fi
+
+          echo "找到以下分卷文件并准备处理:"
+          echo "$FIRST_PART_FILES"
+          echo "---"
+
+          # 循环处理找到的每一个 .zip.001 文件
+          echo "$FIRST_PART_FILES" | while read -r ZIP_FIRST_PART; do
+            if [ -f "$ZIP_FIRST_PART" ]; then
+              # 1. 获取目标目录 (即 "原地")
+              TARGET_DIR=$(dirname "$ZIP_FIRST_PART")
+              
+              # 2. 获取分卷的基础名称 (例如 "MyLargeFile.zip")
+              BASENAME_GLOB=$(basename "$ZIP_FIRST_PART" .001)
+              
+              echo "正在处理: $ZIP_FIRST_PART"
+              echo "  -> 解压到目标目录: $TARGET_DIR"
+              
+              # 3. 使用 7z 命令解压。'-o' 后面没有空格
+              # 7z 会自动查找 .002, .003 等分卷
+              7z x "$ZIP_FIRST_PART" -o"$TARGET_DIR"
+              
+              # 4. 检查解压是否成功
+              if [ $? -eq 0 ]; then
+                echo "  -> 解压成功。"
+                echo "  -> 正在删除分卷文件 (例如: $BASENAME_GLOB.*)..."
+                
+                # 5. 删除所有相关的分卷 (例如 MyLargeFile.zip.001, .002 ...)
+                # 使用 -maxdepth 1 确保只删除当前目录的文件
+                find "$TARGET_DIR" -maxdepth 1 -type f -name "$BASENAME_GLOB.*" -exec rm -v {} +
+                
+                echo "  -> 强制暂存解压后的文件 (无视 .gitignore)"
+                git add --force "$TARGET_DIR"
+                
+                echo "  -> 暂存已删除的分卷文件"
+                git add "$TARGET_DIR"
+
+              else
+                echo "  -> 错误: 解压 $ZIP_FIRST_PART 失败。"
+                exit 1 # 如果解压失败，则停止整个步骤
+              fi
+            fi
+          done
+          echo "---"
+          echo "所有分卷文件处理完毕。"
+
+      - name: 提交变动
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 检查暂存区 (staged) 是否有变动
+          if ! git diff --staged --quiet; then
+            echo "检测到暂存的变动，正在提交..."
+            git commit -m "Chore: 自动解压并删除多分卷 .zip 文件"
+            git push
+          else
+            echo "没有文件变动需要提交。"
+          fi
