@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Plagueherald09
-Name: PERK_Plagueherald_09
-Description: PERK_Plagueherald_09_Desc
-CharacterID: PlagueheraldID
-Available: 2
-CardsToAdd: [AMC_Stun_R]
-

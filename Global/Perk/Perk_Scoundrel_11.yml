@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Scoundrel11
-Name: PERK_Scoundrel_11
-Description: PERK_Scoundrel_11_Desc
-CharacterID: ScoundrelID
-Available: 1
-IgnoreNegativeScenarioEffects: True

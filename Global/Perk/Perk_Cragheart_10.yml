@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Cragheart10
-Name: PERK_Cragheart_10
-Description: PERK_Cragheart_10_Desc
-CharacterID: CragheartID
-Available: 1
-IgnoreNegativeScenarioEffects: True

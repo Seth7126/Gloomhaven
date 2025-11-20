@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Spellweaver11
-Name: PERK_Spellweaver_11
-Description: PERK_Spellweaver_11_Desc
-CharacterID: SpellweaverID
-Available: 1
-CardsToAdd: [AMC_Light_R,AMC_Dark_R]

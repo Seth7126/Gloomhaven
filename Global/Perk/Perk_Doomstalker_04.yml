@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Doomstalker04
-Name: PERK_Doomstalker_04
-Description: PERK_Doomstalker_04_Desc
-CharacterID: DoomstalkerID
-Available: 1
-CardsToAdd: [AMC_Muddle_P2]
-

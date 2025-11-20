@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Summoner05
-Name: PERK_Summoner_05
-Description: PERK_Summoner_05_Desc
-CharacterID: SummonerID
-Available: 1
-CardsToAdd: [AMC_Wound_R,AMC_Wound_R]

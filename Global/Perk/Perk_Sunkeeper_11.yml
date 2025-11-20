@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Sunkeeper11
-Name: PERK_Sunkeeper_11
-Description: PERK_Sunkeeper_11_Desc
-CharacterID: SunkeeperID
-Available: 1
-IgnoreNegativeScenarioEffects: True

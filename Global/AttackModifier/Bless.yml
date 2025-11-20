@@ -1,4 +1,0 @@
-Parser: AttackModifier
-Name: Bless
-MathModifier: "*2"
-IsBless: True

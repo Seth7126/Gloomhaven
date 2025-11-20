@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Berserker10
-Name: PERK_Berserker_10
-Description: PERK_Berserker_10_Desc
-CharacterID: BerserkerID
-Available: 1
-IgnoreNegativeItemEffects: True

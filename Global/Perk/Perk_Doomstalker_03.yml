@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Doomstalker03
-Name: PERK_Doomstalker_03
-Description: PERK_Doomstalker_03_Desc
-CharacterID: DoomstalkerID
-Available: 2
-CardsToAdd: [AMC_P1_R, AMC_P1_R]
-

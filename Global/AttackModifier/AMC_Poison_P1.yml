@@ -1,7 +1,0 @@
-Parser: AttackModifier
-Name: AMC_Poison_P1
-MathModifier: "+1"
-AbilityOverrides:
-    NegCon:
-        ParentName: AMC_Poison_P1
-        Conditions: [Poison]

@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Mindthief01
-Name: PERK_Mindthief_01
-Description: PERK_Mindthief_01_Desc
-CharacterID: MindthiefID
-Available: 2
-CardsToRemove: [AMC_Basic_M1,AMC_Basic_M1]

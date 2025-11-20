@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Doomstalker08
-Name: PERK_Doomstalker_08
-Description: PERK_Doomstalker_08_Desc
-CharacterID: DoomstalkerID
-Available: 1
-CardsToAdd: [AMC_Stun_P0]
-

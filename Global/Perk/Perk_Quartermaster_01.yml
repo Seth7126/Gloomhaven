@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Quartermaster01
-Name: PERK_Quartermaster_01
-Description: PERK_Quartermaster_01_Desc
-CharacterID: QuartermasterID
-Available: 2
-CardsToRemove: [AMC_Basic_M1,AMC_Basic_M1]

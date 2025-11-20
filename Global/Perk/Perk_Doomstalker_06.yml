@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Doomstalker06
-Name: PERK_Doomstalker_06
-Description: PERK_Doomstalker_06_Desc
-CharacterID: DoomstalkerID
-Available: 1
-CardsToAdd: [AMC_Wound_P1]
-

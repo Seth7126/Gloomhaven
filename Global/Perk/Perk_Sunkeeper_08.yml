@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Sunkeeper08
-Name: PERK_Sunkeeper_08
-Description: PERK_Sunkeeper_08_Desc
-CharacterID: SunkeeperID
-Available: 2
-CardsToAdd: [AMC_Light_R,AMC_Light_R]

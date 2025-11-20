@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Nightshroud05
-Name: PERK_Nightshroud_05
-Description: PERK_Nightshroud_05_Desc
-CharacterID: NightshroudID
-Available: 2
-CardsToAdd: [AMC_Invisible_P1]
-

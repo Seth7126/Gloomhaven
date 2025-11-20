@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Soothsinger10
-Name: PERK_Soothsinger_10
-Description: PERK_Soothsinger_10_Desc
-CharacterID: SoothsingerID
-Available: 1
-CardsToRemove: [AMC_Basic_M1]
-CardsToAdd: [AMC_Stun_P0]

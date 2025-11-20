@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Quartermaster04
-Name: PERK_Quartermaster_04
-Description: PERK_Quartermaster_04_Desc
-CharacterID: QuartermasterID
-Available: 2
-CardsToAdd: [AMC_P1_R,AMC_P1_R]

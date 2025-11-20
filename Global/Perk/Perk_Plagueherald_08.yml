@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Plagueherald08
-Name: PERK_Plagueherald_08
-Description: PERK_Plagueherald_08_Desc
-CharacterID: PlagueheraldID
-Available: 1
-CardsToAdd: [AMC_Immobilize_R, AMC_Immobilize_R]
-

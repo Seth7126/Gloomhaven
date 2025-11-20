@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Spellweaver04
-Name: PERK_Spellweaver_04
-Description: PERK_Spellweaver_04_Desc
-CharacterID: SpellweaverID
-Available: 1
-CardsToAdd: [AMC_Stun]

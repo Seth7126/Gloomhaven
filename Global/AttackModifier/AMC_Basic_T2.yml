@@ -1,4 +1,0 @@
-Parser: AttackModifier
-Name: AMC_Basic_T2
-MathModifier: "*2"
-Shuffle: True

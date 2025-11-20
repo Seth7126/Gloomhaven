@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Sawbones04
-Name: PERK_Sawbones_04
-Description: PERK_Sawbones_04_Desc
-CharacterID: SawbonesID
-Available: 2
-CardsToAdd: [AMC_P2_R]
-

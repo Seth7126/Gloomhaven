@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Tinkerer06
-Name: PERK_Tinkerer_06
-Description: PERK_Tinkerer_06_Desc
-CharacterID: TinkererID
-Available: 1
-CardsToAdd: [AMC_Muddle_R,AMC_Muddle_R,AMC_Muddle_R]

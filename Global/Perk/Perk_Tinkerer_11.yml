@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Tinkerer11
-Name: PERK_Tinkerer_11
-Description: PERK_Tinkerer_11_Desc
-CharacterID: TinkererID
-Available: 1
-IgnoreNegativeScenarioEffects: True

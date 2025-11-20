@@ -1,8 +1,0 @@
-Parser: HeroSummon
-ID: SteelConstructID
-LocKey: $SteelConstruct$
-Model: SteelConstruct
-Health: 5
-Move: 2
-Attack: 3
-Range: 1

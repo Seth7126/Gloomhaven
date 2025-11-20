@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Soothsinger12
-Name: PERK_Soothsinger_12
-Description: PERK_Soothsinger_12_Desc
-CharacterID: SoothsingerID
-Available: 2
-CardsToAdd: [AMC_Curse_R, AMC_Curse_R]

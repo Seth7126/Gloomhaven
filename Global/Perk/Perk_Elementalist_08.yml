@@ -1,9 +1,0 @@
-Parser: Perk
-ID: Elementalist08
-Name: PERK_Elementalist_08
-Description: PERK_Elementalist_08_Desc
-CharacterID: ElementalistID
-Available: 1
-CardsToAdd: [AMC_Earth_P0, AMC_Fire_P0]
-CardsToRemove: [AMC_Basic_P0, AMC_Basic_P0]
-

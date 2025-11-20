@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Elementalist07
-Name: PERK_Elementalist_07
-Description: PERK_Elementalist_07_Desc
-CharacterID: ElementalistID
-Available: 1
-CardsToAdd: [AMC_Earth_P0, AMC_Earth_P0, AMC_Earth_P0]
