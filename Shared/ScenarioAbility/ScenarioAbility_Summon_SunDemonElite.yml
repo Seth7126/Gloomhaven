@@ -1,8 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_Summon_SunDemonElite
-ScenarioAbility:
-    Summon1:
-        Summon: SunDemonEliteID
-        Target: 1
-        TargetIsBase: True
-        AnimOverload: Summon

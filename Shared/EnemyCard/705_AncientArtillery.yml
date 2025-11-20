@@ -1,9 +1,0 @@
-Parser: EnemyCard
-ID: 705
-Initiative: 95
-Shuffle: False
-Data:
-    Abilities:
-        Attack1:
-            Attack: +1
-            Filter: Enemy

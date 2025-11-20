@@ -1,7 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_Retaliate1_Self
-ScenarioAbility:
-    AShield:
-        Retaliate: 1
-        Filter: Self
-        ActiveBonusDuration: Persistent

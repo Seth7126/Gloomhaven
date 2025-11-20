@@ -1,8 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_PoisonImmunity_Self
-ScenarioAbility:
-    AShield:
-        ImmunityTo: Poison
-        Filter: Self
-        ActiveBonusDuration: Persistent
-        AutoTrigger: True

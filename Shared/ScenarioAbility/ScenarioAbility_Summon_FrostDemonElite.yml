@@ -1,8 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_Summon_FrostDemonElite
-ScenarioAbility:
-    Summon1:
-        Summon: FrostDemonEliteID
-        Target: 1
-        TargetIsBase: True
-        AnimOverload: Summon
