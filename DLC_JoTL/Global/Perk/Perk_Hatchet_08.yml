@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Hatchet08
-Name: PERK_Hatchet_08
-Description: PERK_Hatchet_08_Desc
-CharacterID: HatchetID
-Available: 1
-CardsToRemove: [AMC_Basic_P1]
-CardsToAdd: [AMC_Stun_P1]

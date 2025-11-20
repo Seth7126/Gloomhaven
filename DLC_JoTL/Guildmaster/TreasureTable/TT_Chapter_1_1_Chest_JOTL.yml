@@ -1,9 +1,0 @@
-Parser: TreasureTable
-TT_Chapter_1_1_Chest:
-    Group:
-        Update: true
-        Group:
-          Update: true
-          Item: BladedArmorID
-          Item: RingOfRestorationID
-          Item: RingOfStrengthID

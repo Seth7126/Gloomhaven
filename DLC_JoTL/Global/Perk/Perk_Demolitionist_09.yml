@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Demolitionist09
-Name: PERK_Demolitionist_09
-Description: PERK_Demolitionist_09_Desc
-CharacterID: DemolitionistID
-Available: 2
-CardsToAdd: [AMC_Radial1_P0] #Change to All adjacent nemies suffer 1 damage

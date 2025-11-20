@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Voidwarden06
-Name: PERK_Voidwarden_06
-Description: PERK_Voidwarden_06_Desc
-CharacterID: VoidwardenID
-Available: 3
-CardsToAdd: [AMC_HealAlly1_P1]

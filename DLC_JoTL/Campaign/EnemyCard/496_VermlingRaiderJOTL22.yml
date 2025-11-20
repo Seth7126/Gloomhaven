@@ -1,9 +1,0 @@
-Parser: EnemyCard
-ID: 11496
-Initiative: 30
-Shuffle: True
-Data:
-    Abilities:
-        Heal1:
-            Heal: 3
-            Filter: Self

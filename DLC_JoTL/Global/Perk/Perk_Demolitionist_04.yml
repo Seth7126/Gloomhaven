@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Demolitionist04
-Name: PERK_Demolitionist_04
-Description: PERK_Demolitionist_04_Desc
-CharacterID: DemolitionistID
-Available: 2
-CardsToRemove: [AMC_Basic_P0]
-CardsToAdd: [AMC_Basic_P2]

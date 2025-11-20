@@ -1,8 +1,0 @@
-Parser: Perk
-ID: Redguard10
-Name: PERK_Redguard_10
-Description: PERK_Redguard_10_Desc
-CharacterID: RedGuardID
-Available: 1
-CardsToAdd: [AMC_Basic_P1,AMC_Basic_P1]
-IgnoreNegativeItemEffects: True

@@ -1,7 +1,0 @@
-Parser: Perk
-ID: Demolitionist06
-Name: PERK_Demolitionist_06
-Description: PERK_Demolitionist_06_Desc
-CharacterID: DemolitionistID
-Available: 1
-CardsToAdd: [AMC_Muddle_P2]
