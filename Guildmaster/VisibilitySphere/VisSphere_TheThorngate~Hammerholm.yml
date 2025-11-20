@@ -1,8 +1,0 @@
-Parser: VisibilitySphere
-ID: VisSphere_TheThorngate~Hammerholm
-UnlockCondition:
-    - UnlockedVillage: TheThorngate
-    - UnlockedVillage: Hammerholm
-SphereDefinitions:
-    - MapLocation: [811,265]
-      Radius: 10

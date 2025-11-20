@@ -1,8 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Soothsinger_2:
-  UnlockQuest: Quest_Story_Soothsinger_3
-  
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: SoothsingerID    
-  

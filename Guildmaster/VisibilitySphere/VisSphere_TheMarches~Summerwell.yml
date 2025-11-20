@@ -1,8 +1,0 @@
-Parser: VisibilitySphere
-ID: VisSphere_TheMarches~Summerwell
-UnlockCondition:
-    - UnlockedVillage: TheMarches
-    - UnlockedVillage: Summerwell
-SphereDefinitions:
-    - MapLocation: [1512,417]
-      Radius: 10

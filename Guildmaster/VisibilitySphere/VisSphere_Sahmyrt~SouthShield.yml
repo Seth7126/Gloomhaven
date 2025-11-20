@@ -1,8 +1,0 @@
-Parser: VisibilitySphere
-ID: VisSphere_Sahmyrt~SouthShield
-UnlockCondition:
-    - UnlockedVillage: Sahmyrt
-    - UnlockedVillage: SouthShield
-SphereDefinitions:
-    - MapLocation: [527,1283]
-      Radius: 18

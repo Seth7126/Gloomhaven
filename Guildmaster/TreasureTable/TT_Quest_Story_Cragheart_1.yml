@@ -1,8 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Cragheart_1:
-  UnlockQuest: Quest_Story_Cragheart_2
-  
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: CragheartID    
-  

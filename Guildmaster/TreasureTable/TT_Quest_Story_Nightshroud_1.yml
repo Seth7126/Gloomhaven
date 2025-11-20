@@ -1,8 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Nightshroud_1:
-  UnlockQuest: Quest_Story_Nightshroud_2
-  
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: NightshroudID    
-  

@@ -1,7 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Cragheart_3:
-  
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: CragheartID    
-  

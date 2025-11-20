@@ -1,8 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Sawbones_1:
-  UnlockQuest: Quest_Story_Sawbones_2
-  
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: SawbonesID    
-  

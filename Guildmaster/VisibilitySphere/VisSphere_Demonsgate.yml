@@ -1,7 +1,0 @@
-Parser: VisibilitySphere
-ID: Demonsgate_Sphere
-UnlockCondition:
-    - Chapter: [1,0]
-SphereDefinitions:
-    - MapLocation: [1166,582]
-      Radius: 18

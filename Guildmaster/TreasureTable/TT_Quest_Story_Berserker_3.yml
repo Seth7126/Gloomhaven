@@ -1,9 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Berserker_3:
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: BerserkerID    
-    
-TT_Quest_Story_Berserker_3_Chest:
-  Gold: 10
-  

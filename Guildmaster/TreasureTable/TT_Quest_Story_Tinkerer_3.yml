@@ -1,7 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Tinkerer_3:
- 
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: TinkererID    
-  

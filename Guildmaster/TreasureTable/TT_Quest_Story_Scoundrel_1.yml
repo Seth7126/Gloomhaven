@@ -1,9 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Scoundrel_1:
-  UnlockQuest: Quest_Story_Scoundrel_2
-  Gold: 30
-  
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: ScoundrelID    
-  

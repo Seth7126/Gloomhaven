@@ -1,8 +1,0 @@
-Parser: TreasureTable
-TT_Quest_Story_Doomstalker_2:
-  UnlockQuest: Quest_Story_Doomstalker_3
-  
-  Group:
-    PerkPoint: 1
-    GiveToCharacter: DoomstalkerID    
-  

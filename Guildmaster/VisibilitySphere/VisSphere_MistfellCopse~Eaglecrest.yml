@@ -1,8 +1,0 @@
-Parser: VisibilitySphere
-ID: VisSphere_MistfellCopse~Eaglecrest
-UnlockCondition:
-    - UnlockedVillage: MistfellCopse
-    - UnlockedVillage: Eaglecrest
-SphereDefinitions:
-    - MapLocation: [1532,155]
-      Radius: 18

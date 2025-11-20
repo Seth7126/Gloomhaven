@@ -1,8 +1,0 @@
-Parser: VisibilitySphere
-ID: VisSphere_DrakeFireFarm~IronwoodCamp
-UnlockCondition:
-    - UnlockedVillage: DrakeFireFarm
-    - UnlockedVillage: IronwoodCamp
-SphereDefinitions:
-    - MapLocation: [813,303]
-      Radius: 10

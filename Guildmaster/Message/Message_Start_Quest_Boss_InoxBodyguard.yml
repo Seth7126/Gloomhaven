@@ -1,9 +1,0 @@
-Parser: Message
-Name: Start_Quest_Boss_InoxBodyguard
-DialogueLines:
-    - Text: Message_Start_Quest_Boss_InoxBodyguard_1
-      Character: Narrator
-MapMessageTrigger: Map
-UnlockCondition:
-    - CompletedQuest: Quest_Story_Brute_3
-    - CompletedQuest: Quest_Story_Scoundrel_3    

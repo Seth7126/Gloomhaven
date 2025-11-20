@@ -1,8 +1,0 @@
-Parser: VisibilitySphere
-ID: VisSphere_Sahmyrt~TempleOfTheAcorn
-UnlockCondition:
-    - UnlockedVillage: Sahmyrt
-    - UnlockedVillage: TempleOfTheAcorn
-SphereDefinitions:
-    - MapLocation: [580,1085]
-      Radius: 10
