@@ -1,0 +1,33 @@
+Parser: EnemyCard
+ID: 57600037
+Initiative: 79
+Shuffle: False
+Data:
+    Abilities:
+        Summon1:
+            Summons: 
+                - GiantViperEliteID
+                - GiantViperEliteID
+                - GiantViperEliteID
+                - GiantViperEliteID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: SummonSnakes
+        Summon2:
+            Summons: 
+                - Empty
+                - Empty
+                - GiantViperID
+                - GiantViperEliteID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: SummonSnakes
+        Fear1:
+            Fear: 4
+            Target: -1
+            TargetIsBase: True
+            Filter: Enemy
+            Targeting: All
+            AnimOverload: CauseFear
+            Text: $Boss_TheBetrayer_Fear$
+            TextOnly: True

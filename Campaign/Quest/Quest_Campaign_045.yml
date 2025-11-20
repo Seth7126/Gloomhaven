@@ -1,0 +1,18 @@
+Parser: Quest
+ID: Quest_Campaign_045
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_045
+LoadoutImageId: FO_DF_04_Bandit
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_035
+BlockCondition:
+    - CompletedAchievement: Achievement_CityRuleEconomic
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: LingeringSwamp
+
+Scenario:
+    MapLocation: [1182, 1519]
+    ScenarioPool: 
+      - [Scenario_Campaign_045, 100]

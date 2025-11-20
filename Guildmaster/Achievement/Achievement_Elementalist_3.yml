@@ -1,0 +1,25 @@
+Parser: Achievement
+ID: Achievement_Elementalist_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Elementalist_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Elementalist_3_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        ElementalistID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: ElementalistID    
+        Filter: UseAbility
+        AbilityTypes: Attack
+        AreaEffect: True
+        Value: 30
+     
+
+
+TreasureTables: [TT_Achievement_Elementalist]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 268
+ 

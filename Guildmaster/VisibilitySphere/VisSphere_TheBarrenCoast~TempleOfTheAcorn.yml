@@ -1,0 +1,8 @@
+Parser: VisibilitySphere
+ID: VisSphere_TheBarrenCoast~TempleOfTheAcorn
+UnlockCondition:
+    - UnlockedVillage: TheBarrenCoast
+    - UnlockedVillage: TempleOfTheAcorn
+SphereDefinitions:
+    - MapLocation: [582,1012]
+      Radius: 18

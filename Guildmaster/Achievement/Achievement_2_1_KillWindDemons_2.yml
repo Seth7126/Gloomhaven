@@ -1,0 +1,18 @@
+Parser: Achievement
+ID: Achievement_2_1_KillWindDemons_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_2_1_KillWindDemons_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_2_1_KillWindDemons_2_Desc$
+UnlockCondition:
+    - Chapter: [2,1]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [WindDemonID, WindDemonEliteID]
+        Value: 75
+TreasureTables: [TT_Achievement_Kill_Level_2]
+AchievementType: Kill
+
+AchievementLevel: 1 
+AchievementOrderId: 611
+
+

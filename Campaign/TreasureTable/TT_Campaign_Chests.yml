@@ -1,0 +1,672 @@
+Parser: TreasureTable
+
+TT_Campaign_Chest_01:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+TT_Campaign_Chest_02:
+    UnlockProsperityItem: TowerShieldID
+
+TT_Campaign_Chest_03:
+    UnlockProsperityItem: SplintmailID
+
+TT_Campaign_Chest_04:
+    Gold: 15
+    
+TT_Campaign_Chest_05:
+    UnlockProsperityItem: ChainmailID
+
+TT_Campaign_Chest_06:
+    UnlockProsperityItem: HookedChainID
+
+TT_Campaign_Chest_07:
+    Group:
+        UnlockQuest: Quest_Campaign_063
+        UnlockQuest: Quest_Campaign_064
+        UnlockQuest: Quest_Campaign_065
+        UnlockQuest: Quest_Campaign_066
+        UnlockQuest: Quest_Campaign_067
+        UnlockQuest: Quest_Campaign_068
+        UnlockQuest: Quest_Campaign_069
+        UnlockQuest: Quest_Campaign_070
+        UnlockQuest: Quest_Campaign_071
+    
+TT_Campaign_Chest_08:
+    PerkCheck: 1
+
+TT_Campaign_Chest_09:
+    Item: WaveCrestID
+
+TT_Campaign_Chest_10:
+    XP: 10 
+
+TT_Campaign_Chest_11:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_12:
+    Item: MagmaWadersID
+
+TT_Campaign_Chest_13:
+    Group:
+        Nothing: 100 #5 Damage, Poison, Wound
+
+TT_Campaign_Chest_14:
+    XP: 10 
+
+TT_Campaign_Chest_15:
+    UnlockProsperityItem: PendantOfDarkPactsID
+    
+TT_Campaign_Chest_16:
+    Gold: 10
+
+TT_Campaign_Chest_17:
+    Gold: 20
+
+TT_Campaign_Chest_18:
+    Gold: 15
+
+TT_Campaign_Chest_19:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_20:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_21:
+    Group:
+        Nothing: 100 #5 Damage
+
+TT_Campaign_Chest_22:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_23:
+    Item: DrakescaleArmorID
+
+TT_Campaign_Chest_24:
+    Group:
+        Nothing: 100 #5 Damage
+
+TT_Campaign_Chest_25:
+    Gold: 25 
+
+TT_Campaign_Chest_26:
+    Gold: 20 
+
+TT_Campaign_Chest_27:
+    Item: OrbOfTwilightID
+
+TT_Campaign_Chest_28:
+    Gold: 15 
+
+TT_Campaign_Chest_29:
+    Item: EnduranceFootwrapsID
+
+TT_Campaign_Chest_30:
+    PerkCheck: 1
+
+TT_Campaign_Chest_31:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_32:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_33:
+    UnlockProsperityItem: WeightedNetID
+
+TT_Campaign_Chest_34:
+    UnlockProsperityItem: AmuletOfLifeID
+
+TT_Campaign_Chest_35:
+    Item: DrakescaleBootsID
+
+TT_Campaign_Chest_36:
+    ItemStocks: [RocketBootsID, RocketBootsID]
+
+TT_Campaign_Chest_37:
+    PerkCheck: 1
+
+TT_Campaign_Chest_38:
+    ItemStocks: [RingOfSkullsID, RingOfSkullsID]
+
+TT_Campaign_Chest_39:
+    Group:
+        Nothing: 100 #5 Damage
+
+TT_Campaign_Chest_40:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_41:
+    UnlockProsperityItem: BlackKnifeID
+
+TT_Campaign_Chest_42:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_43:
+    Group:
+        Nothing: 100 #5 Damage, Poison, Wound
+
+TT_Campaign_Chest_44:
+    Group:
+        UnlockQuest: Quest_Campaign_063
+        UnlockQuest: Quest_Campaign_064
+        UnlockQuest: Quest_Campaign_065
+        UnlockQuest: Quest_Campaign_066
+        UnlockQuest: Quest_Campaign_067
+        UnlockQuest: Quest_Campaign_068
+        UnlockQuest: Quest_Campaign_069
+        UnlockQuest: Quest_Campaign_070
+        UnlockQuest: Quest_Campaign_071
+
+
+TT_Campaign_Chest_45:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_46:
+    Group:
+        Nothing: 100 #3 Damage, Poison
+        
+TT_Campaign_Chest_47:
+    Item: SteamArmorID
+
+TT_Campaign_Chest_48:
+    Gold: 30
+     
+TT_Campaign_Chest_49:
+    UnlockQuest: Quest_Campaign_017
+
+TT_Campaign_Chest_50:
+    Item: SecondSkinID
+
+TT_Campaign_Chest_51:
+    Group:
+        UnlockQuest: Quest_Campaign_063
+        UnlockQuest: Quest_Campaign_064
+        UnlockQuest: Quest_Campaign_065
+        UnlockQuest: Quest_Campaign_066
+        UnlockQuest: Quest_Campaign_067
+        UnlockQuest: Quest_Campaign_068
+        UnlockQuest: Quest_Campaign_069
+        UnlockQuest: Quest_Campaign_070
+        UnlockQuest: Quest_Campaign_071
+
+
+TT_Campaign_Chest_52:
+    Item: HeartOfTheBetrayerID
+
+TT_Campaign_Chest_53:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_54:
+    Item: DoomedCompassID
+
+TT_Campaign_Chest_55:
+    PerkCheck: 1
+
+TT_Campaign_Chest_56:
+    UnlockProsperityItem: StarEarringID
+
+TT_Campaign_Chest_57:
+    Gold: 15
+
+TT_Campaign_Chest_58:
+    Item: DrakescaleHelmID
+
+TT_Campaign_Chest_59:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_60:
+    Item: SkullbaneAxeID
+
+TT_Campaign_Chest_61:
+    UnlockProsperityItem: VersatileDaggerID
+
+TT_Campaign_Chest_62:
+    Item: HelmOfTheMountainID
+    Item: MountainHammerID
+
+TT_Campaign_Chest_63:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_64:
+    Gold: 30
+
+TT_Campaign_Chest_65:
+    ItemStocks: [HornedHelmID, HornedHelmID]
+
+TT_Campaign_Chest_66:
+    UnlockProsperityItem: VolatileBombID
+
+TT_Campaign_Chest_67:
+    Gold: 10
+
+TT_Campaign_Chest_68:
+    Item: HelixRingID
+
+TT_Campaign_Chest_69:
+    Item: RobesOfSummoningID
+
+TT_Campaign_Chest_70:
+    Group:
+        UnlockQuest: Quest_Campaign_063
+        UnlockQuest: Quest_Campaign_064
+        UnlockQuest: Quest_Campaign_065
+        UnlockQuest: Quest_Campaign_066
+        UnlockQuest: Quest_Campaign_067
+        UnlockQuest: Quest_Campaign_068
+        UnlockQuest: Quest_Campaign_069
+        UnlockQuest: Quest_Campaign_070
+        UnlockQuest: Quest_Campaign_071
+
+
+TT_Campaign_Chest_71:
+    Group:
+        UnlockQuest: Quest_Campaign_063
+        UnlockQuest: Quest_Campaign_064
+        UnlockQuest: Quest_Campaign_065
+        UnlockQuest: Quest_Campaign_066
+        UnlockQuest: Quest_Campaign_067
+        UnlockQuest: Quest_Campaign_068
+        UnlockQuest: Quest_Campaign_069
+        UnlockQuest: Quest_Campaign_070
+        UnlockQuest: Quest_Campaign_071
+
+
+TT_Campaign_Chest_72:
+    ItemStocks: [FueledFalchionID, FueledFalchionID]
+
+TT_Campaign_Chest_73:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_74:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+
+TT_Campaign_Chest_75:
+    Gold: 20
+

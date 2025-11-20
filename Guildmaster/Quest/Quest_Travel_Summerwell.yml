@@ -1,0 +1,33 @@
+Parser: Quest
+ID: Quest_Travel_Summerwell
+Chapter: 2
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Summerwell_1 
+      Character: Narrator
+    - Text: Message_End_Quest_Travel_Summerwell_2 
+      Character: Narrator
+    - Text: Message_End_Quest_Travel_Summerwell_3 
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Summerwell_4 
+      Character: Enchantress
+      
+UnlockRevealFoWSphere:
+    - MapLocation: [1654, 420]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1654, 420]
+      Radius: 18
+CompletionRewards: TT_Quest_Travel_Summerwell
+LoadoutImageId: ICE_Cave_01
+UnlockCondition:
+    - UnlockedVillage: Wayward
+    - Chapter: [2,1]    
+StartingVillage: Wayward
+EndingVillage: Summerwell
+#EventChance:
+#EventPool:
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Summerwell, 100]

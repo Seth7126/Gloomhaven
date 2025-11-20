@@ -1,0 +1,9 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_67_ImmuneToSwap
+ScenarioAbility:
+    AImmune:
+        ImmunityTo: [Swap]
+        Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            # ListLayoutOverride: [$ScenarioAbility_67_ImmuneToSwap$, Immune]

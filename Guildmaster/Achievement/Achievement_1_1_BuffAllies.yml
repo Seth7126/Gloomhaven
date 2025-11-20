@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_1_1_BuffAllies
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_BuffAllies$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_BuffAllies_Desc$
+CompleteDialogueLines:
+    - Text: Message_Unlock_Soothsinger_1
+      Character: Trainer
+    - Text: Message_Unlock_Soothsinger_2
+      Character: Narrator
+UnlockCondition:
+    - Chapter: [1,1]
+AchievementCondition:
+    - Targets:
+        Filter: UseAbility
+        AbilityTypes: [Strengthen, Bless, Heal]
+        Value: 40
+        CharacterTypes:
+            Target: [NotSelf]
+
+TreasureTables: [TT_Achievement_1_1_BuffAllies]
+AchievementType: Mercenaries
+
+AchievementLevel: 0  
+AchievementOrderId: 250

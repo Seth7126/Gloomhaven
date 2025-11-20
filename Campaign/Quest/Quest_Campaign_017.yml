@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_Campaign_017
+Chapter: 1
+QuestType: CityAdjacent
+CompletionRewards: TT_Quest_Campaign_017
+LoadoutImageId: FO_DF_04_Vermling
+NarrativeTextImageOverride:
+    - [Quest_Campaign_017_INTRO_GH_1, 017_INTRO_GH_1_Art]
+UnlockCondition:
+    - UnlockChoice:
+        This:
+            CompletedAchievement: Achievement_Campaign_Scenario17
+        OrThis:
+            CompletedAchievement: Achievement_Campaign_Scenario37Chest
+        OrThisOne:
+            CompletedQuest: Quest_Campaign_013
+
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: MistySea
+
+Scenario:
+    MapLocation: [2145, 1333]
+    ScenarioPool: 
+      - [Scenario_Campaign_017, 100]

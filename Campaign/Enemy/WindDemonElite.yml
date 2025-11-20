@@ -1,0 +1,78 @@
+Parser: Enemy
+ID: WindDemonEliteID
+LocKey: $WindDemonElite$
+MonsterType: Monster
+StandeeLimit: 6
+Model: Wind Demon Elite
+NonEliteVariant: WindDemonID
+PredominantlyMelee: False
+AbilityCards: [644,645,646,647,648,649,650,651]
+# Base Stats
+Level0:
+    Health: 5
+    Move: 3
+    Attack: 2
+    Range: 4
+    Target: 1
+    Flying: True
+    Shield: 1
+Level1:
+    Health: 5
+    Move: 3
+    Attack: 2
+    Range: 4
+    Target: 1
+    Flying: True
+    Shield: 2
+Level2:
+    Health: 7
+    Move: 4
+    Attack: 2
+    Range: 4
+    Target: 1
+    Flying: True
+    Shield: 2
+Level3:
+    Health: 8
+    Move: 4
+    Attack: 3
+    Range: 4
+    Target: 1
+    Flying: True
+    Shield: 2
+Level4:
+    Health: 8
+    Move: 4
+    Attack: 3
+    Range: 4
+    Target: 1
+    Flying: True
+    Shield: 2
+    Conditions: [Disarm]
+Level5:
+    Health: 11
+    Move: 4
+    Attack: 3
+    Range: 4
+    Target: 1
+    Flying: True
+    Shield: 2
+    Conditions: [Disarm]
+Level6:
+    Health: 12
+    Move: 4
+    Attack: 3
+    Range: 4
+    Target: 1
+    Flying: True
+    Shield: 3
+    Conditions: [Disarm]
+Level7:
+    Health: 13
+    Move: 4
+    Attack: 4
+    Range: 4
+    Target: 1
+    Flying: True
+    Shield: 3
+    Conditions: [Disarm]

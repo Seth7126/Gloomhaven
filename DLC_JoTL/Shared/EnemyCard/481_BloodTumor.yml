@@ -1,0 +1,14 @@
+Parser: EnemyCard
+ID: 11481
+Initiative: 73
+Shuffle: False
+Data:
+    Abilities:
+        Heal1:
+            Heal: SpecialBaseStat
+            Filter: Self
+            StatIsBasedOnX:
+                Strength:
+                    BasedOn: InitialPlayerCharacterCount
+                    AddTo: True
+            AnimOverload: HealSelf

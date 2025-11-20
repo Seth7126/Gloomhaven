@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_Campaign_033
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_033
+LoadoutImageId: ICE_CryptRuin_01
+UnlockCondition:
+    - Required:
+        CompletedQuest: 1
+    - CompletedQuest: Quest_Campaign_032
+    - CompletedQuest: Quest_Campaign_025
+BlockCondition:
+    - UnlockChoice:
+        This:
+            CompletedQuest: Quest_Campaign_042
+            NotCompletedQuest: Quest_Campaign_025
+        OrThis:
+            CompletedQuest: Quest_Campaign_034
+            NotCompletedQuest: Quest_Campaign_024
+        OrEvenThis:
+            CompletedQuest: Quest_Campaign_034
+            CompletedQuest: Quest_Campaign_042
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: CopperneckMountains
+
+Scenario:
+    MapLocation: [986, 232]
+    ScenarioPool: 
+      - [Scenario_Campaign_033, 100]

@@ -1,0 +1,8 @@
+Parser: Perk
+ID: Sawbones05
+Name: PERK_Sawbones_05
+Description: PERK_Sawbones_05_Desc
+CharacterID: SawbonesID
+Available: 2
+CardsToAdd: [AMC_Immobilize_P1]
+

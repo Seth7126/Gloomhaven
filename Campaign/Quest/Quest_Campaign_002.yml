@@ -1,0 +1,22 @@
+Parser: Quest
+ID: Quest_Campaign_002
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_002
+LoadoutImageId: CR_NE_02_Bandit
+NarrativeTextImageOverride:
+    - [Quest_Campaign_002_OUTRO_GH_1, 002_OUTRO_GH_1_Art]
+    - [Quest_Campaign_002_OUTRO_GH_2, 002_OUTRO_GH_1_Art]
+    - [Quest_Campaign_002_OUTRO_GH_3, 002_OUTRO_GH_2_Art]
+    - [Quest_Campaign_002_OUTRO_GH_4, 002_OUTRO_GH_4_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_001
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Corpsewood
+IconType: Boss
+
+Scenario:
+    MapLocation: [1443, 896]
+    ScenarioPool: 
+      - [Scenario_Campaign_002, 100]

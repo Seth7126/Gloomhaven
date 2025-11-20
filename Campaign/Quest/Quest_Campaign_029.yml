@@ -1,0 +1,16 @@
+Parser: Quest
+ID: Quest_Campaign_029
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_029
+LoadoutImageId: CR_RU_02_Undead
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_028
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: DaggerForest
+
+Scenario:
+    MapLocation: [582, 712]
+    ScenarioPool: 
+      - [Scenario_Campaign_029, 100]

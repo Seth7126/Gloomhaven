@@ -1,0 +1,38 @@
+Parser: Quest
+ID: Quest_Story_Sunkeeper_1
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+UnlockDialogueLines:
+    - Text: Message_Complete_Achievement_1_1_SunkeeperReachLevel2_1
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_SunkeeperReachLevel2_2
+      Character: Trainer
+      CameraLocation: [1037, 698] 
+    - Text: Message_Complete_Achievement_1_1_SunkeeperReachLevel2_3
+      Character: Merchant
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Sunkeeper_1_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Sunkeeper_1_2
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Sunkeeper_1_3
+      Character: Trainer
+      CameraLocation: [755, 719]
+CompletionRewards: TT_Quest_Story_Sunkeeper_1
+LoadoutImageId: CA_DF_02
+UnlockRevealFoWSphere:
+    - MapLocation: [1037, 698]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_1_1_SunkeeperReachLevel2
+    - Chapter: [1,1]
+RequiredCharacters:
+  - Character: SunkeeperID    
+    Level: 2
+StartingVillage: WayfarersRest
+EndingVillage: WayfarersRest
+
+Scenario:
+    MapLocation: [1037, 698]
+    ScenarioPool: [Scenario_Story_Sunkeeper_1, 100]

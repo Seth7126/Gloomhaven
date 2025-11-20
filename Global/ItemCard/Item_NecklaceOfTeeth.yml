@@ -1,0 +1,30 @@
+Parser: ItemCard
+ID: 106
+StringID: NecklaceOfTeethID
+Name: $ITEM_NAME_NecklaceofTeeth$
+Art: Necklace of Teeth
+TotalInGame: 1
+Cost: 40
+Slot: Head 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+Data: 
+    Abilities:
+        TActive:
+            AddActiveBonus:
+                Heal: 1
+                Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: DuringActionAbilityOnKill
+                Requirement: 
+                    OnYourTurn: True
+                Filter: Enemy
+Layout: 
+    - Active:
+        Ability: TActive
+        ListLayout: "$Item_NecklaceOfTeeth$"
+        Layout: "$Item_NecklaceOfTeeth$"
+        Icon: "Heal"
+    - Row: "<size=50%> "

@@ -1,0 +1,42 @@
+Parser: RoadEvent
+ID: Event_Road_JOTL_07ID
+LocKey: $ROAD_EVENT$
+Expansion: JOTL
+RequiredClass: None
+Screens:
+    Decision:
+        Text: "Event_Road_JOTL_07_INTRO"
+        Options:
+            A:
+                Text: "Event_Road_JOTL_07_OPTION_A"
+                TreasureTables: TT_Event_Road_JOTL_07_OPTION_A
+                Next: Event_Road_JOTL_07_OPTION_A
+            B:
+                Text: "Event_Road_JOTL_07_OPTION_B"
+                TreasureTables: TT_Event_Road_JOTL_07_OPTION_A
+                Next: Event_Road_JOTL_07_OPTION_A
+            C:
+                Text: "Event_Road_JOTL_07_OPTION_C"
+                TreasureTables: TT_Event_Road_JOTL_07_OPTION_C
+                Next: Event_Road_JOTL_07_OPTION_C
+            D:
+                Text: "Event_Road_JOTL_07_OPTION_D"
+                TreasureTables: TT_Event_Road_JOTL_07_OPTION_A
+                Next: Event_Road_JOTL_07_OPTION_A
+            E:
+                Text: "Event_Road_JOTL_07_OPTION_E"
+                TreasureTables: TT_Event_Road_JOTL_07_OPTION_A
+                Next: Event_Road_JOTL_07_OPTION_A
+            F:
+                Text: "Event_Road_JOTL_07_OPTION_F"
+                TreasureTables: TT_Event_Road_JOTL_07_OPTION_F
+                Next: Event_Road_JOTL_07_OPTION_F
+    Event_Road_JOTL_07_OPTION_A:
+        Text: "Event_Road_JOTL_07_RESULT_A"
+        End: True
+    Event_Road_JOTL_07_OPTION_C:
+        Text: "Event_Road_JOTL_07_RESULT_C"
+        End: True
+    Event_Road_JOTL_07_OPTION_F:
+        Text: "Event_Road_JOTL_07_RESULT_F"
+        End: True

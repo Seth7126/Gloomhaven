@@ -1,0 +1,15 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_84_PreventDamage
+ScenarioAbility:
+    AActive:
+        PreventDamage: -1
+        Target: -1
+        Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: PreventDamageByDiscardingPlayerCards
+            XPTracker: [0,0]
+            ListLayoutOverride: [$ScenarioAbility_84_PreventDamage$, Prevent]
+            IsToggleBonus: False
+        AnimOverload: None
+        AutoTrigger: True

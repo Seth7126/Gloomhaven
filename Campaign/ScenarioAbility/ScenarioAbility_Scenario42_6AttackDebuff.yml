@@ -1,0 +1,18 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_42_6AttackDebuff
+ScenarioAbility:
+    AActive:
+        Attack: -1
+        StrengthIsBase: True
+        Target: -1
+        Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: BuffAttack
+            IsAura: True
+            AuraFilter: 
+                ActorType: [Player, Summon]
+            AuraTargeting: All
+            ListLayoutOverride: [$ScenarioAbility_42_6AttackDebuff$, Attack]
+        AnimOverload: None
+        AutoTrigger: True

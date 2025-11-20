@@ -1,0 +1,21 @@
+Parser: Achievement
+ID: Achievement_Sunkeeper_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Sunkeeper_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Sunkeeper_2_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        SunkeeperID: 1  
+AchievementCondition:
+    - Targets:
+        CharacterIDs: SunkeeperID   
+        Filter: UseAbility
+        AbilityTypes: [Heal]
+        Amount: 150
+
+TreasureTables: [TT_Achievement_Sunkeeper]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 297
+ 

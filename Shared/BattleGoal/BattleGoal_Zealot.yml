@@ -1,0 +1,17 @@
+Parser: BattleGoal
+ID: BattleGoal_Zealot
+LocalisedName: BATTLEGOAL_Zealot
+LocalisedDescription: BATTLEGOAL_Zealot_Desc
+#Have three or fewer total cards in your hand and discard
+#at the end of the scenario - 1
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: CardsRemaining
+        Conditional:
+            Type: EndScenario
+            Amount: "< 4"
+        ScenarioResult: Win
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

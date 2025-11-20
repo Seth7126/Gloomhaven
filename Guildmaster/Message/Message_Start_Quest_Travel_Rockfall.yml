@@ -1,0 +1,14 @@
+Parser: Message
+Name: Start_Quest_Travel_Rockfall
+DialogueLines:
+    - Text: Message_Start_Quest_Travel_Rockfall_1
+      Character: Enchantress
+    - Text: Message_Start_Quest_Travel_Rockfall_2
+      Character: Trainer
+      CameraLocation: [1591,1156]
+    - Text: Message_Start_Quest_Travel_Rockfall_3
+      Character: Enchantress
+MapMessageTrigger: Map
+UnlockCondition:
+    - UnlockedVillage: MistfellCopse
+    - UnlockedVillage: BoneshatterPass 

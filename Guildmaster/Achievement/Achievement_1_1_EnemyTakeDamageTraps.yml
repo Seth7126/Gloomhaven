@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_1_1_EnemyTakeDamageTraps
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_EnemyTakeDamageTraps$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_EnemyTakeDamageTraps_Desc$
+CompleteDialogueLines:
+    - Text: Message_Unlock_Doomstalker_1
+      Character: Trainer
+    - Text: Message_Unlock_Doomstalker_2
+      Character: Narrator
+UnlockCondition:
+    - Chapter: [1,1]
+AchievementCondition:
+    - Targets:
+        Filter: ReceiveDamage
+        Value: 50
+        DamageSource: [Trap]
+        CharacterTypes:
+            Target: Enemy        
+
+TreasureTables: [TT_Achievement_1_1_EnemyTakeDamageTraps]
+AchievementType: Mercenaries
+
+AchievementLevel: 0  
+AchievementOrderId: 249

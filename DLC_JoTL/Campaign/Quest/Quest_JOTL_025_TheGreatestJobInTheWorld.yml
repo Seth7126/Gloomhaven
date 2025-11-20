@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_JOTL_025_TheGreatestJobInTheWorld
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_025_TheGreatestJobInTheWorld
+LoadoutImageId: 025_TheGreatestJobInTheWorld_Loadout
+NarrativeTextImageOverride:
+    - [Quest_JOTL_025_TheGreatestJobInTheWorld_INTRO_GH_1, 025_TheGreatestJobInTheWorld_INTRO_GH_1_Art]
+    - [Quest_JOTL_025_TheGreatestJobInTheWorld_INTRO_GH_2, 025_TheGreatestJobInTheWorld_INTRO_GH_2_Art]
+    - [Quest_JOTL_025_TheGreatestJobInTheWorld_OUTRO_GH_1, 025_TheGreatestJobInTheWorld_OUTRO_GH_1_Art]
+UnlockCondition:
+    - CompletedAchievement: Achievement_JOTL_025_TheGreatestJobInTheWorld
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLSide
+RequiredCharacters:
+  - Character: DemolitionistID 
+    Level: 1  
+  
+Scenario:
+    MapLocation: [1475, 907]
+    ScenarioPool: 
+      - [Scenario_JOTL_025_TheGreatestJobInTheWorld, 100]

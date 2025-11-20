@@ -1,0 +1,16 @@
+Parser: EnemyCard
+ID: 11426
+Initiative: 9
+Shuffle: True
+Data:
+    Abilities:
+        Move1:
+            Move: 1
+        Retaliate1:
+            Retaliate: 2
+            RetaliateRange: All
+            Filter: Self
+            AnimOverload: PowerUp
+            ActiveBonusDuration: Round
+            ShowRange: False
+            Text: "$JOTL_426$"

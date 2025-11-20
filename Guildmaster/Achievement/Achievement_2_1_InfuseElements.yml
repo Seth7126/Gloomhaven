@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_2_1_InfuseElements
+LocalisedName: $ADVENTURE_ACHIEVEMENT_2_1_InfuseElements$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_2_1_InfuseElements_Desc$
+UnlockCondition:
+    - Chapter: [2,1]
+AchievementCondition:
+    - Targets:
+        Filter: Infuse
+        Elements: [Earth,Ice,Air,Fire,Dark,Light,Any]
+        Value: 100
+
+TreasureTables: [TT_Achievement_2_1_InfuseElements]
+AchievementType: Relics
+AchievementLevel: 2  
+AchievementOrderId: 422

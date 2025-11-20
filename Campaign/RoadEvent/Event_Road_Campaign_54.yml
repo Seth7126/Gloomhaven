@@ -1,0 +1,28 @@
+Parser: RoadEvent
+ID: Event_Road_Campaign_54ID
+# LocKey: $ROAD_EVENT_54$
+LocKey: $ROAD_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_ROAD_CAMPAIGN_54_INTRO"
+        Options:
+            A:
+                Text: "EVENT_ROAD_CAMPAIGN_54_OPTION_A"
+                TreasureTables: TT_EVENT_ROAD_CAMPAIGN_54_OPTION_A
+                Next: EVENT_ROAD_CAMPAIGN_54_OPTION_A
+            B:
+                Text: "EVENT_ROAD_CAMPAIGN_54_OPTION_B"
+                Next: EVENT_ROAD_CAMPAIGN_54_OPTION_B
+    EVENT_ROAD_CAMPAIGN_54_OPTION_A:
+        Text: "EVENT_ROAD_CAMPAIGN_54_RESULT_A"
+        End: True
+    EVENT_ROAD_CAMPAIGN_54_OPTION_B:
+        InParty:
+            ClassIDs: [BerserkerID,BeastTyrantID,DoomstalkerID]
+            Screen:
+                Text: "EVENT_ROAD_CAMPAIGN_54_RESULT_B_A"
+                TreasureTables: TT_EVENT_ROAD_CAMPAIGN_54_OPTION_B_A
+                End: True
+        Text: "EVENT_ROAD_CAMPAIGN_54_RESULT_B_B"
+        TreasureTables: TT_EVENT_ROAD_CAMPAIGN_54_OPTION_B_B
+        End: True

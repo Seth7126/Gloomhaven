@@ -1,0 +1,73 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_WillingSacrifice$
+Character: PlagueheraldID
+ID: 310
+Level: 5
+Initiative: 84
+Discard: [Lost,Lost]
+Data:
+    Top:
+        Abilities:
+            TActive:
+                AddActiveBonus:
+                    Damage: 3
+                    Target: 1
+                    Targeting: All
+                    Filter:
+                        TargetType: Enemy
+                        TargetHasNegativeCondition: Poison
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: DuringActionAbility
+                    Restriction: OncePerAction
+                    ValidAbilityType: Move
+                    IsToggleBonus: True
+                    CostAbility:
+                        Damage: 1
+                        Filter: Self
+                        AnimOverload: PowerUp
+                AnimOverload: PowerUp
+        XP: 2
+    Bottom:
+        Abilities:
+            BRecover:
+                RecoverDiscardedCards: 2
+                Target: -1
+                Targeting: All
+                Filter:
+                    TargetType: Ally
+                    ActorType: Player
+                    TargetHasNegativeCondition: Poison
+                AnimOverload: RadialPositive
+        Consumes:
+            BCAir:
+                Elements: Air
+                AbilityOverrides:
+                    BCAirRecoverBuff:
+                        ParentName: BRecover
+                        Strength: 1
+                XP: 1
+        XP: 1
+Layout:
+    Top:
+        - Active:
+            Ability: TActive
+            Icon: Move
+            ListLayout: "$310_T$"
+            Layout: "$310_T$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Persistent
+    Bottom:
+        - Row: "$310_B$"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: BCAir
+            Text: "$178_T_2$"
+        - Row: "<size=20%> "
+        - XP: 1

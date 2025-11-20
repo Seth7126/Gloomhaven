@@ -1,0 +1,8 @@
+Parser: Perk
+ID: Elementalist12
+Name: PERK_Elementalist_12
+Description: PERK_Elementalist_12_Desc
+CharacterID: ElementalistID
+Available: 1
+CardsToAdd: [AMC_Stun_P0]
+

@@ -1,0 +1,7 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_82_LoseGoalChestReward
+ScenarioAbility:
+    TLoseGoalChestReward:
+        LoseGoalChestRewards: 1
+        Filter: Self
+        AutoTrigger: True

@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Travel_Kailej
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Kailej_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Kailej_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Kailej_3
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1170, 1243]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1170, 1243]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_Kailej]
+LoadoutImageId: SE_Rot_03
+UnlockCondition:
+    - UnlockedVillage: TheShiftingSands
+    - Chapter: [4,1]  
+StartingVillage: TheShiftingSands
+EndingVillage: Kailej
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Kailej, 100]

@@ -1,0 +1,22 @@
+Parser: ItemCard
+ID: 53
+StringID: BlackKnifeID
+Name: $ITEM_NAME_BlackKnife$
+Art: Black Knife
+TotalInGame: 2
+Cost: 25
+Slot: OneHand 
+Rarity: Rare
+Usage: Spent
+Trigger: SingleTarget
+ProsperityRequirement: 7
+Data:     
+    Overrides:
+        OCurse:
+            Conditions: Curse
+    CompareAbility:
+        AbilityType: Attack
+        IsMelee: True
+        Filter: Enemy
+Layout: 
+    - Row: $Item_BlackKnife$

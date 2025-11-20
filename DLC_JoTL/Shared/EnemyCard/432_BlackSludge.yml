@@ -1,0 +1,25 @@
+Parser: EnemyCard
+ID: 11432
+Initiative: 66
+Shuffle: False
+Data:
+    Abilities:
+        Move1:
+            Move: 0
+        Loot1:
+            Loot: 1
+            Target: -1
+            AnimOverload: LootHeal
+            RangeIsBase: True
+            TargetIsBase: True            
+        Heal1:
+            Heal: 2
+            Filter: Self
+            AnimOverload: None                    
+    Consumes:
+        CDark:
+            Elements: Dark
+            AbilityOverrides:
+                CDarkAttackBuff:
+                    ParentName: Heal1
+                    Strength: 1

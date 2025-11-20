@@ -1,0 +1,20 @@
+Parser: Message
+Name: Start_Quest_Boss_SightlessEye
+DialogueLines:
+    - Text: Message_Start_Quest_Boss_SightlessEye_1
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_SightlessEye_2
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_SightlessEye_3
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_SightlessEye_4
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_SightlessEye_5
+      Character: Enchantress
+      CameraLocation: [1361, 1374]     
+      
+MapMessageTrigger: Map
+UnlockCondition:
+    - CompletedQuest: Quest_Story_BeastTyrant_3
+    - CompletedQuest: Quest_Story_Nightshroud_3    
+    

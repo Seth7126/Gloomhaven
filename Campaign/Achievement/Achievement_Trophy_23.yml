@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Trophy23
+LocalisedName: $TROPHY_ACHIEVEMENT_23$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_23_Desc$
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - Retirement: ANY
+TreasureTables: [TT_Achievement_Trophy23]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4023

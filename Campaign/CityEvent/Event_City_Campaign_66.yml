@@ -1,0 +1,28 @@
+Parser: CityEvent
+ID: Event_City_Campaign_66ID
+# LocKey: $CITY_EVENT_66$
+LocKey: $CITY_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_CITY_CAMPAIGN_66_INTRO"
+        Options:
+            A:
+                Text: "EVENT_CITY_CAMPAIGN_66_OPTION_A"
+                Next: EVENT_CITY_CAMPAIGN_66_OPTION_A
+            B:
+                Text: "EVENT_CITY_CAMPAIGN_66_OPTION_B"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_66_OPTION_B
+                Next: EVENT_CITY_CAMPAIGN_66_OPTION_B
+    EVENT_CITY_CAMPAIGN_66_OPTION_A:
+        MinGold:
+            Amount: 40
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_66_RESULT_A"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_66_OPTION_A_A
+                End: True        
+        Text: "EVENT_CITY_CAMPAIGN_66_RESULT_B"
+        TreasureTables: TT_EVENT_CITY_CAMPAIGN_66_OPTION_B
+        End: True
+    EVENT_CITY_CAMPAIGN_66_OPTION_B:
+        Text: "EVENT_CITY_CAMPAIGN_66_RESULT_B"
+        End: True

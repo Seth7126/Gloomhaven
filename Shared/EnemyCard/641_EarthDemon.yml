@@ -1,0 +1,26 @@
+Parser: EnemyCard
+ID: 641
+Initiative: 93
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: -1
+        Attack1:
+            Attack: -1
+            Target: -1
+            TargetIsBase: True
+            Filter: Enemy
+            Text: "$Target_AllAdjacentEnemies$"
+            AnimOverload: RadialAttack
+    Consumes:
+        CEarth:
+            Elements: Earth
+            AbilityOverrides:
+                CEarthPush:
+                    ParentName: Attack1
+                    SubAbilities:
+                        TCAttackSubPush:
+                            Push:
+                                Amount: 1
+                            AnimOverload: None

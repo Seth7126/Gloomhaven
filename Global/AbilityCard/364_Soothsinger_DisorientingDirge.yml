@@ -1,0 +1,56 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_DisorientingDirge$
+Character: SoothsingerID
+ID: 364
+Level: 4
+Initiative: 14
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TPlaySong:
+                PlaySong: 1
+                Filter: Self
+                Song:
+                    Filter: Enemy
+                    SongEffect:
+                        AbilityType: Attack
+                        AttackType: Attack
+                        AbilityOverrides:
+                            TSongAttackBuff:
+                                ParentName: TSong
+                                AttackHasDisadvantage: True
+                AnimOverload: PlaySongShield3
+    Bottom:
+        Abilities:
+            BCurse:
+                Curse:
+                    Enhancements: 1
+                Range: 3
+                Target: -1
+                Filter: Enemy
+                AnimOverload: AggressiveNonTargetedShout                
+            BBless:
+                Bless:
+                    Enhancements: 1
+                Range: 3
+                Target: -1
+                Filter: Ally
+                AnimOverload: PlayPositiveTune
+
+        XP: 1
+Layout:
+    Top:
+        - Song:
+            SongIcon: Soothsinger
+            ParentAbility: TPlaySong
+            ActiveBonusLayout: "$364_T$"
+            SongAbilityLayout: "$364_T$"
+    Bottom:
+        - Row: "<b><size=130%>$Curse$ <sprite name=Curse> <size=100%><voffset=1>@BCurse@"
+        - Row: "$Target_AllEnemiesWithin$ <nobr>$Range$ <sprite name=Range> *BCurse.Range*</nobr>"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Bless$ <sprite name=Bless> <size=100%><voffset=1>@BBless@"
+        - Row: "$Target_AllAlliesWithin$ <nobr>$Range$ <sprite name=Range> *BBless.Range*</nobr>"
+        - Row: "<size=50%> "
+        - XP: 1

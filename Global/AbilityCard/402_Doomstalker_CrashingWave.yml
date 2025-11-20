@@ -1,0 +1,57 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_CrashingWave$
+Character: DoomstalkerID
+ID: 402
+Level: 7
+Initiative: 22
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TMove: 
+                Move:
+                    Amount: 4
+                    Enhancements: 1
+            TAttack:
+                Attack:
+                    Amount: 3
+                    Enhancements: 2
+                Range: 1
+                Target: -1
+                XPPerTarget: 1
+                MultiPassAttack: False
+                AnimOverload: RadialAttack
+    Bottom:
+        Abilities:
+            BDoom:
+                AddDoom:
+                    Doom:
+                        DoomAbilities:
+                            BDoomAttackDebuff:
+                                Attack: 0
+                                Condition: Curse
+                                ActiveBonus:
+                                    Duration: Persistent
+                                    Behaviour: BuffIncomingAttacks
+                                    Filter:
+                                        ActorType: [Player, Summon, Ally]
+                Filter: 
+                    TargetType: Enemy
+                    EnemyType: [Normal, Elite, Boss]
+                Target: 1
+                Targeting: All
+                AnimOverload: DoomTarget
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *TMove* <size=100%><voffset=1>@TMove@"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Target_AllAdjacentEnemies$"
+        - Row: "<size=20%> "
+        - Row: "$XP_PerEnemy$"
+    Bottom:
+        - Doom:
+            DoomIcon: Doomstalker
+            ParentAbility: BDoom
+            ActiveBonusLayout: "$402_B$"
+            DoomAbilityLayout: "$402_B$"

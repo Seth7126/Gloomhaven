@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_025
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_025
+LoadoutImageId: ICE_Cave_01
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_016
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LinkedQuestID: Quest_Campaign_034
+LocationArea: CopperneckMountains
+
+Scenario:
+    MapLocation: [727, 225]
+    ScenarioPool: 
+      - [Scenario_Campaign_025, 100]

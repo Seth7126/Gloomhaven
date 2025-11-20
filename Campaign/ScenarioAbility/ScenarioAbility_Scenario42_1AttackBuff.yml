@@ -1,0 +1,18 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_42_1AttackBuff
+ScenarioAbility:
+    AActive:
+        Attack: 1
+        Target: -1
+        Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: BuffAttack
+            IsAura: True
+            AuraFilter:
+                ActorType: [Enemy]
+                EnemyType: [Normal, Elite, Boss]
+            AuraTargeting: All
+            ListLayoutOverride: [$ScenarioAbility_42_1AttackBuff$, Attack]
+        AnimOverload: None
+        AutoTrigger: True

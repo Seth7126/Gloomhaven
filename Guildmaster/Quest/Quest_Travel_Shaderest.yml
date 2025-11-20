@@ -1,0 +1,24 @@
+Parser: Quest
+ID: Quest_Travel_Shaderest
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Shaderest_1
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [838,848]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [838,848]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_Shaderest]
+LoadoutImageId: CR_NE_01_Undead
+UnlockCondition:
+    - UnlockedVillage: Bloodford
+StartingVillage: Bloodford
+EndingVillage: Shaderest
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Shaderest, 100]

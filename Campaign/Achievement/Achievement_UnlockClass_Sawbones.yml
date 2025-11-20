@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_UnlockClass_Sawbones
+LocalisedName: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+LocalisedDescription: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+UnlockCondition:
+    - UnlockClass: SawbonesID
+AchievementCondition:
+    - UnlockClass: SawbonesID
+TreasureTables: [TT_Achievement_UnlockClass_Sawbones]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 2209

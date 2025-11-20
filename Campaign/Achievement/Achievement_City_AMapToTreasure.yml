@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_AMapToTreasure
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_BuffAllies$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_BuffAllies_Desc$
+UnlockCondition:
+    - Prosperity: 999
+AchievementCondition:
+    - Prosperity: 0
+TreasureTables: [TT_Achievement_AMapToTreasure]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 3001

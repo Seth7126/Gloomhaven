@@ -1,0 +1,21 @@
+Parser: ItemCard
+ID: 63
+StringID: LuckyEyeID
+Name: $ITEM_NAME_LuckyEye$
+Art: Lucky Eye
+TotalInGame: 2
+Cost: 60
+Slot: SmallItem 
+Rarity: Rare
+Usage: Consumed
+Trigger: DuringOwnTurn
+ProsperityRequirement: 8
+Data: 
+    Abilities:
+        AStrengthen:
+            Strengthen: True
+            Range: 1
+            Target: -1
+            Filter: [Self, Ally]
+Layout: 
+    - Row: $Item_LuckyEye$

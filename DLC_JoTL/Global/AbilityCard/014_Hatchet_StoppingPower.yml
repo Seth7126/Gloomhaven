@@ -1,0 +1,68 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_StoppingPower$
+Character: HatchetID
+ID: 11014
+Level: 1
+Initiative: 35
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 3
+                    Enhancements: 1
+                Range:
+                    Amount: 2
+                    Enhancements: 1
+                AnimOverload: RangedAttack
+        Consumes:
+            TCAir:
+                Elements: Air
+                AbilityOverrides:
+                    TCAirBuff:
+                        ParentName: TAttack
+                        Range: 1
+                        SubAbilities:
+                            TAttackSubPush:
+                                Push: 2
+                                IsInlineSubAbility: True
+                XP: 1
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 3
+                    Enhancements: 1
+                    Jump: True
+                SubAbilities:
+                    BMoveSubImmobilize:
+                        Immobilize: True
+                        Range: 1
+                        Target: -1
+                        Filter: [Enemy]
+                        AllTargetsAdjacentToParentMovePath: true
+        Infuse: Air
+        XP: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range* @TAttack.Range@"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCAir
+            Text: "<nobr>+1 $Range$ <sprite name=Range></nobr>, <nobr>$Push$ <sprite name=Push> 2</nobr>, <sprite name=XP1>"
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "$Jump$ <sprite name=Jump>"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Immobilize$ <sprite name=Immobilize>"
+        - Row: "$Target_AllEnemiesAdjacentToHexesMovedThrough$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - Infuse: Air
+            - Column:
+                - XP: 1

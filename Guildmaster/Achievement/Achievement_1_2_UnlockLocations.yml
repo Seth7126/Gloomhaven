@@ -1,0 +1,20 @@
+Parser: Achievement
+ID: Achievement_1_2_UnlockLocations
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_2_UnlockLocations$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_2_UnlockLocations_Desc$
+CompleteDialogueLines:
+    - Text: Message_Complete_Achievement_1_2_UnlockLocations_1
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_2_UnlockLocations_2
+      Character: Merchant
+      CameraLocation: [1400,590]  
+    - Text: Message_Complete_Achievement_1_2_UnlockLocations_3
+      Character: Trainer
+UnlockCondition:
+    - Chapter: [1,2]
+AchievementCondition:
+    - UnlockedVillage: 11
+TreasureTables: [TT_Achievement_1_2_UnlockLocations]
+AchievementType: General
+AchievementLevel: 0
+AchievementOrderId: 130

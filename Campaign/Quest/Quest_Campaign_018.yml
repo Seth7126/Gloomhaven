@@ -1,0 +1,22 @@
+Parser: Quest
+ID: Quest_Campaign_018
+Chapter: 1
+QuestType: City
+#CompletionRewards: TT_Quest_Campaign_018
+LoadoutImageId: SE_05
+NarrativeTextImageOverride:
+    - [Quest_Campaign_018_INTRO_GH_1, 018_INTRO_GH_1_Art]
+UnlockCondition:
+    - Required:
+        CompletedQuest: 1
+    - CompletedQuest: Quest_Campaign_011
+    - CompletedQuest: Quest_Campaign_012
+    - CompletedQuest: Quest_Campaign_020
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+
+Scenario:
+    MapLocation: [660, 1097]
+    ScenarioPool: 
+      - [Scenario_Campaign_018, 100]

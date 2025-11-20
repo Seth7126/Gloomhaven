@@ -1,0 +1,29 @@
+Parser: ItemCard
+ID: 72
+StringID: ShoesOfHappinessID
+Name: $ITEM_NAME_ShoesofHappiness$
+Art: Shoes of Happiness
+TotalInGame: 2
+Cost: 50
+Slot: Legs 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+Data: 
+    Abilities:
+        TActive:
+            AddActiveBonus:
+                GainXP: 1
+            ActiveBonus:
+                Duration: Persistent
+                Restriction: OncePerTurn
+                Behaviour: DuringActionAbilityOnMoved
+                Target: 6
+                ValidAbilityType: Move
+Layout: 
+    - Active:
+        Ability: TActive
+        ListLayout: "$Item_ShoesOfHappiness$"
+        Layout: "$Item_ShoesOfHappiness$"
+        Icon: "XP"
+    - Row: "<size=50%> "

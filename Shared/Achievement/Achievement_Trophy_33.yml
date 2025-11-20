@@ -1,0 +1,15 @@
+Parser: Achievement
+ID: Achievement_Trophy33
+LocalisedName: $TROPHY_ACHIEVEMENT_33$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_33_Desc$
+AchievementCondition:
+    - Targets:
+        CharacterIDs: SummonerID
+        Filter: UseAbility
+        AbilityTypes: Summon
+        Value: 5
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy33]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4033

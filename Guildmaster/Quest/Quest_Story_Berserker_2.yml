@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Story_Berserker_2
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Berserker_2_1
+      Character: Merchant
+      CameraLocation: [466, 332] 
+      
+CompletionRewards: TT_Quest_Story_Berserker_2
+LoadoutImageId: TO_DF_01_Militia
+UnlockRevealFoWSphere:
+    - MapLocation: [903, 213]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: Bloodford
+    - CompletedQuest: Quest_Story_Berserker_1
+RequiredCharacters:
+  - Character: BerserkerID    
+    Level: 3
+StartingVillage: IronwoodCamp
+EndingVillage: IronwoodCamp
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [903, 213]
+    ScenarioPool: [Scenario_Story_Berserker_2, 100]

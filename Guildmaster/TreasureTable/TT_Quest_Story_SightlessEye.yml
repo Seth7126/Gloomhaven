@@ -1,0 +1,5 @@
+Parser: TreasureTable
+TT_Quest_Story_SightlessEye:
+  Item: FueledFalchionID
+  EnhancementSlots: 1
+  

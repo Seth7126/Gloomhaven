@@ -1,0 +1,73 @@
+Parser: Enemy
+ID: LivingSpiritID
+LocKey: $LivingSpirit$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Living Spirit
+PredominantlyMelee: False
+AbilityCards: [580,581,582,583,584,585,586,587]
+# Base Stats
+Level0:
+    Health: 2
+    Move: 2
+    Attack: 2
+    Range: 2
+    Target: 1
+    Shield: 1
+    Flying: True
+Level1:
+    Health: 2
+    Move: 2
+    Attack: 2
+    Range: 2
+    Target: 1
+    Shield: 2
+    Flying: True
+Level2:
+    Health: 2
+    Move: 3
+    Attack: 2
+    Range: 3
+    Target: 1
+    Shield: 2
+    Flying: True
+Level3:
+    Health: 3
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    Shield: 2
+    Flying: True
+Level4:
+    Health: 3
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    Shield: 3
+    Flying: True
+Level5:
+    Health: 4
+    Move: 3
+    Attack: 3
+    Range: 4
+    Target: 1
+    Shield: 3
+    Flying: True
+Level6:
+    Health: 4
+    Move: 3
+    Attack: 4
+    Range: 4
+    Target: 1
+    Shield: 3
+    Flying: True 
+Level7:
+    Health: 6
+    Move: 3
+    Attack: 4
+    Range: 4
+    Target: 1    
+    Shield: 3
+    Flying: True

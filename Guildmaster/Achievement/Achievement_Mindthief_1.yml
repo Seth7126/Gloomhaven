@@ -1,0 +1,25 @@
+Parser: Achievement
+ID: Achievement_Mindthief_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Mindthief_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Mindthief_1_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        MindthiefID: 1  
+AchievementCondition:
+    - Targets:
+        CharacterIDs: MindthiefID    
+        Filter: UseAbility
+        AbilityTypes: [Curse, Disarm, Immobilize, Wound, Muddle, Poison, Stun]
+        Value: 30
+        CharacterTypes:
+            Target: [Enemy]     
+
+
+TreasureTables: [TT_Achievement_Mindthief]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 269
+
+ 

@@ -1,0 +1,83 @@
+Parser: Scenario
+ID: Scenario_Story_UndeadCommander
+BaseBiome: City
+BaseSubBiome: StoneRooms
+BaseTone: Natural
+ScenarioMeshes: [GUI_MapIcon_BossLairs-B4_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_UNDEADCOMMANDER_START_1
+          Character: Narrator
+    DialogueLines:
+        - Text: SCENARIO_STORY_UNDEADCOMMANDER_START_2
+          Character: UndeadCommander
+    DialogueLines:
+        - Text: SCENARIO_STORY_UNDEADCOMMANDER_START_3
+          Character: Narrator
+    DialogueLines:
+        - Text: SCENARIO_STORY_UNDEADCOMMANDER_START_4
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_UNDEADCOMMANDER_SUCCESS_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                ActorType: Player            
+                PlayerClasses: [ElementalistID, SoothsingerID]
+            ObjectiveDescription: Scenario_Story_UndeadCommander_Fail_Objective 
+                
+    Rooms:
+        Room1:
+            Threat: 76
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: FrostDemonUndead                 
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]
+        Room2:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_UNDEADCOMMANDER_ROOM_2_1
+                      Character: UndeadCommander         
+     
+            Threat: 76
+            PossibleRooms:
+                - MediumEmptyRoom: 
+                    MonsterGroup: WindDemonUndead
+                    TerrainWater: [100]
+                    TerrainThorns: [100, 100]
+        Room3:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_UNDEADCOMMANDER_ROOM_3_1
+                      Character: UndeadCommander         
+                    - Text: SCENARIO_STORY_UNDEADCOMMANDER_ROOM_3_2
+                      Character: UndeadCommander         
+     
+            Threat: 150
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    MonsterGroup: FrostWindDemonUndead
+                    TerrainWater: [100]
+                    TerrainThorns: [100, 100]
+                    GoldPiles: [100,100]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [UndeadCommanderID, UndeadCommanderID, UndeadCommanderID, UndeadCommanderID]
+                    

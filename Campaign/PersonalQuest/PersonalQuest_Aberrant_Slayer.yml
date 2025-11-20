@@ -1,0 +1,33 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_Aberrant_Slayer
+LocalisedName: PERSONALQUEST_Aberrant_Slayer
+LocalisedDescription: PERSONALQUEST_Aberrant_Slayer_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_Aberrant_Slayer_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_Aberrant_Slayer_Objective_PROGRESS_TOOLTIP
+PersonalQuestCondition:
+#Kill one Flame Demon, one Frost Demon, one Wind Demon, one Earth Demon, one Night Demon, and one Sun Demon.
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [FlameDemonID, FlameDemonEliteID]
+        Value: 1
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [FrostDemonID, FrostDemonEliteID]
+        Value: 1
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [WindDemonID, WindDemonEliteID]
+        Value: 1
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [EarthDemonID, EarthDemonEliteID]
+        Value: 1
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [NightDemonID, NightDemonEliteID]
+        Value: 1
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [SunDemonID, SunDemonEliteID]
+        Value: 1
+TreasureTables: [TT_PERSONALQUEST_Aberrant_Slayer]

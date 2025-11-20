@@ -1,0 +1,49 @@
+Parser: Achievement
+ID: Achievement_TownRecords_Chapter_04
+LocalisedName: $Achievement_TownRecords_Chapter_04$
+LocalisedDescription: $Achievement_TownRecords_Chapter_04$
+CompleteDialogueLines:
+    - Text: Town_Records_ReachProsperity5_1
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_2
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_3
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_4
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_5
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_6
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_7
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_8
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_9
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_10
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_11
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_12
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_13
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_14
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_15
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity5_16
+      Character: Narrator
+UnlockCondition:
+    - Retirement: ANY
+    - CompletedQuest: Quest_Campaign_072
+    - Prosperity: 5
+AchievementCondition:
+    - Retirement: ANY
+    - CompletedQuest: Quest_Campaign_072
+    - Prosperity: 5
+TreasureTables: [TT_Achievement_TownRecords_Chapter_04]
+AchievementType: TownRecord
+AchievementLevel: 0  
+AchievementOrderId: 2004

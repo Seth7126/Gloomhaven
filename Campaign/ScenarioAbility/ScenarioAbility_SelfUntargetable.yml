@@ -1,0 +1,10 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_SelfUntargetable
+ScenarioAbility:
+    AUntargetable:
+        Untargetable: True
+        Filter: Self
+        AutoTrigger: True     
+        ActiveBonus:
+            Duration: Persistent
+            ListLayoutOverride: [$ScenarioAbility_Untargetable$, Immune]

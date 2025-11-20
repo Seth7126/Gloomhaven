@@ -1,0 +1,37 @@
+Parser: ItemCard
+ID: 3
+StringID: HideArmorID
+Name: $ITEM_NAME_HideArmor$
+Art: Hide Armor
+TotalInGame: 2
+Cost: 10
+Slot: Body 
+Rarity: Rare
+Usage: Spent
+#Trigger: DuringOwnTurn
+Trigger: PassiveEffect
+ProsperityRequirement: 1
+Data:
+    ShieldValue: 1
+    Abilities:
+        AShield:
+            Shield: 1
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: ShieldIncomingAttacks
+                XPTracker: [0,0]
+                IsToggleBonus: True
+                ValidAbilityType: Attack
+    CompareAbility:
+        AbilityType: Attack
+    AddModifiers:
+        - [AMC_Basic_M1, 2]
+Layout: 
+    - Active:
+        Ability: AShield
+        ListLayout: "$Item_HideArmor$"
+        Layout: "$Item_HideArmor$"
+        Icon: "Shield"
+    - Row: "<size=50%> "
+    - XPTracker: AShield

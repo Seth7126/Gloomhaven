@@ -1,0 +1,71 @@
+Parser: Enemy
+ID: BlackImpEliteID
+LocKey: $BlackImpElite$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Black Imp Elite
+NonEliteVariant: BlackImpID
+PredominantlyMelee: False
+AbilityCards: [676,677,678,679,680,681,682,683]
+# Base Stats
+Level0:
+    Health: 4
+    Move: 1
+    Attack: 2
+    Range: 3
+    Target: 1    
+    Conditions: [Poison]
+Level1:
+    Health: 6
+    Move: 1
+    Attack: 2
+    Range: 3
+    Target: 1
+    Conditions: [Poison]
+Level2:
+    Health: 8
+    Move: 1
+    Attack: 2
+    Range: 4
+    Target: 1
+    Conditions: [Poison]
+Level3:
+    Health: 8
+    Move: 1
+    Attack: 3
+    Range: 4
+    Target: 1
+    Conditions: [Poison]
+    AttackersGainDisadvantage: True
+Level4:
+    Health: 11
+    Move: 1
+    Attack: 3
+    Range: 4
+    Target: 1
+    Conditions: [Poison]
+    AttackersGainDisadvantage: True
+Level5:
+    Health: 12
+    Move: 1
+    Attack: 3
+    Range: 5
+    Target: 1
+    Conditions: [Poison]
+    AttackersGainDisadvantage: True
+Level6:
+    Health: 14
+    Move: 1
+    Attack: 4
+    Range: 5
+    Target: 1    
+    Conditions: [Poison]
+    AttackersGainDisadvantage: True
+Level7:
+    Health: 17
+    Move: 1
+    Attack: 4
+    Range: 5
+    Target: 1    
+    Conditions: [Poison]
+    AttackersGainDisadvantage: True

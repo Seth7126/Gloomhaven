@@ -1,0 +1,21 @@
+Parser: CityEvent
+ID: Event_City_Campaign_13ID
+# LocKey: $CITY_EVENT_13$
+LocKey: $CITY_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_CITY_CAMPAIGN_13_INTRO"
+        Options:
+            A:
+                Text: "EVENT_CITY_CAMPAIGN_13_OPTION_A"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_13_OPTION_A
+                Next: EVENT_CITY_CAMPAIGN_13_OPTION_A
+            B:
+                Text: "EVENT_CITY_CAMPAIGN_13_OPTION_B"
+                Next: EVENT_CITY_CAMPAIGN_13_OPTION_B
+    EVENT_CITY_CAMPAIGN_13_OPTION_A:
+        Text: "EVENT_CITY_CAMPAIGN_13_RESULT_A"
+        End: Reuse
+    EVENT_CITY_CAMPAIGN_13_OPTION_B:
+        Text: "EVENT_CITY_CAMPAIGN_13_RESULT_B"
+        End: Reuse

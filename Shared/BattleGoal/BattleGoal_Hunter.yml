@@ -1,0 +1,13 @@
+Parser: BattleGoal
+ID: BattleGoal_Hunter
+LocalisedName: BATTLEGOAL_Hunter
+LocalisedDescription: BATTLEGOAL_Hunter_Desc
+#Kill one or more elite monsters during the scenario
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [BanditArcherEliteID,LivingBonesEliteID,BanditGuardEliteID,HoundEliteID,RendingDrakeEliteID,SpittingDrakeEliteID,LivingCorpseEliteID,LivingSpiritEliteID,InoxGuardEliteID,InoxArcherEliteID,InoxShamanEliteID,VermlingScoutEliteID,CaveBearEliteID,CityArcherEliteID,CultistEliteIDD,LurkerEliteID,FrostDemonEliteID,FlameDemonEliteID,EarthDemonEliteID,WindDemonEliteID,NightDemonEliteID,SunDemonEliteID,ForestImpEliteID,BlackImpEliteID,StoneGolemEliteID,OozeEliteID,AncientArtilleryEliteID,GiantViperEliteID,CityGuardEliteID,VermlingShamanEliteID,SavvasIcestormEliteID,SavvasLavaflowEliteID,HarrowerInfesterEliteID,DeepTerrorEliteID,BoneRangerEliteID,BlackSludgeEliteID,FilthySludgeEliteID,BloodImpEliteID,BloodMonstrosityEliteID,ChaosDemonEliteID,EntropyDemonEliteID,RatMonstrosity16Phase2EliteID,RatMonstrosity16Phase3EliteID,RatMonstrosityEliteID,VermlingRaiderEliteID,VermlingRaiderJOTL22EliteID,ZealotEliteID]
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_Spellweaver_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Spellweaver_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Spellweaver_2_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        SpellweaverID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: SpellweaverID    
+        Filter: Kill
+        AbilityTypes: Attack
+        AttackTypes: Ranged
+        Value: 20
+   
+
+TreasureTables: [TT_Achievement_Spellweaver]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 291
+ 

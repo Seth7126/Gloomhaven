@@ -1,0 +1,23 @@
+Parser: Quest
+ID: Quest_Story_Brute_3
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompletionRewards: TT_Quest_Story_Brute_3
+LoadoutImageId: DU_DF_03
+UnlockRevealFoWSphere:
+    - MapLocation: [1455, 105]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: GibbetHill
+    - CompletedQuest: Quest_Story_Brute_2
+RequiredCharacters:
+  - Character: BruteID    
+    Level: 5
+StartingVillage: Eaglecrest
+EndingVillage: Eaglecrest
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1455, 105]
+    ScenarioPool: [Scenario_Story_Brute_3, 100]

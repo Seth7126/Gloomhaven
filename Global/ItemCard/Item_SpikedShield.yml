@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 46
+StringID: SpikedShieldID
+Name: $ITEM_NAME_SpikedShield$
+Art: Spiked Shield
+TotalInGame: 2
+Cost: 40
+Rarity: Rare
+Slot: OneHand 
+Usage: Spent
+Trigger: OnAttacked
+ProsperityRequirement: 6
+Data: 
+    ShieldValue: 1
+    RetaliateValue: 2
+    CompareAbility:
+        AbilityType: Attack
+Layout: 
+    - Row: $Item_SpikedShield$

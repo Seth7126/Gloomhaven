@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Trophy06
+LocalisedName: $TROPHY_ACHIEVEMENT_06$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_06_Desc$
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - CompletedQuest: Quest_Campaign_002
+TreasureTables: [TT_Achievement_Trophy06]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4006

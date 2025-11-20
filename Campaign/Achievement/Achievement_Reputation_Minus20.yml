@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Reputation_Minus20
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_BuffAllies$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_BuffAllies_Desc$
+UnlockCondition:
+    - Reputation: -20
+AchievementCondition:
+    - Reputation: -20
+TreasureTables: [TT_Achievement_Reputation_Minus20]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 1251

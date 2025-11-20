@@ -1,0 +1,7 @@
+Parser: Perk
+ID: Spellweaver08
+Name: PERK_Spellweaver_08
+Description: PERK_Spellweaver_08_Desc
+CharacterID: SpellweaverID
+Available: 2
+CardsToAdd: [AMC_Fire_P2]

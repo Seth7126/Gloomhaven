@@ -1,0 +1,12 @@
+Parser: BattleGoal
+ID: BattleGoal_Gambler
+LocalisedName: BATTLEGOAL_Gambler
+LocalisedDescription: BATTLEGOAL_Gambler_Desc
+#Kill a monster with an attack that has Disadvantage.
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: KillDisadvantaged
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

@@ -1,0 +1,18 @@
+Parser: Quest
+ID: Quest_Campaign_032
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_032
+LoadoutImageId: FO_CW_02
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_024
+BlockCondition:
+    - CompletedQuest: Quest_Campaign_042
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: LingeringSwamp
+
+Scenario:
+    MapLocation: [1487, 1439]
+    ScenarioPool: 
+      - [Scenario_Campaign_032, 100]

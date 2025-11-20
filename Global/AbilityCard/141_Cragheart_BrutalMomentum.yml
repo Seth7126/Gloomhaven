@@ -1,0 +1,66 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BrutalMomentum$
+Character: CragheartID
+ID: 141
+Level: 7
+Initiative: 52
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 3
+                    Enhancements: 1
+                SubAbilities:
+                    TAttackSubPush:
+                        Push:
+                            Amount: 2
+                            Enhancements: 1
+                        IsInlineSubAbility: True
+                        AdditionalPushEffect: TrackBlocked
+                        AdditionalPushEffectDamage: 2
+                        AdditionalPushEffectXP: 1
+    Bottom:
+        Abilities:
+            BAttackBuff:
+                Attack: 0
+                Filter: Self
+                ActiveBonus:
+                    Duration: Round
+                    Behaviour: BuffAttack
+                AttackEffect:
+                    Type: StandardBuff
+                    Strength: 1
+                    AttackType: Ranged
+        Consumes:
+            TCEarth:
+                Elements: Earth
+                AbilityOverrides:
+                    TCEarthRangeBuff:
+                        ParentName: BAttackBuff
+                        AttackEffect:
+                            Type: StandardBuff
+                            Strength: 1
+                            AttackType: Ranged
+                            XP: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Push$ <sprite name=Push> *TAttackSubPush* @TAttackSubPush@"
+        - Row: "<size=20%> "
+        - Row: "$141_T$"
+    Bottom:
+        - Active:
+            Ability: BAttackBuff
+            Icon: "Damage"
+            ListLayout: "$141_B_1$"
+            ListLayoutAlt: "$141_B_1_Alt$"
+            Layout: "$141_B_1$"
+            LayoutAlt: "$141_B_1_Alt$"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCEarth
+            Text: "$141_B_2$"
+        - Row: "<size=20%> "
+        - Duration: Round

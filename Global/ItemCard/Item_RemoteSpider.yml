@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 126
+StringID: RemoteSpiderID
+Name: $ITEM_NAME_RemoteSpider$
+Art: Remote Spider
+TotalInGame: 1
+Cost: 40
+Slot: SmallItem 
+Rarity: Relic
+Usage: Consumed
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        APoison:
+            Poison: True
+            Target: -1
+            Filter: Enemy
+Layout: 
+    - Row: $Item_RemoteSpider$

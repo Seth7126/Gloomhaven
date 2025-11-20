@@ -1,0 +1,81 @@
+Parser: Scenario
+ID: Scenario_Story_Brute_2
+BaseBiome: Forest
+#BaseSubTheme: Undead
+MonsterFamily: Inox
+BaseTone: ForestMoonlight
+ScenarioMeshes: [DGN_Forest_10_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BRUTE_2_START_1
+          Character: Scabwit
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BRUTE_2_START_2
+          Character: Scabwit
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BRUTE_2_SUCCESS_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        ReachRound:
+            Result: Win
+            ReachRound: 10
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]                
+            Filter:
+                PlayerClasses: [BruteID]
+                EnemyClasses: [VermlingShamanID, VermlingShamanEliteID] 
+            ObjectiveDescription: Scenario_Story_Brute_Scabwit_Character_Fail_Objective 
+                
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    Theme: VermlingVillage
+                    OneHexObstacles: [100, 100, 100]
+                    AllyMonsters:
+                        - [VermlingShamanEliteID, 1, 1, 1, 1]                        
+                        - [VermlingScoutID, 2, 3, 1, 0]                        
+                        - [VermlingScoutEliteID, 0, 0, 2, 3]                        
+                    
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [InoxArcherID,   InoxArcherID,    InoxArcherID,        InoxArcherEliteID]
+                                - SpawnClasses: [Empty,         Empty,          InoxArcherID,        InoxArcherID]
+                                - SpawnClasses: [InoxGuardID,    InoxGuardID,     InoxGuardEliteID,   InoxGuardEliteID]
+                                - SpawnClasses: [Empty,         InoxGuardID,     InoxGuardID,         InoxGuardEliteID]
+                            Easy:
+                                - SpawnClasses: [InoxArcherID,   InoxArcherID,    InoxArcherEliteID,  InoxArcherEliteID]
+                                - SpawnClasses: [Empty,         Empty,          InoxArcherID,        InoxArcherID]
+                                - SpawnClasses: [InoxGuardID,    InoxGuardID,     InoxGuardID,         InoxGuardEliteID]
+                                - SpawnClasses: [Empty,         InoxGuardID,     InoxGuardID,         InoxGuardEliteID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [Empty,         InoxArcherID,    InoxArcherID,        InoxArcherEliteID]
+                                - SpawnClasses: [InoxGuardID,    InoxGuardID,     InoxGuardEliteID,   InoxGuardEliteID]
+                                - SpawnClasses: [Empty,         InoxGuardID,     InoxGuardID,         InoxGuardEliteID]
+                                - SpawnClasses: [InoxArcherID,   InoxArcherID,    InoxArcherEliteID,  InoxArcherEliteID]
+                            Easy:
+                                - SpawnClasses: [Empty,         InoxArcherID,    InoxArcherID,        InoxArcherEliteID]
+                                - SpawnClasses: [InoxGuardID,    InoxGuardID,     InoxGuardID,         InoxGuardEliteID]
+                                - SpawnClasses: [Empty,         InoxGuardID,     InoxGuardID,         InoxGuardID]
+                                - SpawnClasses: [InoxArcherID,   Empty,          InoxArcherID,        InoxArcherEliteID]            
+                    TwoHexObstacles: [100, 100]
+                    GoldPiles: [100,100]
+

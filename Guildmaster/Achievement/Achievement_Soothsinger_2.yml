@@ -1,0 +1,25 @@
+Parser: Achievement
+ID: Achievement_Soothsinger_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Soothsinger_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Soothsinger_2_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        SoothsingerID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: SoothsingerID    
+        Filter: UseAbility
+        AbilityTypes: [Strengthen, Bless, Heal]
+        Value: 40
+        CharacterTypes:
+            Target: [Ally] 
+     
+
+TreasureTables: [TT_Achievement_Soothsinger]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 288
+ 

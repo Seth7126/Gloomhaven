@@ -1,0 +1,66 @@
+Parser: Enemy
+ID: BoneRangerEliteID
+LocKey: $BoneRangerElite$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Bone Ranger Elite
+NonEliteVariant: BoneRangerID
+PredominantlyMelee: False
+AbilityCards: [1001,1002,1003,1004,1005,1006,1007,1008]
+# Base Stats
+Level0:
+    Health: 5
+    Move: 2
+    Attack: 3
+    Range: 3
+    Target: 1
+    Shield: 0
+Level1:
+    Health: 6
+    Move: 2
+    Attack: 3
+    Range: 5
+    Target: 1
+    Shield: 1
+Level2:
+    Health: 7
+    Move: 3
+    Attack: 3
+    Range: 5
+    Target: 1
+    Shield: 1
+ Level3:
+    Health: 8
+    Move: 3
+    Attack: 3
+    Range: 4
+    Target: 2
+    Shield: 1
+ Level4:
+    Health: 9
+    Move: 3
+    Attack: 3
+    Range: 5
+    Target: 2
+    Shield: 1
+ Level5:
+    Health: 10
+    Move: 4
+    Attack: 4
+    Range: 6
+    Target: 2
+    Shield: 1
+ Level6:
+    Health: 11
+    Move: 4
+    Attack: 5
+    Range: 6
+    Target: 2
+    Shield: 2
+ Level7:
+    Health: 13
+    Move: 4
+    Attack: 5
+    Range: 6
+    Target: 2
+    Shield: 2

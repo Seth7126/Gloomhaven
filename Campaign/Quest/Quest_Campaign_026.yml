@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Campaign_026
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_Campaign_026
+LoadoutImageId: SE_Rot_02
+NarrativeTextImageOverride:
+    - [Quest_Campaign_026_OUTRO_GH_1, 026_OUTRO_GH_1_Art]
+    - [Quest_Campaign_026_OUTRO_GH_2, 026_OUTRO_GH_2_Art]
+    - [Quest_Campaign_026_OUTRO_GH_3, 026_OUTRO_GH_3_Art]
+    - [Quest_Campaign_026_OUTRO_GH_4, 026_OUTRO_GH_4_Art]
+    - [Quest_Campaign_026_OUTRO_GH_5, 026_OUTRO_GH_5_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_018
+    - UnlockChoice:
+        This:
+            CompletedQuest: Quest_Campaign_023
+        OrThis:
+            CompletedQuest: Quest_Campaign_043
+
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+
+Scenario:
+    MapLocation: [909, 1195]
+    ScenarioPool: 
+      - [Scenario_Campaign_026, 100]

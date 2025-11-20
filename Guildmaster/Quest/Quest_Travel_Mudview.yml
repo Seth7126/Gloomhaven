@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Travel_Mudview
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Mudview_1
+      Character: Narrator
+    - Text: Message_End_Quest_Travel_Mudview_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Mudview_3
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [706, 716]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [706, 716]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_Mudview]
+LoadoutImageId: FO_CW_02
+UnlockCondition:
+    - UnlockedVillage: Millpond
+    - Chapter: [3,1]  
+StartingVillage: Amberhill
+EndingVillage: Mudview
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Mudview, 100]

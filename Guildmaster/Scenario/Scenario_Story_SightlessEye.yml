@@ -1,0 +1,70 @@
+Parser: Scenario
+ID: Scenario_Story_SightlessEye
+BaseBiome: City
+BaseSubBiome: Sewers
+BaseTone: Toxic
+ScenarioMeshes: [DGN_Cesspit_06_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:       
+        - Text: SCENARIO_STORY_SightlessEye_START_1
+          Character: Trainer
+        - Text: SCENARIO_STORY_SightlessEye_START_2
+          Character: Merchant    
+        - Text: SCENARIO_STORY_SightlessEye_START_3
+          Character: Trainer           
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SightlessEye_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_SightlessEye_SUCCESS_2
+          Character: Trainer
+ScenarioLayout:
+    Objectives:     
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                PlayerClasses: [NightshroudID, BeastTyrantID]
+            ObjectiveDescription: Scenario_Story_SightlessEye_Fail_Objective    
+    Rooms:
+        Room1:
+            Threat: 150
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: BlackImpOozesTerrors
+                    Traps: [100, 50]
+                    TerrainRubble: [100, 50]
+                    TerrainThorns: [50]     
+                    OneHexObstacles: [100,100]                     
+        Room2:
+            Threat: 175
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_SightlessEye_ROOM_2_1
+                      Character: Narrator     
+                    - Text: SCENARIO_STORY_SightlessEye_ROOM_2_2
+                      Character: Enchantress     
+                    - Text: SCENARIO_STORY_SightlessEye_ROOM_2_3
+                      Character: Trainer                       
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    MonsterGroup: BlackImpOozesTerrors
+                    OneHexObstacles: [100,100] 
+                    Traps: [100,50]
+                    TwoHexObstacles: [100,100]
+                    GoldPiles: [100,100,100,50]
+                    TerrainRubble: [100,100,50]
+                    TerrainThorns: [100,50]         
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [SightlessEyeID, SightlessEyeID, SightlessEyeID, SightlessEyeID]                   

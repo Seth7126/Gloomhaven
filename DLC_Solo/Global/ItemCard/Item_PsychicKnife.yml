@@ -1,0 +1,29 @@
+Parser: ItemCard
+ID: 139
+StringID: PsychicKnifeID
+Name: $ITEM_NAME_PsychicKnife$
+Art: Psychic Knife
+TotalInGame: 1
+Cost: 50
+Slot: OneHand 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+ValidEquipCharacterClassIDs: MindthiefID
+Tradeable: False
+Data: 
+    Abilities:
+        AActive:
+            Attack: 2
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: BuffAttack
+                AttackType: Augment
+Layout: 
+    - Active:
+        Ability: AActive
+        ListLayout: "$Item_PsychicKnife$"
+        Layout: "$Item_PsychicKnife$"
+        Icon: "Mindthief"
+    - Row: "<size=50%> "

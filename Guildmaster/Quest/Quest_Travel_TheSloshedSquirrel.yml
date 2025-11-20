@@ -1,0 +1,27 @@
+Parser: Quest
+ID: Quest_Travel_TheSloshedSquirrel
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_TheSloshedSquirrel_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_TheSloshedSquirrel_2
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1583, 578]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1583, 578]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_TheSloshedSquirrel]
+LoadoutImageId: FO_DF_03_Bandit
+UnlockCondition:
+    - UnlockedVillage: DemonspineHollow
+#    - Chapter: [1,2]  
+StartingVillage: DemonspineHollow
+EndingVillage: TheSloshedSquirrel
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_TheSloshedSquirrel, 100]

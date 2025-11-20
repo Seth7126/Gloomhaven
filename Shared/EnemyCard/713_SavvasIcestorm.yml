@@ -1,0 +1,30 @@
+Parser: EnemyCard
+ID: 713
+Initiative: 14
+Shuffle: False
+Data:
+    Abilities:
+        Shield1:
+            Shield: 4
+            Filter: Self
+            ActiveBonusDuration: Round
+            AnimOverload: PowerUp     
+        Heal1:
+            Heal: 2
+            Range: 3
+            RangeIsBase: True
+            Filter: [Self, Ally]
+            AnimOverload: Heal
+    Consumes:
+        CIce:
+            Elements: Ice
+            AbilityOverrides:
+                CLightTargetAll:
+                    ParentName: Heal1
+                    Strength: 3
+        CAir:
+            Elements: Air
+            Abilities:
+                CAirAttack:
+                    Attack: 0
+                    Filter: Enemy

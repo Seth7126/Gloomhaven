@@ -1,0 +1,42 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_FearsomeBlade$
+Character: MindthiefID
+ID: 148
+Level: 1
+Initiative: 27
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 1
+                SubAbilities:
+                    TAttackSubPush:
+                        Push:
+                            Amount: 3
+                            Enhancements: 1
+                        IsInlineSubAbility: True
+        XP: 1
+    Bottom:
+        Abilities:
+            BMove:
+                Move: 4
+            BAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 2
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Push$ <sprite name=Push> *TAttackSubPush* @TAttackSubPush@"
+        - Row: "<size=20%> "
+        - XP: 1
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove*"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAttack* <size=100%><voffset=1>@BAttack@"
+        - Row: "<size=20%> "
+        - XP: 2

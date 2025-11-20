@@ -1,0 +1,7 @@
+Parser: Perk
+ID: Sunkeeper06
+Name: PERK_Sunkeeper_06
+Description: PERK_Sunkeeper_06_Desc
+CharacterID: SunkeeperID
+Available: 2
+CardsToAdd: [AMC_Heal1_R, AMC_Heal1_R]

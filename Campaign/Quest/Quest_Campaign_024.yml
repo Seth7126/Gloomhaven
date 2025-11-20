@@ -1,0 +1,16 @@
+Parser: Quest
+ID: Quest_Campaign_024
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_024
+LoadoutImageId: CA_DF_04_Demon
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_016
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: CopperneckMountains
+
+Scenario:
+    MapLocation: [945, 335]
+    ScenarioPool: 
+      - [Scenario_Campaign_024, 100]

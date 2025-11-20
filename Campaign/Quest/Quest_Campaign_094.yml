@@ -1,0 +1,18 @@
+Parser: Quest
+ID: Quest_Campaign_094
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_094
+LoadoutImageId: FO_DF_01_Vermling
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_CityEventScenario94
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LinkedQuestID: Quest_Campaign_095
+LocationArea: Corpsewood
+IconType: Side
+
+Scenario:
+    MapLocation: [1496, 822]
+    ScenarioPool: 
+      - [Scenario_Campaign_094, 100]

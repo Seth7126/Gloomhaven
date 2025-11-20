@@ -1,0 +1,60 @@
+Parser: Scenario
+ID: Scenario_Job_TheHaunting
+BaseBiome: Forest
+BaseSubBiome: Default
+BaseTheme: AncientTemple
+BaseSubTheme: Default
+BaseTone: ForestEerie
+MonsterFamily: Demon_SunNight
+ScenarioMeshes: [DGN_Forest_08_MAT]
+ChestTreasureTables: [TT_Chapter_1_1_Chest]
+
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_TheHaunting_Start_1
+          Character: Narrator
+        - Text: SCENARIO_JOB_TheHaunting_Start_2
+          Character: Priestess
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_TheHaunting_Success_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:       
+            Result: Win
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [2,2,2,2]
+            Filter:
+                EnemyClasses: [LivingSpiritID, LivingSpiritEliteID]
+    Rooms:
+        Room1:
+            Threat: 125
+            PossibleRooms:
+                - MediumEmptyRoom:
+                    OneHexObstacles: [50] 
+                    TwoHexObstacles: [20]
+                    Traps: [100]
+                    AllyMonsters:
+                        - [LivingSpiritID, 2, 2, 2, 2]
+        Room2:
+            Threat: 100
+            PossibleRooms:
+                - EmptyTJunction:
+                    OneHexObstacles: [50,50] 
+                    TwoHexObstacles: [20, 20]
+                    Traps: [100,50,20]
+                    GoldPiles: [50,20]
+        Room3:
+            Threat: 175
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    Theme: InoxBurialGround
+                    OneHexObstacles: [100,50,20] 
+                    TwoHexObstacles: [70, 50]
+                    Traps: [100,100,50,5,5]
+                    GoldPiles: [100,80,50,20,5]
+                    TreasureChestChance: [33]

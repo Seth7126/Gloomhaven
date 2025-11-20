@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 236
+StringID: JetBootsID
+Name: $ITEM_NAME_JetBoots$
+Art: Jet Boots
+TotalInGame: 1
+Cost: 30
+Slot: Legs 
+Rarity: Rare
+Usage: Spent
+Trigger: SingleAbility
+Data:     
+    Overrides:
+        OMove:
+            Strength: 1
+            Jump: True
+    CompareAbility:
+        AbilityType: Move
+Layout: 
+    - Row: $Item_JetBoots$

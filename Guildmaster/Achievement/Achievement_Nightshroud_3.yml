@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_Nightshroud_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Nightshroud_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Nightshroud_3_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        NightshroudID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: NightshroudID   
+        Filter: UseAbility
+        AbilityTypes: [Invisible]
+        Value: 20
+        CharacterTypes:
+            Target: [Self]        
+
+TreasureTables: [TT_Achievement_Nightshroud]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 274
+ 

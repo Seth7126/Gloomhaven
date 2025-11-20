@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_067
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_067
+LoadoutImageId: DU_DF_01
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_RandomScenario67
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: UnnamedLocation
+IconType: Side
+
+Scenario:
+    MapLocation: [551, 1311]
+    ScenarioPool: 
+      - [Scenario_Campaign_067, 100]

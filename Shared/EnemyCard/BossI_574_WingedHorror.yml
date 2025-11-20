@@ -1,0 +1,20 @@
+Parser: EnemyCard
+ID: 57400067
+Initiative: 17
+Shuffle: False
+Data:
+    Abilities:
+        Summon1:
+            Summon: WingedHorrorEggID
+            Target: 0
+            StatIsBasedOnX:
+                Target:
+                    BasedOn: InitialPlayerCharacterCount
+                    Multiplier: 1
+            AnimOverload: Summon
+        Move1:
+            Move: 0
+        Attack1:
+            Attack: 0
+            Filter: Enemy
+

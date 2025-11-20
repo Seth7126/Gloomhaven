@@ -1,0 +1,61 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_CrushingCold$
+Character: VoidwardenID
+ID: 11166
+Level: 2
+Initiative: 86
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TAlly:
+                ControlActor:
+                    Abilities:
+                        TAllyAttack:
+                            Attack: 4
+                            Target: 2
+                            StrengthIsBase: True
+                            RangeIsBase: True
+                            TargetIsBase: True
+                Range: 3
+                Filter: Ally
+                AnimOverload: ControlAlly
+        Consumes:
+            TCIce:
+                Elements: Ice
+                AbilityOverrides:
+                    TCIceBuff:
+                        ParentName: TAllyAttack
+                        Condition: Muddle
+                XP: 1
+        XP: 1
+    Bottom:
+        Abilities:
+            BMove:
+                Move: 3
+            BMuddle:
+                Muddle: 
+                    Enhancements: 1
+                Range: 3
+                Filter: Enemy
+                AnimOverload: TargetedDebuff
+        Infuse: Ice
+Layout:
+    Top:
+        - Row: "$JOTL_166_T$"
+        - Row: "<size=20%> "
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAllyAttack*"
+        - Row: "$Target$ <sprite name=Target> *TAllyAttack.Target* @TAllyAttack.Target@"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCIce
+            Text: "<nobr>$Muddle$ <sprite name=Muddle></nobr>, <sprite name=XP1>"
+        - Row: "<size=20%> "
+        - XP: 1
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove*"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Muddle$ <sprite name=Muddle> @BMuddle@"
+        - Row: "$Range$ <sprite name=Range> *BMuddle.Range*"
+        - Row: "<size=50%> "
+        - Infuse: Ice

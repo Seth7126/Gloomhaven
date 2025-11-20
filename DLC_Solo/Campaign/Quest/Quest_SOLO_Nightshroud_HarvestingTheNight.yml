@@ -1,0 +1,21 @@
+Parser: Quest
+ID: Quest_SOLO_Nightshroud_HarvestingTheNight
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_Nightshroud_HarvestingtheNight
+UnlockCondition:
+    - RequiredHeroes: 
+        NightshroudID: 5
+RequiredCharacters:
+  - Character: NightshroudID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_Nightshroud_HarvestingTheNight
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [2093, 502]
+
+    ScenarioPool: 
+      - [Scenario_SOLO_Nightshroud_HarvestingTheNight, 100]

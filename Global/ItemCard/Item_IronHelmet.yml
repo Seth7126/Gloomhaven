@@ -1,0 +1,27 @@
+Parser: ItemCard
+ID: 7
+StringID: IronHelmetID
+Name: $ITEM_NAME_IronHelmet$
+Art: Iron Helmet
+TotalInGame: 2
+Cost: 10
+Slot: Head 
+Rarity: Rare
+Usage: Unrestricted
+ProsperityRequirement: 1
+Trigger: PassiveEffect
+Data: 
+    Abilities:
+        AModifyAttack:
+            ChangeAttackModifier:
+            ReplaceModifiers: "*2"
+            ReplaceWithModifier: "AMC_Basic_P0"
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: AdjustWhenAttacked
+Layout: 
+    - Active:
+        Ability: AModifyAttack
+        ListLayout: "$Item_IronHelmet$"
+        Layout: "$Item_IronHelmet$"
+        Icon: "Attack"

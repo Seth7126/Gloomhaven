@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 1014
+Initiative: 99
+Shuffle: True
+Data:
+    Abilities: 
+        Summon1:
+            Summon: LivingCorpseID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: Summon
+

@@ -1,0 +1,45 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_LivingMountain$
+Character: SummonerID
+ID: 249
+Level: 4
+Initiative: 88
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TSummon:
+                Summon: RockColossusID
+                AnimOverload: Summon
+        XP: 2
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 2
+                    Enhancements: 1
+            BLoot:
+                Loot: 1
+                Target: -1
+                AnimOverload: Loot
+Layout:
+    Top:
+        - Active:
+            Ability: "TSummon"
+            Icon: "Summon"
+            Layout:
+                - Summon:
+                    Ability: TSummon
+                    SummonName: $RockColossus$
+        - Row: "<size=20%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Persistent
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Loot$ <sprite name=Loot> *BLoot*"

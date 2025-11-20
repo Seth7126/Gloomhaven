@@ -1,0 +1,26 @@
+Parser: ItemCard
+ID: 124
+StringID: DoomedCompassID
+Name: $ITEM_NAME_DoomedCompass$
+Art: Doomed Compass
+TotalInGame: 1
+Cost: 50
+Slot: SmallItem 
+Rarity: Relic
+Usage: Consumed
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:      
+        AControl:
+            ControlActor:
+                Abilities:
+                    EnemyWillDoThis:
+                        Move: 2
+                        StrengthIsBase: True
+                ControlDurationType: ControlForOneAction
+                ControlActorType: Player
+            Target: 1 
+            Range: 5
+            Filter: Enemy
+Layout: 
+    - Row: $Item_DoomedCompass$

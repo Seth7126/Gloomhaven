@@ -1,0 +1,21 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario23_AttackBuff_2
+ScenarioAbility:
+    AAttackBuff:
+        Attack: 0
+        StatIsBasedOnX:
+            Strength:
+                BasedOn: ActorCount
+                Multiplier: 0.167
+                RoundingType: ToFloor
+                Filter:
+                    TargetType: Ally
+                    EnemyClasses: CrowdMemberID
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: BuffAttack
+            GroupID: JOTL23_AttackBuff
+            Hidden: True
+        Filter: Self
+        AnimOverload: None
+        AutoTrigger: True

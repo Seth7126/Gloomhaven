@@ -1,0 +1,23 @@
+Parser: Quest
+ID: Quest_Campaign_028
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_028
+LoadoutImageId: CR_NE_02
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_006
+    - UnlockChoice:
+        This:
+            CompletedQuest: Quest_Campaign_012
+        OrThis:
+            CompletedQuest: Quest_Campaign_020
+
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LinkedQuestID: Quest_Campaign_029
+LocationArea: DaggerForest
+
+Scenario:
+    MapLocation: [642, 666]
+    ScenarioPool: 
+      - [Scenario_Campaign_028, 100]

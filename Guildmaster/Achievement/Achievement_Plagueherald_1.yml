@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_Plagueherald_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Plagueherald_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Plagueherald_1_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        PlagueheraldID: 1  
+AchievementCondition:
+    - Targets:
+        CharacterIDs: PlagueheraldID    
+        Filter: Kill
+        Conditions:
+            Target: [Poison]
+        Value: 25   
+     
+
+
+TreasureTables: [TT_Achievement_Plagueherald]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 275
+ 

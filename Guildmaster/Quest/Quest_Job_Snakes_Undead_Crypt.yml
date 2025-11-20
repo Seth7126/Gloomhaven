@@ -1,0 +1,13 @@
+Parser: Quest
+ID: Quest_Job_Snakes_Undead_Crypt
+Chapter: 1
+QuestType: Job
+CompletionRewards: TT_Quest_Job_Chapter_1_1
+LoadoutImageId: CR_RU_02_Undead
+UnlockCondition:
+    - UnlockedVillage: Sahmyrt
+    - Chapter: [1,2]    
+
+Scenario:
+    MapLocation: [400, 400]
+    ScenarioPool: [Scenario_Job_Snakes_Undead_Crypt, 100]

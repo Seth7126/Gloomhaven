@@ -1,0 +1,64 @@
+Parser: Scenario
+ID: Scenario_Travel_SchoolOfTheGreatOak
+BaseBiome: Forest
+BaseSubBiome: CorpseWood
+BaseSubTheme: Demon
+BaseTone: Demonic
+MonsterFamily: Demon_SunNight
+ScenarioMeshes: [DGN_Forest_01_MAT, DGN_Forest_02_MAT, DGN_Forest_03_MAT, DGN_Forest_04_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_SCHOOLOFTHEGREATOAK_START_1
+          Character: Priestess
+        - Text: SCENARIO_TRAVEL_SCHOOLOFTHEGREATOAK_START_2
+          Character: Priestess
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_SCHOOLOFTHEGREATOAK_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_TRAVEL_SCHOOLOFTHEGREATOAK_SUCCESS_2
+          Character: Priestess
+ScenarioLayout:
+    ScenarioModifiers:
+        SM1:
+            Type: SetElements
+            TriggerPhase: StartRound
+            InertElements: [Fire, Earth, Light, Dark, Ice, Air]    
+#                StrongElements: Earth
+#                WaningElements:
+    Objectives:
+        KillAllEnemies: Win
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: Demon_Night_PlusCorpses
+                    Theme: StagnantPits
+                    OneHexObstacles: [20,20] 
+                    TwoHexObstacles: [10]
+                    Traps: [20,20,20]
+
+        Room2:
+            Threat: 75
+            PossibleRooms:
+                - EmptyRandomCorridor: 
+                    MonsterGroup: Demon_Night_PlusCorpses
+                    Theme: FungalWasteland
+                    OneHexObstacles: [20,20] 
+                    TwoHexObstacles: [50]
+                    Traps: [50,40,20]
+                    GoldPiles: [50,25]
+        Room3:
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: Demon_Night_PlusCorpses
+                    Theme: EvilDead
+                    OneHexObstacles: [100,50] 
+                    TwoHexObstacles: [100, 20]
+                    Traps: [100,50,200]
+                    GoldPiles: [50,20]

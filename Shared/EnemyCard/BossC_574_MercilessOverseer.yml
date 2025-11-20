@@ -1,0 +1,24 @@
+Parser: EnemyCard
+ID: 57400019
+Initiative: 17
+Shuffle: True
+Data:
+    Abilities:
+        Summon1:
+            Summons: 
+                - VermlingScoutID
+                - VermlingScoutID
+                - VermlingScoutID
+                - VermlingScoutEliteID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: Summon
+        Summon2:
+            Summons: 
+                - VermlingScoutID
+                - VermlingScoutID
+                - VermlingScoutEliteID
+                - VermlingScoutEliteID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: Summon

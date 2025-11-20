@@ -1,0 +1,11 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario21_EndTurnDamage
+ScenarioAbility:
+    ADamage:
+        Damage: 0
+        StatIsBasedOnX:
+            Strength:
+                BasedOn: LevelTimesXTimesHexesMovedThisTurnInDefinedRoom
+                Multiplier: 0.5
+                CheckGUIDs: ["0f1b68ba-afb3-4858-b22f-81dd3f5bda0b", "81f46fc1-c762-4280-9b91-daee1865d462"]
+        Filter: Self

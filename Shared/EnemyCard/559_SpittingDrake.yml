@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 559
+Initiative: 27
+Shuffle: False
+Data:
+    Abilities:
+        Attack1:
+            Attack: 0
+            Target: 2
+            TargetIsBase: True
+            Conditions: Poison
+            Filter: Enemy

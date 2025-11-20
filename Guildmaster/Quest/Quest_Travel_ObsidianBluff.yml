@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_Travel_ObsidianBluff
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_ObsidianBluff_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_ObsidianBluff_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_ObsidianBluff_3
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_ObsidianBluff_4
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1266, 1360]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1266, 1360]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_ObsidianBluff]
+LoadoutImageId: ICE_CryptRuin_01_Demon
+UnlockCondition:
+    - UnlockedVillage: CrystalHollow
+    - Chapter: [4,1]  
+StartingVillage: CrystalHollow
+EndingVillage: ObsidianBluff
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_ObsidianBluff, 100]

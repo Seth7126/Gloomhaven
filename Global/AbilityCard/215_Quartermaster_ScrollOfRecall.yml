@@ -1,0 +1,34 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_ScrollofRecall$
+Character: QuartermasterID
+ID: 215
+Level: X
+Initiative: 98
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TRefresh:
+                RefreshItems: 1
+                SlotToRefresh: SmallItem
+                SlotStateToRefresh: Consumed
+                Filter: Self
+                AnimOverload: Refresh
+    Bottom:
+        Abilities:
+            BPull:
+                Pull:
+                    Amount: 1
+                    Enhancements: 1
+                Range: 3
+                Target:
+                    Amount: 3
+                    Enhancements: 1
+                AnimOverload: TargetedScroll
+Layout:
+    Top:
+        - Row: "$215_T$"
+    Bottom:
+        - Row: "<b><size=130%>$Pull$ <sprite name=Pull> *BPull* <size=100%><voffset=1>@BPull@"
+        - Row: "$Range$ <sprite name=Range> *BPull.Range*"
+        - Row: "$Target$ <sprite name=Target> *BPull.Target* @BPull.Target@"

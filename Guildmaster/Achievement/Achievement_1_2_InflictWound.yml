@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_2_InflictWound
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_2_InflictWound$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_2_InflictWound_Desc$
+UnlockCondition:
+    - Chapter: [1,2]
+AchievementCondition:
+    - Targets:
+        Filter: UseAbility
+        AbilityTypes: Wound
+        Value: 20
+TreasureTables: [TT_Achievement_1_2_InflictWound]
+AchievementType: Enhancements
+
+AchievementLevel: 1  
+AchievementOrderId: 316

@@ -1,0 +1,56 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_DefensiveDitty$
+Character: SoothsingerID
+ID: 349
+Level: 1
+Initiative: 9
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TPlaySong:
+                Shield: 1
+                Filter: Self
+                ActiveBonus:
+                    Duration: Persistent
+                    OverrideAsSong: True
+                    Filter: Ally
+                AnimOverload: PlaySongShield1
+    Bottom:
+        Abilities:
+            BPrevent:
+                PreventDamage: 1
+                Range: 2
+                Target: -1
+                Filter: [Self]
+                ActiveBonus:
+                    Duration: Round
+                    XPTracker: [0]
+                    IsAura: True
+                    AuraFilter: [Ally]
+                AnimOverload: PlayPositiveTuneShield
+        XP: 1
+Layout:
+    Top:
+        - Song:
+            SongIcon: Soothsinger
+            ParentAbility: TPlaySong
+            ActiveBonusLayout: "$Shield$ <sprite name=Shield> 1, $Affect_AllAllies$"
+            SongAbilityLayout:
+                - Row: "<b><size=130%>$Shield$ <sprite name=Shield> 1"
+                - Row: "$Affect_AllAllies$"
+    Bottom:
+        - Active:
+            Ability: BPrevent
+            ListLayout: "<b>$Aura$<sprite name=Aura>:</b> $349_B$"
+            Layout: "<b>$Aura$<sprite name=Aura>:</b> $349_B$"
+            Icon: "Immune"
+            HideTracker: True
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 1
+            - Column:
+                - Duration: Round

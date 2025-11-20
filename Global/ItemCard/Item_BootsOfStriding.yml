@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 1
+StringID: BootsOfStridingID
+Name: $ITEM_NAME_BootsofStriding$
+Art: Boots of Striding
+TotalInGame: 2
+Cost: 20
+Slot: Legs 
+Rarity: Rare
+Usage: Spent
+Trigger: SingleAbility
+ProsperityRequirement: 1
+Data:    
+    Overrides:
+        OMove:
+            Strength: 2
+    CompareAbility:
+        AbilityType: Move
+Layout: 
+    - Row: $Item_BootsOfStriding$

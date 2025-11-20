@@ -1,0 +1,13 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario23_Change_Allegiance_On_Lethal_Damage
+ScenarioAbility:
+    AActive:
+        AddActiveBonus:
+            ChangeAllegiance:
+                ChangeToType: Ally
+            Target: -1
+            Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: DuringActionAbilityOnPreventedDamage
+            Hidden: True

@@ -1,0 +1,20 @@
+Parser: Quest
+ID: Quest_Campaign_073
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_073
+LoadoutImageId: FO_DF_04_Inox
+NarrativeTextImageOverride:
+    - [Quest_Campaign_073_OUTRO_GH_1, 072_INTRO_GH_1_Art]
+    - [Quest_Campaign_073_OUTRO_GH_2, 073_OUTRO_GH_2_Art]
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_SealedScenario73
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: WatcherMountains
+IconType: Side
+
+Scenario:
+    MapLocation: [791, 1607]
+    ScenarioPool: 
+      - [Scenario_Campaign_073, 100]

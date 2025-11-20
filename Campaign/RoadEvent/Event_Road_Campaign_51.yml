@@ -1,0 +1,21 @@
+Parser: RoadEvent
+ID: Event_Road_Campaign_51ID
+# LocKey: $ROAD_EVENT_51$
+LocKey: $ROAD_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_ROAD_CAMPAIGN_51_INTRO"
+        Options:
+            A:
+                Text: "EVENT_ROAD_CAMPAIGN_51_OPTION_A"
+                TreasureTables: TT_EVENT_ROAD_CAMPAIGN_51_OPTION_A
+                Next: EVENT_ROAD_CAMPAIGN_51_OPTION_A
+            B:
+                Text: "EVENT_ROAD_CAMPAIGN_51_OPTION_B"
+                Next: EVENT_ROAD_CAMPAIGN_51_OPTION_B
+    EVENT_ROAD_CAMPAIGN_51_OPTION_A:
+        Text: "EVENT_ROAD_CAMPAIGN_51_RESULT_A"
+        End: True
+    EVENT_ROAD_CAMPAIGN_51_OPTION_B:
+        Text: "EVENT_ROAD_CAMPAIGN_51_RESULT_B"
+        End: True

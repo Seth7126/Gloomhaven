@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_Trophy34
+LocalisedName: $TROPHY_ACHIEVEMENT_34$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_34_Desc$
+AchievementCondition:
+    - Targets:
+        CharacterIDs: MindthiefID
+        Filter: UseAbility
+        AbilityTypes: Augment
+        Value: 5
+        SubFilter: SingleScenario
+        ScenarioResult: Win
+TreasureTables: [TT_Achievement_Trophy34]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4034

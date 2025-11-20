@@ -1,0 +1,54 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_AirborneToxin$
+Character: PlagueheraldID
+ID: 313
+Level: 7
+Initiative: 57
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TCurseMuddle:
+                Curse: True
+                Condition: Muddle
+                Range: 1
+                Target: -1
+                Filter: Enemy
+                AnimOverload: RadialNegative
+        Consumes:
+            TCAir:
+                Elements: Air
+                AbilityOverrides:
+                    TCAirBuff:
+                        ParentName: TCurseMuddle
+                        Range: 1
+                XP: 1
+    Bottom:
+        Abilities:
+            BPoison:
+                Poison: True
+                Target: -1
+                Targeting: All
+                Filter: Enemy
+                AnimOverload: RadialNegativeMajor
+        Infuse: Air
+        XP: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%><nobr>$Curse$ <sprite name=Curse></nobr> $and$ <nobr>$Muddle$ <sprite name=Muddle></nobr>"
+        - Row: "$Target_AllAdjacentEnemies$"
+        - Row: "<size=50%> "
+        - Consume:
+            Name: TCAir
+            Text: "$Target_AllEnemiesWithin$ <nobr>$Range$ <sprite name=Range> 2</nobr> <nobr>$instead$, <sprite name=XP1></nobr>"
+    Bottom:
+        - Row: "<b><size=130%>$Poison$ <sprite name=Poison>"
+        - Row: "$Target_AllEnemies$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - Infuse: Air
+            - Column:
+                - XP: 1

@@ -1,0 +1,28 @@
+Parser: CityEvent
+ID: Event_City_Campaign_44ID
+# LocKey: $CITY_EVENT_44$
+LocKey: $CITY_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_CITY_CAMPAIGN_44_INTRO"
+        Options:
+            A:
+                Text: "EVENT_CITY_CAMPAIGN_44_OPTION_A"
+                Next: EVENT_CITY_CAMPAIGN_44_OPTION_A
+            B:
+                Text: "EVENT_CITY_CAMPAIGN_44_OPTION_B"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_44_OPTION_B
+                Next: EVENT_CITY_CAMPAIGN_44_OPTION_B
+    EVENT_CITY_CAMPAIGN_44_OPTION_A:
+        InParty:
+            ClassIDs: [SpellweaverID,ElementalistID,SummonerID]
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_44_RESULT_A_A"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_44_OPTION_A_A
+                End: True        
+        Text: "EVENT_CITY_CAMPAIGN_44_RESULT_A_B"
+        TreasureTables: TT_EVENT_CITY_CAMPAIGN_44_OPTION_A_B
+        End: True
+    EVENT_CITY_CAMPAIGN_44_OPTION_B:
+        Text: "EVENT_CITY_CAMPAIGN_44_RESULT_B"
+        End: True

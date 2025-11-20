@@ -1,0 +1,75 @@
+Parser: Scenario
+ID: Scenario_Relic_StaffOfSummoning
+BaseBiome: Cave
+BaseSubBiome: Default
+BaseTheme: Default
+BaseTone: Default
+ScenarioMeshes: [DGN_Cave_02_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_RELIC_StaffOfSummoning_Start_1
+          Character: Enchantress
+        - Text: SCENARIO_RELIC_StaffOfSummoning_Start_2
+          Character: Enchantress
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_RELIC_StaffOfSummoning_Success_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:       
+            Result: Win
+        LootX: 
+            Result: Win
+            LootAmount: [1,1,1,1]
+            Filter:
+                LootType: GoalChest
+    ScenarioModifiers:
+        SM1:
+            Type: TriggerAbility
+            TriggerPhase: StartTurn
+            ScenarioAbilityID: ScenarioAbility_AttackBuffAll2_Self
+            ApplyToEachActorOnce: True
+            ConditionDecrementTrigger: Never
+            Filter:
+                ActorType: [Summon]                    
+        SM2:
+            Type: TriggerAbility
+            TriggerPhase: StartTurn
+            ScenarioAbilityID: ScenarioAbility_MoveBuff2_Self
+            ApplyToEachActorOnce: True
+            ConditionDecrementTrigger: Never
+            Filter:
+                ActorType: [Summon]                    
+        SM3:
+            Type: TriggerAbility
+            TriggerPhase: StartTurn
+            ScenarioAbilityID: ScenarioAbility_AttackDeBuffAll1_Self
+            ApplyToEachActorOnce: True
+            ConditionDecrementTrigger: Never
+            Filter:
+                ActorType: [Player]                    
+
+    Rooms:
+        Room1:
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    Theme: Volcanic
+                    MonsterGroup: SavvasLavaflowFriends
+                    OneHexObstacles: [100] 
+                    TerrainRubble: [100, 100, 100]
+                    TerrainHotCoals: [100, 100]
+        Room3:
+            Threat: 175
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    Theme: Ice
+                    MonsterGroup: SavvasIcestormFriends
+                    TwoHexObstacles: [100, 100, 100] 
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]
+                    GoalChest: [£StaffOfSummoningID£]

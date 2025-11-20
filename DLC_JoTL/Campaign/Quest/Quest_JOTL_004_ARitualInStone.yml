@@ -1,0 +1,16 @@
+Parser: Quest
+ID: Quest_JOTL_004_ARitualInStone
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_004_ARitualInStone
+LoadoutImageId: 004_ARitualInStone_Loadout
+UnlockCondition:
+    - CompletedQuest: Quest_JOTL_003_TheBlackShip
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTL
+Scenario:
+    MapLocation: [554, 824]
+    ScenarioPool: 
+      - [Scenario_JOTL_004_ARitualInStone, 100]

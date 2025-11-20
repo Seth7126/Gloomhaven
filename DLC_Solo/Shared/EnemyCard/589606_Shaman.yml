@@ -1,0 +1,27 @@
+Parser: EnemyCard
+ID: 589606
+Initiative: 8
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: -1
+        Attack1:
+            Attack: 0
+            Filter: Enemy
+            ConditionalOverrides:
+                AttackCO:
+                    Filter:
+                        TargetHasImmunities: Immobilize
+                        Invert: True
+                    AbilityOverrides:
+                        ASummonSubAbilityOverride:
+                            SubAbilities:
+                                ASummonSubAbility:
+                                    Summon: LivingCorpseID
+                                    Target: 1
+                                    TargetIsBase: True
+                                    AnimOverload: Summon
+                                    IsInlineSubAbility: True
+                                    TreatAsNonSubAbility: True
+            Text: "$589606$"

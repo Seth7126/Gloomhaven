@@ -1,0 +1,16 @@
+Parser: EnemyCard
+ID: 1009
+Initiative: 99
+Shuffle: True
+Data:
+    Abilities: 
+        Summon1:
+            Summon: LivingBonesID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: Summon
+#        Damage1:
+ #           Damage: 2
+  #          Filter: Self
+   #         Text: "$609$"
+    #        TextOnly: True

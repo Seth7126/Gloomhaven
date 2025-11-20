@@ -1,0 +1,32 @@
+Parser: Quest
+ID: Quest_Story_WingedHorror
+Chapter: 1
+QuestType: Story
+IconType: Boss
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_WingedHorror_1
+      Character: Merchant
+    - Text: Message_End_Quest_Story_WingedHorror_2
+      Character: Trainer
+    - Text: Message_End_Quest_Story_WingedHorror_3
+      Character: Trainer
+    - Text: Message_End_Quest_Story_WingedHorror_4
+      Character: Enchantress
+    - Text: Message_End_Quest_Story_WingedHorror_5
+      Character: Merchant
+CompletionRewards: TT_Quest_Story_WingedHorror
+LoadoutImageId: CR_RU_01_Demon
+UnlockRevealFoWSphere:
+    - MapLocation: [574, 196]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Sawbones_3
+
+RequiredCharacters:
+  - Character: SawbonesID   
+    Level: 6
+StartingVillage: SchoolOfTheGreatOak
+EndingVillage: SchoolOfTheGreatOak
+Scenario:
+    MapLocation: [574, 196]
+    ScenarioPool: [Scenario_Story_WingedHorror, 100]

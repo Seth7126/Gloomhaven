@@ -1,0 +1,13 @@
+Parser: Achievement
+ID: Achievement_Trophy_JOTL_03
+LocalisedName: $TROPHY_ACHIEVEMENT_JOTL_03$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_JOTL_03_Desc$
+#Defeat the First of the order
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - CompletedQuest: Quest_JOTL_017_RedTwilight
+TreasureTables: [TT_Achievement_Trophy_JOTL_03]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 5003

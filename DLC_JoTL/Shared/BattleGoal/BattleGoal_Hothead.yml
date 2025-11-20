@@ -1,0 +1,19 @@
+Parser: BattleGoal
+ID: BattleGoal_Hothead
+LocalisedName: BATTLEGOAL_Hothead
+LocalisedDescription: BATTLEGOAL_Hothead_Desc
+#Perform two actions with Lost icons before your first rest.
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: LostActionsBeforeRest
+        Value: 2
+        SubFilter: Scenario
+BattleGoalFailCondition:
+    - Targets:
+        Filter: LostActionsBeforeRest
+        Conditional:
+            Amount: "< 0"
+        Amount: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

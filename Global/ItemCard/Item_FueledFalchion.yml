@@ -1,0 +1,26 @@
+Parser: ItemCard
+ID: 116
+StringID: FueledFalchionID
+Name: $ITEM_NAME_FueledFalchion$
+Art: Fueled Falchion
+TotalInGame: 2
+Cost: 50
+Slot: OneHand 
+Rarity: Rare
+Usage: Consumed
+Trigger: SingleTarget
+Data: 
+    Overrides:
+        ODamage:
+            SubAbilities:
+                AttackSubDamage:
+                    Damage: 1
+                    Range: 1
+                    Target: -1
+                    Filter: Enemy
+    CompareAbility:
+        AbilityType: Attack
+        IsMelee: True
+        Filter: Enemy
+Layout: 
+    - Row: $Item_FueledFalchion$

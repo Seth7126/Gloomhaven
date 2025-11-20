@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_UnlockClass_Summoner
+LocalisedName: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+LocalisedDescription: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+UnlockCondition:
+    - UnlockClass: SummonerID
+AchievementCondition:
+    - UnlockClass: SummonerID
+TreasureTables: [TT_Achievement_UnlockClass_Summoner]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 2211

@@ -1,0 +1,19 @@
+Parser: Message
+Name: End_Quest_Story_2D
+DialogueLines:
+    - Text: Message_End_Quest_Story_2D_1
+      Character: Trainer
+      CameraLocation: [1160,600]
+    - Text: Message_End_Quest_Story_2D_2
+      Character: Merchant
+    - Text: Message_End_Quest_Story_2D_3
+      Character: Merchant
+    - Text: Message_End_Quest_Story_2D_4
+      Character: Merchant
+    - Text: Message_End_Quest_Story_2D_5
+      Character: Trainer
+      CameraLocation: [1100, 580]
+
+MapMessageTrigger: Map
+UnlockCondition:
+    - Chapter: [1,0]    

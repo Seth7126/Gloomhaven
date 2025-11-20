@@ -1,0 +1,48 @@
+Parser: Village
+ID: WayfarersRest
+LocalisedName: $WayfarersRest$
+LocalisedDescription: $ADVENTURE_LOCATION_WayfarersRest_Desc$
+Mesh: Ca23_The Deadlands_MAT
+MapLocation: [1084,751]
+JobLocations: 
+    - [1131, 705]
+    - [1024, 769]
+    - [1165, 715]
+UnlockCondition:
+    - Chapter: [1,0]
+    - CompletedQuest: Quest_Travel_WayfarersRest
+Quests: 
+#TRAVEL
+    - Quest_Travel_TheCopperOasis
+#STORY
+    - Quest_Story_Sunkeeper_1  
+#JOBS-FOREST    
+    - Quest_Job_Chapter_1_1_Bandit_Forest
+    - Quest_Job_Imps_Spirits_Forest
+    - Quest_Job_Inox_Vermling_Forest
+    - Quest_Job_MindControl
+    - Quest_Job_TheHaunting
+    - Quest_Job_TheStoneMan
+    - Quest_Job_TheDjinnPalace    
+#JOBS-CRYPT
+    - Quest_Job_Chapter_1_1_Undead_Crypt
+    - Quest_Job_Chapter_1_1_Undead_Bandit_Crypt 
+    - Quest_Job_Snakes_Undead_Crypt    
+    - Quest_Job_Mysterious_Maze  
+    - Quest_Job_AnEyeForAnEye
+    - Quest_Job_DemonicDissent
+    - Quest_Job_TheVaultsOfPus    
+#JOBS-CAVE
+    - Quest_Job_Vermling_Cave
+    - Quest_Job_TwoTribes
+    - Quest_Job_CallOfTheWild
+    - Quest_Job_DemonAltars
+    - Quest_Job_FireCult
+    - Quest_Job_SavvasAid
+    - Quest_Job_SavvasInfighting  
+
+#JOBS-FOREST    
+    - Quest_Job_FellHounds
+#JOBS-CRYPT
+    - Quest_Job_DungeonOfMisfortune
+    

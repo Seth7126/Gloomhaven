@@ -1,0 +1,41 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario14_Kill_Summon
+ScenarioAbility:
+    TActiveSummon:
+        AddActiveBonus:
+            Kill: True
+            NoGoldDrop: true
+            Target: -1
+            Range: 1
+            TargetIsBase: True
+            Filter:
+                EnemyClasses: ["GiantViperID", "GiantViperEliteID"]
+            SubAbilities:
+                TSummon:
+                    Summons: 
+                        - BloodImpEliteID
+                        - BloodImpEliteID
+                        - BloodImpEliteID
+                        - BloodImpEliteID
+                    Target: 0
+                    TargetIsBase: True
+                    StartAbilityRequirements:
+                        Type: SubAbility
+                        ActorsKilledByAbility: "> 0"
+                    StatIsBasedOnX:
+                        Target:
+                            BasedOn: ActorsKilledByParentAbility
+                            Multiplier: 1
+                            AddTo: True
+                            Filter:
+                                EnemyClasses: ["GiantViperID", "GiantViperEliteID"]
+                        Target:
+                            BasedOn: ActorsKilledByParentAbility
+                            Multiplier: 1
+                            AddTo: True
+                            Filter:
+                                EnemyClasses: ["GiantViperEliteID"]   
+                    AnimOverload: Summon 
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: StartRoundAbility

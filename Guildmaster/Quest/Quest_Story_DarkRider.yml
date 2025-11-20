@@ -1,0 +1,41 @@
+Parser: Quest
+ID: Quest_Story_DarkRider
+Chapter: 1
+QuestType: Story
+IconType: Boss
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_DarkRider_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_DarkRider_2
+      Character: Merchant
+    - Text: Message_End_Quest_Story_DarkRider_3
+      Character: Trainer
+    - Text: Message_End_Quest_Story_DarkRider_4
+      Character: Merchant
+    - Text: Message_End_Quest_Story_DarkRider_5
+      Character: Enchantress
+    - Text: Message_End_Quest_Story_DarkRider_6
+      Character: Merchant
+    - Text: Message_End_Quest_Story_DarkRider_7
+      Character: Trainer
+CompletionRewards: TT_Quest_Story_DarkRider
+LoadoutImageId: FO_DF_03_Bandit
+UnlockRevealFoWSphere:
+    - MapLocation: [1104, 521]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_BanditCommander
+    - CompletedQuest: Quest_Story_CaptainOfTheGuard
+    - CompletedQuest: Quest_Story_HighCultist
+    - CompletedQuest: Quest_Story_InoxBodyguard
+    - CompletedQuest: Quest_Story_Jekserah
+    - CompletedQuest: Quest_Story_MercilessOverseer
+    - CompletedQuest: Quest_Story_SightlessEye
+    - CompletedQuest: Quest_Story_UndeadCommander
+    - CompletedQuest: Quest_Story_WingedHorror
+
+StartingVillage: Demonsgate
+EndingVillage: Demonsgate
+Scenario:
+    MapLocation: [1104, 521]
+    ScenarioPool: [Quest_Story_DarkRider, 100]

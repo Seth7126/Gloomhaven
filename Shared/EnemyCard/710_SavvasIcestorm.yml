@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 710
+Initiative: 98
+Shuffle: False
+Data:
+    Abilities:
+        Summon1:
+            Summon: FrostDemonID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: Summon
+    Infuse: Ice 

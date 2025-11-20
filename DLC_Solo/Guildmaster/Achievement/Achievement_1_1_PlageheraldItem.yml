@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_1_PlagueheraldItem
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_PlagueheraldItem$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_PlagueheraldItem_Desc$
+   
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes: 
+        PlagueheraldID: 1     
+AchievementCondition:
+    - CompletedQuest: Quest_Story_Plagueherald_2
+TreasureTables: [TT_Achievement_1_1_PlagueheraldItem]
+AchievementType: Mercenaries
+AchievementLevel: 0  
+AchievementOrderId: 202
+

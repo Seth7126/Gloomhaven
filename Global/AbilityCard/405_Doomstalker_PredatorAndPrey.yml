@@ -1,0 +1,60 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_PredatorandPrey$
+Character: DoomstalkerID
+ID: 405
+Level: 9
+Initiative: 86
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TSummon:
+                Summon: SpittingCobraID
+                AnimOverload: Summon
+        XP: 2
+    Bottom:
+        Abilities:
+            BDoom:
+                AddDoom:
+                    Doom:
+                        DoomAbilities:
+                            BDoomAttackDebuff:
+                                Attack: 0
+                                StatIsBasedOnX:
+                                    Strength:
+                                        BasedOn: TargetDistanceRangeDiff
+                                        AddTo: True
+                                ActiveBonus:
+                                    Duration: Persistent
+                                    Behaviour: BuffIncomingAttacks
+                Filter: 
+                    TargetType: Enemy
+                    EnemyType: [Normal, Elite, Boss]
+                Target: 1
+                Targeting: All
+                AnimOverload: DoomTarget
+Layout:
+    Top:
+        - Active:
+            Ability: "TSummon"
+            Icon: "Summon"
+            Layout:
+                - Summon:
+                    Ability: TSummon
+                    SummonName: $SpittingCobra$
+                    SpecialText:
+                        - Row: "<nobr>$Poison$ <sprite name=Poison></nobr>"
+        - Row: "<size=20%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Persistent
+    Bottom:
+        - Doom:
+            DoomIcon: Doomstalker
+            ParentAbility: BDoom
+            ActiveBonusLayout: "$405_B$"
+            DoomAbilityLayout: "$405_B$"

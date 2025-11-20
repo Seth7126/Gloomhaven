@@ -1,0 +1,48 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_SingleOut$
+Character: ScoundrelID
+ID: 88
+Level: 1
+Initiative: 86
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 3
+                    Enhancements: 1
+                ConditionalOverrides:
+                    TAttackCO:
+                        Filter:
+                            TargetType: Enemy
+                            TargetAdjacentAlliesOfCaster: "> 0"
+                        XP: 1
+                        AbilityOverrides:
+                            TAdjAllyBuff:
+                                Strength: 2
+    Bottom:
+        Abilities:
+            BActive:
+                Attack: 2
+                Filter: Self
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: BuffAttack
+                    Filter:
+                        TargetType: Enemy
+                        TargetAdjacentAlliesOfTarget: "<= 0"
+                    XPTracker: [0,1,0,1]
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "<size=20%> "
+        - Row: "$088_T$"
+    Bottom:
+        - Active:
+            Ability: BActive
+            ListLayout: "$088_B$"
+            Layout: "$088_B$"
+            Icon: "Damage"
+        - Row: "<size=50%> "
+        - XPTracker: BActive

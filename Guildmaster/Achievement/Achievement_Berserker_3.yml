@@ -1,0 +1,22 @@
+Parser: Achievement
+ID: Achievement_Berserker_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Berserker_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Berserker_3_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        BerserkerID: 1  
+AchievementCondition:
+    - Targets:
+        CharacterIDs:
+               TargetIDs: BerserkerID
+        Filter: UseAbility
+        AbilityTypes: [Heal]
+        Amount: 200
+
+TreasureTables: [TT_Achievement_Berserker]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 256
+ 

@@ -1,0 +1,62 @@
+Parser: RoadEvent
+ID: BrokenCartID
+LocKey: $ROAD_EVENT_BROKEN_CART$
+Screens:
+    Decision:
+        Text: EVENT_BrokenCart
+        Options:
+            A:
+                Text: EVENT_BrokenCart_A
+                Next: Help
+            B:
+                Text: EVENT_BrokenCart_B
+                Next: Rob
+            C:
+                Text: EVENT_BrokenCart_C
+                Next: Leave
+    Help:
+        Text: EVENT_BrokenCart_Help
+        Options:
+            A:
+                Text: EVENT_BrokenCart_Help_A
+                TreasureTables: BrokenCart_Help
+                Next: Help2
+    Help2:
+        Gained:
+            Gold: True
+            Screen:
+                Text: EVENT_BrokenCart_Help2_Gained
+                End: True
+        Text: EVENT_BrokenCart_Help2
+        Options:
+            A:
+                Text: EVENT_BrokenCart_Help2_Gained_Next
+                Next: Drink
+    Drink:
+        Text: EVENT_BrokenCart_Drink
+        End: True
+    Rob:
+        Text: EVENT_BrokenCart_Rob
+        Options:
+            A:
+                Text: EVENT_BrokenCart_Rob_A
+                TreasureTables: BrokenCart_Drink
+                Next: Drink2
+    Drink2:
+        Gained:
+            Gold: True
+            Condition: Muddle
+            Screen:
+                Text: EVENT_BrokenCart_Drink2_Gained_Muddle
+                End: True
+        Gained:
+            Gold: True
+            Condition: Strengthen
+            Screen:
+                Text: EVENT_BrokenCart_Drink2_Gained_Strengthen
+                End: True
+        Text: EVENT_BrokenCart_Drink2
+        End: True
+    Leave:
+        Text: EVENT_BrokenCart_Leave
+        End: True

@@ -1,0 +1,32 @@
+Parser: Quest
+ID: Quest_Relic_CuriousGear
+Chapter: 1
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_CuriousGear_Unlock_1
+      Character: Trainer
+    - Text: QUEST_RELIC_CuriousGear_Unlock_2
+      Character: Trainer
+    - Text: QUEST_RELIC_CuriousGear_Unlock_3
+      Character: Merchant
+      CameraLocation: [1520, 491] 
+CompleteDialogueLines:
+    - Text: QUEST_RELIC_CuriousGear_Complete_1
+      Character: Trainer
+RequiredCharacters:
+  - Character: TinkererID       
+UnlockRevealFoWSphere:
+    - MapLocation: [1502, 478]
+      Radius: 14
+#CompletionRewards: TT_Quest_Travel_TheCityOfSlate
+LoadoutImageId: FO_DF_04
+UnlockCondition:
+#    - UnlockedVillage: SloshedSquirrel
+    - CompletedAchievement: Achievement_1_3_DisarmTrap
+StartingVillage: TheSloshedSquirrel
+EndingVillage: TheSloshedSquirrel
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1520, 491]
+    ScenarioPool: [Scenario_Relic_CuriousGear, 100]

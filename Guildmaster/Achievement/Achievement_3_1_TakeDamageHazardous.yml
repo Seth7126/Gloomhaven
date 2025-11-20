@@ -1,0 +1,17 @@
+Parser: Achievement
+ID: Achievement_3_1_TakeDamageHazardous
+LocalisedName: $ADVENTURE_ACHIEVEMENT_3_1_TakeDamageHazardous$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_3_1_TakeDamageHazardous_Desc$
+UnlockCondition:
+    - Chapter: [3,1]
+AchievementCondition:
+    - Targets:
+        Filter: ReceiveDamage
+        Value: 20
+        DamageSource: [HazardousTerrain]
+
+TreasureTables: [TT_Achievement_3_1_TakeDamageHazardous]
+AchievementType: Relics
+AchievementOrderId: 437
+
+AchievementLevel: 2  

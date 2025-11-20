@@ -1,0 +1,66 @@
+Parser: Enemy
+ID: LivingBonesEliteID
+LocKey: $LivingBonesElite$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Living Bones Elite
+NonEliteVariant: LivingBonesID
+PredominantlyMelee: True
+AbilityCards: [516,517,518,519,520,521,522,523]
+# Base Stats
+Level0:
+    Health: 6
+    Move: 4
+    Attack: 2
+    Range: 1
+    Target: 2
+    Shield: 0
+Level1:
+    Health: 6
+    Move: 4
+    Attack: 2
+    Range: 1
+    Target: 3
+    Shield: 1
+Level2:
+    Health: 7
+    Move: 4
+    Attack: 3
+    Range: 1
+    Target: 3
+    Shield: 1
+Level3:
+    Health: 10
+    Move: 4
+    Attack: 3
+    Range: 1
+    Target: 3
+    Shield: 1
+Level4:
+    Health: 11
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 3
+    Shield: 1
+Level5:
+    Health: 11
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 3
+    Shield: 2
+Level6:
+    Health: 11
+    Move: 6
+    Attack: 4
+    Range: 1
+    Target: 3
+    Shield: 2    
+Level7:
+    Health: 14
+    Move: 6
+    Attack: 4
+    Range: 1
+    Target: 3    
+    Shield: 2

@@ -1,0 +1,62 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_Shrapnel$
+Character: HatchetID
+ID: 11035
+Level: 8
+Initiative: 37
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack: 2
+                Range:
+                    Amount: 3
+                    Enhancements: 1
+                Target: 2
+                Condition: Wound
+                AnimOverload: QuickRangedAttack
+        Consumes:
+            TCAir:
+                Elements: Air
+                AbilityOverrides:
+                    TCAirBuff:
+                        ParentName: TAttack
+                        Target: 1
+                XP: 1
+    Bottom:
+        Abilities:
+            BActive:
+                AddActiveBonus:
+                    Damage: 2
+                    Range: 1
+                    Target: -1
+                    Filter: Enemy
+                    AutoTrigger: True
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: DuringActionAbilityOnKill
+                    Requirement: 
+                        OnYourTurn: True
+                    UseTriggerAbilityAsParent: True
+                    Filter: Enemy
+                    XPTracker: [0,0,1,0,1]
+                AnimOverload: PowerUp
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack*"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range* @TAttack.Range@"
+        - Row: "$Target$ <sprite name=Target> *TAttack.Target*"
+        - Row: "$Wound$ <sprite name=Wound>"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCAir
+            Text: "<nobr>+1 $Target$ <sprite name=Target></nobr>, <sprite name=XP1>"
+    Bottom:
+        - Active:
+            Ability: BActive
+            ListLayout: "$JOTL_035_B$"
+            Layout: "$JOTL_035_B$"
+            Icon: "Attack"
+        - Row: "<size=20%>"
+        - XPTracker: BActive

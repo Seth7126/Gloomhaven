@@ -1,0 +1,24 @@
+Parser: Quest
+ID: Quest_Travel_TheDome
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_TheDome_1
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1025, 307]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1025, 307]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_TheDome]
+LoadoutImageId: CR_DF_04
+UnlockCondition:
+    - UnlockedVillage: Toadmoor
+StartingVillage: Toadmoor
+EndingVillage: TheDome
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_TheDome, 100]

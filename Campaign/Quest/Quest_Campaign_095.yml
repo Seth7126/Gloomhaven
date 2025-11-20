@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_095
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_095
+LoadoutImageId: CR_RU_02_Demon
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_094
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Corpsewood
+IconType: Side
+
+Scenario:
+    MapLocation: [1692, 932]
+    ScenarioPool: 
+      - [Scenario_Campaign_095, 100]

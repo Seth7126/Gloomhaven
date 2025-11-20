@@ -1,0 +1,21 @@
+Parser: ItemCard
+ID: 14
+StringID: MinorPowerPotionID
+Name: $ITEM_NAME_MinorPowerPotion$
+Art: Minor Power Potion
+TotalInGame: 4
+Cost: 10
+Slot: SmallItem 
+Rarity: Common
+Usage: Consumed
+Trigger: EntireAction
+ProsperityRequirement: 1
+Data: 
+    Overrides:
+        OAttack:
+            Strength: 1
+    CompareAbility:
+        AbilityType: Attack
+        Filter: Enemy
+Layout: 
+    - Row: $Item_MinorPowerPotion$

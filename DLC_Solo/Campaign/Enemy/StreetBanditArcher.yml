@@ -1,0 +1,59 @@
+Parser: Enemy
+ID: StreetBanditArcherID
+LocKey: $BanditArcher$
+MonsterType: Monster
+StandeeLimit: 6
+Model: Bandit Archer
+PredominantlyMelee: False
+AbilityCards: [533606]
+# Base Stats
+Level0:
+    Health: 3
+    Move: 2
+    Attack: 1
+    Range: 2
+    Target: 1  
+Level1:
+    Health: 3
+    Move: 2
+    Attack: 1
+    Range: 3
+    Target: 1   
+Level2:
+    Health: 4
+    Move: 2
+    Attack: 2
+    Range: 3
+    Target: 1
+Level3:
+    Health: 5
+    Move: 2
+    Attack: 2
+    Range: 4
+    Target: 1
+Level4:
+    Health: 6
+    Move: 3
+    Attack: 2
+    Range: 4
+    Target: 1
+Level5:
+    Health: 6
+    Move: 3
+    Attack: 3
+    Range: 4
+    Target: 1
+Level6:
+    Health: 8
+    Move: 3
+    Attack: 3
+    Range: 4
+    Target: 1
+Level7:
+    Health: 10
+    Move: 3
+    Attack: 3
+    Range: 5
+    Target: 1
+  
+ 

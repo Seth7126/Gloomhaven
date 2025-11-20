@@ -1,0 +1,21 @@
+Parser: Quest
+ID: Quest_JOTL_001_RoadsideAmbush
+Chapter: 1
+QuestType: City
+#CompletionRewards: TT_Quest_Campaign_001
+LoadoutImageId: 001_RoadsideAmbush_Loadout
+NarrativeTextImageOverride:
+    - [Quest_JOTL_001_RoadsideAmbush_INTRO_GH_1, 001_RoadsideAmbush_INTRO_GH_1_Art]
+    - [Quest_JOTL_001_RoadsideAmbush_INTRO_GH_2, 001_RoadsideAmbush_INTRO_GH_2_Art]
+    - [Quest_JOTL_001_RoadsideAmbush_INTRO_GH_3, 001_RoadsideAmbush_INTRO_GH_3_Art]
+UnlockCondition:
+    - UnlockedVillage: Gloomhaven
+    - Chapter: [1,0]
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTL
+Scenario:
+    MapLocation: [437, 334]
+    ScenarioPool: 
+      - [Scenario_JOTL_001_RoadsideAmbush, 100]

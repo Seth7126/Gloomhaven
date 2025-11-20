@@ -1,0 +1,10 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_Scoundrel_ChangeAllegiance
+ScenarioAbility:
+    AChangeAllegiance:
+        ChangeAllegiance:
+                ChangeToType: Enemy2
+            Target: -1
+            Filter: Self
+            AutoTrigger: True
+            SkipAnim: True

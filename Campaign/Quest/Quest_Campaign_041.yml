@@ -1,0 +1,18 @@
+Parser: Quest
+ID: Quest_Campaign_041
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_041
+LoadoutImageId: DU_DF_01_Undead
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_040
+BlockCondition:
+    - CompletedQuest: Quest_Campaign_042
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: CopperneckMountains
+
+Scenario:
+    MapLocation: [1733, 775]
+    ScenarioPool: 
+      - [Scenario_Campaign_041, 100]

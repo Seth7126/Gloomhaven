@@ -1,0 +1,70 @@
+Parser: Scenario
+ID: Scenario_Job_DungeonOfMisfortune
+BaseBiome: Dungeon
+BaseSubBiome: Default
+BaseTheme: Default
+BaseSubTheme: Default
+BaseTone: Default
+MonsterFamily: Drakes
+ScenarioMeshes: [DGN_Maus_01_MAT, DGN_Maus_02_MAT, DGN_Maus_03_MAT, DGN_Maus_04_MAT, DGN_Maus_05_MAT]
+ChestTreasureTables: [TT_Chapter_1_1_Chest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_DungeonOfMisfortune_Start_1
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_DungeonOfMisfortune_Success_1
+          Character: Merchant
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:       
+            Result: Win
+    Rooms:
+        Room1:
+            Threat: 75
+            PossibleRooms:
+                - EmptyRandomCorridor:
+                    MonsterGroup: ForestImps
+                    OneHexObstacles: [50] 
+                    Traps: [80,50]
+
+        Room2:
+            Threat: 75
+            PossibleRooms:
+                - EmptyWindingCorridor:
+                    MonsterGroup: Spirits
+                    OneHexObstacles: [50] 
+                    TwoHexObstacles: [50]
+                    Traps: [80,50,20]
+                    GoldPiles: [50,20]
+        Room3:
+            Threat: 75
+            PossibleRooms:
+                - ShortEmptyCorridor:
+                    MonsterGroup: Golems
+                    OneHexObstacles: [50] 
+                    TwoHexObstacles: [50]
+                    Traps: [80,50,20]
+                    GoldPiles: [50,20]
+        Room4:
+            Threat: 75
+            PossibleRooms:
+                - EmptyWindingCorridor:
+                    MonsterGroup: Drakes
+                    OneHexObstacles: [50,50] 
+                    TwoHexObstacles: [20,20]
+                    Traps: [80,50,20]
+                    GoldPiles: [50,20]
+        Room5:
+            Threat: 100
+            PossibleRooms:
+                - EmptySummoningCircle:
+                    MonsterGroup: Demon_SunNight
+                    OneHexObstacles: [100,50,20] 
+                    TwoHexObstacles: [20, 20]
+                    Traps: [100,50,20]
+                    GoldPiles: [100,80,50,20,5]
+                    TreasureChestChance: [33]

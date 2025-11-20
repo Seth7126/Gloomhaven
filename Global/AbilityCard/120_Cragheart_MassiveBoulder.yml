@@ -1,0 +1,43 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_MassiveBoulder$
+Character: CragheartID
+ID: 120
+Level: 1
+Initiative: 87
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 3
+                    Enhancements: 1
+                Range:
+                    Amount: 3
+                    Enhancements: 1
+                AnimOverload: ObstacleMassiveBoulder
+                SubAbilities:
+                    TAttackSubDamage:
+                        Damage: 1
+                        Range: 1
+                        Target: -1
+                        Filter: [Enemy, Ally]
+                        IsInlineSubAbility: True
+                        AllTargetsAdjacentToParentTargets: True
+        Infuse: Earth
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 4
+                    Enhancements: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range* @TAttack.Range@"
+        - Row: "<size=20%> "
+        - Row: "$120_T$"
+        - Row: "<size=20%> "
+        - Infuse: Earth
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"

@@ -1,0 +1,21 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_58_Heal
+ScenarioAbility:
+    AActive:
+        AddActiveBonus:
+            Heal: 1
+            Target: 1
+            Filter: Self
+            PreviewEffectText: <sprite name="Heal">
+            StatIsBasedOnX: 
+                Strength:
+                    BasedOn: XAddedToInitialPlayerCharacterCount
+                    Multiplier: -1
+                    SecondVariable: 0
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: EndRoundAbility
+            ListLayoutOverride: [$ScenarioAbility_58_Heal$, Heal]
+        AnimOverload: None
+        AutoTrigger: True
+        Filter: Self

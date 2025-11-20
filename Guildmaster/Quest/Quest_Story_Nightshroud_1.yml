@@ -1,0 +1,43 @@
+Parser: Quest
+ID: Quest_Story_Nightshroud_1
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+UnlockDialogueLines:
+    - Text: Message_Complete_Achievement_1_1_NightshroudReachLevel2_1
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_NightshroudReachLevel2_2
+      Character: Merchant
+    - Text: Message_Complete_Achievement_1_1_NightshroudReachLevel2_3
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_NightshroudReachLevel2_4
+      Character: Merchant
+    - Text: Message_Complete_Achievement_1_1_NightshroudReachLevel2_5
+      Character: Trainer
+      CameraLocation: [1048, 929]  
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Nightshroud_1_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Nightshroud_1_2
+      Character: Merchant
+    - Text: Message_End_Quest_Story_Nightshroud_1_3
+      Character: Trainer
+      CameraLocation: [475, 647]
+CompletionRewards: TT_Quest_Story_Nightshroud_1
+LoadoutImageId: FO_DF_01_Undead
+UnlockRevealFoWSphere:
+    - MapLocation: [1048, 929] 
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: TheBarrenCoast
+    - Chapter: [1,1]
+    - CompletedAchievement: Achievement_1_1_NightshroudReachLevel2    
+RequiredCharacters:
+  - Character: NightshroudID
+    Level: 2
+StartingVillage: ThePyre
+EndingVillage: ThePyre
+
+Scenario:
+    MapLocation: [1048, 929] 
+    ScenarioPool: [Scenario_Story_Nightshroud_1, 100]

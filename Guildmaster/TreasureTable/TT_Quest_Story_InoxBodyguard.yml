@@ -1,0 +1,4 @@
+Parser: TreasureTable
+TT_Quest_Story_InoxBodyguard:
+  Item: MountainHammerID
+  EnhancementSlots: 1  

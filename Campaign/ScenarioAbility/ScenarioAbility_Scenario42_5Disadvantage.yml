@@ -1,0 +1,18 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_42_5Disadvantage
+ScenarioAbility:
+    AActive:
+        Attack: 0
+        AttackHasDisadvantage: True
+        Target: -1
+        Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: BuffAttack
+            IsAura: True
+            AuraFilter: 
+                ActorType: [Player, Summon]
+            AuraTargeting: All
+            ListLayoutOverride: [$ScenarioAbility_42_5Disadvantage$, Disadvantage]
+        AnimOverload: None
+        AutoTrigger: True

@@ -1,0 +1,21 @@
+Parser: EnemyCard
+ID: 57300058
+Initiative: 14
+Shuffle: False
+Data:
+    Abilities:
+        Move1:
+            Move: 0    
+        Summon1:
+            Summon: ForestImpID
+            Target: 1
+            StatIsBasedOnX:
+                Target:
+                    BasedOn: InitialPlayerCharacterCount
+                    Multiplier: 0.5
+            AnimOverload: Summon
+        Attack1:
+            Attack: -1
+            Filter: Enemy
+            ShowPlusX: True
+            Text: "$Boss_DarkRider_AddHexesMovedToAttack$"

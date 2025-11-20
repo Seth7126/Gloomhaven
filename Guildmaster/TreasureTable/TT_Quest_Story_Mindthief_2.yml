@@ -1,0 +1,8 @@
+Parser: TreasureTable
+TT_Quest_Story_Mindthief_2:
+  UnlockQuest: Quest_Story_Mindthief_3
+  
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: MindthiefID    
+  

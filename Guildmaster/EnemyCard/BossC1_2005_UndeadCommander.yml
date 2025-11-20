@@ -1,0 +1,18 @@
+Parser: EnemyCard
+ID: 2005
+Initiative: 79
+Shuffle: False
+Data:
+    Abilities: 
+        Damage1:
+            Damage: 2 # TODO: Maybe use player count in some way?
+            Targeting: All
+            Target: -1
+            TargetIsBase: True
+            Filter: Enemy
+            Text: "All enemies suffer 2 damage."
+            TextOnly: True
+            AnimOverload: Drain
+        Heal1:
+            Heal: 2 # TODO: Maybe use player count in some way?
+            Filter: Self

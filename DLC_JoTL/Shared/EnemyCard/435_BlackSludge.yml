@@ -1,0 +1,24 @@
+Parser: EnemyCard
+ID: 11435
+Initiative: 85
+Shuffle: True
+Data:
+    Abilities:
+        Damage1:
+            Damage: 0 # +L/2
+            StatIsBasedOnX:
+                Strength:
+                    BasedOn: XAddedToYTimesLevel
+                    Multiplier: 1
+                    SecondVariable: 0.5            
+            Filter: Enemy
+            Target: 1
+            TargetIsBase: True
+            Targeting: All
+            AnimOverload: DirectDamage
+            Text: $JOTL_434$
+            TextOnly: True
+        Heal1:
+            Heal: 1
+            Filter: Self
+    Infuse: Earth

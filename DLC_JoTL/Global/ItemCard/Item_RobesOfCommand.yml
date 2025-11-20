@@ -1,0 +1,25 @@
+Parser: ItemCard
+ID: 235
+StringID: RobesOfCommandID
+Name: $ITEM_NAME_RobesOfCommand$
+Art: Robes of Command
+TotalInGame: 1
+Cost: 40
+Slot: Body
+Rarity: Rare
+Usage: Spent
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        TAlly:
+            ControlActor:
+                Abilities:
+                    TAllyAttack:
+                        Attack: 2
+                        StrengthIsBase: True
+                        RangeIsBase: True
+            Range: 1
+            Filter: Ally
+            AnimOverload: MindControl
+Layout: 
+    - Row: $Item_RobesOfCommand$

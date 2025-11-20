@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 24
+StringID: AmuletOfLifeID
+Name: $ITEM_NAME_AmuletofLife$
+Art: Amulet of Life
+TotalInGame: 2
+Cost: 20
+Slot: Head 
+Rarity: Rare
+Usage: Spent
+Trigger: DuringOwnTurn
+ProsperityRequirement: 3
+Data: 
+    Abilities:
+        AHealSelf:
+            Heal: 1
+            Filter: Self
+Layout: 
+    - Row: $Item_AmuletOfLife$

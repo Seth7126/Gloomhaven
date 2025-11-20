@@ -1,0 +1,24 @@
+Parser: Headquarters
+ID: Gloomhaven
+CreateCharacterGoldPerLevelAmount: 15
+
+Quests: 
+#FTUE
+    - Quest_SOLO_BeastTyrant_TheCagedBear
+    - Quest_SOLO_Brute_ReturnToTheBlackBarrow
+    - Quest_SOLO_Doomstalker_CorruptedHunt
+    - Quest_SOLO_Elementalist_ElementalSecrets
+    - Quest_SOLO_Mindthief_RodentLiberation
+    - Quest_SOLO_Nightshroud_HarvestingTheNight
+    - Quest_SOLO_Plagueherald_PlaguedCrypt
+    - Quest_SOLO_Scoundrel_ArmoryHeist
+    - Quest_SOLO_Soothsinger_BattleOfTheBards
+    - Quest_SOLO_Spellweaver_CorruptedLaboratory
+    - Quest_SOLO_Summoner_PlaneOfWildBeasts
+    - Quest_SOLO_Sunkeeper_CaravanEscort
+    - Quest_SOLO_Berserker_UnnaturalInsults
+    - Quest_SOLO_Cragheart_StoneDefense
+    - Quest_SOLO_Quartermaster_StorageFees
+    - Quest_SOLO_Sawbones_Aftermath
+    - Quest_SOLO_Tinkerer_AnUnfortunateIntrusion
+    

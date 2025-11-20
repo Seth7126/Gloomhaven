@@ -1,0 +1,23 @@
+Parser: Achievement
+ID: Achievement_1_1_InfuseLight
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_InfuseLight$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_InfuseLight_Desc$
+CompleteDialogueLines:
+    - Text: Message_Unlock_Sunkeeper_1
+      Character: Trainer
+    - Text: Message_Unlock_Sunkeeper_2
+      Character: Narrator
+UnlockCondition:
+    - Chapter: [1,1]
+AchievementCondition:
+    - Targets:
+        Filter: Infuse
+        Elements: Light
+        Value: 30
+
+
+TreasureTables: [TT_Achievement_1_1_InfuseLight]
+AchievementType: Mercenaries
+
+AchievementLevel: 0  
+AchievementOrderId: 248

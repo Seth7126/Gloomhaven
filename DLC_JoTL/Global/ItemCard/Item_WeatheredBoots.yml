@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 237
+StringID: WeatheredBootsID
+Name: $ITEM_NAME_WeatheredBoots$
+Art: Weathered Boots
+TotalInGame: 2
+Cost: 15
+Slot: Legs 
+Rarity: Rare
+Usage: Spent
+Trigger: SingleAbility
+Data:     
+    Overrides:
+        OMove:
+            Strength: 1
+    CompareAbility:
+        AbilityType: Move
+Layout: 
+    - Row: $Item_WeatheredBoots$

@@ -1,0 +1,22 @@
+Parser: ItemCard
+ID: 80
+StringID: TremorBladeID
+Name: $ITEM_NAME_TremorBlade$
+Art: Tremor Blade
+TotalInGame: 2
+Cost: 30
+Slot: OneHand 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: SingleTarget
+Consumes: Earth
+Data: 
+    Overrides:
+        OAttack:
+            Strength: 2
+    CompareAbility:
+        AbilityType: Attack
+        IsMelee: True
+        Filter: Enemy
+Layout: 
+    - Row: $Item_TremorBlade$

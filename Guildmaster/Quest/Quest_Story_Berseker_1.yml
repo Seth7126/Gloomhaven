@@ -1,0 +1,32 @@
+Parser: Quest
+ID: Quest_Story_Berserker_1
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+UnlockDialogueLines:
+    - Text: Message_Complete_Achievement_1_1_BerserkerReachLevel2_1
+      Character: Trainer
+      CameraLocation: [590, 390] 
+    - Text: Message_Complete_Achievement_1_1_BerserkerReachLevel2_2
+      Character: Trainer
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Berserker_1_1
+      Character: Merchant
+      CameraLocation: [903, 213]
+CompletionRewards: TT_Quest_Story_Berserker_1
+LoadoutImageId: FO_DF_03
+UnlockRevealFoWSphere:
+    - MapLocation: [590, 390]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_1_1_BerserkerReachLevel2
+    - Chapter: [1,1]
+RequiredCharacters:
+  - Character: BerserkerID    
+    Level: 2
+StartingVillage: Millpond
+EndingVillage: Millpond
+
+Scenario:
+    MapLocation: [590, 390]
+    ScenarioPool: [Scenario_Story_Berserker_1, 100]

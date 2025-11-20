@@ -1,0 +1,32 @@
+Parser: Quest
+ID: Quest_Relic_StaffOfXorn
+Chapter: 1
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_StaffOfXorn_Unlock_1
+      Character: Trainer
+    - Text: QUEST_RELIC_StaffOfXorn_Unlock_2
+      Character: Trainer
+      CameraLocation: [497, 1091]    
+    - Text: QUEST_RELIC_StaffOfXorn_Unlock_3
+      Character: Trainer
+      CameraLocation: [497, 1091]   
+CompleteDialogueLines:
+    - Text: QUEST_RELIC_StaffOfXorn_Complete_1
+      Character: Merchant
+#CompletionRewards: TT_Quest_Travel_TheCityOfSlate
+LoadoutImageId: FO_DF_03
+UnlockRevealFoWSphere:
+    - MapLocation: [497, 1091]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: TheBarrenCoast
+    - CompletedAchievement: Achievement_1_1_KillMuddlePoison
+
+StartingVillage: TheBarrenCoast
+EndingVillage: TheBarrenCoast
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [497, 1091]
+    ScenarioPool: [Scenario_Relic_StaffOfXorn, 100]

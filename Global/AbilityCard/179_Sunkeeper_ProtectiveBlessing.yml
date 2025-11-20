@@ -1,0 +1,50 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_ProtectiveBlessing$
+Character: SunkeeperID
+ID: 179
+Level: 1
+Initiative: 61
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TBlessStrengthen:
+                Bless: True
+                Condition: Strengthen
+                Range: 3
+                Filter: Ally
+                AnimOverload: PositiveBuffTargeted
+    Bottom:
+        Abilities:
+            BPrevent:
+                PreventDamage: -1
+                Range: 1
+                Target: -1
+                Filter: Self
+                ActiveBonus:
+                    Duration: Round
+                    IsAura: True
+                    AuraFilter: [Self, Ally]
+                AnimOverload: PositiveBuffRadial
+        Infuse: Light
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Bless$ <sprite name=Bless> $and$ <size=130%>$Strengthen$ <sprite name=Strengthen>"
+        - Row: "$Affect_OneAllyWithinRange3$"
+    Bottom:
+        - Active:
+            Ability: BPrevent
+            Icon: Immune
+            ListLayout: "<b>$Aura$<sprite name=Aura>:</b> $179_B$"
+            Layout: "<b>$Aura$<sprite name=Aura>:</b> $179_B$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "20,20,20,20"
+            - Column:
+            - Column:
+                - Infuse: Light
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Round

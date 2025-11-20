@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_047
+Chapter: 1
+QuestType: CityAdjacent
+#CompletionRewards: TT_Quest_Campaign_047
+LoadoutImageId: CR_RU_02
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_037
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: MistySea
+IconType: Boss
+
+Scenario:
+    MapLocation: [2082, 1043]
+    ScenarioPool: 
+      - [Scenario_Campaign_047, 100]

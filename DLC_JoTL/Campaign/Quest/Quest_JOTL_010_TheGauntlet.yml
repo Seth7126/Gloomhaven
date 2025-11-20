@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_JOTL_010_TheGauntlet
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_010_TheGauntlet
+LoadoutImageId: 010_TheGauntlet_Loadout
+NarrativeTextImageOverride:
+    - [Quest_JOTL_010_TheGauntlet_OUTRO_GH_1, 010_TheGauntlet_OUTRO_GH_1_Art]
+    - [Quest_JOTL_010_TheGauntlet_OUTRO_GH_2, 010_TheGauntlet_OUTRO_GH_2_Art]
+    - [Quest_JOTL_010_TheGauntlet_OUTRO_GH_3, 010_TheGauntlet_OUTRO_GH_3_Art]
+    - [Quest_JOTL_010_TheGauntlet_OUTRO_GH_4, 010_TheGauntlet_OUTRO_GH_4_Art]
+UnlockCondition:
+    - Required:
+        CompletedQuest: 1
+
+    - CompletedQuest: Quest_JOTL_009_ExplosiveEvolution
+    - CompletedQuest: Quest_JOTL_009B_ExplosiveEvolution
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTL
+Scenario:
+    MapLocation: [690, 1586]
+    ScenarioPool: 
+      - [Scenario_JOTL_010_TheGauntlet, 100]

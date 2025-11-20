@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_SOLO_Scoundrel_ArmoryHeist
+Chapter: 1
+QuestType: City
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_Scoundrel_ArmoryHeist
+NarrativeTextImageOverride:
+    - [Quest_SOLO_Scoundrel_ArmoryHeist_INTRO_GH_1, SOLO_Scoundrel_ArmoryHeist_INTRO_GH_1]
+    - [Quest_SOLO_Scoundrel_ArmoryHeist_INTRO_GH_2, SOLO_Scoundrel_ArmoryHeist_INTRO_GH_2]
+    - [Quest_SOLO_Scoundrel_ArmoryHeist_INTRO_GH_3, SOLO_Scoundrel_ArmoryHeist_INTRO_GH_3]
+    - [Quest_SOLO_Scoundrel_ArmoryHeist_INTRO_GH_4, SOLO_Scoundrel_ArmoryHeist_INTRO_GH_4]
+    - [Quest_SOLO_Scoundrel_ArmoryHeist_INTRO_GH_5, SOLO_Scoundrel_ArmoryHeist_INTRO_GH_5]
+    - [Quest_SOLO_Scoundrel_ArmoryHeist_INTRO_GH_6, SOLO_Scoundrel_ArmoryHeist_INTRO_GH_6]
+    - [Quest_SOLO_Scoundrel_ArmoryHeist_INTRO_GH_7, SOLO_Scoundrel_ArmoryHeist_INTRO_GH_7]
+    - [Quest_SOLO_Scoundrel_ArmoryHeist_INTRO_GH_8, SOLO_Scoundrel_ArmoryHeist_INTRO_GH_8]
+UnlockCondition:
+    - RequiredHeroes: 
+        ScoundrelID: 5
+RequiredCharacters:
+  - Character: ScoundrelID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_Scoundrel_ArmoryHeist
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [1357, 595]
+
+    ScenarioPool: 
+      - [Scenario_SOLO_Scoundrel_ArmoryHeist, 100]

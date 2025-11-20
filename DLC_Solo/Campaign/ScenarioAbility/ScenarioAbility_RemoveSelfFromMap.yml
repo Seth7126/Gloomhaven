@@ -1,0 +1,18 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_RemoveSelfFromMap
+ScenarioAbility:
+    ARemoveActorActiveBonus:
+        AddActiveBonus:
+            RemoveActorFromMap: True
+            IgnoreStun: True
+            Range: 1
+            Target: 1
+            Filter: Self
+            AutoTrigger: True
+            SkipAnim: True 
+        ActiveBonus:
+            Behaviour: DuringActionAbilityOnHealedToFull
+            Duration: Persistent
+            Hidden: True
+        AutoTrigger: True
+        SkipAnim: True

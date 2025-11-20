@@ -1,0 +1,8 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_Summon_NightDemonElite
+ScenarioAbility:
+    Summon1:
+        Summon: NightDemonEliteID
+        Target: 1
+        TargetIsBase: True
+        AnimOverload: Summon

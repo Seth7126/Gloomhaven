@@ -1,0 +1,60 @@
+Parser: Scenario
+ID: Scenario_Story_Brute_1
+BaseBiome: Forest
+BaseTone: ForestDefault
+
+#BaseSubTheme: Undead
+MonsterFamily: Inox
+ScenarioMeshes: [DGN_Forest_01_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BRUTE_1_START_1
+          Character: Narrator
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BRUTE_1_SUCCESS_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                PlayerClasses: [BruteID]
+                EnemyClasses: [VermlingShamanID, VermlingShamanEliteID]    
+            ObjectiveDescription: Scenario_Story_Brute_Scabwit_Character_Fail_Objective 
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - EmptyWindingCorridor:
+                    MonsterGroup: Hounds
+                    Theme: DeepForestGlade
+                    Traps: [100,100]
+                    AllyMonsters:
+                        - [VermlingShamanEliteID, 1, 1, 1, 1]                        
+        Room2:
+            Threat: 100
+            PossibleRooms:
+                - LongEmptyCorridor: 
+                    MonsterGroup: Hounds
+                    Theme: StillWaters
+                    OneHexObstacles: [100, 100, 100] 
+                    Traps: [100,100]
+        Room3:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_BRUTE_1_ROOM_3
+                      Character: Trainer            
+            Threat: 100
+            PossibleRooms:
+                - MediumEmptyRoom: 
+                    MonsterGroup: Elite_Inox_Archer_Hounds
+                    Theme: DruidsGrove
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100,100]

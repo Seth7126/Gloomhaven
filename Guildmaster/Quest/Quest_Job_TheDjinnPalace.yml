@@ -1,0 +1,13 @@
+Parser: Quest
+ID: Quest_Job_TheDjinnPalace
+Chapter: 1
+QuestType: Job
+CompletionRewards: TT_Quest_Job_Chapter_1_1
+LoadoutImageId: CR_RU_03_Undead
+UnlockCondition:
+    - Chapter: [1,2]   
+RequiredCharacters:
+  - Character: TinkererID        
+Scenario:
+    MapLocation: [300, 300]
+    ScenarioPool: [Scenario_Job_TheDjinnPalace, 100]

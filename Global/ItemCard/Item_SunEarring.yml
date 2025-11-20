@@ -1,0 +1,25 @@
+Parser: ItemCard
+ID: 49
+StringID: SunEarringID
+Name: $ITEM_NAME_SunEarring$
+Art: Sun Earring
+TotalInGame: 2
+Cost: 40
+Slot: SmallItem 
+Rarity: Rare
+Usage: Consumed
+Trigger: DuringOwnTurn
+ProsperityRequirement: 6
+Data: 
+    Abilities:
+        ARefreshItems:
+            RefreshItems: All
+            SlotStateToRefresh: Spent
+            Target: -1
+            Filter: Self
+            SubAbilities:
+                ARefreshItemsSubHeal:
+                    Heal: 3
+                    Filter: Self
+Layout: 
+    - Row: $Item_SunEarring$

@@ -1,0 +1,23 @@
+Parser: Achievement
+ID: Achievement_Doomstalker_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Doomstalker_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Doomstalker_1_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        DoomstalkerID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: DoomstalkerID   
+        Filter: Kill
+        CauseOfDeath: Damage
+        KillInOneHit: True
+        Value: 10
+
+TreasureTables: [TT_Achievement_Doomstalker]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 263
+ 

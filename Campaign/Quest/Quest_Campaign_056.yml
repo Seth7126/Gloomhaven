@@ -1,0 +1,20 @@
+Parser: Quest
+ID: Quest_Campaign_056
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_056
+LoadoutImageId: FO_DF_01_Bandit
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_055
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: DaggerForest
+IconType: Side
+
+RequiredCharacters:
+  - PersonalQuest: PERSONALQUEST_Take_Back_the_Trees
+
+Scenario:
+    MapLocation: [726, 944]
+    ScenarioPool: 
+      - [Scenario_Campaign_056, 100]

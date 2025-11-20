@@ -1,0 +1,97 @@
+Parser: Enemy
+ID: SightlessEyeID
+LocKey: $SightlessEye$
+MonsterType: Boss
+Model: Sightless Eye
+StandeeLimit: 1
+PredominantlyMelee: False
+AbilityCards: [57200049,57300050,57400051,57500052,57600053,57700054,57800055,57900056]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 0
+    Attack: 5
+    Range: 3
+    Target: 1
+    Immunities: [Disarm, Push, Pull, Move, Swap, Stun, Curse, Muddle]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 7
+Level1:
+    Health: 0
+    Move: 0
+    Attack: 6
+    Range: 3
+    Target: 1
+    Immunities: [Disarm, Push, Pull, Move, Swap, Stun, Curse, Muddle]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 8
+Level2:
+    Health: 0
+    Move: 0
+    Attack: 6
+    Range: 3
+    Target: 1
+    Immunities: [Disarm, Push, Pull, Move, Swap, Stun, Curse, Muddle]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 10
+Level3:
+    Health: 0
+    Move: 0
+    Attack: 7
+    Range: 3
+    Target: 1
+    Immunities: [Disarm, Push, Pull, Move, Swap, Stun, Curse, Muddle]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 11
+Level4:
+    Health: 0
+    Move: 0
+    Attack: 7
+    Range: 3
+    Target: 1
+    Immunities: [Disarm, Push, Pull, Move, Swap, Stun, Curse, Muddle]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 14
+Level5:
+    Health: 0
+    Move: 0
+    Attack: 8
+    Range: 3
+    Target: 1
+    Immunities: [Disarm, Push, Pull, Move, Swap, Stun, Curse, Muddle]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 15
+Level6:
+    Health: 0
+    Move: 0
+    Attack: 8
+    Range: 3
+    Target: 1
+    Immunities: [Disarm, Push, Pull, Move, Swap, Stun, Curse, Muddle]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 18
+Level7:
+    Health: 0
+    Move: 0
+    Attack: 9
+    Range: 3
+    Target: 1
+    Immunities: [Disarm, Push, Pull, Move, Swap, Stun, Curse, Muddle]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 20

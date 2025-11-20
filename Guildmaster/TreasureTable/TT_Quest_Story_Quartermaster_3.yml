@@ -1,0 +1,7 @@
+Parser: TreasureTable
+TT_Quest_Story_Quartermaster_3:
+ 
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: QuartermasterID    
+  

@@ -1,0 +1,121 @@
+Parser: Enemy
+ID: BloodHorrorID
+LocKey: $BloodHorror$
+MonsterType: Boss
+StandeeLimit: 6
+Model: Blood Horror
+PredominantlyMelee: True
+AbilityCards: [11468, 11469, 11470, 11471, 11472, 11473, 11474, 11475]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 3
+    Attack: -1
+    Range: 1
+    Target: 1
+    Immunities: [Muddle, Disarm, Immobilize, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 7
+        Attack:
+            BasedOn: InitialPlayerCharacterCount
+            AddTo: True
+Level1:
+    Health: 0
+    Move: 3
+    Attack: 0
+    Range: 1
+    Target: 1
+    Immunities: [Muddle, Disarm, Immobilize, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 10
+        Attack:
+            BasedOn: InitialPlayerCharacterCount
+            AddTo: True
+Level2:
+    Health: 0
+    Move: 4
+    Attack: 0
+    Range: 1
+    Target: 1
+    Immunities: [Muddle, Disarm, Immobilize, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 12
+        Attack:
+            BasedOn: InitialPlayerCharacterCount
+            AddTo: True
+Level3:
+    Health: 0
+    Move: 4
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Muddle, Disarm, Immobilize, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 15
+        Attack:
+            BasedOn: InitialPlayerCharacterCount
+            AddTo: True
+Level4:
+    Health: 0
+    Move: 5
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Muddle, Disarm, Immobilize, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 17
+        Attack:
+            BasedOn: InitialPlayerCharacterCount
+            AddTo: True
+Level5:
+    Health: 0
+    Move: 5
+    Attack: 2
+    Range: 1
+    Target: 1
+    Immunities: [Muddle, Disarm, Immobilize, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 20
+        Attack:
+            BasedOn: InitialPlayerCharacterCount
+            AddTo: True
+Level6:
+    Health: 0
+    Move: 5
+    Attack: 3
+    Range: 1
+    Target: 1
+    Immunities: [Muddle, Disarm, Immobilize, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 23
+        Attack:
+            BasedOn: InitialPlayerCharacterCount
+            AddTo: True
+Level7:
+    Health: 0
+    Move: 5
+    Attack: 4
+    Range: 1
+    Target: 1
+    Immunities: [Muddle, Disarm, Immobilize, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 28
+        Attack:
+            BasedOn: InitialPlayerCharacterCount
+            AddTo: True

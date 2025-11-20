@@ -1,0 +1,21 @@
+Parser: ItemCard
+ID: 82
+StringID: NightBladeID
+Name: $ITEM_NAME_NightBlade$
+Art: Night Blade
+TotalInGame: 2
+Cost: 30
+Slot: OneHand 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: SingleTarget
+Consumes: Dark
+Data: 
+    Overrides:
+        OAttack:
+            Strength: 2
+    CompareAbility:
+        IsMelee: True
+        AbilityType: Attack
+Layout: 
+    - Row: $Item_NightBlade$

@@ -1,0 +1,81 @@
+Parser: Enemy
+ID: SunDemonID
+LocKey: $SunDemon$
+MonsterType: Monster
+StandeeLimit: 6
+Model: Sun Demon
+PredominantlyMelee: True
+AbilityCards: [652,653,654,655,656,657,658,659]
+# Base Stats
+Level0:
+    Health: 5
+    Move: 2
+    Attack: 2
+    Range: 1
+    Target: 1
+    Flying: True
+    Advantage: True
+    Shield: 1
+Level1:
+    Health: 7
+    Move: 2
+    Attack: 2
+    Range: 1
+    Target: 1
+    Flying: True
+    Advantage: True
+    Shield: 1
+Level2:
+    Health: 9
+    Move: 2
+    Attack: 2
+    Range: 1
+    Target: 1
+    Flying: True
+    Advantage: True
+    Shield: 1
+Level3:
+    Health: 10
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 1
+    Flying: True
+    Advantage: True
+    Shield: 1
+Level4:
+    Health: 11
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    Flying: True
+    Advantage: True
+    Shield: 1
+Level5:
+    Health: 11
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    Flying: True
+    Advantage: True
+    Shield: 2
+Level6:
+    Health: 12
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Flying: True
+    Advantage: True
+    Shield: 2    
+Level7:
+    Health: 15
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Flying: True
+    Advantage: True
+    Shield: 2

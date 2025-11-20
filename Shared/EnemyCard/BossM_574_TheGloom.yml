@@ -1,0 +1,18 @@
+Parser: EnemyCard
+ID: 57400099
+Initiative: 17
+Shuffle: False
+Data:
+    Abilities:
+        ANull:
+            Null: True
+            Text: "$Boss_TheGloom_Teleport$"
+            TextOnly: True
+        Attack1:
+            Attack: -1
+            Range: 5
+            RangeIsBase: True
+            Conditions: [Poison, Wound, Stun]
+            Filter: Enemy
+            AnimOverload: RangedAttack
+

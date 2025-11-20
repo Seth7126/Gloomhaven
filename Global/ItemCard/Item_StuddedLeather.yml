@@ -1,0 +1,34 @@
+Parser: ItemCard
+ID: 30
+StringID: StuddedLeatherID
+Name: $ITEM_NAME_StuddedLeather$
+Art: Studded Leather
+TotalInGame: 2
+Cost: 30
+Rarity: Rare
+Slot: Body 
+Usage: Spent
+Trigger: PassiveEffect
+ProsperityRequirement: 4
+Data: 
+    ShieldValue: 1
+    Abilities:
+        Disadvantage:
+            Shield: 1
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: ShieldAndDisadvantage
+                IsToggleBonus: True
+                ValidAbilityType: Attack
+                XPTracker: [0,0]
+    CompareAbility:
+        AbilityType: Attack
+Layout: 
+    - Active:
+        Ability: Disadvantage
+        ListLayout: "$Item_StuddedLeather$"
+        Layout: "$Item_StuddedLeather$"
+        Icon: "Shield"
+    - Row: "<size=50%> "
+    - XPTracker: Disadvantage

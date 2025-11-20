@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 584
+Initiative: 61
+Shuffle: False
+Data:
+    Abilities: 
+        Attack1:
+            Attack: 0
+            Range: -1
+            Target: 2
+            TargetIsBase: True
+            Filter: Enemy

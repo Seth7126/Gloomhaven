@@ -1,0 +1,8 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_Summon_WindDemonElite
+ScenarioAbility:
+    Summon1:
+        Summon: WindDemonEliteID
+        Target: 1
+        TargetIsBase: True
+        AnimOverload: Summon

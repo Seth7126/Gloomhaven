@@ -1,0 +1,51 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_FrostArmor$
+Character: SpellweaverID
+ID: 66
+Level: 1
+Initiative: 20
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 1
+                Range: 3
+                AnimOverload: TargetedFrostArmor
+        Consumes:
+            TCAny:
+                Elements: Any
+                AbilityOverrides:
+                    TCAnyAttackBuff:
+                        ParentName: TAttack
+                        Strength: 1
+                XP: 1
+    Bottom:
+        Abilities:
+            BPrevent:
+                PreventDamage: 2
+                ActiveBonus:
+                    Duration: Persistent
+                    XPTracker: [1,1]
+                AnimOverload: PowerUpFrost
+        Infuse: Ice
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCAny
+            Text: "+1 $Attack$ <sprite name=Attack>, <sprite name=XP1>"
+    Bottom:
+        - Active:
+            Ability: BPrevent
+            ListLayout: "$066_B$"
+            Layout: "$066_B$"
+            Icon: "Immune"
+        - Row: "<size=50%> "
+        - XPTracker: BPrevent
+        - Row: "<size=20%> "
+        - Infuse: Ice

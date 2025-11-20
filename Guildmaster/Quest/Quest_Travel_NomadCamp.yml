@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_Travel_NomadCamp
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_NomadCamp_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_NomadCamp_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_NomadCamp_3
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_NomadCamp_4
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [896, 1138]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [896, 1138]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_NomadCamp]
+LoadoutImageId: FO_DF_03_Inox
+UnlockCondition:
+    - UnlockedVillage: TheShiftingSands
+    - Chapter: [4,1]  
+StartingVillage: TheShiftingSands
+EndingVillage: NomadCamp
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_NomadCamp, 100]

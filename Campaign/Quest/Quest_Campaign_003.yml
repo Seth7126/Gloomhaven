@@ -1,0 +1,29 @@
+Parser: Quest
+ID: Quest_Campaign_003
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_003
+LoadoutImageId: FO_DF_04_Inox
+NarrativeTextImageOverride:
+    - [Quest_Campaign_003_OUTRO_GH_1, 003_OUTRO_GH_1_Art]
+    - [Quest_Campaign_003_OUTRO_GH_2, 003_OUTRO_GH_2_Art]
+    - [Quest_Campaign_003_OUTRO_GH_3, 003_OUTRO_GH_3_Art]
+    - [Quest_Campaign_003_OUTRO_GH_4, 003_OUTRO_GH_4_Art]
+    - [Quest_Campaign_003_OUTRO_GH_5, 003_OUTRO_GH_5_Art]
+    - [Quest_Campaign_003_OUTRO_GH_6, 003_OUTRO_GH_1_Art]
+    - [Quest_Campaign_003_OUTRO_GH_7, 003_OUTRO_GH_7_Art]
+    - [Quest_Campaign_003_OUTRO_GH_8, 003_OUTRO_GH_8_Art]
+    - [Quest_Campaign_003_OUTRO_GH_9, 003_OUTRO_GH_10_Art]
+    - [Quest_Campaign_003_OUTRO_GH_10, 003_OUTRO_GH_8_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_002
+BlockCondition:
+    - CompletedQuest: Quest_Campaign_008
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: DaggerForest
+
+Scenario:
+    MapLocation: [647, 970]
+    ScenarioPool: 
+      - [Scenario_Campaign_003, 100]

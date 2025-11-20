@@ -1,0 +1,22 @@
+Parser: EnemyCard
+ID: 635
+Initiative: 8
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: -1
+        Trap1:
+            Trap:
+                TrapName: BearTrap
+                Damage: 4
+            SpawnDelay: 1.57            
+            Range: 1
+            RangeIsBase: True
+            AnimOverload: LayTrap
+            Text: "$635$"
+            TextOnly: True
+    Consumes:
+        CAny:
+            Elements: Any
+            Infuse: Fire

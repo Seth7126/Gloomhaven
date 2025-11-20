@@ -1,0 +1,8 @@
+Parser: TreasureTable
+TT_Quest_Story_Summoner_1:
+  UnlockQuest: Quest_Story_Summoner_2
+  
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: SummonerID    
+  

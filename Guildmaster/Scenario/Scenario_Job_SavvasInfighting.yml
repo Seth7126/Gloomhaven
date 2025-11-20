@@ -1,0 +1,71 @@
+Parser: Scenario
+ID: Scenario_Job_SavvasInfighting
+BaseBiome: Cave
+BaseTheme: Volcanic
+BaseTone: Spectral
+ScenarioMeshes: [DGN_Cave_07_MAT]
+ChestTreasureTables: [TT_Chapter_1_1_Chest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_SavvasInfighting_Start_1
+          Character: Trainer
+        - Text: SCENARIO_JOB_SavvasInfighting_Start_2
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_SavvasInfighting_Success_1
+          Character: Narrator
+        - Text: SCENARIO_JOB_SavvasInfighting_Success_2
+          Character: Trainer
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:
+            Result: Win                  
+    Rooms:
+        Room1:
+            Threat: 138
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: SavvasLavaflowFriends
+                    TerrainHotCoals: [100, 100] 
+                    TerrainRubble: [100, 100] 
+                    Enemy2Monsters:
+                        - [SavvasIcestormID, 1, 1, 0, 1] 
+                        - [SavvasIcestormEliteID, 0, 0, 1, 1] 
+                        - [WindDemonID, 1, 1, 2, 0] 
+                        - [WindDemonEliteID, 0, 0, 0, 1] 
+                        - [FrostDemonID, 2, 1, 0, 0] 
+                        - [FrostDemonID, 0, 0, 1, 1] 
+        Room2:
+            Threat: 176
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    Theme: Ice
+                    MonsterGroup: SavvasLavaflowFriends
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]                    
+                    TwoHexObstacles: [100, 50]
+                    Enemy2Monsters:
+                        - [SavvasIcestormID, 1, 0, 2, 0] 
+                        - [SavvasIcestormEliteID, 0, 1, 0, 2] 
+                        - [WindDemonID, 1, 1, 0, 1] 
+                        - [WindDemonEliteID, 0, 0, 1, 0] 
+                        - [FrostDemonID, 2, 0, 2, 1] 
+                        - [FrostDemonID, 0, 0, 0, 0] 
+        Room3:
+            Threat: 200
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    MonsterGroup: SavvasLavaflowFriends
+                    TerrainHotCoals: [100, 100, 100, 100] 
+                    TerrainRubble: [100, 100] 
+                    TreasureChestChance: [33]
+                    Enemy2Monsters:
+                        - [SavvasIcestormID, 1, 0, 2, 0] 
+                        - [SavvasIcestormEliteID, 0, 1, 0, 2] 
+                        - [WindDemonID, 1, 1, 0, 1] 
+                        - [WindDemonEliteID, 0, 0, 1, 0] 
+                        - [FrostDemonID, 2, 0, 2, 1] 
+                        - [FrostDemonID, 0, 0, 0, 0] 

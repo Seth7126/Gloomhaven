@@ -1,0 +1,79 @@
+Parser: Scenario
+ID: Scenario_Story_Tinkerer_1
+BaseBiome: Cave
+BaseTone: Natural
+MonsterFamily: Bandit
+ScenarioMeshes: [DGN_Cave_01_MAT]
+ChestTreasureTables: [TT_Tinkerer_1_Chest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_TINKERER_1_START_1
+          Character: Narrator
+    DialogueLines:
+        - Text: SCENARIO_STORY_TINKERER_1_START_2
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_TINKERER_1_SUCCESS_1
+          Character: Trainer
+
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:       
+            Result: Win
+        LootX: 
+            Result: Win
+            LootAmount: [1,1,1,1]
+            Filter:
+                LootType: GoalChest   
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]                
+            Filter:
+                ActorType: Player
+                PlayerClasses: [TinkererID]                
+            ObjectiveDescription: Scenario_Story_Tinkerer_Character_Fail_Objective 
+                
+    Rooms:
+        Room1:
+            Threat: 50
+            PossibleRooms:
+                - SmallEmptyRoom:
+                    MonsterGroup: HoundsVipers
+                    OneHexObstacles: [100] 
+                    Traps: [100]
+        Room2:
+            Threat: 50
+            PossibleRooms:
+                - ShortEmptyCorridor:
+                    MonsterGroup: HoundsVipers
+                    TwoHexObstacles: [100]
+                    Traps: [100,100]
+                    GoldPiles: [100]
+        Room3:
+            Threat: 75
+            PossibleRooms:
+                - EmptyRandomCorridor:
+                    MonsterGroup: HoundsVipersBears
+                    OneHexObstacles: [100] 
+                    Traps: [100]
+        Room4:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_TINKERER_1_ROOM_4_1
+                      Character: Narrator
+                    - Text: SCENARIO_STORY_TINKERER_1_ROOM_4_2
+                      Character: Trainer
+        
+            Threat: 125
+            PossibleRooms:
+                - EmptySummoningCircle:
+                    MonsterGroup: HoundsVipersBears
+                    TwoHexObstacles: [100,100]
+                    Traps: [100,100]
+                    GoldPiles: [100]
+                    GoalChest: [TT_Tinkerer_1_Chest]
+

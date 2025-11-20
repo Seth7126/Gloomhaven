@@ -1,0 +1,26 @@
+Parser: Achievement
+ID: Achievement_Soothsinger_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Soothsinger_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Soothsinger_3_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        SoothsingerID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: SoothsingerID    
+        Filter: UseAbility
+        AbilityTypes: [Curse]
+        Value: 25
+        CharacterTypes:
+            Target: [Enemy]     
+
+     
+
+TreasureTables: [TT_Achievement_Soothsinger]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 289
+ 

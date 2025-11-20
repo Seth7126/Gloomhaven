@@ -1,0 +1,399 @@
+Parser: TreasureTable
+
+#TT_Quest_Campaign_001:
+
+TT_Quest_Campaign_002:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    Prosperity: 1
+
+TT_Quest_Campaign_003:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 15
+    Prosperity: 1
+
+#TT_Quest_Campaign_004:
+    
+#TT_Quest_Campaign_005:
+
+TT_Quest_Campaign_006:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+
+#TT_Quest_Campaign_007:
+    
+TT_Quest_Campaign_008:
+    Reputation: 2
+
+TT_Quest_Campaign_009:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 20
+    Prosperity: 1
+
+#TT_Quest_Campaign_010:
+
+TT_Quest_Campaign_011:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 15
+    Reputation: -2
+    Prosperity: 2
+    ItemStocks: [SkullbaneAxeID,SkullbaneAxeID]
+    UnlockAchievement: Achievement_CityRuleEconomic
+
+
+TT_Quest_Campaign_012:
+    Reputation: 4
+    ItemStocks: [SkullbaneAxeID]
+
+#TT_Quest_Campaign_013:
+
+TT_Quest_Campaign_014:
+  UnlockEnhancer: True
+  Enhancements: [PlusAttack, PlusMove, PlusRange, PlusShield, PlusPush, PlusPull, PlusPierce, PlusRetaliate, PlusHeal, PlusTarget, PlusRetaliateRange, SummonMove, SummonAttack, SummonRange, SummonHP, Area, Air, AnyElement, Dark, Earth, Fire, Ice, Light, Curse, Disarm, Immobilize, Muddle, Poison, Wound, Jump, Bless, Strengthen]
+
+TT_Quest_Campaign_015:
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 20
+    
+#TT_Quest_Campaign_016:
+
+TT_Quest_Campaign_017:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 25
+
+#TT_Quest_Campaign_018:
+
+
+TT_Quest_Campaign_019:
+    Prosperity: 1
+
+
+TT_Quest_Campaign_020:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 20
+    Reputation: 2
+    Prosperity: 1
+
+
+TT_Quest_Campaign_021:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 50
+    Prosperity: 1
+    CityEvent: Event_City_Campaign_78ID
+    
+#TT_Quest_Campaign_022:
+
+#TT_Quest_Campaign_023:
+
+#TT_Quest_Campaign_024:
+
+#TT_Quest_Campaign_025:
+
+TT_Quest_Campaign_026:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    Reputation: 1
+    Prosperity: 2
+
+TT_Quest_Campaign_027:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 100
+    Prosperity: 1
+    #Enhancements
+
+#TT_Quest_Campaign_028:
+
+
+TT_Quest_Campaign_029:
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 15
+
+TT_Quest_Campaign_030:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+
+#TT_Quest_Campaign_031:
+
+#TT_Quest_Campaign_032:
+
+#TT_Quest_Campaign_033:
+
+TT_Quest_Campaign_034:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 20
+    Reputation: 2
+    Prosperity: 1
+
+TT_Quest_Campaign_035:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 30
+    Reputation: -5
+    Prosperity: -2
+    CityEvent: Event_City_Campaign_79ID
+    LockAchievement: Achievement_CityRuleEconomic
+
+TT_Quest_Campaign_036:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    Reputation: 4
+    CityEvent: Event_City_Campaign_78ID
+
+#TT_Quest_Campaign_037:
+
+TT_Quest_Campaign_038:
+    Reputation: 1
+
+TT_Quest_Campaign_039:
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+
+#TT_Quest_Campaign_040:
+
+TT_Quest_Campaign_041:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 50
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 25
+    Prosperity: 2
+    #PerkTick: 2
+
+#TT_Quest_Campaign_042:
+
+#TT_Quest_Campaign_043:
+
+TT_Quest_Campaign_044:
+    Reputation: 2
+    UnlockCharacter: DoomstalkerID
+
+TT_Quest_Campaign_045:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 20
+    Reputation: -2
+
+#TT_Quest_Campaign_046:
+
+#TT_Quest_Campaign_047:
+
+#TT_Quest_Campaign_048:
+     
+TT_Quest_Campaign_049:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 50
+    Reputation: -3
+
+TT_Quest_Campaign_050:
+    Prosperity: -2
+    Reputation: 3
+
+TT_Quest_Campaign_051:
+    Prosperity: 5
+    Reputation: 5
+    CityEvent: Event_City_Campaign_81ID
+    RoadEvent: Event_Road_Campaign_69ID
+
+#TT_Quest_Campaign_052:
+
+TT_Quest_Campaign_053:
+    Group:
+        Item: StaffOfXornID
+        GiveToCharacterRequirementType: CharacterHasPersonalQuest
+        GiveToCharacterRequirementCheckID: PERSONALQUEST_Seeker_of_Xorn
+        GiveToCharacterType: Equip
+
+#TT_Quest_Campaign_054:
+    #Retire Staff of Xorn Wielder
+#    UnlockCharacter: PlagueheraldID
+    CityEvent: Event_City_Campaign_59ID
+    RoadEvent: Event_Road_Campaign_59ID
+    
+TT_Quest_Campaign_055:
+    Gold:
+        TreasureDistributionType: Combined
+        Amount: 10
+
+TT_Quest_Campaign_056:
+#    UnlockCharacter: BeastTyrantID
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    Reputation: 2
+
+TT_Quest_Campaign_057:
+    Reputation: 1
+
+TT_Quest_Campaign_058:
+    #Vengeance Personal Quest
+    #Envelope X
+    Reputation: 2
+
+#TT_Quest_Campaign_059:
+
+TT_Quest_Campaign_060:
+    #Finding The Cure Personal Quest
+    #Envelope X
+    Prosperity: 1
+
+#TT_Quest_Campaign_061:
+
+TT_Quest_Campaign_062:
+    #Fall of Man Personal Quest
+#    UnlockCharacter: NightshroudID
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    
+
+TT_Quest_Campaign_063:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 15
+
+TT_Quest_Campaign_064:
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+
+TT_Quest_Campaign_065:
+    ItemStocks: [AncientDrillID, AncientDrillID]
+
+#TT_Quest_Campaign_066:
+
+TT_Quest_Campaign_067:
+    Item: PowerCoreID
+
+TT_Quest_Campaign_068:
+    Item: MajorHealingPotionID
+    Item: MajorHealingPotionID
+
+TT_Quest_Campaign_069:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 15
+
+TT_Quest_Campaign_070:
+    Prosperity: 2
+
+TT_Quest_Campaign_071:
+    Item: MajorPowerPotionID
+    Item: MajorPowerPotionID
+
+
+TT_Quest_Campaign_072:
+    Prosperity: 1
+    Reputation: 1
+
+TT_Quest_Campaign_073:
+    Reputation: 1
+
+
+TT_Quest_Campaign_074:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    Prosperity: 2
+
+TT_Quest_Campaign_075:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 60
+
+
+#TT_Quest_Campaign_076:
+
+TT_Quest_Campaign_077:
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+
+TT_Quest_Campaign_078:
+    Reputation: 3
+
+TT_Quest_Campaign_079:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 15
+
+TT_Quest_Campaign_080:
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+
+TT_Quest_Campaign_081:
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+
+#TT_Quest_Campaign_082:
+#    Reputation: 0
+    # Reputation: -1
+    # Prosperity: -2
+
+TT_Quest_Campaign_083:
+    Gold:
+        TreasureDistributionType: Combined
+        Amount: 40
+
+TT_Quest_Campaign_084:
+    Prosperity: 1
+    Item: ResonantCrystalID
+
+TT_Quest_Campaign_085:
+    Item: OrbOfDawnID
+
+TT_Quest_Campaign_086:
+    Reputation: 2
+
+TT_Quest_Campaign_087:
+    Reputation: 1
+    Prosperity: 1
+
+TT_Quest_Campaign_088:
+    Item: StaffOfSummoningID
+
+TT_Quest_Campaign_089:
+    Gold:
+        TreasureDistributionType: Combined
+        Amount: 50
+
+TT_Quest_Campaign_090:
+    Item: BlackCenserID
+
+TT_Quest_Campaign_091:
+    PerkCheck: 2
+
+TT_Quest_Campaign_092:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    Reputation: -3
+
+TT_Quest_Campaign_093:
+    XP:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+
+#TT_Quest_Campaign_094:
+
+TT_Quest_Campaign_095:
+    Item: SkullOfHatredID

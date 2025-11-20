@@ -1,0 +1,10 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario23_Heal_To_Full_On_Lethal
+ScenarioAbility:
+    APrevent:
+        PreventDamage: 1
+        PreventOnlyIfLethal: True
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: PreventAndFullyHeal
+            Hidden: True

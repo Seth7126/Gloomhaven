@@ -1,0 +1,36 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BackupAmmunition$
+Character: CragheartID
+ID: 121
+Level: 1
+Initiative: 77
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TActive:
+                AddTarget: 1
+                Filter: Self
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: BuffTarget
+                    ValidAbilityType: Attack
+                    AttackType: Ranged
+                    XPTracker: [1,1,1,1]
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 3
+                    Enhancements: 1
+Layout:
+    Top:
+        - Active:
+            Ability: TActive
+            ListLayout: "$121_T$"
+            Layout: "$121_T$"
+            Icon: "Target"
+        - Row: "<size=50%> "
+        - XPTracker: TActive
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"

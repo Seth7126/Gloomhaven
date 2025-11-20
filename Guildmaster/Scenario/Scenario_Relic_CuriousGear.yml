@@ -1,0 +1,101 @@
+Parser: Scenario
+ID: Scenario_Relic_CuriousGear
+BaseBiome: Forest
+BaseSubBiome: Default
+BaseTheme: Default
+BaseSubTheme: Default
+BaseTone: ForestDefault
+MonsterFamily: Inox
+ScenarioMeshes: [DGN_Forest_04_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_RELIC_CuriousGear_Start_1
+          Character: InoxArcherElite
+        - Text: SCENARIO_RELIC_CuriousGear_Start_2
+          Character: InoxArcherElite
+        - Text: SCENARIO_RELIC_CuriousGear_Start_3
+          Character: Narrator
+        - Text: SCENARIO_RELIC_CuriousGear_Start_4
+          Character: Merchant
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_RELIC_CuriousGear_Success_1
+          Character: Narrator
+        - Text: SCENARIO_RELIC_CuriousGear_Success_2
+          Character: Merchant
+ScenarioLayout:
+    Objectives:
+        ReachRound:
+            Result: Win
+            ReachRound: 10
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]
+            Filter:
+                ActorType: Player
+                PlayerClasses: [TinkererID]
+        LootX: 
+            Result: Win
+            LootAmount: [1,1,1,1]
+            Filter:
+                LootType: GoalChest                
+    ScenarioModifiers:
+        SM1:
+            Type: TriggerAbility
+            TriggerPhase: EndTurn
+            ScenarioAbilityID: ScenarioAbility_Damage1_Self
+            Filter:
+                ActorType: [Player, Summon]
+        SM2:
+            Type: ApplyConditionToActor
+            IsPositive: True
+            TriggerPhase: StartScenario
+            Conditions: [Strengthen]
+            ConditionDecrementTrigger: Never
+            Filter:
+                ActorType: [Player, Summon]
+    Rooms:
+        Room1:
+            Threat: 250
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    GoalChest: [£CuriousGearID£]                
+                    Theme: DeepForestGlade
+                    OneHexObstacles: [50,50] 
+                    TwoHexObstacles: [20,20]
+                    Traps: [100,50,20]
+                    GoldPiles: [50,20]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [InoxArcherID,   HoundID,          InoxArcherEliteID,  InoxArcherID]
+                                - SpawnClasses: [Empty,         InoxArcherID,    InoxArcherID,        HoundEliteID]
+                                - SpawnClasses: [InoxGuardID,    InoxGuardID,     InoxGuardID,         CaveBearID]
+                                - SpawnClasses: [Empty,         Empty,          HoundID,              InoxGuardEliteID]
+                            Easy:
+                                - SpawnClasses: [InoxArcherID,   HoundID,          InoxArcherID,        InoxArcherID]
+                                - SpawnClasses: [Empty,         Empty,          InoxArcherID,        HoundEliteID]
+                                - SpawnClasses: [InoxGuardID,    InoxGuardID,     InoxGuardID,         CaveBearID]
+                                - SpawnClasses: [Empty,         Empty,          HoundID,              InoxGuardID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [Empty,         Empty,          InoxArcherID,        HoundEliteID]
+                                - SpawnClasses: [InoxGuardID,    InoxGuardID,     InoxGuardID,         CaveBearID]
+                                - SpawnClasses: [Empty,         Empty,          HoundID,              InoxGuardEliteID]
+                                - SpawnClasses: [InoxArcherID,   HoundID,          InoxArcherEliteID,  InoxArcherID]
+                            Easy:
+                                - SpawnClasses: [Empty,         Empty,          InoxArcherID,        HoundEliteID]
+                                - SpawnClasses: [InoxGuardID,    InoxGuardID,     InoxGuardID,         CaveBearID]
+                                - SpawnClasses: [Empty,         HoundID,          HoundID,              InoxGuardID]
+                                - SpawnClasses: [InoxArcherID,   HoundID,          InoxArcherID,        InoxArcherID]

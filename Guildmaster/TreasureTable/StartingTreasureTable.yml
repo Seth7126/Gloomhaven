@@ -1,0 +1,59 @@
+Parser: TreasureTable
+StartingTreasureTable:
+
+  UnlockProsperityItemStocks: [WingedShoesID, WingedShoesID, HideArmorID, HideArmorID, LeatherArmorID, CloakOfInvisibilityID, EagleEyeGogglesID, HeaterShieldID, HeaterShieldID, PiercingBowID, PiercingBowID, WarHammerID, WarHammerID, PoisonDaggerID, MinorHealingPotionID, MinorHealingPotionID, MinorHealingPotionID, MinorHealingPotionID, MinorHealingPotionID, MinorStaminaPotionID, MinorStaminaPotionID, MinorStaminaPotionID, MinorStaminaPotionID, MinorPowerPotionID, MinorPowerPotionID, MinorPowerPotionID, MinorPowerPotionID, MinorPowerPotionID ]
+
+  Enhancements: [PlusAttack, PlusMove, PlusRange, PlusShield, PlusPush, PlusPull, PlusPierce, PlusRetaliate, PlusHeal, PlusTarget, PlusRetaliateRange, SummonMove, SummonAttack, SummonRange, SummonHP, Area] 
+  
+  UnlockChapter: [1,0]
+  Item: ResonantCrystalID
+
+  Group:
+    GiveToCharacter: SpellweaverID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: MinorPowerPotionID
+  Group:
+    GiveToCharacter: SpellweaverID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: CloakOfInvisibilityID
+  
+  Group:
+    GiveToCharacter: TinkererID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: EagleEyeGogglesID
+
+  Group:
+    GiveToCharacter: BruteID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: BootsOfStridingID
+  Group:
+    GiveToCharacter: BruteID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: MinorHealingPotionID
+  
+  Group:
+    GiveToCharacter: MindthiefID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: PoisonDaggerID
+  Group:
+    GiveToCharacter: MindthiefID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: MinorStaminaPotionID
+    
+  Group:
+    GiveToCharacter: ScoundrelID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: LeatherArmorID
+  Group:
+    GiveToCharacter: ScoundrelID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: MinorStaminaPotionID   
+
+  Group:
+    GiveToCharacter: CragheartID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: BootsOfStridingID  
+  Group:
+    GiveToCharacter: CragheartID
+    GiveToCharacterType: Equip
+    UnlockProsperityItem: MinorPowerPotionID

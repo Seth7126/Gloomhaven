@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_Spellweaver_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Spellweaver_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Spellweaver_3_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        SpellweaverID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: SpellweaverID    
+        Filter: UseAbility
+        AbilityTypes: [RecoverLostCards]
+        Value: 30
+   
+
+
+TreasureTables: [TT_Achievement_Spellweaver]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 292
+ 

@@ -1,0 +1,31 @@
+Parser: Quest
+ID: Quest_Story_UndeadCommander
+Chapter: 1
+QuestType: Story
+IconType: Boss
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_UndeadCommander_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_UndeadCommander_2
+      Character: Merchant
+    - Text: Message_End_Quest_Story_UndeadCommander_3
+      Character: Merchant
+CompletionRewards: TT_Quest_Story_UndeadCommander
+LoadoutImageId: ICE_Cave_01_Undead
+UnlockRevealFoWSphere:
+    - MapLocation: [1814, 312]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Soothsinger_3
+    - CompletedQuest: Quest_Story_Elementalist_3
+
+RequiredCharacters:
+  - Character: SoothsingerID
+    Level: 6
+  - Character: ElementalistID  
+    Level: 6
+StartingVillage: Summerwell
+EndingVillage: Summerwell
+Scenario:
+    MapLocation: [1814, 312]
+    ScenarioPool: [Scenario_Story_UndeadCommander, 100]

@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Travel_Keyport
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Keyport_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Keyport_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Keyport_3
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [286, 336]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [286, 336]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_Keyport]
+LoadoutImageId: TO_ST_01_Militia
+UnlockCondition:
+    - UnlockedVillage: ShimmeringShallows
+    - Chapter: [3,1]  
+StartingVillage: Millpond
+EndingVillage: Keyport
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Keyport, 100]

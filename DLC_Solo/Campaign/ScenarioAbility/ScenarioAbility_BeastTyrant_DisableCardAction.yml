@@ -1,0 +1,16 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_BeastTyrant_DisableCardAction
+ScenarioAbility:
+    ADisableCardAction:
+        DisableCardAction:
+            CardName: Disorienting Roar
+            DisableActionType: BottomAction
+        IgnoreStun: True
+        Range: 1
+        Target: 1
+        Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            ListLayoutOverride: [$Scenario_SOLO_BeastTyrant_TheCagedBear_Modifier_2$, Poison]
+        AutoTrigger: True
+        SkipAnim: True 

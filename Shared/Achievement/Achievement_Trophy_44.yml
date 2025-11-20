@@ -1,0 +1,15 @@
+Parser: Achievement
+ID: Achievement_Trophy44
+LocalisedName: $TROPHY_ACHIEVEMENT_44$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_44_Desc$
+AchievementCondition:
+    - Targets:
+        CharacterIDs: QuartermasterID
+        Filter: UseAbility
+        AbilityTypes: Attack
+        Value: 4
+        SubFilter: Round
+TreasureTables: [TT_Achievement_Trophy44]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4044

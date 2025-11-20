@@ -1,0 +1,24 @@
+Parser: EnemyCard
+ID: 739
+Initiative: 54
+Shuffle: False
+Data:
+    Abilities:
+        Debuff:
+            Wound: True
+            Condition: Poison
+            Range: 1
+            RangeIsBase: True
+            Target: -1
+            TargetIsBase: True
+            Filter: Enemy
+            ShowRange: False
+            Text: "$Target_AllAdjacentEnemies$"
+            AnimOverload: RadialAttack
+        Attack2:
+            Attack: 0
+            Range: 4
+            RangeIsBase: True
+            Filter: Enemy
+            AnimOverload: RangedAttack
+            

@@ -1,0 +1,15 @@
+Parser: Achievement
+ID: Achievement_Trophy41
+LocalisedName: $TROPHY_ACHIEVEMENT_41$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_41_Desc$
+AchievementCondition:
+    - Targets:
+        CharacterIDs: CragheartID
+        Filter: UseAbility
+        AbilityTypes: Create
+        Amount: 6
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy41]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4041

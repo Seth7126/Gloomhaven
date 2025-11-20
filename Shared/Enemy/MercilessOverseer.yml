@@ -1,0 +1,129 @@
+Parser: Enemy
+ID: MercilessOverseerID
+LocKey: $MercilessOverseer$
+MonsterType: Boss
+Model: Merciless Overseer
+StandeeLimit: 1
+PredominantlyMelee: True
+AbilityCards: [57200017,57300018,57400019,57500020,57600021,57700022,57800023,57900024]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 2
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Disarm, Curse, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 6
+        Attack:
+            BasedOn: ActorCount
+            Filter:
+                EnemyClasses: [VermlingScoutID, VermlingScoutEliteID]
+Level1:
+    Health: 0
+    Move: 2
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Disarm, Curse, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 8
+        Attack:
+            BasedOn: ActorCount
+            Filter:
+                EnemyClasses: [VermlingScoutID, VermlingScoutEliteID]
+Level2:
+    Health: 0
+    Move: 3
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Disarm, Curse, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 9
+        Attack:
+            BasedOn: ActorCount
+            Filter:
+                EnemyClasses: [VermlingScoutID, VermlingScoutEliteID]
+Level3:
+    Health: 0
+    Move: 3
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Disarm, Curse, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 11
+        Attack:
+            BasedOn: ActorCount
+            Filter:
+                EnemyClasses: [VermlingScoutID, VermlingScoutEliteID]
+Level4:
+    Health: 0
+    Move: 4
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Disarm, Curse, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 12
+        Attack:
+            BasedOn: ActorCount
+            Filter:
+                EnemyClasses: [VermlingScoutID, VermlingScoutEliteID]
+Level5:
+    Health: 0
+    Move: 4
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Disarm, Curse, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 14
+        Attack:
+            BasedOn: ActorCount
+            Filter:
+                EnemyClasses: [VermlingScoutID, VermlingScoutEliteID]
+Level6:
+    Health: 0
+    Move: 4
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Disarm, Curse, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 16
+        Attack:
+            BasedOn: ActorCount
+            Filter:
+                EnemyClasses: [VermlingScoutID, VermlingScoutEliteID]
+Level7:
+    Health: 0
+    Move: 4
+    Attack: 1
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Disarm, Curse, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 19
+        Attack:
+            BasedOn: ActorCount
+            Filter:
+                EnemyClasses: [VermlingScoutID, VermlingScoutEliteID]

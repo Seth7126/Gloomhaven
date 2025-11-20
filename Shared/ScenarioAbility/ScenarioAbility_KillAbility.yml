@@ -1,0 +1,6 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_KillAbility
+ScenarioAbility:
+    TKill:
+        Kill: True
+        Filter: Self

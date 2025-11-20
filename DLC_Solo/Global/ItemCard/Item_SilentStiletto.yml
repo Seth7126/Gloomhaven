@@ -1,0 +1,31 @@
+Parser: ItemCard
+ID: 137
+StringID: SilentStilettoID
+Name: $ITEM_NAME_SilentStiletto$
+Art: Silent Stiletto
+TotalInGame: 1
+Cost: 50
+Slot: OneHand 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+ValidEquipCharacterClassIDs: ScoundrelID
+Tradeable: False
+Data: 
+    Abilities:
+        AAttack:
+            Attack: 0
+            AttackEffect:
+                Type: StandardBuff
+                Pierce: 1
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: BuffAttack
+Layout: 
+    - Active:
+        Ability: AAttack
+        ListLayout: "$Item_SilentStiletto$"
+        Layout: "$Item_SilentStiletto$"
+        Icon: "Damage"
+    - Row: "<size=50%> "

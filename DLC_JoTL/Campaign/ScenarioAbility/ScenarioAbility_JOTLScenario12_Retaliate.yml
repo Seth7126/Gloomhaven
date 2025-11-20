@@ -1,0 +1,17 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario12_Retaliate
+ScenarioAbility:
+    ARetaliate:
+        Retaliate: 1
+        RetaliateRange: All
+        StatIsBasedOnX:
+            Strength:
+                BasedOn: LevelTimesXPlusY
+                Multiplier: 0.5
+                SecondVariable: 1
+        Target: -1
+        Filter: [Self]
+        BypassImmunity: True
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: Retaliate

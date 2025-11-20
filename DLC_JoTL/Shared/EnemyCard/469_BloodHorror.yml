@@ -1,0 +1,18 @@
+Parser: EnemyCard
+ID: 11469
+Initiative: 14
+Shuffle: False
+Data:
+    Abilities:
+        Move1:
+            Move: 0
+        Attack1:
+            Attack: 0
+            Filter: Enemy
+        ARevive:
+            Revive: LivingCorpseEliteID
+            Target: -1
+            Targeting: Room
+            AnimOverload: ResurrectAll
+            TextOnly: True
+            Text: $Boss_BloodHorror_Special1$

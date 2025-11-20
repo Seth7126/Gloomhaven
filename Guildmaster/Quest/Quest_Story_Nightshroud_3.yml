@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Story_Nightshroud_3
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Nightshroud_3_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Nightshroud_3_2
+      Character: Merchant
+    - Text: Message_End_Quest_Story_Nightshroud_3_3
+      Character: Merchant
+CompletionRewards: TT_Quest_Story_Nightshroud_3
+LoadoutImageId: ICE_Cave_01
+UnlockRevealFoWSphere:
+    - MapLocation: [944, 1370]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Nightshroud_2
+RequiredCharacters:
+  - Character: NightshroudID  
+    Level: 5  
+StartingVillage: CrystalHollow
+EndingVillage: CrystalHollow
+
+Scenario:
+    MapLocation: [944, 1370]
+    ScenarioPool: [Scenario_Story_Nightshroud_3, 100]

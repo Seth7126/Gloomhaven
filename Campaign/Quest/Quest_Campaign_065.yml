@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_065
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_065
+LoadoutImageId: CA_Mine_02
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_RandomScenario65
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: WatcherMountains
+IconType: Side
+
+Scenario:
+    MapLocation: [874, 1566]
+    ScenarioPool: 
+      - [Scenario_Campaign_065, 100]

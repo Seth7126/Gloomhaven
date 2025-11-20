@@ -1,0 +1,73 @@
+Parser: Enemy
+ID: LurkerID
+LocKey: $Lurker$
+MonsterType: Monster
+StandeeLimit: 6
+Model: Lurker
+PredominantlyMelee: True
+AbilityCards: [612,613,614,615,616,617,618,619]
+# Base Stats
+Level0:
+    Health: 5
+    Move: 2
+    Attack: 2
+    Range: 1
+    Target: 2
+    Shield: 0
+    Pierce: 0
+Level1:
+    Health: 7
+    Move: 2
+    Attack: 2
+    Range: 1
+    Target: 2
+    Shield: 0
+    Pierce: 1
+Level2:
+    Health: 9
+    Move: 3
+    Attack: 2
+    Range: 1
+    Target: 2
+    Shield: 0
+    Pierce: 1
+ Level3:
+    Health: 10
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 2
+    Shield: 0
+    Pierce: 2
+ Level4:
+    Health: 10
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 2
+    Shield: 1
+    Pierce: 2
+ Level5:
+    Health: 11
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 2
+    Shield: 1
+    Pierce: 2
+ Level6:
+    Health: 12
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 2
+    Shield: 1
+    Pierce: 3    
+ Level7:
+    Health: 14
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 2
+    Shield: 1
+    Pierce: 3

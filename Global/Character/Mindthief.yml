@@ -1,0 +1,14 @@
+Parser: Character
+ID: MindthiefID
+LocKey: $Mindthief$
+Model: Mindthief
+DefaultSkin: 1
+# PlayerLevel:  [  1,   2,   3,   4,   5,   6,   7,   8,   9 ]
+HealthTable:    [  6,   7,   8,   9,  10,  11,  12,  13,  14 ]
+NumberAbilityCardsInBattle: 10
+Role: $Mindthief_ROLE$
+Description: $Mindthief_DESCRIPTION$
+Difficulty: $DIFFICULTY_HIGH$
+Strengths: $Mindthief_STRENGTHS$
+Weaknesses: $Mindthief_WEAKNESSES$
+Adventure_Description: $Mindthief_ADVENTURE_DESCRIPTION$

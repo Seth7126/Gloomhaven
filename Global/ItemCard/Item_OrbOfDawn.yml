@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 121
+StringID: OrbOfDawnID
+Name: $ITEM_NAME_OrbofDawn$
+Art: Orb of Dawn
+TotalInGame: 1
+Cost: 50
+Slot: OneHand 
+Rarity: Relic
+Usage: Unrestricted
+Trigger: DuringOwnTurn
+Consumes: Dark
+Data: 
+    Abilities:
+        AInfuse:
+            Infuse: Light
+            Filter: Self
+Layout: 
+    - Row: $Item_OrbOfDawn$

@@ -1,0 +1,23 @@
+Parser: Quest
+ID: Quest_JOTL_008_HiddenTumor
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_008_HiddenTumor
+LoadoutImageId: 008_HiddenTumor_Loadout
+#NarrativeTextImageOverride:
+#    - [Quest_Campaign_001_INTRO_GH_1, 001_Intro_GH_1_Art]
+#    - [Quest_Campaign_001_INTRO_GH_2, 001_Intro_GH_2_Art]
+#    - [Quest_Campaign_001_INTRO_GH_3, 001_Intro_GH_3_Art]
+#    - [Quest_Campaign_001_INTRO_GH_4, 001_Intro_GH_4_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_JOTL_006_CorruptedResearch
+BlockCondition:
+    - CompletedQuest: Quest_JOTL_007_SunkenTumor    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLBoss
+Scenario:
+    MapLocation: [1313, 949]
+    ScenarioPool: 
+      - [Scenario_JOTL_008_HiddenTumor, 100]

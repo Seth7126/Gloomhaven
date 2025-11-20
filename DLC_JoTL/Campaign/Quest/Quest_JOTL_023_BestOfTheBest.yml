@@ -1,0 +1,23 @@
+Parser: Quest
+ID: Quest_JOTL_023_BestOfTheBest
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_023_BestOfTheBest
+LoadoutImageId: 023_BestOfTheBest_Loadout
+#NarrativeTextImageOverride:
+#    - [Quest_Campaign_001_INTRO_GH_1, 001_Intro_GH_1_Art]
+UnlockCondition:
+    - CompletedAchievement: Achievement_JOTL_023_BestOfTheBest
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLSide
+RequiredCharacters:
+  - Character: HatchetID 
+    Level: 1  
+  
+Scenario:
+    MapLocation: [1228, 769]
+    ScenarioPool: 
+      - [Scenario_JOTL_023_BestOfTheBest, 100]

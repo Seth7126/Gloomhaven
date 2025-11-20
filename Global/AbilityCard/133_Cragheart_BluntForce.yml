@@ -1,0 +1,62 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BluntForce$
+Character: CragheartID
+ID: 133
+Level: 3
+Initiative: 21
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 4
+                    Enhancements: 2
+        Consumes:
+            TCEarth:
+                Elements: Earth
+                AbilityOverrides:
+                    TCEarthAttackBuff:
+                        ParentName: TAttack
+                        Strength: 4
+                XP: 2
+        XP: 1
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 2
+                    Enhancements: 1
+            BRetaliate:
+                Retaliate:
+                    Amount: 1
+                    Enhancements: 1
+                Filter: Self
+                AnimOverload: PowerUp
+                ActiveBonusDuration: Round
+        XP: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Consume:
+            Name: TCEarth
+            Text: "+4 $Attack$ <sprite name=Attack>, <sprite name=XP2>"
+        - XP: 1
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "<size=50%> "
+        - Active:
+            Ability: BRetaliate
+            Icon: "Retaliate"
+            ListLayout: "$Retaliate$ <sprite name=Retaliate> *BRetaliate*, $Self$"
+            Layout:
+                - Row: "<b><size=130%>$Retaliate$ <sprite name=Retaliate> *BRetaliate* <size=100%><voffset=1>@BRetaliate@"
+                - Row: "$Self$"
+        - Row: "<size=20%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 1
+            - Column:
+                - Duration: Round

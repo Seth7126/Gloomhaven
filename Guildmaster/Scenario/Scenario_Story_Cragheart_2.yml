@@ -1,0 +1,72 @@
+Parser: Scenario
+ID: Scenario_Story_Cragheart_2
+BaseBiome: Cave
+MonsterFamily: Bandit
+BaseSubTheme: Bandit
+ScenarioMeshes: [DGN_Grave_03_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_CRAGHEART_2_START_1
+          Character: Trainer
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_CRAGHEART_2_START_2
+          Character: Enchantress
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_CRAGHEART_2_SUCCESS_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                ActorType: Player            
+                PlayerClasses: [CragheartID]
+            ObjectiveDescription: Scenario_Story_Cragheart_Character_Fail_Objective                 
+    ScenarioModifiers:
+        SM1:
+            Type: SetElements
+            TriggerPhase: StartRound
+            StrongElements: Earth
+    Rooms:
+        Room1:
+            Threat: 150
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    OneHexObstacles: [100, 50]
+                    TwoHexObstacles: [100, 25]
+                    Traps: [100]
+                    Enemy2Monsters:
+                        - [SpittingDrakeEliteID, 1, 1, 1, 2]                        
+                        - [RendingDrakeEliteID, 1, 1, 1, 1]                        
+                        - [GiantViperEliteID, 0, 0, 2, 2]                        
+        Room2:
+            Threat: 50
+            PossibleRooms:
+                - LongEmptyCorridor:
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100]
+                    Traps: [100]
+                    Enemy2Monsters:
+                        - [SpittingDrakeEliteID, 0, 0, 1, 1]                        
+                        - [RendingDrakeEliteID, 0, 1, 1, 2]                        
+                        - [GiantViperEliteID, 2, 2, 1, 2]                        
+        Room3:
+            Threat: 100
+            PossibleRooms:
+                - SmallEmptyRoom:
+                    TwoHexObstacles: [100, 100]
+                    GoldPiles: [100,100]
+                    Traps: [100,100]
+                    Enemy2Monsters:
+                        - [SpittingDrakeEliteID, 1, 1, 0, 2]                        
+                        - [RendingDrakeEliteID, 0, 0, 1, 1]                        
+                        - [GiantViperEliteID, 2, 2, 2, 2]                        
+    
+    

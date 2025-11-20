@@ -1,0 +1,26 @@
+Parser: Quest
+ID: Quest_Relic_EnduranceFootwraps
+Chapter: 1
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_EnduranceFootwraps_Unlock_1
+      Character: Trainer
+    - Text: QUEST_RELIC_EnduranceFootwraps_Unlock_2
+      Character: Merchant
+      CameraLocation: [1821, 991] 
+CompleteDialogueLines:
+    - Text: QUEST_RELIC_EnduranceFootwraps_Complete_1
+      Character: Merchant
+    - Text: QUEST_RELIC_EnduranceFootwraps_Complete_2
+      Character: Merchant
+LoadoutImageId: CA_DF_01
+UnlockRevealFoWSphere:
+    - MapLocation: [1821, 991]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_3_1_MoveXDistance
+StartingVillage: BoneshatterPass
+EndingVillage: BoneshatterPass
+Scenario:
+    MapLocation: [1821, 991]
+    ScenarioPool: [Scenario_Relic_EnduranceFootwraps, 100]

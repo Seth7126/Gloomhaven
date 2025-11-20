@@ -1,0 +1,22 @@
+Parser: Quest
+ID: Quest_JOTL_012_BeguilingSewers
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_012_BeguilingSewers
+LoadoutImageId: 012_BeguilingSewers_Loadout
+NarrativeTextImageOverride:
+    - [Quest_JOTL_012_BeguilingSewers_OUTRO_GH_1, 012_BeguilingSewers_OUTRO_GH_1_Art]
+    - [Quest_JOTL_012_BeguilingSewers_OUTRO_GH_2, 012_BeguilingSewers_OUTRO_GH_2_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_JOTL_010_TheGauntlet
+BlockCondition:
+    - CompletedQuest: Quest_JOTL_011_DefiledSewers  
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTL
+Scenario:
+    MapLocation: [1286, 596]
+    ScenarioPool: 
+      - [Scenario_JOTL_012_BeguilingSewers, 100]

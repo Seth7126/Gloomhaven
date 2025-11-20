@@ -1,0 +1,21 @@
+Parser: Quest
+ID: Quest_Campaign_061
+Chapter: 1
+QuestType: Story
+LoadoutImageId: CR_RU_02_Demon
+UnlockCondition:
+    - CompletedPersonalQuestStep: PERSONALQUEST_The_Fall_of_Man
+    - PersonalQuestStep: 0
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LinkedQuestID: Quest_Campaign_062
+LocationArea: LingeringSwamp
+IconType: Side
+
+RequiredCharacters:
+  - PersonalQuest: PERSONALQUEST_The_Fall_of_Man
+
+Scenario:
+    MapLocation: [1740, 1556]
+    ScenarioPool: 
+      - [Scenario_Campaign_061, 100]

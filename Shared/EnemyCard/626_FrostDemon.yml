@@ -1,0 +1,17 @@
+Parser: EnemyCard
+ID: 626
+Initiative: 58
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: -1
+        Attack1:
+            Attack: 
+                Amount: -1
+                Pierce: 3
+            Filter: Enemy
+    Consumes:
+        CAny:
+            Elements: Any
+            Infuse: Ice

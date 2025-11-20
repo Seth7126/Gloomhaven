@@ -1,0 +1,34 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario15_Kill_Summon_Stun
+ScenarioAbility:
+    TActiveSummon:
+        AddActiveBonus:
+            Kill: True
+            Target: 1
+            Range: 3
+            TargetIsBase: True
+            Filter:
+                EnemyClasses: ["BlackImpID", "BlackImpEliteID"]
+            SubAbilities:
+                TSummon:
+                    Summons: 
+                        - BloodImpEliteID
+                        - BloodImpEliteID
+                        - BloodImpEliteID
+                        - BloodImpEliteID
+                    Target: 1
+                    TargetIsBase: True
+                    IsInlineSubAbility: True
+                    StartAbilityRequirements:
+                        Type: SubAbility
+                        ActorsKilledByAbility: "> 0"
+                    AnimOverload: Summon      
+                TStunSelf:
+                    Stun: True
+                    Filter: Self   
+                    StartAbilityRequirements:
+                        Type: SubAbility
+                        ActorsKilledByAbility: "> 0"    
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: EndRoundAbility

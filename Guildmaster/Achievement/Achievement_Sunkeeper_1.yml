@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_Sunkeeper_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Sunkeeper_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Sunkeeper_1_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        SunkeeperID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: SunkeeperID    
+        Filter: ModifiersUsed
+        Modifiers: ["x2"]
+        Value: 40         
+
+
+TreasureTables: [TT_Achievement_Sunkeeper]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 296
+
+ 

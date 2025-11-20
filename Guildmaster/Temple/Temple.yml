@@ -1,0 +1,30 @@
+Parser: Temple
+ID: TempleID
+TempleBlessings:
+    - Condition: Bless
+      Quantity: 2
+      GoldCost: 10
+#    - Condition: Strengthen
+#      Quantity: 1
+#      GoldCost: 10
+#    - Condition: Invisible
+#      Quantity: 1
+#      GoldCost: 10
+#    - Condition: Advantage
+#      Quantity: 1
+#      GoldCost: 10
+
+DonationTable:
+  - [100, TT_Chapter_1_1_Chest]
+  - [150, TT_Chapter_1_1_Chest]
+  - [200, TT_Chapter_1_1_Chest]
+  - [250, TT_Chapter_1_1_Chest]
+  - [300, TT_Chapter_1_1_Chest]
+  - [350, TT_Chapter_1_1_Chest]
+  - [400, TT_Chapter_1_1_Chest]
+  - [500, TT_Chapter_1_1_Chest]
+  - [600, TT_Chapter_1_1_Chest]
+  - [700, TT_Chapter_1_1_Chest]
+  - [800, TT_Chapter_1_1_Chest]
+  - [900, TT_Chapter_1_1_Chest]
+  - [1000, TT_Chapter_1_1_Chest]

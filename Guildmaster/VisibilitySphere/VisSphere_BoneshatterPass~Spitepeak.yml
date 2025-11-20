@@ -1,0 +1,8 @@
+Parser: VisibilitySphere
+ID: VisSphere_BoneshatterPass~Spitepeak
+UnlockCondition:
+    - UnlockedVillage: BoneshatterPass
+    - UnlockedVillage: Spitepeak
+SphereDefinitions:
+    - MapLocation: [1749,1100]
+      Radius: 10

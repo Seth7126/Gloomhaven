@@ -1,0 +1,107 @@
+Parser: Enemy
+ID: UndeadCommanderID
+LocKey: $UndeadCommander$
+MonsterType: Boss
+StandeeLimit: 1
+Model: Undead Commander
+PredominantlyMelee: True
+AbilityCards: [2001,2002,2003,2004,2005,2006,2007,2008]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    Shield: 1
+    Immunities: [Immobilize, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 7
+
+Level1:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    Shield: 1
+    Immunities: [Immobilize, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 9
+Level2:
+    Health: 0
+    Move: 4
+    Attack: 3
+    Range: 1
+    Target: 1
+    Shield: 1
+    Immunities: [Immobilize, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 11
+ Level3:
+    Health: 0
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+    Shield: 1
+    Immunities: [Immobilize, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 12
+ Level4:
+    Health: 0
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+    Shield: 1
+    Immunities: [Immobilize, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 14
+ Level5:
+    Health: 0
+    Move: 5
+    Attack: 5
+    Range: 1
+    Target: 1
+    Shield: 2
+    Immunities: [Immobilize, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 15
+ Level6:
+    Health: 0
+    Move: 5
+    Attack: 5
+    Range: 1
+    Target: 1
+    Shield: 2
+    Immunities: [Immobilize, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 17
+ Level7:
+    Health: 0
+    Move: 5
+    Attack: 5
+    Range: 1
+    Target: 1
+    Shield: 2
+    Immunities: [Immobilize, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 21
+    

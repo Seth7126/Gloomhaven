@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 222
+StringID: BladedArmorID
+Name: $ITEM_NAME_BladedArmor$
+Art: Bladed Armor
+TotalInGame: 1
+Cost: 45
+Slot: Body
+Rarity: Rare
+Usage: Spent
+Trigger: OnAttacked
+Data: 
+    ShieldValue: 2
+    RetaliateValue: 2
+    RetaliateRange: 999
+    CompareAbility:
+        AbilityType: Attack
+Layout: 
+    - Row: $Item_BladedArmor$

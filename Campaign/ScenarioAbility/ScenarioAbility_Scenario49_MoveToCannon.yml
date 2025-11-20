@@ -1,0 +1,9 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_49_MoveToCannon
+ScenarioAbility:
+    AMove:
+        Move: 3
+    ANull:
+        Null: True
+        TriggeredScenarioModifiers: ControlCannon
+        TriggerScenarioModifierOnSelfOnly: True

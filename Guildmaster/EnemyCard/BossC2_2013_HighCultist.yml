@@ -1,0 +1,22 @@
+Parser: EnemyCard
+ID: 2013
+Initiative: 79
+Shuffle: False
+Data:
+    Abilities: 
+        Attack1:
+            Attack: -1
+            Target: -1
+            TargetIsBase: True
+            ShowTarget: False
+            Text: "$Target_AllEnemiesWithinRange$"
+            AnimOverload: RadialAttack
+            MultiPassAttack: False
+    Consumes:
+        CDark:
+            Elements: Dark
+            AbilityOverrides:
+                CDarkMuddle:
+                    
+                    ParentName: Attack1
+                    Conditions: Curse

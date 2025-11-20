@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_Campaign_035
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_Campaign_035
+LoadoutImageId: TO_ST_03_Militia
+NarrativeTextImageOverride:
+    - [Quest_Campaign_035_OUTRO_GH_1, 035_OUTRO_GH_1_Art]
+    - [Quest_Campaign_035_OUTRO_GH_2, 035_OUTRO_GH_2_Art]
+    - [Quest_Campaign_035_OUTRO_GH_3, 035_OUTRO_GH_3_Art]
+    - [Quest_Campaign_035_OUTRO_GH_4, 035_OUTRO_GH_4_Art]
+    - [Quest_Campaign_035_OUTRO_GH_5, 035_OUTRO_GH_5_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_022
+    - CompletedQuest: Quest_Campaign_010
+BlockCondition:
+    - Required:
+        CompletedQuest: 1
+    - CompletedQuest: Quest_Campaign_021
+    - CompletedQuest: Quest_Campaign_036
+    - CompletedQuest: Quest_Campaign_027
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: Boss
+
+Scenario:
+    MapLocation: [654, 487]
+    ScenarioPool: 
+      - [Scenario_Campaign_035, 100]

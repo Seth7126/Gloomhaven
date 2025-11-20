@@ -1,0 +1,14 @@
+Parser: HeroSummon
+ID: KillbotID
+LocKey: $Killbot$
+Model: Killbot
+Health:
+    Amount: 6
+    Enhancements: 1
+Move:
+    Amount: 3
+    Enhancements: 1
+Attack:
+    Amount: 3
+    Enhancements: 1
+Range: 1

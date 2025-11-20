@@ -1,0 +1,146 @@
+Parser: Enemy
+ID: HungrySoulID
+LocKey: $HungrySoul$
+MonsterType: Boss
+StandeeLimit: 6
+Model: Hungry Soul
+PredominantlyMelee: True
+AbilityCards: [516,517,518,519,520,521,522,523]
+UseNormalSizeAvatarForBoss: True
+# Base Stats
+Level0:
+    Health: 0
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 2
+    Shield: 5
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 3
+        Shield:
+            BasedOn: ActorCount
+            Multiplier: -1
+            AddTo: True
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID]
+Level1:
+    Health: 0
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 3
+    Shield: 6
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 3
+        Shield:
+            BasedOn: ActorCount
+            Multiplier: -1
+            AddTo: True
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID]
+Level2:
+    Health: 0
+    Move: 4
+    Attack: 5
+    Range: 1
+    Target: 3
+    Shield: 6
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 4
+        Shield:
+            BasedOn: ActorCount
+            Multiplier: -1
+            AddTo: True
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID]
+Level3:
+    Health: 0
+    Move: 4
+    Attack: 5
+    Range: 1
+    Target: 3
+    Shield: 6
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 5
+        Shield:
+            BasedOn: ActorCount
+            Multiplier: -1
+            AddTo: True
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID]
+Level4:
+    Health: 0
+    Move: 4
+    Attack: 6
+    Range: 1
+    Target: 3
+    Shield: 6
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 6
+        Shield:
+            BasedOn: ActorCount
+            Multiplier: -1
+            AddTo: True
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID]
+Level5:
+    Health: 0
+    Move: 4
+    Attack: 6
+    Range: 1
+    Target: 3
+    Shield: 7
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 6
+        Shield:
+            BasedOn: ActorCount
+            Multiplier: -1
+            AddTo: True
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID]
+Level6:
+    Health: 0
+    Move: 6
+    Attack: 6
+    Range: 1
+    Target: 3
+    Shield: 7    
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 6
+        Shield:
+            BasedOn: ActorCount
+            Multiplier: -1
+            AddTo: True
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID]
+Level7:
+    Health: 0
+    Move: 6
+    Attack: 6
+    Range: 1
+    Target: 3    
+    Shield: 7
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 7
+        Shield:
+            BasedOn: ActorCount
+            Multiplier: -1
+            AddTo: True
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID]

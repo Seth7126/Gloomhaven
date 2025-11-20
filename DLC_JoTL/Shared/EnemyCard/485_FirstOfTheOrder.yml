@@ -1,0 +1,17 @@
+Parser: EnemyCard
+ID: 11485
+Initiative: 14
+Shuffle: False
+Data:
+    Abilities:
+        Attack1:
+            Attack: 0
+            Target: 3
+            TargetIsBase: True
+            ChainAttack: True
+            ChainAttackRange: 2
+            ChainAttackDamageReduction: 1
+            AnimOverload: ChainLightning
+            MultiPassAttack: False
+            Text: "$Boss_FirstOfTheOrder_Special2$"
+            TextOnly: True

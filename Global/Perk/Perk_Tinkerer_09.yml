@@ -1,0 +1,7 @@
+Parser: Perk
+ID: Tinkerer09
+Name: PERK_Tinkerer_09
+Description: PERK_Tinkerer_09_Desc
+CharacterID: TinkererID
+Available: 2
+CardsToAdd: [AMC_Heal2_P1]

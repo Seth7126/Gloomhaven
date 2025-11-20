@@ -1,0 +1,20 @@
+Parser: Achievement
+ID: Achievement_1_2_ReachTheSloshedSquirrel
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_2_ReachTheSloshedSquirrel$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_2_ReachTheSloshedSquirrel_Desc$
+CompleteDialogueLines:
+    - Text: Message_Complete_Achievement_1_2_ReachTheSloshedSquirrel_1
+      Character: Merchant
+    - Text: Message_Complete_Achievement_1_2_ReachTheSloshedSquirrel_2
+      Character: Merchant
+      CameraLocation: [779, 515]      
+    - Text: Message_Complete_Achievement_1_2_ReachTheSloshedSquirrel_3
+      Character: Merchant
+UnlockCondition:
+    - Chapter: [1,2]
+AchievementCondition:
+    - UnlockedVillage: TheSloshedSquirrel
+TreasureTables: [TT_Achievement_1_2_ReachTheSloshedSquirrel]
+AchievementType: General
+AchievementLevel: 0
+AchievementOrderId: 135

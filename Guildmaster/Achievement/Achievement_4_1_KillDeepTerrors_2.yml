@@ -1,0 +1,18 @@
+Parser: Achievement
+ID: Achievement_4_1_KillDeepTerrors_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_4_1_KillDeepTerrors_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_4_1_KillDeepTerrors_2_Desc$
+UnlockCondition:
+    - Chapter: [4,1]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [DeepTerrorID,DeepTerrorEliteID]
+        Value: 100
+TreasureTables: [TT_Achievement_Kill_Level_2]
+AchievementType: Kill
+
+AchievementLevel: 1 
+AchievementOrderId: 526
+
+

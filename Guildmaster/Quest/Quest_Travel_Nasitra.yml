@@ -1,0 +1,24 @@
+Parser: Quest
+ID: Quest_Travel_Nasitra
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Nasitra_1
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [800,1067]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [800,1067]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_Nasitra]
+LoadoutImageId: CR_DF_01_Bandit
+UnlockCondition:
+    - UnlockedVillage: ThePyre
+StartingVillage: ThePyre
+EndingVillage: Nasitra
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.7
+    ScenarioPool: [Scenario_Travel_Nasitra, 100]

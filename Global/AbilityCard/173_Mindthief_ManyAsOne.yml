@@ -1,0 +1,66 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_ManyasOne$
+Character: MindthiefID
+ID: 173
+Level: 9
+Initiative: 91
+Discard: [Lost,Lost]
+Data:
+    Top:
+        Abilities:
+            TSummon:
+                Summon: RatKingID
+                AnimOverload: Summon
+        XP: 2
+    Bottom:
+        Abilities:
+            BAttack:
+                Attack: 0
+                Range: 2
+                Target: -1
+                Filter: Self
+                ActiveBonus:
+                    Behaviour: BuffAttack
+                    Duration: Round
+                    IsAura: True
+                    AuraFilter: [Ally]
+                    Filter: 
+                        CasterAdjacentAllies: ">= 0"
+                        CheckAdjacentRange: 2
+                StatIsBasedOnX:
+                    Strength:
+                        BasedOn: CasterAdjacentAllies
+        XP: 2
+Layout:
+    Top:
+        - Active:
+            Ability: "TSummon"
+            Icon: "Summon"
+            Layout:
+                - Summon:
+                    Ability: TSummon
+                    SummonName: $RatKing$
+                    SpecialText: "$173_T_2$"
+        - Row: "<size=20%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Persistent
+    Bottom:
+        - Active:
+            Ability: BAttack
+            Icon: "Damage"
+            ListLayout: "<b>$Aura$<sprite name=Aura>:</b> $173_B$"
+            Layout:
+                - Row: "<b>$Aura$<sprite name=Aura>:</b> $173_B$"
+        - Row: "<size=20%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Round

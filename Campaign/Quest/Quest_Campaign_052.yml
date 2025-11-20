@@ -1,0 +1,26 @@
+Parser: Quest
+ID: Quest_Campaign_052
+Chapter: 1
+QuestType: City
+#CompletionRewards: TT_Quest_Campaign_052
+LoadoutImageId: ICE_CryptRuin_01_Demon
+NarrativeTextImageOverride:
+  - [Quest_Campaign_052_INTRO_GH_1, 052_INTRO_GH_1_Art]
+  - [Quest_Campaign_052_INTRO_GH_2, 052_INTRO_GH_2_Art]
+  - [Quest_Campaign_052_OUTRO_GH_1, 052_OUTRO_GH_1_Art]
+  - [Quest_Campaign_052_OUTRO_GH_2, 052_OUTRO_GH_2_Art]
+UnlockCondition:
+    - CompletedPersonalQuestStep: PERSONALQUEST_Seeker_of_Xorn
+    - PersonalQuestStep: 0
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: Side
+
+RequiredCharacters:
+  - PersonalQuest: PERSONALQUEST_Seeker_of_Xorn
+
+Scenario:
+    MapLocation: [449, 1129]
+    ScenarioPool: 
+      - [Scenario_Campaign_052, 100]

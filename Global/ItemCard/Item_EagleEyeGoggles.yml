@@ -1,0 +1,21 @@
+Parser: ItemCard
+ID: 6
+StringID: EagleEyeGogglesID
+Name: $ITEM_NAME_Eagle-EyeGoggles$
+Art: Eagle-Eye Goggles
+TotalInGame: 2
+Cost: 30
+Slot: Head 
+Rarity: Rare
+Usage: Spent
+Trigger: EntireAction
+ProsperityRequirement: 1
+Data: 
+    Overrides:
+        OConditions:
+            AttackHasAdvantage: True
+    CompareAbility:
+        AbilityType: Attack
+        Filter: Enemy
+Layout: 
+    - Row: $Item_EagleEyeGoggles$ # During your attack, gain Advantage on the entire Attack action.

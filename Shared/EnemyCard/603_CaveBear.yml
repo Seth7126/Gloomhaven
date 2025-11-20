@@ -1,0 +1,23 @@
+Parser: EnemyCard
+ID: 603
+Initiative: 03
+Shuffle: False
+Data:
+    Abilities: 
+        Shield1:
+            Shield: 1
+            Filter: Self
+            AnimOverload: PowerUp  
+            ActiveBonusDuration: Round
+        Retaliate1:
+            Retaliate: 2
+            Filter: Self
+            SkipAnim: True
+            ActiveBonusDuration: Round
+            AnimOverload: PowerUp  
+        Heal1:
+            Heal: 2
+            Filter: Self
+            SkipAnim: True
+            AnimOverload: PowerUp  
+

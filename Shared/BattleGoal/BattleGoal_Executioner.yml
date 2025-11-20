@@ -1,0 +1,15 @@
+Parser: BattleGoal
+ID: BattleGoal_Executioner
+LocalisedName: BATTLEGOAL_Executioner
+LocalisedDescription: BATTLEGOAL_Executioner_Desc
+#Kill an undamaged monster with a single attack
+#action during the scenario
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: Kill
+        CauseOfDeath: Damage
+        KillInOneHit: True
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

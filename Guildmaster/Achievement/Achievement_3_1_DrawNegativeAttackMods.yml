@@ -1,0 +1,17 @@
+Parser: Achievement
+ID: Achievement_3_1_DrawNegativeAttackMods
+LocalisedName: $ADVENTURE_ACHIEVEMENT_3_1_DrawNegativeAttackMods$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_3_1_DrawNegativeAttackMods_Desc$
+UnlockCondition:
+    - Chapter: [3,1]
+AchievementCondition:
+    - Targets:
+        Filter: ModifiersUsed
+        Modifiers: ["-1"]
+        Value: 50
+        
+TreasureTables: [TT_Achievement_3_1_DrawNegativeAttackMods]
+AchievementType: Relics
+AchievementOrderId: 432
+
+AchievementLevel: 2

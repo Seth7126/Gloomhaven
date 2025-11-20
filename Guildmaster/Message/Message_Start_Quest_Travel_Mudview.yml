@@ -1,0 +1,12 @@
+Parser: Message
+Name: Start_Quest_Travel_Mudview
+DialogueLines:
+    - Text: Message_Start_Quest_Travel_Mudview_1
+      Character: Trainer
+    - Text: Message_Start_Quest_Travel_Mudview_2
+      Character: Merchant
+      CameraLocation: [706, 716]
+
+MapMessageTrigger: Map
+UnlockCondition:
+    - UnlockedVillage: Millpond

@@ -1,0 +1,22 @@
+Parser: Achievement
+ID: Achievement_Demolitionist_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Demolitionist_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Demolitionist_1_Desc$
+#The Demolitionist destroys 20 Obstacles 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        DemolitionistID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: DemolitionistID   
+        Filter: DestroyObstacle
+        Value: 20
+
+
+TreasureTables: [TT_Achievement_Demolitionist]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 302
+ 

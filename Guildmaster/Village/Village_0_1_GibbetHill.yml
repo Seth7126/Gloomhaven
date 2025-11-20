@@ -1,0 +1,54 @@
+Parser: Village
+ID: GibbetHill
+LocalisedName: $GibbetHill$
+LocalisedDescription: $ADVENTURE_LOCATION_TheMarches_Desc$
+Mesh: Ca11_GibbetHill_MAT
+MapLocation: [979,516]
+JobLocations: 
+    - [1014, 530]
+    - [932, 526]
+    - [1002, 469]
+
+UnlockCondition:
+    - Chapter: [1,0]
+    - CompletedQuest: Quest_Travel_GibbetHill
+Quests:
+#STORY
+    - Quest_Story_Soothsinger_1
+#FTUE
+    - Quest_Story_5A   
+#TRAVEL
+    - Quest_Travel_Hammerholm
+    - Quest_Travel_Toadmoor
+    - Quest_Travel_Amberhill
+#RELIC
+    - Quest_Relic_ResonantCrystal
+#JOBS-FOREST    
+    - Quest_Job_Chapter_1_1_Bandit_Forest
+    - Quest_Job_Imps_Spirits_Forest
+    - Quest_Job_Inox_Vermling_Forest
+    - Quest_Job_MindControl
+    - Quest_Job_TheHaunting
+    - Quest_Job_TheStoneMan    
+#JOBS-CRYPT
+    - Quest_Job_Chapter_1_1_Undead_Crypt
+    - Quest_Job_Chapter_1_1_Undead_Bandit_Crypt 
+    - Quest_Job_Snakes_Undead_Crypt    
+    - Quest_Job_Mysterious_Maze 
+    - Quest_Job_AnEyeForAnEye
+    - Quest_Job_DemonicDissent
+    - Quest_Job_TheVaultsOfPus    
+#JOBS-CAVE
+    - Quest_Job_Vermling_Cave
+    - Quest_Job_TwoTribes
+    - Quest_Job_CallOfTheWild
+    - Quest_Job_DemonAltars
+    - Quest_Job_FireCult
+    - Quest_Job_SavvasAid
+    - Quest_Job_SavvasInfighting    
+    
+#JOBS-FOREST    
+    - Quest_Job_FellHounds
+#JOBS-CRYPT
+    - Quest_Job_DungeonOfMisfortune
+    

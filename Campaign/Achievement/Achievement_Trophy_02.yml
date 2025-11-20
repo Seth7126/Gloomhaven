@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Trophy02
+LocalisedName: $TROPHY_ACHIEVEMENT_02$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_02_Desc$
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - Retirement: 5
+TreasureTables: [TT_Achievement_Trophy02]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4002

@@ -1,0 +1,7 @@
+Parser: TreasureTable
+TT_Quest_Story_BeastTyrant_3:
+  
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: BeastTyrantID    
+  

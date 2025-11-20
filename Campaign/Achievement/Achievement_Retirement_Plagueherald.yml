@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Retirement_Plagueherald
+LocalisedName: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+LocalisedDescription: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+UnlockCondition:
+    - Retirement: PlagueheraldID
+AchievementCondition:
+    - Retirement: PlagueheraldID
+TreasureTables: [TT_Achievement_Retirement_Plagueherald]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 2108

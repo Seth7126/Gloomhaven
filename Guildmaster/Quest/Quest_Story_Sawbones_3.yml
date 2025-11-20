@@ -1,0 +1,24 @@
+Parser: Quest
+ID: Quest_Story_Sawbones_3
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompletionRewards: TT_Quest_Story_Sawbones_3
+LoadoutImageId: FO_DF_03
+UnlockRevealFoWSphere:
+    - MapLocation: [387, 239]
+      Radius: 14
+UnlockCondition:
+    - Chapter: [1,1]
+    - CompletedQuest: Quest_Story_Sawbones_2    
+    
+RequiredCharacters:
+  - Character: SawbonesID    
+    Level: 5
+StartingVillage: SaltmarshFlats
+EndingVillage: SaltmarshFlats
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [387, 239]
+    ScenarioPool: [Scenario_Story_Sawbones_3, 100]

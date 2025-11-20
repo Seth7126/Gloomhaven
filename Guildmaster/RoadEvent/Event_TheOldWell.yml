@@ -1,0 +1,34 @@
+Parser: RoadEvent
+ID: TheOldWellID
+LocKey: $ROAD_EVENT_THE_OLD_WELL$
+Screens:
+    Decision:
+        Text: EVENT_TheOldWell
+        Options:
+            A:
+                Text: EVENT_TheOldWell_A
+                Subtext: EVENT_TheOldWell_A_Subtext
+                TreasureTables: TheOldWell
+                OptionConditions:
+                    MinGold: TheOldWell.GoldAmount
+                UnavailableText: EVENT_Unavailable_Gold
+                Next: CoinsDropped
+            B:
+                Text: EVENT_TheOldWell_B
+                Next: Leave
+    CoinsDropped:
+        Gained:
+            Items: [CloakOfInvisibilityID, LuckyEyeID, MinorHealingPotionID]
+            Screen:
+                Text: EVENT_TheOldWell_CoinsDropped_Gained_Item
+                End: True
+        Gained:
+            Conditions: Bless
+            Screen:
+                Text: EVENT_TheOldWell_CoinsDropped_Gained_Bless
+                End: True
+        Text: EVENT_TheOldWell_CoinsDropped
+        End: True
+    Leave:
+        Text: EVENT_TheOldWell_Leave
+        End: True

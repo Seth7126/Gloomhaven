@@ -1,0 +1,26 @@
+Parser: Quest
+ID: Quest_Travel_HoundHill
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_HoundHill_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_HoundHill_2
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [500, 638]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [500, 638]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_HoundHill]
+LoadoutImageId: TO_ST_01_Militia
+UnlockCondition:
+    - UnlockedVillage: Mudview
+    - Chapter: [3,1]  
+StartingVillage: Mudview
+EndingVillage: HoundHill
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_HoundHill, 100]

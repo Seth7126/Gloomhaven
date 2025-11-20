@@ -1,0 +1,5 @@
+Parser: TreasureTable
+TT_Quest_Story_HighCultist:
+  Item: BlackCenserID
+  EnhancementSlots: 1  
+  

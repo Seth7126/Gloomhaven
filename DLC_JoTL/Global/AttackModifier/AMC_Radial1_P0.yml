@@ -1,0 +1,6 @@
+Parser: AttackModifier
+Name: AMC_Radial1_P0
+MathModifier: "+0"
+Abilities:
+    DamageAdjacentAbility:
+        Damage: 1

@@ -1,0 +1,121 @@
+Parser: Enemy
+ID: DarkRiderID
+LocKey: $DarkRider$
+MonsterType: Boss
+Model: Dark Rider
+StandeeLimit: 1
+PredominantlyMelee: True
+AbilityCards: [57200057,57300058,57400059,57500060,57600061,57700062,57800063,57900064]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Immobilize, Disarm, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 9
+        Attack:
+            BasedOn: HexesMovedThisAction
+            AddTo: True
+Level1:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Immobilize, Disarm, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 10
+        Attack:
+            BasedOn: HexesMovedThisAction
+            AddTo: True
+Level2:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Immobilize, Disarm, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 12
+        Attack:
+            BasedOn: HexesMovedThisAction
+            AddTo: True
+Level3:
+    Health: 0
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Immobilize, Disarm, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 13
+        Attack:
+            BasedOn: HexesMovedThisAction
+            AddTo: True
+Level4:
+    Health: 0
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Immobilize, Disarm, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 15
+        Attack:
+            BasedOn: HexesMovedThisAction
+            AddTo: True
+Level5:
+    Health: 0
+    Move: 3
+    Attack: 5
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Immobilize, Disarm, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 16
+        Attack:
+            BasedOn: HexesMovedThisAction
+            AddTo: True
+Level6:
+    Health: 0
+    Move: 4
+    Attack: 5
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Immobilize, Disarm, Stun]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 16
+        Attack:
+            BasedOn: HexesMovedThisAction
+            AddTo: True
+Level7:
+    Health: 0
+    Move: 4
+    Attack: 6
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Immobilize, Disarm, Stun]    
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 18
+        Attack:
+            BasedOn: HexesMovedThisAction
+            AddTo: True

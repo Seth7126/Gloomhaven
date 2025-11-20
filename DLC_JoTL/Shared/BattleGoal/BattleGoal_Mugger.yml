@@ -1,0 +1,12 @@
+Parser: BattleGoal
+ID: BattleGoal_Mugger
+LocalisedName: BATTLEGOAL_Mugger
+LocalisedDescription: BATTLEGOAL_Mugger_Desc
+#Kill a monster and loot the money token it drops in the same turn.
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: LootTheKill
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

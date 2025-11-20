@@ -1,0 +1,24 @@
+Parser: Quest
+ID: Quest_Campaign_016
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_016
+LoadoutImageId: CA_DF_03_Undead
+NarrativeTextImageOverride:
+    - [Quest_Campaign_016_INTRO_GH_1, 016_INTRO_GH_1_Art]
+    - [Quest_Campaign_016_INTRO_GH_2, 016_INTRO_GH_2_Art]
+UnlockCondition:
+    - Required:
+        CompletedQuest: 1
+    - CompletedQuest: Quest_Campaign_011
+    - CompletedQuest: Quest_Campaign_012
+    - CompletedQuest: Quest_Campaign_020
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LinkedQuestID: Quest_Campaign_024
+LocationArea: CopperneckMountains
+
+Scenario:
+    MapLocation: [818, 331]
+    ScenarioPool: 
+      - [Scenario_Campaign_016, 100]

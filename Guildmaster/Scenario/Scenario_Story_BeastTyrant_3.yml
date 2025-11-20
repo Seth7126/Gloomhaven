@@ -1,0 +1,115 @@
+Parser: Scenario
+ID: Scenario_Story_BeastTyrant_3
+BaseBiome: City
+BaseSubBiome: Rot
+BaseTone: Toxic
+
+#BaseSubTheme: Undead
+#MonsterFamily: Inox
+ScenarioMeshes: [DGN_Cesspit_05_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BeastTyrant_3_START_1
+          Character: Trainer
+        - Text: SCENARIO_STORY_BeastTyrant_3_START_2
+          Character: Merchant         
+        - Text: SCENARIO_STORY_BeastTyrant_3_START_3
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BeastTyrant_3_SUCCESS_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+    
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                PlayerClasses: [BeastTyrantID]
+            ObjectiveDescription: Scenario_Story_BeastTyrant_Character_Fail_Objective   
+        XCharactersDie:
+            Result: Win
+            Filter:
+                EnemyClasses: [DeepTerrorID, DeepTerrorEliteID]
+            KillAmount: [8, 8, 8, 8]            
+        
+    Rooms:
+        Room1:
+            Threat: 50
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    MonsterGroup: BlackImps
+                    Biome: Cave
+                    SubBiome: Default
+                    
+                    Traps: [100, 50]
+                    TerrainRubble: [100, 50]
+                    TerrainThorns: [50]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [DeepTerrorID,  DeepTerrorID,   DeepTerrorID, DeepTerrorEliteID]
+                              - SpawnClasses: [Empty,         Empty,          Empty,        Empty]
+                              - SpawnClasses: [Empty,         Empty,          Empty,        Empty]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [Empty,         Empty,          Empty,        Empty]
+                              - SpawnClasses: [DeepTerrorID,  DeepTerrorID,   DeepTerrorEliteID, DeepTerrorEliteID]
+                              - SpawnClasses: [Empty,         Empty,          Empty,        Empty]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [Empty,         Empty,          Empty,        Empty]
+                              - SpawnClasses: [Empty,         Empty,          Empty,        Empty]
+                              - SpawnClasses: [DeepTerrorID,  DeepTerrorID,   DeepTerrorID, DeepTerrorEliteID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [Empty,         Empty,          Empty,        Empty]
+                              - SpawnClasses: [DeepTerrorID,  DeepTerrorID,   DeepTerrorEliteID, DeepTerrorEliteID]
+                              - SpawnClasses: [Empty,         Empty,          Empty,        Empty]
+                     
+        Room2:
+            Threat: 75   
+            PossibleRooms:
+                - ShortEmptyCorridor: 
+                    MonsterGroup: LurkerOozes
+                    Traps: [50]
+                    GoldPiles: [50,50]               
+        Room3:
+            Threat: 50   
+            PossibleRooms:
+                - ShortEmptyCorridor: 
+                    MonsterGroup: HarrowerOozes
+                    Traps: [50]
+                    GoldPiles: [50,50]        
+        Room4:
+            IsAdditionalDungeonEntrance: True
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    MonsterGroup: BlackImps
+                    TerrainRubble: [100, 100, 100]
+                    TwoHexObstacles: [100,50] 
+                    Traps: [100, 100, 100]
+                    GoldPiles: [100,50,10]
+                    AllyMonsters:
+                        - [CaveBearEliteID, 1, 2, 3, 4]   

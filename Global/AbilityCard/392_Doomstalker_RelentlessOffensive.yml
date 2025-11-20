@@ -1,0 +1,42 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_RelentlessOffensive$
+Character: DoomstalkerID
+ID: 392
+Level: 2
+Initiative: 52
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 1
+                Range: 5
+                Target:
+                    Amount: 2
+                    Enhancements: 1
+                AnimOverload: RangedAttack
+    Bottom:
+        Abilities:
+            BAttackBuff:
+                Attack: 2
+                Filter: Self
+                ActiveBonus:
+                    Duration: Round
+                    Behaviour: BuffAttack
+                    Filter:
+                        IsDoomed: True
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "$Target$ <sprite name=Target> *TAttack.Target* @TAttack.Target@"
+    Bottom:
+        - Active:
+            Ability: BAttackBuff
+            ListLayout: "$392_B$"
+            Layout: "$392_B$"
+            Icon: "Attack"
+        - Row: "<size=50%> "
+        - Duration: Round

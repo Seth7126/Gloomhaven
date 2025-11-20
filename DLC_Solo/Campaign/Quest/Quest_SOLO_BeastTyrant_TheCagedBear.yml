@@ -1,0 +1,20 @@
+Parser: Quest
+ID: Quest_SOLO_BeastTyrant_TheCagedBear
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_BeastTyrant_TheCagedBear
+UnlockCondition:
+    - RequiredHeroes: 
+        BeastTyrantID: 5
+RequiredCharacters:
+  - Character: BeastTyrantID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_BeastTyrant_TheCagedBear   
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [1799, 871]
+    ScenarioPool: 
+      - [Scenario_SOLO_BeastTyrant_TheCagedBear, 100]

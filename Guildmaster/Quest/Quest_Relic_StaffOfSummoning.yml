@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_Relic_StaffOfSummoning
+Chapter: 2
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_StaffOfSummoning_Unlock_1
+      Character: Priestess
+    - Text: QUEST_RELIC_StaffOfSummoning_Unlock_2
+      Character: Priestess
+    - Text: QUEST_RELIC_StaffOfSummoning_Unlock_3
+      Character: Priestess
+      CameraLocation: [1455, 1202] 
+LoadoutImageId: CA_DF_05
+UnlockRevealFoWSphere:
+    - MapLocation: [1455, 1202]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_2_1_SummonKills
+StartingVillage: Rockfall
+EndingVillage: Rockfall
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1455, 1202]
+    ScenarioPool: [Scenario_Relic_StaffOfSummoning, 100]

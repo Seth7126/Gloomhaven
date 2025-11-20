@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Trophy07
+LocalisedName: $TROPHY_ACHIEVEMENT_07$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_07_Desc$
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - CompletedQuest: Quest_Campaign_079
+TreasureTables: [TT_Achievement_Trophy07]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4007

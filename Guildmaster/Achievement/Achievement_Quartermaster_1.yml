@@ -1,0 +1,22 @@
+Parser: Achievement
+ID: Achievement_Quartermaster_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Quartermaster_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Quartermaster_1_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        QuartermasterID: 1  
+AchievementCondition:
+    - Targets:
+        CharacterIDs: QuartermasterID    
+        Filter: Loot
+        LootType: [Chest,GoalChest]
+        Value: 10
+        
+TreasureTables: [TT_Achievement_Quartermaster]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 278
+
+ 

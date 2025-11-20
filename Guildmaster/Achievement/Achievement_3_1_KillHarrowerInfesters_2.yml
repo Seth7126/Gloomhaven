@@ -1,0 +1,17 @@
+Parser: Achievement
+ID: Achievement_3_1_KillHarrowerInfesters_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_3_1_KillHarrowerInfesters_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_3_1_KillHarrowerInfesters_2_Desc$
+UnlockCondition:
+    - Chapter: [3,1]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [HarrowerInfesterID, HarrowerInfesterEliteID]
+        Value: 50
+TreasureTables: [TT_Achievement_Kill_Level_2]
+AchievementType: Kill
+AchievementLevel: 1 
+AchievementOrderId: 538
+
+

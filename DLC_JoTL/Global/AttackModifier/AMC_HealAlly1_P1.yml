@@ -1,0 +1,7 @@
+Parser: AttackModifier
+Name: AMC_HealAlly1_P1
+MathModifier: "+1"
+Abilities:
+    HealAbility:
+        Heal: 1 #HealAlly
+        Filter: Ally

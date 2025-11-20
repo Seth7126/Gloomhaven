@@ -1,0 +1,17 @@
+Parser: ItemCard
+ID: 16
+StringID: CloakOfPocketsID
+Name: $ITEM_NAME_CloakofPockets$
+Art: Cloak of Pockets
+TotalInGame: 2
+Cost: 20
+Slot: Body 
+Rarity: Rare
+UsedWhenEquipped: true
+Usage: Unrestricted
+Trigger: PassiveEffect
+ProsperityRequirement: 2
+Data: 
+    SmallSlots: 2
+Layout: 
+    - Row: $Item_CloakOfPockets$

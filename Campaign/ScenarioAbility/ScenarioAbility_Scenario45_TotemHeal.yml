@@ -1,0 +1,23 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_45_TotemHeal
+ScenarioAbility:
+    AActive:
+        AddActiveBonus:
+            Heal: 2
+            Target: 1
+            Filter: Self
+            PreviewEffectText: <sprite name="Heal">
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: StartTurnAbility
+            IsAura: True
+            ActiveBonusAnimOverload: Heal
+            AuraTriggerAbilityAnimType: AnimateAuraOriginator
+            AuraFilter:
+                ActorType: [Enemy]
+                EnemyType: [Normal, Elite, Boss]
+            ListLayoutOverride: [$ScenarioAbility_45_TotemHeal$, Heal]
+        Range: 2
+        AnimOverload: Heal
+        AutoTrigger: True
+        Filter: Self

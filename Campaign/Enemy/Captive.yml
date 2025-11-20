@@ -1,0 +1,97 @@
+Parser: Enemy
+ID: CaptiveID
+LocKey: $Captive$
+MonsterType: Monster
+StandeeLimit: 10
+Model: [Captive 01 Weapon, Captive 02 Weapon, Captive 03 Weapon, Captive 04 Weapon, Captive 05 Weapon, Captive 06 Weapon]
+PredominantlyMelee: True
+AbilityCards: [2007]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 4 #X
+            SecondVariable: 2 #Y
+Level1:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 4
+            SecondVariable: 2
+Level2:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 4
+            SecondVariable: 2
+Level3:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 4
+            SecondVariable: 2
+Level4:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 4
+            SecondVariable: 2
+Level5:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 4
+            SecondVariable: 2
+Level6:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 4
+            SecondVariable: 2
+Level7:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 4
+            SecondVariable: 2

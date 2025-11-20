@@ -1,0 +1,19 @@
+Parser: EnemyCard
+ID: 661
+Initiative: 7
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: 1
+        Attack1:
+            Attack: -1
+            Filter: Enemy
+    Consumes:
+        CDark:
+            Elements: Dark
+            Abilities:
+                CDarkInvis:
+                    Invisible: True
+                    Filter: Self
+                    AnimOverload: TurnInvisible

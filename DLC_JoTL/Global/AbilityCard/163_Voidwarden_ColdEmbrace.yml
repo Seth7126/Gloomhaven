@@ -1,0 +1,71 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_ColdEmbrace$
+Character: VoidwardenID
+ID: 11163
+Level: X
+Initiative: 71
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TCurse:
+                Curse: True
+                Range: 3
+                Target:
+                    Amount: 3
+                    Enhancements: 1
+                Filter: Enemy
+                AnimOverload: TargetedDebuff
+        Consumes:
+            TCDark:
+                Elements: Dark
+                AbilityOverrides:
+                    TCDarkBuff:
+                        ParentName: TCurse
+                        Range: 1
+                        Target: 1
+                XP: 1
+        XP: 1
+    Bottom:
+        Abilities:
+            BNull:
+                Null: True
+            BDamage:
+                Damage: 1
+                Range: 1
+                Target: -1
+                Filter: Ally
+                AnimOverload: RadialPositive
+            BBless:
+                Bless: True
+                Range: 1
+                Target: -1
+                Filter: Ally
+        Consumes:
+            BCIce:
+                Elements: Ice
+                Abilities:
+                    BCIceMove:
+                        ParentName: BNull
+                        Move: 3
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Curse$ <sprite name=Curse>"
+        - Row: "$Range$ <sprite name=Range> *TCurse.Range*"
+        - Row: "$Target$ <sprite name=Target> *TCurse.Target* @TCurse.Target@"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCDark
+            Text: "<nobr>+1 $Range$ <sprite name=Range></nobr>, <nobr>+1 $Target$ <sprite name=Target></nobr>, <sprite name=XP1>"
+        - Row: "<size=20%> "
+        - XP: 1
+    Bottom:
+        - Consume:
+            Name: BCIce
+            Text: "<b><size=130%>$Move$ <sprite name=Move> 3"
+        - Row: "<size=50%> "
+        - Row: "$JOTL_163_B$"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Bless$ <sprite name=Bless>"
+        - Row: "$Target_AllAdjacentAllies$"
+

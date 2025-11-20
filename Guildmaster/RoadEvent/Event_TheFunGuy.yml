@@ -1,0 +1,30 @@
+Parser: RoadEvent
+ID: TheFunGuyID
+LocKey: $ROAD_EVENT_THE_FUN_GUY$
+Screens:
+    Decision:
+        Text: EVENT_TheFunGuy
+        Options:
+            A:
+                Text: EVENT_TheFunGuy_A
+                TreasureTables: TheFunGuy
+                Next: TryTakingBoots
+            B:
+                Text: EVENT_TheFunGuy_B
+                Next: NoBootsForYou
+    TryTakingBoots:
+        Gained:
+            Conditions: Poison
+            Screen:
+                Text: EVENT_TheFunGuy_TryTakingBoots_Poison
+                End: True
+        Gained:
+            Gold: True
+            Screen:
+                Text: EVENT_TheFunGuy_TryTakingBoots_Gold
+                End: True
+        Text: EVENT_TheFunGuy_TryTakingBoots
+        End: True
+    NoBootsForYou:
+        Text: EVENT_TheFunGuy_NoBootsForYou
+        End: True

@@ -1,0 +1,88 @@
+Parser: Scenario
+ID: Scenario_Story_Soothsinger_3
+BaseBiome: Forest
+BaseTone: ForestDefault
+ScenarioMeshes: [DGN_Forest_07_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SOOTHSINGER_3_START_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_SOOTHSINGER_3_START_2
+          Character: EliteCultist
+        - Text: SCENARIO_STORY_SOOTHSINGER_3_START_3
+          Character: Narrator      
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SOOTHSINGER_3_SUCCESS_1
+          Character: Narrator
+        
+ScenarioLayout:
+    Objectives:
+        DestroyXObjects:
+            Result: Win        
+            DestroyAmount: [2,2,2,2]               
+            Filter:
+                ObjectClasses: [UndeadSummoningAltarID]
+            ObjectiveDescription: Scenario_Destroy_all_Skull_Altars                     
+        KillAllEnemies:       
+            Result: Win
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]                
+            Filter:
+                PlayerClasses: [SoothsingerID]
+            ObjectiveDescription: Scenario_Story_Soothsinger_Character_Fail_Objective                  
+                
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - EmptyRoomTileM:
+                    AllyMonsters:
+                        - [InoxGuardID, 1, 2, 1, 0]
+                        - [InoxGuardEliteID, 0, 0, 1, 2]
+                    Theme: InoxCamp
+                    MonsterGroup: Undead_NonFamily
+                    TerrainRubble: [100, 100, 100]
+                    TerrainThorns: [100, 100, 100, 100]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [CultistEliteID,  CultistEliteID, CultistEliteID, CultistEliteID]
+                    
+        Room2:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_SOOTHSINGER_3_ROOM_2_1
+                      Character: Trainer 
+            Threat: 100
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    Biome: City
+                    SubBiome: StoneRooms
+                    MonsterGroup: FlameDemonUndead                 
+                    TerrainRubble: [100, 100]
+                    TerrainHotCoals: [100, 100]
+                    Objects:
+                        - [UndeadSummoningAltarID, 1, 1, 1, 1]
+        Room3:
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    Biome: City
+                    SubBiome: StoneRooms
+                    MonsterGroup: NightDemonUndead                 
+                    TerrainThorns: [100, 100]
+                    TwoHexObstacles: [100, 100]
+                    Objects:
+                        - [UndeadSummoningAltarID, 1, 1, 1, 1]
+
+

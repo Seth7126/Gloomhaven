@@ -1,0 +1,17 @@
+Parser: Achievement
+ID: Achievement_Trophy_JOTL_02
+LocalisedName: $TROPHY_ACHIEVEMENT_JOTL_02$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_JOTL_02_Desc$
+#Defeat the Blood Horror
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - UnlockChoice:
+        This:
+            CompletedQuest: Quest_JOTL_009_ExplosiveEvolution
+        OrThis:
+            CompletedQuest: Quest_JOTL_009B_ExplosiveEvolution
+TreasureTables: [TT_Achievement_Trophy_JOTL_02]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 5002

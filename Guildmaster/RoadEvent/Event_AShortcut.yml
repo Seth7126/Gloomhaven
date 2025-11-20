@@ -1,0 +1,41 @@
+Parser: RoadEvent
+ID: AShortcutID
+LocKey: $ROAD_EVENT_A_SHORTCUT$
+Screens:
+    Decision:
+        Text: "EVENT_AShortcut"
+        Options:
+            A:
+                Text: "EVENT_AShortcut_A"
+                TreasureTables: AShortcut_Try
+                Next: TakeTheShortcut
+            B:
+                Text: "EVENT_AShortcut_B"
+                Next: ContinueDownRoad
+    TakeTheShortcut:
+        Text: "EVENT_AShortcut_TakeTheShortcut"
+        Options:
+            A:
+                Text: "EVENT_AShortcut_TakeTheShortcut_A"
+                TreasureTables: AShortcut_Berries
+                Next: Berries
+            B:
+                Text: "EVENT_AShortcut_TakeTheShortcut_B"
+                Next: ContinueDownRoad
+    Berries:
+        Gained:
+            Condition: Poison
+            Screen:
+                Text: "EVENT_AShortcut_Berries_Gained1"
+                End: True
+        Gained:
+            Condition: Strengthen
+            Screen:
+                Text: "EVENT_AShortcut_Berries_Gained2"
+                End: True
+        Text: "EVENT_AShortcut_Berries"
+        End: True
+    ContinueDownRoad:
+        Text: "EVENT_AShortcut_ContinueDownRoad"
+        End: True
+

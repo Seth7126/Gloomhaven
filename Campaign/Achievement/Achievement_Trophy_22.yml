@@ -1,0 +1,14 @@
+Parser: Achievement
+ID: Achievement_Trophy22
+LocalisedName: $TROPHY_ACHIEVEMENT_22$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_22_Desc$
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - Targets:
+        Filter: Enhancement
+        Value: 1
+TreasureTables: [TT_Achievement_Trophy22]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4022

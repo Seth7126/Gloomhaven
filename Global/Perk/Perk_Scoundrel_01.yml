@@ -1,0 +1,7 @@
+Parser: Perk
+ID: Scoundrel01
+Name: PERK_Scoundrel_01
+Description: PERK_Scoundrel_01_Desc
+CharacterID: ScoundrelID
+Available: 2
+CardsToRemove: [AMC_Basic_M1,AMC_Basic_M1]

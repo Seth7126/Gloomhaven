@@ -1,0 +1,30 @@
+Parser: EnemyCard
+ID: 595606
+Initiative: 9
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: 1
+        Attack1:
+            Attack: -1
+            Target: 2
+            TargetIsBase: True
+            Filter: Enemy
+            ConditionalOverrides:
+                AttackCO:
+                    Filter:
+                        TargetHasImmunities: Curse
+                        Invert: True
+                    AbilityOverrides:
+                        ASummonSubAbilityOverride:
+                            SubAbilities:
+                                ASummonSubAbility:
+                                    Summon: LivingCorpseID
+                                    Target: 1
+                                    TargetIsBase: True
+                                    AnimOverload: Summon
+                                    IsInlineSubAbility: True
+                                    TreatAsNonSubAbility: True
+            AnimOverload: RadialCurse
+            Text: "$595606$"

@@ -1,0 +1,31 @@
+Parser: Quest
+ID: Quest_Story_BeastTyrant_2
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_BeastTyrant_2_1
+      Character: Enchantress
+    - Text: Message_End_Quest_Story_BeastTyrant_2_2
+      Character: Enchantress
+    - Text: Message_End_Quest_Story_BeastTyrant_2_3
+      Character: Enchantress
+      CameraLocation: [1640, 1104]
+    - Text: Message_End_Quest_Story_BeastTyrant_2_4
+      Character: Enchantress
+CompletionRewards: TT_Quest_Story_BeastTyrant_2
+LoadoutImageId: FO_DF_02_Inox
+UnlockRevealFoWSphere:
+    - MapLocation: [1566, 754]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: Bloodford
+    - CompletedQuest: Quest_Story_BeastTyrant_1
+RequiredCharacters:
+  - Character: BeastTyrantID    
+    Level: 3
+StartingVillage: TheHermitage
+EndingVillage: TheHermitage
+Scenario:
+    MapLocation: [1566, 754]
+    ScenarioPool: [Scenario_Story_BeastTyrant_2, 100]

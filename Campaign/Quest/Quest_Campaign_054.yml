@@ -1,0 +1,21 @@
+Parser: Quest
+ID: Quest_Campaign_054
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_054
+LoadoutImageId: ICE_Cave_01
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_053
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: CopperneckMountains
+IconType: Side
+
+RequiredCharacters:
+  - Item: StaffOfXornID
+    PersonalQuest: PERSONALQUEST_Seeker_of_Xorn
+
+Scenario:
+    MapLocation: [1129, 542]
+    ScenarioPool: 
+      - [Scenario_Campaign_054, 100]

@@ -1,0 +1,24 @@
+Parser: EnemyCard
+ID: 57600045
+Initiative: 79
+Shuffle: False
+Data:
+    Abilities:
+        CInvis:
+            Invisible: True
+            Filter: Self
+            AnimOverload: TurnInvisible
+    Consumes:
+        CDark:
+            Elements: Dark
+            LayoutPriorTo: CInvis
+            Abilities:
+                Summon1:
+                    Summons: 
+                        - NightDemonID
+                        - NightDemonID
+                        - NightDemonID
+                        - NightDemonEliteID
+                    Target: 1
+                    TargetIsBase: True
+                    AnimOverload: SummonNightDemon

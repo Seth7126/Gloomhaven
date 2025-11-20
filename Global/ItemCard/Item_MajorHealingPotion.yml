@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 27
+StringID: MajorHealingPotionID
+Name: $ITEM_NAME_MajorHealingPotion$
+Art: Major Healing Potion
+TotalInGame: 4
+Cost: 30
+Slot: SmallItem 
+Rarity: Common
+Usage: Consumed
+Trigger: DuringOwnTurn
+ProsperityRequirement: 3
+Data: 
+    Abilities:
+        AHeal:
+            Heal: 5
+            Filter: Self
+Layout: 
+    - Row: $Item_MajorHealingPotion$

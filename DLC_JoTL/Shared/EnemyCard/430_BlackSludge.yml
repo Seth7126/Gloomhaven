@@ -1,0 +1,22 @@
+Parser: EnemyCard
+ID: 11430
+Initiative: 57
+Shuffle: False
+Data:
+    Abilities:
+        Attack1:
+            Attack: 0
+            Range: 2
+            Target: 2
+            RangeIsBase: True
+            TargetIsBase: True
+            Condition: Poison
+            Filter: Enemy
+            AnimOverload: PoisonAttack
+    Consumes:
+        CEarth:
+            Elements: Earth
+            AbilityOverrides:
+                CEarthAttackBuff:
+                    ParentName: Attack1
+                    Target: 1

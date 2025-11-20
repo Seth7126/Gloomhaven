@@ -1,0 +1,25 @@
+Parser: ItemCard
+ID: 141
+StringID: UtilityBeltID
+Name: $ITEM_NAME_UtilityBelt$
+Art: Utility Belt
+TotalInGame: 1
+Cost: 50
+Slot: SmallItem 
+Rarity: Rare
+Usage: Consumed
+PermanentlyConsumed: True
+Trigger: DuringOwnTurn
+ValidEquipCharacterClassIDs: QuartermasterID
+Tradeable: False
+Data: 
+    Abilities:
+        ARefreshItems:
+            RefreshItems: 1
+            SlotStateToRefresh: [Consumed, Spent]
+            Targeting: All
+            Filter:
+                TargetType: [Self, Ally]
+                ActorType: Player
+Layout: 
+    - Row: "$Item_UtilityBelt$"

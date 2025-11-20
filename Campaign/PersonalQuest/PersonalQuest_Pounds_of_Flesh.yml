@@ -1,0 +1,13 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_Pounds_of_Flesh
+LocalisedName: PERSONALQUEST_Pounds_of_Flesh
+LocalisedDescription: PERSONALQUEST_Pounds_of_Flesh_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_Pounds_of_Flesh_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_Pounds_of_Flesh_Objective_PROGRESS_TOOLTIP
+PersonalQuestCondition:
+#Kill fifteen Vermlings.
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [VermlingScoutID, VermlingScoutEliteID, VermlingShamanID, VermlingShamanEliteID]
+        Value: 15
+TreasureTables: [TT_PERSONALQUEST_Pounds_of_Flesh]

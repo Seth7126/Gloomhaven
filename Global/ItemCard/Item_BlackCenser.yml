@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 128
+StringID: BlackCenserID
+Name: $ITEM_NAME_BlackCenser$
+Art: Black Censer
+TotalInGame: 1
+Cost: 50
+Slot: SmallItem 
+Rarity: Relic
+Usage: Consumed
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        AMuddle:
+            Muddle: True
+            Range: 2
+            Target: -1
+            Filter: Enemy
+Layout: 
+    - Row: $Item_BlackCenser$

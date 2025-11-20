@@ -1,0 +1,22 @@
+Parser: Quest
+ID: Quest_JOTL_020_MisplacedGoods
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_020_MisplacedGoods
+LoadoutImageId: 020_MisplacedGoods_Loadout
+NarrativeTextImageOverride:
+    - [Quest_JOTL_020_MisplacedGoods_OUTRO_GH_1, 020_MisplacedGoods_OUTRO_GH_1_Art]
+    - [Quest_JOTL_020_MisplacedGoods_OUTRO_GH_2, 020_MisplacedGoods_OUTRO_GH_2_Art]
+UnlockCondition:
+    - CompletedAchievement: Achievement_JOTL_020_MisplacedGoods
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLSide
+LocalizedCustomTreasureRewardKey: GUI_QUEST_TREASURE_REWARDS
+HideTreasureWhenCompleted: True
+Scenario:
+    MapLocation: [1194, 966]
+    ScenarioPool: 
+      - [Scenario_JOTL_020_MisplacedGoods, 100]

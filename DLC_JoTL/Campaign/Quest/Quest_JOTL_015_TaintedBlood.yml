@@ -1,0 +1,22 @@
+Parser: Quest
+ID: Quest_JOTL_015_TaintedBlood
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_015_TaintedBlood
+LoadoutImageId: 015_TaintedBlood_Loadout
+#NarrativeTextImageOverride:
+#    - [Quest_Campaign_001_INTRO_GH_1, 001_Intro_GH_1_Art]
+UnlockCondition:
+    - Required:
+        CompletedQuest: 1
+    - CompletedQuest: Quest_JOTL_013_VileHarvest
+    - CompletedQuest: Quest_JOTL_014_ToxicHarvest
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTL
+Scenario:
+    MapLocation: [1008, 883]
+    ScenarioPool: 
+      - [Scenario_JOTL_015_TaintedBlood, 100]

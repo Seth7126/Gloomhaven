@@ -1,0 +1,23 @@
+Parser: Achievement
+ID: Achievement_Cragheart_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Cragheart_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Cragheart_1_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        CragheartID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: CragheartID    
+        Filter: Consume
+        Elements: [Earth]
+        Value: 40      
+
+
+TreasureTables: [TT_Achievement_Cragheart]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 260
+ 

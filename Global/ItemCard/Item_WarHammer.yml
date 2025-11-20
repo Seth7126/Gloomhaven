@@ -1,0 +1,22 @@
+Parser: ItemCard
+ID: 10
+StringID: WarHammerID
+Name: $ITEM_NAME_WarHammer$
+Art: War Hammer
+TotalInGame: 2
+Cost: 30
+Slot: TwoHand 
+Rarity: Rare
+Usage: Consumed
+Trigger: EntireAction
+ProsperityRequirement: 1
+Data:     
+    Overrides:
+        OStun:
+            Conditions: Stun
+    CompareAbility:
+        AbilityType: Attack
+        IsMelee: True
+        Filter: Enemy
+Layout: 
+    - Row: $Item_WarHammer$

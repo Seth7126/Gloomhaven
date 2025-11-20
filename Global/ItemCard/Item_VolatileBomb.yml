@@ -1,0 +1,26 @@
+Parser: ItemCard
+ID: 33
+StringID: VolatileBombID
+Name: $ITEM_NAME_VolatileBomb$
+Art: Volatile Bomb
+TotalInGame: 2
+Cost: 30
+Slot: OneHand 
+Rarity: Rare
+Usage: Consumed
+Trigger: SingleAbility
+ProsperityRequirement: 4
+Data:     
+    Overrides:
+        OAoE:
+            AreaEffect: "0,0,R|2,0,R|1,1,R"
+            MultiPassAttack: false
+    CompareAbility:
+        AbilityType: Attack
+        Target: 1
+        IsRanged: True
+        Filter: Enemy
+Layout: 
+    - Row: "<size=100%>$Item_VolatileBomb$"
+    - Row: "<size=100%> "
+    - Row: "£Area£"

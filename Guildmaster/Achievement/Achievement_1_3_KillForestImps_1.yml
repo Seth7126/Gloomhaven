@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_3_KillForestImps_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_3_KillForestImps_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_3_KillForestImps_1_Desc$
+UnlockCondition:
+    - Chapter: [1,3]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [ForestImpID, ForestImpEliteID]
+        Value: 20
+TreasureTables: [TT_Achievement_Kill_Level_1]
+AchievementType: Kill
+
+AchievementLevel: 0
+AchievementOrderId: 531

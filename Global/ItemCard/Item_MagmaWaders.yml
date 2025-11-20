@@ -1,0 +1,42 @@
+Parser: ItemCard
+ID: 99
+StringID: MagmaWadersID
+Name: $ITEM_NAME_MagmaWaders$
+Art: Magma Waders
+TotalInGame: 1
+Cost: 50
+Slot: Legs
+Rarity: Relic
+UsedWhenEquipped: true
+Usage: Unrestricted
+Trigger: PassiveEffect
+Data: 
+    Abilities:
+        AMove:
+            Move:
+                Amount: 0
+                IgnoreHazardousTerrain: true
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: BuffMove
+        AActive:
+            AddActiveBonus:
+                Heal: 2
+                Filter: Self
+                IgnoreHazardousTerrain: True
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: DuringActionAbilityOnMoved
+                Restriction: OncePerTurn
+                Requirement: 
+                    EnterHazardousTerrain: True
+                Target: 0
+                ValidAbilityTypes: [Move, Push, Pull]
+Layout: 
+    - Active:
+        Ability: AMove
+        ListLayout: "$Item_MagmaWaders$"
+        Layout: "$Item_MagmaWaders$"
+        Icon: "Move"
+    - Row: "<size=50%> "

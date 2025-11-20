@@ -1,0 +1,100 @@
+Parser: Enemy
+ID: PrimeDemonID
+LocKey: $PrimeDemon$
+MonsterType: Boss
+Model: Prime Demon
+StandeeLimit: 1
+PredominantlyMelee: True
+
+
+AbilityCards: [57200089,57300090,57400091,57500092,57600093,57700094,57800095,57900096]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 16    
+Level1:
+    Health: 0
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 18   
+Level2:
+    Health: 0
+    Move: 4
+    Attack: 5
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 20   
+ Level3:
+    Health: 0
+    Move: 4
+    Attack: 6
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 24    
+ Level4:
+    Health: 0
+    Move: 5
+    Attack: 6
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 28    
+ Level5:
+    Health: 0
+    Move: 5
+    Attack: 7
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 32    
+ Level6:
+    Health: 0
+    Move: 5
+    Attack: 7
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 40    
+ Level7:
+    Health: 0
+    Move: 5
+    Attack: 8
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 44    
+    

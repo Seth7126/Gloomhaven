@@ -1,0 +1,6 @@
+Parser: TreasureTable
+TT_Quest_Story_Spellweaver_2:
+  UnlockQuest: Quest_Story_Spellweaver_3
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: SpellweaverID 

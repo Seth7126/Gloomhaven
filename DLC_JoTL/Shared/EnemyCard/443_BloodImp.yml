@@ -1,0 +1,26 @@
+Parser: EnemyCard
+ID: 11443
+Initiative: 24
+Shuffle: False
+Data:
+    Abilities:
+        Strengthen1:
+            Strengthen: True
+            Target: -1
+            TargetIsBase: True
+            Range: 2
+            RangeIsBase: True
+            ShowRange: False
+            Filter: [Self, Ally]
+            AnimOverload: RadialSpell
+            Text: "$Affect_SelfAndAllAlliesInRange2$"
+        Muddle1:
+            Muddle: True
+            Target: -1
+            TargetIsBase: True
+            Range: 2
+            RangeIsBase: True
+            ShowRange: False
+            Filter: Enemy
+            AnimOverload: RadialSpell
+            Text: "$Target_AllEnemiesWithin$ <nobr>$Range$ <sprite name=Range> 2</nobr>"

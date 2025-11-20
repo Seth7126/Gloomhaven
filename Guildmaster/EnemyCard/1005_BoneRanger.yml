@@ -1,0 +1,21 @@
+Parser: EnemyCard
+ID: 1005
+Initiative: 57
+Shuffle: False
+Data:
+    Abilities: 
+        Attack1:
+            Attack: -1
+            Filter: Enemy
+            AnimOverload: HeavyAttack
+            Text: "$120_T$"
+            SubAbilities:
+                Attack1SubDamage:
+                    IsInlineSubAbility: True
+                    Damage: 1
+                    Range: 1
+                    RangeIsBase: True
+                    Target: -1
+                    TargetIsBase: True
+                    Filter: [Enemy, Ally]
+                    AllTargetsAdjacentToParentTargets: True

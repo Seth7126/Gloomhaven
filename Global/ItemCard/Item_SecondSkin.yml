@@ -1,0 +1,18 @@
+Parser: ItemCard
+ID: 101
+StringID: SecondSkinID
+Name: $ITEM_NAME_SecondSkin$
+Art: Second Skin
+TotalInGame: 1
+Cost: 30
+Slot: Body
+Rarity: Rare
+UsedWhenEquipped: true
+Usage: Unrestricted
+Trigger: PassiveEffect
+Data: 
+    ShieldValue: 1
+    RemoveModifiers:
+        - [AMC_Basic_M1, 2]
+Layout: 
+    - Row: $Item_SecondSkin$

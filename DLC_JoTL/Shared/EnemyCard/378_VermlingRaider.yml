@@ -1,0 +1,15 @@
+Parser: EnemyCard
+ID: 11378
+Initiative: 77
+Shuffle: False
+Data:
+    Abilities:
+        Move1:
+            Move: -1
+        Attack1:
+            Attack: 0
+            Range: 3
+            RangeIsBase: True
+            Filter: Enemy
+            Condition: Wound
+            AnimOverload: RangedAttack  

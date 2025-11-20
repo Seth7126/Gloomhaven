@@ -1,0 +1,17 @@
+Parser: EnemyCard
+ID: 728
+Initiative: 02
+Shuffle: True
+Data:
+    Abilities:
+        Shield1:
+            Shield: 2
+            Filter: Self
+            ActiveBonusDuration: Round
+            AnimOverload: PowerUp            
+        Retaliate1:
+            Retaliate: 2
+            RetaliateRange: 3
+            Filter: Self
+            ActiveBonusDuration: Round
+            SkipAnim: True

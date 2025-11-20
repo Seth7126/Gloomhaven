@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_Trophy45
+LocalisedName: $TROPHY_ACHIEVEMENT_45$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_45_Desc$
+AchievementCondition:
+    - Targets:
+        CharacterIDs: NightshroudID
+        Filter: Kill
+        Conditions:
+            Actor: Invisible
+        Value: 8
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy45]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4045

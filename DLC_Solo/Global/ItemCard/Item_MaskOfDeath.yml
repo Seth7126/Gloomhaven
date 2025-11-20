@@ -1,0 +1,30 @@
+Parser: ItemCard
+ID: 145
+StringID: MaskOfDeathID
+Name: $ITEM_NAME_MaskOfDeath$
+Art: Mask of Death
+TotalInGame: 1
+Cost: 50
+Slot: Head 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+ValidEquipCharacterClassIDs: BerserkerID
+Tradeable: False
+Data: 
+    Abilities:
+        AAttack:
+            Attack: 2
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: BuffAttack
+                Requirement:
+                    HP: "== 1"
+Layout: 
+    - Active:
+        Ability: AAttack
+        ListLayout: "$Item_MaskOfDeath$"
+        Layout: "$Item_MaskOfDeath$"
+        Icon: "Attack"
+    - Row: "<size=50%> "

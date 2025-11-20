@@ -1,0 +1,90 @@
+Parser: Scenario
+ID: Scenario_Story_Plagueherald_2
+BaseBiome: Dungeon
+BaseTone: Dark
+ScenarioMeshes: [DGN_Maus_12_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Plagueherald_2_START_1
+          Character: Trainer
+        - Text: SCENARIO_STORY_Plagueherald_2_START_2
+          Character: Merchant
+        - Text: SCENARIO_STORY_Plagueherald_2_START_3
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Plagueherald_2_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_Plagueherald_2_SUCCESS_2
+          Character: Narrator
+        - Text: SCENARIO_STORY_Plagueherald_2_SUCCESS_3
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        LootX: 
+            Result: Win
+            LootAmount: [1,1,1,1]
+            Filter:
+                LootType: GoalChest
+        KillAllEnemies: Win        
+                
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                PlayerClasses: [PlagueheraldID]
+            ObjectiveDescription: Scenario_Story_Plagueherald_Character_Fail_Objective 
+   
+    Rooms:
+        Room1:
+            Threat: 75
+            PossibleRooms:
+                - EmptyTJunction:
+                    MonsterGroup: JustArtillery
+                    Traps: [100,100]
+                    TwoHexObstacles: [100] 
+        Room2:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_Plagueherald_2_ROOM_2_1
+                      Character: Narrator        
+                    - Text: SCENARIO_STORY_Plagueherald_2_ROOM_2_2
+                      Character: Trainer           
+                    - Text: SCENARIO_STORY_Plagueherald_2_ROOM_2_3
+                      Character: Narrator        
+                    - Text: SCENARIO_STORY_Plagueherald_2_ROOM_2_4
+                      Character: Merchant        
+                    - Text: SCENARIO_STORY_Plagueherald_2_ROOM_2_5
+                      Character: Trainer            
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    MonsterGroup: BanditsArtillery
+                    OneHexObstacles: [100] 
+                    Traps: [100,100, 100]
+                    Enemy2Monsters:
+                        - [SavvasIcestormID, 1, 2, 1, 0] 
+                        - [SavvasIcestormEliteID, 0, 0, 1, 2] 
+
+        Room3:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_Plagueherald_2_ROOM_3_1
+                      Character: Merchant       
+                    - Text: SCENARIO_STORY_Plagueherald_2_ROOM_3_2
+                      Character: Trainer           
+            Threat: 150
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    MonsterGroup: BanditsArtillery
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100,100,100]
+                    GoalChest: [TT_Plagueherald_2_Chest]                      
+                    Enemy2Monsters:
+                        - [SavvasLavaflowID, 1, 2, 1, 0] 
+                        - [SavvasLavaflowEliteID, 0, 0, 1, 2] 

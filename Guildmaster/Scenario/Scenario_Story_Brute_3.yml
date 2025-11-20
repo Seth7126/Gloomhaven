@@ -1,0 +1,68 @@
+Parser: Scenario
+ID: Scenario_Story_Brute_3
+BaseBiome: Dungeon
+BaseTone: Toxic
+MonsterFamily: Inox 
+ScenarioMeshes: [GUI_MapIcon_BossLairs-B6_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BRUTE_3_START_1
+          Character: Narrator
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_BRUTE_3_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_BRUTE_3_SUCCESS_2
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win        
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]                
+            Filter:
+                ActorType: Player
+                PlayerClasses: [BruteID]
+            ObjectiveDescription: Scenario_Story_Brute_Character_Fail_Objective                 
+    ScenarioModifiers:
+        SM1:
+            Type: ApplyConditionToActor
+            TriggerPhase: StartScenario
+            IsPositive: True
+            Conditions: [Strengthen]
+            ApplyToEachActorOnce: True
+            
+            ConditionDecrementTrigger: Never
+            Filter:
+                ActorType: [Player]                    
+                PlayerClasses: [BruteID]
+    Rooms:
+        Room1:
+            Threat: 175
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    MonsterGroup: NightDemons_PlusInox
+                    Theme: AlchemyLab
+                    OneHexObstacles: [20,20] 
+                    TwoHexObstacles: [10]
+                    Traps: [20,20,20]
+        Room2:
+            Threat: 175
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_BRUTE_3_ROOM_2
+                      Character: Narrator              
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    MonsterGroup: NightDemons_PlusInoxShamans
+                    Theme: Library
+                    OneHexObstacles: [20,20] 
+                    TwoHexObstacles: [50]
+                    Traps: [50,40,20]
+                    GoldPiles: [50,25]
+
+

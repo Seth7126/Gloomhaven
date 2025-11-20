@@ -1,0 +1,11 @@
+Parser: Quest
+ID: Quest_Job_DemonicDissent
+Chapter: 1
+QuestType: Job
+CompletionRewards: TT_Quest_Job_Chapter_1_1
+LoadoutImageId: DU_DF_01_Demon
+UnlockCondition:
+    - CompletedAchievement: Achievement_1_5_UnlockLocations
+Scenario:
+    MapLocation: [400, 400]
+    ScenarioPool: [Scenario_Job_DemonicDissent, 100]

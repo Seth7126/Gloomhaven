@@ -1,0 +1,32 @@
+Parser: Quest
+ID: Quest_Relic_NecklaceOfTeeth
+Chapter: 1
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_NecklaceOfTeeth_Unlock_1
+      Character: Merchant
+    - Text: QUEST_RELIC_NecklaceOfTeeth_Unlock_2
+      Character: Trainer
+    - Text: QUEST_RELIC_NecklaceOfTeeth_Unlock_3
+      Character: Merchant
+    - Text: QUEST_RELIC_NecklaceOfTeeth_Unlock_4
+      Character: Priestess
+      CameraLocation: [686, 563] 
+CompleteDialogueLines:
+    - Text: QUEST_RELIC_NecklaceOfTeeth_Complete_1
+      Character: Merchant
+    - Text: QUEST_RELIC_NecklaceOfTeeth_Complete_2
+      Character: Merchant
+    - Text: QUEST_RELIC_NecklaceOfTeeth_Complete_3
+      Character: Merchant
+LoadoutImageId: FO_DF_02_Vermling
+UnlockRevealFoWSphere:
+    - MapLocation: [686, 563]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_3_1_KillAnything
+StartingVillage: Mudview
+EndingVillage: Mudview
+Scenario:
+    MapLocation: [686, 563]
+    ScenarioPool: [Scenario_Relic_NecklaceOfTeeth, 100]

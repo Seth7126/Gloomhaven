@@ -1,0 +1,26 @@
+Parser: CityEvent
+ID: Event_City_Campaign_77ID
+# LocKey: $CITY_EVENT_77$
+LocKey: $CITY_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_CITY_CAMPAIGN_77_INTRO"
+        Options:
+            A:
+                Text: "EVENT_CITY_CAMPAIGN_77_OPTION_A"
+                Next: EVENT_CITY_CAMPAIGN_77_OPTION_A
+            B:
+                Text: "EVENT_CITY_CAMPAIGN_77_OPTION_B"
+                Next: EVENT_CITY_CAMPAIGN_77_OPTION_B
+    EVENT_CITY_CAMPAIGN_77_OPTION_A:
+        Reputation:
+            Amount: "< -14"
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_77_RESULT_A_A"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_77_OPTION_A_A
+                End: True        
+        Text: "EVENT_CITY_CAMPAIGN_77_RESULT_A_B"
+        End: Reuse
+    EVENT_CITY_CAMPAIGN_77_OPTION_B:
+        Text: "EVENT_CITY_CAMPAIGN_77_RESULT_B"
+        End: Reuse

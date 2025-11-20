@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_1_CragheartItem
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_CragheartItem$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_CragheartItem_Desc$
+   
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes: 
+        CragheartID: 1     
+AchievementCondition:
+    - CompletedQuest: Quest_Story_Cragheart_2
+TreasureTables: [TT_Achievement_1_1_CragheartItem]
+AchievementType: Mercenaries
+AchievementLevel: 0  
+AchievementOrderId: 202
+

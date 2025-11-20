@@ -1,0 +1,19 @@
+Parser: Quest
+ID: Quest_JOTL_018_TheHeist
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_018_TheHeist
+LoadoutImageId: 018_TheHeist_Loadout
+#NarrativeTextImageOverride:
+#    - [Quest_Campaign_001_INTRO_GH_1, 001_Intro_GH_1_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_JOTL_012_BeguilingSewers
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLSide
+Scenario:
+    MapLocation: [1395, 310]
+    ScenarioPool: 
+      - [Scenario_JOTL_018_TheHeist, 100]

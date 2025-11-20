@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_JOTL_005_ADeeperUnderstanding
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_005_ADeeperUnderstanding
+LoadoutImageId: 005_ADeeperUnderstanding_Loadout
+#NarrativeTextImageOverride:
+UnlockCondition:
+    - CompletedQuest: Quest_JOTL_004_ARitualInStone
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLBoss
+Scenario:
+    MapLocation: [568, 929]
+    ScenarioPool: 
+      - [Scenario_JOTL_005_ADeeperUnderstanding, 100]

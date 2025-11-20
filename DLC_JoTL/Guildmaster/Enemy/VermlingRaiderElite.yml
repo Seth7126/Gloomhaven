@@ -1,0 +1,58 @@
+Parser: Enemy
+ID: VermlingRaiderEliteID
+LocKey: $VermlingRaiderElite$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Vermling Raider Elite
+NonEliteVariant: VermlingRaiderID
+PredominantlyMelee: False
+AbilityCards: [11372, 11373, 11374, 11375, 11376, 11377, 11378, 11379]
+# Base Stats
+Level0:
+    Health: 8
+    Move: 1
+    Attack: 2
+    Range: 1
+    Target: 1
+Level1:
+    Health: 10
+    Move: 1
+    Attack: 2
+    Range: 1
+    Target: 1
+Level2:
+    Health: 14
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+Level3:
+    Health: 16
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+Level4:
+    Health: 19
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level5:
+    Health: 23
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level6:
+    Health: 27
+    Move: 4
+    Attack: 5
+    Range: 1
+    Target: 1
+Level7:
+    Health: 31
+    Move: 4
+    Attack: 6
+    Range: 1
+    Target: 1

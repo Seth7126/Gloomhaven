@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Retirement_Spellweaver
+LocalisedName: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+LocalisedDescription: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+UnlockCondition:
+    - Retirement: SpellweaverID
+AchievementCondition:
+    - Retirement: SpellweaverID
+TreasureTables: [TT_Achievement_Retirement_Spellweaver]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 2113

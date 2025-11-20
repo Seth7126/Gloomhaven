@@ -1,0 +1,77 @@
+Parser: Scenario
+ID: Scenario_Job_SavvasAid
+BaseBiome: Forest
+BaseTone: Natural
+ScenarioMeshes: [DGN_Forest_15_MAT]
+ChestTreasureTables: [TT_Chapter_1_1_Chest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_SavvasAid_Start_1
+          Character: SavvasLavaflowElite
+        - Text: SCENARIO_JOB_SavvasAid_Start_2
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_SavvasAid_Success_1
+          Character: Narrator
+        - Text: SCENARIO_JOB_SavvasAid_Success_2
+          Character: Trainer
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:
+            Result: Win                  
+
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]
+            Filter:
+                EnemyClasses: [SavvasLavaflowEliteID]                   
+    Rooms:
+        Room1:
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    Theme: AncientTemple
+                    MonsterGroup: Hounds_BearsVipersDrakes
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]    
+                    AllyMonsters:
+                        - [SavvasLavaflowEliteID, 1, 1, 1, 1]
+
+        Room2:
+            Threat: 50
+            PossibleRooms:
+                - ShortEmptyCorridor:
+                    Biome: Crypt
+                    SubBiome: Ruined
+                    Theme: TombStore
+                    MonsterGroup: Hounds_BearsVipersDrakes
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]                    
+                    OneHexObstacles: [100]
+        Room3:
+            Threat: 50
+            PossibleRooms:
+                - ShortEmptyCorridor:
+                    Biome: Crypt
+                    SubBiome: Ruined
+                    Theme: Well
+                    MonsterGroup: Hounds_BearsVipersDrakes
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]                    
+                    OneHexObstacles: [100]
+        Room4:
+            Threat: 125
+            PossibleRooms:
+                - MediumEmptyRoom:
+                    Biome: Crypt
+                    SubBiome: Ruined
+                    Theme: DruidTemple
+                    MonsterGroup: Hounds_BearsVipersDrakes
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]                    
+                    OneHexObstacles: [100]
+                    TwoHexObstacles: [100]
+                    TreasureChestChance: [33]

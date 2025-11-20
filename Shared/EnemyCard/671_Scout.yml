@@ -1,0 +1,15 @@
+Parser: EnemyCard
+ID: 671
+Initiative: 54
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: -2
+        Attack1:
+            Attack: 0
+            Range: 3
+            RangeIsBase: True
+            Filter: Enemy
+            AnimOverload: RangedAttack
+            Conditions: Poison

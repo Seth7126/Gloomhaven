@@ -1,0 +1,34 @@
+Parser: ItemCard
+ID: 76
+StringID: ChainHoodID
+Name: $ITEM_NAME_ChainHood$
+Art: Chain Hood
+TotalInGame: 2
+Cost: 40
+Slot: Head
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+Data: 
+    Abilities:
+        AShield:
+          Shield:
+              Amount: 1
+          Range: 1
+          Target: -1
+          Filter: [Self]
+          ActiveBonus:
+              Duration: Persistent
+              IsAura: True
+              AuraFilter:
+                  TargetType: Self
+                  TargetAdjacentEnemies: ">= 3"
+    AddModifiers:
+        - [AMC_Basic_M1, 1]
+Layout: 
+    - Active:
+        Ability: AShield
+        ListLayout: "$Item_ChainHood$"
+        Layout: "$Item_ChainHood$"
+        Icon: "Shield"
+    - Row: "<size=50%> "

@@ -1,0 +1,22 @@
+Parser: EnemyCard
+ID: 627
+Initiative: 18
+Shuffle: False
+Data:
+    Abilities: 
+        Shield1:
+            Shield: 2
+            Filter: Self
+            AnimOverload: PowerUp
+            ActiveBonusDuration: Round
+        Move1:
+            Move: 1
+    Consumes:
+        CFire:
+            Elements: Fire
+            Abilities:
+                CFireDamage:
+                    Damage: 1
+                    Filter: Self
+                    Text: "$627$"
+                    TextOnly: True

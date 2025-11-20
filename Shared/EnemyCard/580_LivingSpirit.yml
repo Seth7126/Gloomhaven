@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 580
+Initiative: 22
+Shuffle: True
+Data:
+    Abilities: 
+        Move1:
+            Move: -1
+        Attack1:
+            Attack: -1
+            Filter: Enemy
+            Conditions: Muddle

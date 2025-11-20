@@ -1,0 +1,56 @@
+Parser: Scenario
+ID: Scenario_Job_Imps_Spirits_Forest
+BaseBiome: Forest
+BaseTone: ForestEerie
+BaseTheme: MagicGrotto
+MonsterFamily: ForestDenizens
+ScenarioMeshes: [DGN_Forest_05_MAT, DGN_Forest_07_MAT, DGN_Forest_08_MAT]
+ChestTreasureTables: [TT_Chapter_1_1_Chest]
+
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: QUEST_JOB_IMPS_SPIRITS_FOREST_INTRO_01
+          Character: Merchant
+        - Text: QUEST_JOB_IMPS_SPIRITS_FOREST_INTRO_02
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: QUEST_JOB_IMPS_SPIRITS_FOREST_OUTRO
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: ForestImps_Spirits
+#                        Theme: [Burial Chamber, Mausoleum, Shrine, Temple, Chapel, Ancient Library, Study]
+                    OneHexObstacles: [100,50,20] 
+                    TwoHexObstacles: [100,20]
+                    Traps: [80,20,5]
+        Room2:
+            Threat: 75
+            PossibleRooms:
+                - LongEmptyCorridor:
+                    MonsterGroup: ForestImps_Spirits
+#                        Theme: [Burial Chamber, Mausoleum, Shrine, Temple, Chapel, Ancient Library, Study]
+                    OneHexObstacles: [50,50] 
+                    TwoHexObstacles: [20]
+                    Traps: [20,5]
+                    GoldPiles: [5,5]              
+        Room3:
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: ForestImps_Spirits
+#                        Theme: [Burial Chamber, Mausoleum, Shrine, Temple, Chapel, Ancient Library, Study]
+                    OneHexObstacles: [100,50] 
+                    TwoHexObstacles: [50, 50]
+                    Traps: [50,50,50]
+                    GoldPiles: [100,50,20,5,1]
+                    TreasureChestChance: [33]
+

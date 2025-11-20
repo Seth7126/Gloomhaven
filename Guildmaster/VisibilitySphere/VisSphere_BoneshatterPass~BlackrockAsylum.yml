@@ -1,0 +1,8 @@
+Parser: VisibilitySphere
+ID: VisSphere_BoneshatterPass~BlackrockAsylum
+UnlockCondition:
+    - UnlockedVillage: BoneshatterPass
+    - UnlockedVillage: BlackrockAsylum
+SphereDefinitions:
+    - MapLocation: [1645,908]
+      Radius: 10
