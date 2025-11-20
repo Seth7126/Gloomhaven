@@ -1,0 +1,61 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_OozingManifestation$
+Character: SummonerID
+ID: 248
+Level: 3
+Initiative: 86
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TSummon:
+                Summon: SlimeSpiritID
+                AnimOverload: Summon
+        XP: 2
+    Bottom:
+        Abilities:
+            BAttack:
+                Attack:
+                    Amount: 3
+                    Enhancements: 1
+                Range: 3
+                Conditions: Immobilize
+                AnimOverload: RangedAttackDark
+                MultiPassAttack: False
+        Consumes:
+            BCDark:
+                Elements: Dark
+                AbilityOverrides:
+                    BCDarkCurse:
+                        ParentName: BAttack
+                        Conditions: Curse
+                XP: 1
+Layout:
+    Top:
+        - Active:
+            Ability: "TSummon"
+            Icon: "Summon"
+            Layout:
+                - Summon:
+                    Ability: TSummon
+                    SummonName: $SlimeSpirit$
+                    SpecialText:
+                        - Row: "<nobr>$Muddle$ <sprite name=Muddle></nobr>"
+                        - Row: "<size=20%> "
+                        - Row: "<nobr>$Shield$ <sprite name=Shield> 2</nobr>"
+        - Row: "<size=20%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Persistent
+    Bottom:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAttack* <size=100%><voffset=1>@BAttack@"
+        - Row: "$Range$ <sprite name=Range> *BAttack.Range*"
+        - Row: "$Immobilize$ <sprite name=Immobilize>"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: BCDark
+            Text: "$Curse$ <sprite name=Curse>, <sprite name=XP1>"

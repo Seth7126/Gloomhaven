@@ -1,0 +1,51 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BoosterShot$
+Character: SawbonesID
+ID: 410
+Level: 1
+Initiative: 42
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            THeal:
+                Heal:
+                    Amount: 4
+                    Enhancements: 2
+                Range: 1
+                Filter: [Self, Ally]                
+                AnimOverload: Heal
+    Bottom:
+        Abilities:
+            BShield:
+                Shield:
+                    Amount: 1
+                Filter:
+                    TargetType: Ally
+                    ActorType: Player
+                ActiveBonus:
+                    Duration: Persistent
+                    GiveAbilityCardToActor: True
+                AnimOverload: BuffAdjacent
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Heal$ <sprite name=Heal> *THeal* <size=100%><voffset=1>@THeal@"
+        - Row: "$Range$ <sprite name=Range> *THeal.Range*"
+    Bottom:
+        - Row:
+            - ColumnWidths: "88,12"
+            - Column:
+                - Row: "$410_B$"
+            - Column:
+                - XP: 2
+        - Row: "<size=50%> "
+        - Active:
+            Ability: BShield
+            Icon: "Shield"
+            ListLayout: "$Shield$ <sprite name=Shield> *BShield*, $Self$"
+            Layout:
+                - Row: "<b><size=130%>$Shield$ <sprite name=Shield> *BShield* <size=100%><voffset=1>@BShield@"
+                - Row: "$Self$"
+        - Row: "<size=20%> "
+        - Duration: Persistent

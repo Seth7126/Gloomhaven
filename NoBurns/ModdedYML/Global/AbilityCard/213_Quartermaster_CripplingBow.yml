@@ -1,0 +1,34 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_CripplingBow$
+Character: QuartermasterID
+ID: 213
+Level: 1
+Initiative: 44
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack: 3
+                Range: 3
+                AnimOverload: RangedAttack
+        XP: 1
+    Bottom:
+        Abilities:
+            BAttack:
+                Attack:
+                    Amount: 1
+                    Enhancements: 1
+                Range: 4
+                Condition: Immobilize
+                AnimOverload: RangedAttack
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack*"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "<size=50%> "
+        - XP: 1
+    Bottom:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAttack* <size=100%><voffset=1>@BAttack@"
+        - Row: "$Range$ <sprite name=Range> *BAttack.Range*"
+        - Row: "$Immobilize$ <sprite name=Immobilize>"

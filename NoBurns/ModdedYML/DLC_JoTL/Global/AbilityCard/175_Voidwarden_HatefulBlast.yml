@@ -1,0 +1,75 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_HatefulBlast$
+Character: VoidwardenID
+ID: 11175
+Level: 7
+Initiative: 29
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 5
+                    Enhancements: 1
+                Range: 3
+                Condition: Muddle
+                AnimOverload: RangedAttack
+        Consumes:
+            TCDark:
+                Elements: Dark
+                AbilityOverrides:
+                    TCDarkBuff:
+                        ParentName: TAttack
+                        Condition: Wound
+                XP: 1
+    Bottom:
+        Abilities:
+            BControl:
+                ControlActor:
+                    Abilities:
+                        EnemyWillDoThis:
+                            Attack:
+                                Amount: 2
+                                Enhancements: 1
+                            Range: 2
+                            Target: 3
+                            Condition: Wound
+                            StrengthIsBase: True
+                            RangeIsBase: True
+                            TargetIsBase: True
+                            AnimOverload: RangedAttack
+                    ControlDurationType: ControlForOneAction
+                    ControlActorType: Player
+                Range: 3
+                Filter: Enemy
+                AnimOverload: ControlEnemy
+        Consumes:
+            BCDark:
+                Elements: Dark
+                AbilityOverrides:
+                    BCDarkBuff:
+                        ParentName: EnemyWillDoThis
+                        Range: 1
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* @TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "$Muddle$ <sprite name=Muddle>"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCDark
+            Text: "<nobr>$Wound$ <sprite name=Wound></nobr>, <sprite name=XP1>"
+    Bottom:
+        - Row: "$JOTL_175_B$"
+        - Row: "<size=20%> "
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *EnemyWillDoThis* @EnemyWillDoThis@"
+        - Row: "$Range$ <sprite name=Range> *EnemyWillDoThis.Range*"
+        - Row: "$Target$ <sprite name=Target> *EnemyWillDoThis.Target*"
+        - Row: "$Wound$ <sprite name=Wound>"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: BCDark
+            Text: "<nobr>+1 $Range$ <sprite name=Range></nobr>"
+        - XP: 2

@@ -1,0 +1,47 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BlackKnives$
+Character: NightshroudID
+ID: 261
+Level: 1
+Initiative: 44
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TActive:
+                AddActiveBonus:
+                    Attack:
+                        Amount: 2
+                    Range: 3
+                    AnimOverload: RangedAttack
+                ActiveBonus:
+                    Duration: Persistent
+                    Restriction: OncePerAction
+                    Behaviour: DuringActionAbilityOnAttackAbilityFinished
+                    Filter:
+                        CasterHasPositiveConditions: [Invisible]
+                    XPTracker: [1,1,1,1]
+                Targeting: All
+                Target: -1
+                Filter: Self
+                AnimOverload: PowerUp
+    Bottom:
+        Abilities:
+            BAttack:
+                Attack: 2
+                Condition: Muddle
+        XP: 1
+Layout:
+    Top:
+        - Active:
+            Ability: "TActive"
+            Icon: "Invisible"
+            ListLayout: "$261_T$"
+            Layout: "$261_T$"
+        - Row: "<size=50%> "
+        - XPTracker: TActive
+    Bottom:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAttack*"
+        - Row: "$Muddle$ <sprite name=Muddle>"
+        - Row: "<size=50%> "
+        - XP: 1

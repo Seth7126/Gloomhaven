@@ -1,0 +1,68 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_ElementalAid$
+Character: SpellweaverID
+ID: 75
+Level: 3
+Initiative: 84
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            THeal:
+                Heal:
+                    Amount: 3
+                    Enhancements: 1
+                Range:
+                    Amount: 2
+                    Enhancements: 1
+                Filter: [Self, Ally]
+                AnimOverload: Heal
+        Consumes:
+            TCEarth:
+                Elements: Earth
+                AbilityOverrides:
+                    TCEarthHealBuff:
+                        ParentName: THeal
+                        Strength: 2
+                XP: 1
+    Bottom:
+        Abilities:
+            BShield:
+                Shield: 2
+                Targeting: All
+                Filter: Ally
+                ActiveBonusDuration: Round
+        Consumes:
+            BCAir:
+                Elements: Air
+                AbilityOverrides:
+                    BCAirShieldBuff:
+                        ParentName: BShield
+                        Target: -1
+                        TargetIsBase: True
+                        Filter: Ally
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Heal$ <sprite name=Heal> *THeal* <size=100%><voffset=1>@THeal@"
+        - Row: "$Range$ <sprite name=Range> *THeal.Range* @THeal.Range@"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCEarth
+            Text: "+2 $Heal$ <sprite name=Heal>, <sprite name=XP1>"
+    Bottom:
+        - Active:
+            Ability: BShield
+            Layout:
+                - Row: "<b><size=130%>$Shield$ <sprite name=Shield> *BShield*"
+                - Row: "$Affect_AnyOneAlly$"
+            LayoutAlt:
+                - Row: "<b><size=130%>$Shield$ <sprite name=Shield> *BShield*"
+                - Row: "$Affect_AllAllies$"
+            ListLayout: "<b><size=130%>$Shield$ <sprite name=Shield> *BShield*"
+            Icon: "Shield"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: BCAir
+            Text: "$Affect_AllAllies$ $instead$"
+        - Row: "<size=20%> "
+        - Duration: Round

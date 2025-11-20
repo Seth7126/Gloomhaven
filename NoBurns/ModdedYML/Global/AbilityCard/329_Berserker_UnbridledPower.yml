@@ -1,0 +1,60 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_UnbridledPower$
+Character: BerserkerID
+ID: 329
+Level: X
+Initiative: 67
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 1
+                Condition: Stun
+        Consumes:
+            TCFire:
+                Elements: Fire
+                AbilityOverrides:
+                    TCFireAttackBuff:
+                        ParentName: TAttack
+                        Strength: 2
+    Bottom:
+        Abilities:
+            BAllowOverheal:
+                AllowOverheal: 26
+                Filter: Self
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: SetMinimumOverheal
+            BHeal:
+                Heal: 3
+                Filter: Self
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Stun$ <sprite name=Stun>"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCFire
+            Text: "+2 $Attack$ <sprite name=Attack>"
+    Bottom:
+        - Active:
+            Ability: BAllowOverheal
+            Icon: Heal
+            ListLayout: "$329_B$"
+            Layout:
+                - Row: "$329_B$"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Heal$ <sprite name=Heal> *BHeal*"
+        - Row: "$Self$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Persistent

@@ -1,0 +1,41 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BattlefieldMedicine$
+Character: SawbonesID
+ID: 414
+Level: 1
+Initiative: 83
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TGiveSupplyCard:
+                GiveSupplyCard: 424
+                Filter:
+                    TargetType: Ally
+                    ActorType: Player
+                AnimOverload: GivePackAdjacent
+        XP: 2                
+    Bottom:
+        Abilities:
+            BImmunity:
+                ImmunityTo: [Poison, Wound, Stun, Disarm, Immobilize, Muddle, Curse]
+                Filter: Self
+                ActiveBonus:
+                    Duration: Round
+                    IsAura: True
+                    AuraTargeting: All
+                    AuraFilter: [Self, Ally]
+                AnimOverload: PowerUp
+Layout:
+    Top:
+        - Row: "$414_T$"
+        - Row: "<size=50%> "
+        - XP: 2
+    Bottom:
+        - Active:
+            Ability: BImmunity
+            Icon: Immune
+            ListLayout: "<b>$Aura$<sprite name=Aura>:</b> $414_B$"
+            Layout: "<b>$Aura$<sprite name=Aura>:</b> $414_B$"
+        - Row: "<size=50%> "
+        - Duration: Round

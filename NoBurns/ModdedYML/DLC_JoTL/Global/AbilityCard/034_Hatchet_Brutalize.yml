@@ -1,0 +1,63 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_Brutalize$
+Character: HatchetID
+ID: 11034
+Level: 7
+Initiative: 22
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 4
+                    Enhancements: 1
+                ConditionalOverrides:
+                        TAttackFavoriteCO:
+                            Filter:
+                                TargetType: Enemy
+                                TargetHasCharacterResource: ["TheFavorite"]
+                            XP: 1
+                            AbilityOverrides:
+                                TAdjAllyBuff:
+                                    Strength: 2
+                                    ResourcesToTakeFromTargets:
+                                        - ["TheFavorite", 1]
+                        TAttackNewFavoriteCO:
+                            Filter:
+                                TargetType: Enemy
+                                TargetHasCharacterResource: ["TheNewFavorite"]
+                            XP: 1
+                            AbilityOverrides:
+                                TAdjAllyBuff:
+                                    Strength: 2
+                                    ResourcesToTakeFromTargets:
+                                        - ["TheNewFavorite", 1]
+    Bottom:
+        Abilities:
+            BAttack:
+                Attack: 
+                    Amount: 5
+                    Enhancements: 1
+                Range: 4
+                Condition: Stun
+                AnimOverload: HeavyRangedAttack
+        Infuse: Air
+        XP: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "<size=20%> "
+        - Row: "$JOTL_034_T$"
+    Bottom:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAttack* <size=100%><voffset=1>@BAttack@"
+        - Row: "$Range$ <sprite name=Range> *BAttack.Range*"
+        - Row: "$Stun$ <sprite name=Stun>"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - Infuse: Air
+            - Column:
+                - XP: 1

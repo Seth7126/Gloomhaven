@@ -1,0 +1,28 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_RevivingEther$
+Character: SpellweaverID
+ID: 63
+Level: 1
+Initiative: 80
+Discard: [Permanently Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            BRecover:
+                RecoverLostCards: All
+        Infuse: Dark
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 4
+                    Jump: True
+                    Enhancements: 1
+Layout:
+    Top:
+        - Row: "$063_T$"
+        - Row: "<size=20%> "
+        - Infuse: Dark
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "$Jump$ <sprite name=Jump>"

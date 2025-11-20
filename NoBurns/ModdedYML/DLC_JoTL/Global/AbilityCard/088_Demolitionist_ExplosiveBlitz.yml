@@ -1,0 +1,48 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_ExplosiveBlitz$
+Character: DemolitionistID
+ID: 11088
+Level: 1
+Initiative: 19
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack: 2
+                Range:
+                    Amount: 4
+                    Enhancements: 1
+                AnimOverload: RangedAttack
+        Infuse: Fire
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 3
+                    Enhancements: 1
+            BStun:
+                Stun: True
+                Range: 3
+                Target: -1
+                Filter: Enemy
+                StartAbilityRequirements:
+                    Type: PreviousAbility
+                    DoorsOpenedByAbility: "> 0"
+                AnimOverload: RadialDebuff
+        XP: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack*"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range* @TAttack.Range@"
+        - Row: "<size=50%> "
+        - Infuse: Fire
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "<size=50%> "
+        - Row: "$JOTL_088_B$"
+        - Row: "<size=20%> "
+        - Row: "<b><size=130%>$Stun$ <sprite name=Stun>"
+        - Row: "$Target_AllEnemiesWithin$ <nobr>$Range$ <sprite name=Range> 3</nobr>"
+        - Row: "<size=20%> "
+        - XP: 1

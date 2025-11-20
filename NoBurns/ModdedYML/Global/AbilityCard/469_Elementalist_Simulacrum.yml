@@ -1,0 +1,85 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_Simulacrum$
+Character: ElementalistID
+ID: 469
+Level: 6
+Initiative: 94
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+          TAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 1
+                Range: 3
+        Consumes:
+            TCAnyAny1:
+                Elements: [Any,Any]
+                AbilityOverrides:
+                    TCAnyAny1:
+                        ParentName: TAttack
+                        Amount: 3
+                XP: 1
+            TCAnyAny2:
+                Elements: [Any,Any]
+                AbilityOverrides:
+                    TCAnyAny2:
+                        ParentName: TAttack
+                        Target: 1
+                XP: 1
+            TCAnyAny3:
+                Elements: [Any,Any]
+                AbilityOverrides:
+                    TCAnyAny3:
+                        ParentName: TAttack
+                        Conditions: [Immobilize, Muddle]
+
+                XP: 1                
+    Bottom:
+        Abilities:
+          BSummon:
+            Summon: 
+                ID: DoppelgangerID
+                ActiveBonusData:
+                    Behaviour: CastAbilityFromSummon
+                    ValidAbilityType: Attack
+                    IsToggleBonus: True            
+            AnimOverload: Summon
+        XP: 1  
+        Infuse: [Earth]        
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "<size=50%> "
+        - Consume:
+            Name: TCAnyAny1
+            Text: "<nobr>+3 $Attack$ <sprite name=Attack></nobr>, <sprite name=XP1>"
+        - Consume:
+            Name: TCAnyAny2
+            Text: "<nobr>$Target$ <sprite name=Target> 2</nobr>, <sprite name=XP1>"
+        - Consume:
+            Name: TCAnyAny3
+            Text: "<nobr>$Immobilize$ <sprite name=Immobilize></nobr>, <nobr>$Muddle$ <sprite name=Muddle>, <sprite name=XP1></nobr>"
+    Bottom:
+        - Active:
+            Ability: BSummon
+            Icon: "Summon"
+            Layout: 
+                - Summon: 
+                    Ability: BSummon
+                    SummonName: $Doppelganger$
+                    SpecialText: "$469_B_2$"
+        - Row: "<size=20%> "
+        - Row:
+            - ColumnWidths: "20,20,20,20,20"
+            - Column:
+            - Column:
+                - Infuse: Earth
+            - Column:
+                - XP: 1
+            - Column:
+                - Duration: Persistent
+            - Column:
+ 

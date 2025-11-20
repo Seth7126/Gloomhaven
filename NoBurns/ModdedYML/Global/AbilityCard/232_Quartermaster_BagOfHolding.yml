@@ -1,0 +1,34 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BagofHolding$
+Character: QuartermasterID
+ID: 232
+Level: 9
+Initiative: 91
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TLoot:
+                Loot: 3
+                Target: -1
+                AnimOverload: Loot
+    Bottom:
+        Abilities:
+            BRefresh:
+                RefreshItems: All
+                SlotToRefresh: SmallItem
+                SlotStateToRefresh: Consumed
+                Range: 1
+                Target: -1
+                Filter:
+                    TargetType: [Self, Ally]
+                    ActorType: Player
+                AnimOverload: Refresh
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Loot$ <sprite name=Loot> *TLoot*"
+    Bottom:
+        - Row: "$232_B$"
+        - Row: "<size=50%> "
+        - XP: 2

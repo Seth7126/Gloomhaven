@@ -1,0 +1,67 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_GiftOfTheVoid$
+Character: VoidwardenID
+ID: 11153
+Level: 1
+Initiative: 89
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TPoison:
+                Poison: True
+                Range: 3
+                Filter: Enemy
+                AnimOverload: TargetedDebuff Poison
+                SubAbilities:
+                    TSubAlly:
+                        ControlActor:
+                            TreatPreviousAbilityToControlAbilityAsParent: True
+                            UseControllingActorPlayerControl: True
+                            Abilities:
+                                TAllyAttack:
+                                    Attack: 3
+                                    Range: 4
+                                    StrengthIsBase: True
+                                    RangeIsBase: True
+                                    TargetIsBase: True
+                                    SubAbilities:
+                                        TAllyAttackSubDamage:
+                                            Damage: 2
+                                            Filter: Self
+                                            TreatAsNonSubAbility: True
+                                            AutoTrigger: True
+                                    AnimOverload: RangedAttack
+                        Range: 1
+                        Filter: Ally
+                        TreatAsNonSubAbility: True
+                        UseParentTiles: False
+                        AnimOverload: ControlAlly
+        Infuse: Dark
+    Bottom:
+        Abilities:
+            BHeal:
+                Heal: 2
+                Range: 3
+                Filter: [Self, Ally]
+                AnimOverload: TargetedHeal
+Layout:
+    Top:
+        - Row:
+            - ColumnWidths: "15,70,15"
+            - Column:
+            - Column:
+                - Row: "<b><size=130%>$Poison$ <sprite name=Poison>"
+                - Row: "$Range$ <sprite name=Range> *TPoison.Range*"
+            - Column:
+                - Infuse: Dark
+        - Row: "<size=50%> "
+        - Row: "$JOTL_153_T_1$"
+        - Row: "<size=20%> "
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> 3"
+        - Row: "$Range$ <sprite name=Range> 4"
+        - Row: "<size=20%> "
+        - Row: "$With_YouControllingActions$ $JOTL_153_T_2$"
+    Bottom:
+        - Row: "<b><size=130%>$Heal$ <sprite name=Heal> *BHeal* <size=100%><voffset=1>@BHeal@"
+        - Row: "$Range$ <sprite name=Range> *BHeal.Range*"

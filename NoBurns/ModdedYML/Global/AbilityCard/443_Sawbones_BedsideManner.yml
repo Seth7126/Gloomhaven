@@ -1,0 +1,52 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BedsideManner$
+Character: SawbonesID
+ID: 443
+Level: 8
+Initiative: 5
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            THeal:
+                Heal:
+                    Amount: 3
+                    Enhancements: 2
+                Range: 1
+                Filter: [Self, Ally]
+                SubAbilities:
+                    THealSubRemoveConditions:
+                        RemoveConditions: All
+                        Conditions: [Poison, Wound, Immobilize, Disarm, Stun, Muddle]
+                        AnimOverload: None
+                    THealSubGiveSupplyCard:
+                        GiveSupplyCard: 424
+                        Filter:
+                            TargetType: Ally
+                            ActorType: Player                        
+                        AnimOverload: None
+                AnimOverload: Heal
+        XP: 2
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 2
+                    Enhancements: 1
+            BRecover:
+                RecoverDiscardedCards: 2
+                Range: 1
+                Filter: Ally
+                AnimOverload: BuffAdjacent
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Heal$ <sprite name=Heal> *THeal* <size=100%><voffset=1>@THeal@"
+        - Row: "$Range$ <sprite name=Range> *THeal.Range*"
+        - Row: "<size=20%> "
+        - Row: "$443_T$"
+        - Row: "<size=50%> "
+        - XP: 2
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "<size=50%> "
+        - Row: "$443_B$"

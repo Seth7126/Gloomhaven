@@ -1,0 +1,71 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_GrimBargain$
+Character: PlagueheraldID
+ID: 316
+Level: 8
+Initiative: 46
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TActive:
+                AddTarget: 2
+                Filter: Self
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: BuffTarget
+                    Restriction: OncePerAction
+                    ValidAbilityType: Attack
+                    IsToggleBonus: True
+                    XPTracker: [0,1,0,1,0,1]
+                    CostAbility:
+                        Curse: True
+                        Range: 2
+                        Filter: Ally
+                        AnimOverload: TargetedDebuff
+                AnimOverload: PowerUp
+    Bottom:
+        Abilities:
+            BMuddle:
+                Muddle: True
+                Filter: Self
+                SubAbilities:
+                    BMuddleSubActive:
+                        Attack: 2
+                        ActiveBonus:
+                            Duration: Round
+                            Behaviour: BuffAttack
+                            StrengthIsScalar: True
+                            XPTracker: [0]
+                AnimOverload: PowerUp
+        Infuse: Dark
+        XP: 1
+Layout:
+    Top:
+        - Active:
+            Ability: TActive
+            Icon: Target
+            ListLayout: "$316_T$"
+            Layout: "$316_T$"
+        - Row: "<size=50%> "
+        - XPTracker: TActive
+    Bottom:
+        - Row: "<b><size=130%>$Muddle$ <sprite name=Muddle>"
+        - Row: "$Self$"
+        - Row: "<size=50%> "
+        - Active:
+            Ability: BMuddleSubActive
+            Icon: Attack
+            ListLayout: "$316_B$"
+            Layout: "$316_B$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "20,20,20,20"
+            - Column:
+            - Column:
+                - Infuse: Dark
+            - Column:
+                - XP: 1
+            - Column:
+                - Duration: Round
+

@@ -1,0 +1,39 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_LurkingRuin$
+Character: NightshroudID
+ID: 286
+Level: 8
+Initiative: 18
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack: 5
+                ConditionalOverrides:
+                    TAttackCO:
+                        Filter:
+                            CasterHasPositiveConditions: Invisible
+                        AbilityOverrides:
+                            TAttackCOBuff:
+                                Conditions: [Poison, Muddle, Wound]
+                        XP: 1
+                AnimOverload: HeavyAttack
+    Bottom:
+        Abilities:
+            BMove:
+                Move: 3
+            BInvis:
+                Invisible: True
+                Filter: Self
+                AnimOverload: TurnInvisible
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack*"
+        - Row: "<size=20%> "
+        - Row: "$286_T$"
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove*"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Invisible$ <sprite name=Invisible>"
+        - Row: "$Self$"

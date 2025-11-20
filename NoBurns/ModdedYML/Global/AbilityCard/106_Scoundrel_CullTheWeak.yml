@@ -1,0 +1,49 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_CulltheWeak$
+Character: ScoundrelID
+ID: 106
+Level: 5
+Initiative: 16
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 4
+                    Enhancements: 1
+                ConditionalOverrides:
+                    TAttackCO:
+                        Filter:
+                            TargetType: Enemy
+                            TargetAdjacentAllies: "> 0"
+                        XP: 1
+                        AbilityOverrides:
+                            TAdjAllyBuff:
+                                Strength: 2
+    Bottom:
+        Abilities:
+            BAttackBuff:
+                Attack: 0
+                Filter: Self
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: BuffAttack
+                    XPTracker: [0,1,0,1,0,1]
+                AttackEffect:
+                    Type: BuffIfAnyConditionsOnTarget
+                    Strength: 2
+                    Conditions: [Disarm, Stun, Immobilize]
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "<size=20%> "
+        - Row: "$088_T$"
+    Bottom:
+        - Active:
+            Ability: BAttackBuff
+            ListLayout: "$106_B$"
+            Layout: "$106_B$"
+            Icon: "Damage"
+        - Row: "<size=50%> "
+        - XPTracker: BAttackBuff

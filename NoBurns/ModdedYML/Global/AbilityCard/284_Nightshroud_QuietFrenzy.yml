@@ -1,0 +1,48 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_QuietFrenzy$
+Character: NightshroudID
+ID: 284
+Level: 7
+Initiative: 19
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack: 3
+                ConditionalOverrides:
+                    TAttackCO:
+                        Filter:
+                            CasterHasPositiveConditions: Invisible
+                        AbilityOverrides:
+                            TAttackCOBuff:
+                                Strength: 2
+                        XP: 1
+                AnimOverload: HeavyAttack
+        Consumes:
+            TCDark:
+                Elements: Dark
+                AbilityOverrides:
+                    TCDarkAttackBuff:
+                        ParentName: TAttack
+                        Strength: 3
+                XP: 1
+    Bottom:
+        Abilities:
+            BAttack:
+                Attack: 3
+            BMove:
+                Move: 3
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack*"
+        - Row: "<size=20%> "
+        - Row: "$268_T$"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCDark
+            Text: "+3 $Attack$ <sprite name=Attack>, <sprite name=XP1>"
+    Bottom:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAttack*"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove*"

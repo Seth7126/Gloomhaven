@@ -1,0 +1,63 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_PulltheStrings$
+Character: SoothsingerID
+ID: 368
+Level: 6
+Initiative: 20
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TPlaySong:
+                PlaySong: 1
+                Filter: Self
+                Song:
+                    Filter: Self
+                    SongEffect:
+                        Abilities:
+                            TControl:
+                                ControlActor:
+                                    Abilities:
+                                        EnemyWillDoThis:
+                                            Move: 2
+                                            StrengthIsBase: True
+                                    ControlDurationType: ControlForOneAction
+                                    ControlActorType: Player
+                                Range: 5
+                                Filter: Enemy
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: StartTurnAbility
+                AnimOverload: PlaySongConfuse1
+    Bottom:
+        Abilities:
+            BControl:
+                ControlActor:
+                    Abilities:
+                        EnemyWillDoThis:
+                            Attack: 0
+                            Range: 0
+                            Target: 1
+                            TargetIsBase: True
+                    ControlDurationType: ControlForOneAction
+                    ControlActorType: Player
+                Range: 5
+                Filter: Enemy
+                AnimOverload: AggressiveTargetedShout
+        XP: 1                
+Layout:
+    Top:
+        - Song:
+            SongIcon: Soothsinger
+            ParentAbility: TPlaySong
+            ActiveBonusLayout: "$368_T$"
+            SongAbilityLayout: "$368_T$"
+    Bottom:
+        - Row: "$146_B_1$"
+        - Row: "<size=20%> "
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> +0"
+        - Row: "$Range$ <sprite name=Range> +0"
+        - Row: "<size=20%> "
+        - Row: "$146_B_2$"
+        - Row: "<size=50%> "
+        - XP: 1

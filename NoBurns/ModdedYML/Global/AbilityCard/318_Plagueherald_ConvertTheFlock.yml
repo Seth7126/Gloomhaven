@@ -1,0 +1,63 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_ConverttheFlock$
+Character: PlagueheraldID
+ID: 318
+Level: 9
+Initiative: 29
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 4
+                    Enhancements: 1
+                Range:
+                    Amount: 3
+                    Enhancements: 1
+                Target:
+                    Amount: 3
+                    Enhancements: 1
+                Condition: Curse
+                AnimOverload: RadialNegativeMajor
+                MultiPassAttack: False                    
+                
+        XP: 2
+    Bottom:
+        Abilities:
+            BDamage:
+                Damage: 2
+                Target: -1
+                Targeting: All
+                Filter:
+                    TargetType: Ally
+                    TargetHasNegativeCondition: Poison
+                AnimOverload: RadialNegativeMajor
+                SubAbilities:
+                    BDamageSubAttackBuff:
+                        Attack: 1
+                        Filter: Self
+                        ActiveBonus:
+                            Duration: Round
+                        AbilityXP: 1
+                        PerformXTimesBasedOn: HalfTargetsDamagedByPreviousDamageAbilityThisAction
+                        AnimOverload: None
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range* @TAttack.Range@"
+        - Row: "$Target$ <sprite name=Target> *TAttack.Target* @TAttack.Target@"
+        - Row: "$Curse$ <sprite name=Curse>"
+        - Row: "<size=50%> "
+        - XP: 2
+    Bottom:
+        - Row: "$318_B_1$"
+        - Row: "<size=20%> "
+        - Active:
+            Ability: BDamageSubAttackBuff
+            Icon: Attack
+            ListLayout: "$318_B_2$"
+            Layout: "$318_B_2$"
+        - Row: "<size=20%> "
+        - Duration: Round
+        

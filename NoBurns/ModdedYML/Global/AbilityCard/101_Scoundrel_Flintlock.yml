@@ -1,0 +1,32 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_Flintlock$
+Character: ScoundrelID
+ID: 101
+Level: 2
+Initiative: 90
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TLoot:
+                Loot: 1
+                Target: -1
+    Bottom:
+        Abilities:
+            BAttack:
+                Attack:
+                    Amount: 5
+                    Enhancements: 2
+                Range:
+                    Amount: 4
+                    Enhancements: 1
+                AnimOverload: RangedAttackPistol
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Loot$ <sprite name=Loot> *TLoot*"
+    Bottom:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAttack* <size=100%><voffset=1>@BAttack@"
+        - Row: "$Range$ <sprite name=Range> *BAttack.Range* @BAttack.Range@"
+        - Row: "<size=20%> "
+        - XP: 2

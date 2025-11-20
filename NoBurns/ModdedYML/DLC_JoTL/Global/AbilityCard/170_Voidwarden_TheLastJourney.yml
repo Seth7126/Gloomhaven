@@ -1,0 +1,55 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_TheLastJourney$
+Character: VoidwardenID
+ID: 11170
+Level: 4
+Initiative: 38
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 4
+                    Enhancements: 1
+                Range: 3
+                Condition: Curse
+                AnimOverload: RangedAttack
+        Infuse: Dark
+    Bottom:
+        Abilities:
+            BMove:
+                Move: 4
+            BControl:
+                ControlActor:
+                    Abilities:
+                        EnemyWillDoThis:
+                            Move: 3
+                            StrengthIsBase: True
+                            SubAbilities:
+                                SubImmobilize:
+                                    Immobilize: True
+                                    Filter: Self
+                    ControlDurationType: ControlForOneAction
+                    ControlActorType: Player
+                Range: 1
+                Filter: Enemy
+                AnimOverload: ControlEnemy
+        XP: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* @TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "$Curse$ <sprite name=Curse>"
+        - Row: "<size=50%> "
+        - Infuse: Dark
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove*"
+        - Row: "<size=50%> "
+        - Row: "$JOTL_170_B_1$"
+        - Row: "<size=20%> "
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *EnemyWillDoThis*"
+        - Row: "<size=20%> "
+        - Row: "$JOTL_170_B_2$"
+        - Row: "<size=20%> "
+        - XP: 1

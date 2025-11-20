@@ -1,0 +1,45 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_DesertNight$
+Character: RedGuardID
+ID: 11233
+Level: 1
+Initiative: 90
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 1
+                Range: 2
+                Condition: Disarm
+                TreatAsMelee: True
+                AnimOverload: RangedAttack
+        Infuse: [Ice, Dark]
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 6
+                    Enhancements: 1
+                    Jump: True
+        XP: 1
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Disarm$ <sprite name=Disarm>"
+        - Row: "$JOTL_233_T$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - Infuse: Ice
+            - Column:
+                - Infuse: Dark
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "$Jump$ <sprite name=Jump>"
+        - Row: "<size=50%> "
+        - XP: 1
