@@ -1,0 +1,9 @@
+namespace Steamworks;
+
+internal enum RemoteStoragePublishedFileVisibility
+{
+	Public,
+	FriendsOnly,
+	Private,
+	Unlisted
+}

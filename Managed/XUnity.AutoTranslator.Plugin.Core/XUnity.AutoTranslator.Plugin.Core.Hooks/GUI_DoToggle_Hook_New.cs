@@ -1,0 +1,43 @@
+using System.Reflection;
+using UnityEngine;
+using XUnity.Common.Constants;
+using XUnity.Common.Harmony;
+using XUnity.Common.MonoMod;
+using XUnity.Common.Utilities;
+
+namespace XUnity.AutoTranslator.Plugin.Core.Hooks;
+
+[HookingHelperPriority(0)]
+internal static class GUI_DoToggle_Hook_New
+{
+	private delegate bool OriginalMethod(Rect arg1, int arg2, bool arg3, GUIContent arg4, GUIStyle arg5);
+
+	private static OriginalMethod _original;
+
+	private static bool Prepare(object instance)
+	{
+		return UnityTypes.GUI != null;
+	}
+
+	private static MethodBase TargetMethod(object instance)
+	{
+		return AccessToolsShim.Method(UnityTypes.GUI.ClrType, "DoToggle", typeof(Rect), typeof(int), typeof(bool), typeof(GUIContent), typeof(GUIStyle));
+	}
+
+	private static void Prefix(GUIContent content)
+	{
+		AutoTranslationPlugin.Current.Hook_TextChanged(content, onEnable: false);
+	}
+
+	private static void MM_Init(object detour)
+	{
+		_original = detour.GenerateTrampolineEx<OriginalMethod>();
+	}
+
+	private static bool MM_Detour(Rect arg1, int arg2, bool arg3, GUIContent arg4, GUIStyle arg5)
+	{
+		//IL_000b: Unknown result type (might be due to invalid IL or missing references)
+		Prefix(arg4);
+		return _original(arg1, arg2, arg3, arg4, arg5);
+	}
+}

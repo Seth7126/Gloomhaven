@@ -1,0 +1,40 @@
+using System;
+using System.Reflection;
+using UnityEngine;
+using XUnity.Common.Constants;
+using XUnity.Common.Harmony;
+using XUnity.Common.MonoMod;
+
+namespace XUnity.AutoTranslator.Plugin.Core.Hooks;
+
+internal static class UIRect_OnInit_Hook
+{
+	private static Action<object> _original;
+
+	private static bool Prepare(object instance)
+	{
+		return UnityTypes.UIRect != null;
+	}
+
+	private static MethodBase TargetMethod(object instance)
+	{
+		return AccessToolsShim.Method(UnityTypes.UIRect?.ClrType, "OnInit");
+	}
+
+	public static void Postfix(object __instance)
+	{
+		Texture2D texture = null;
+		AutoTranslationPlugin.Current.Hook_ImageChangedOnComponent(__instance, ref texture, isPrefixHooked: false, onEnable: true);
+	}
+
+	private static void MM_Init(object detour)
+	{
+		_original = detour.GenerateTrampolineEx<Action<object>>();
+	}
+
+	private static void MM_Detour(object __instance)
+	{
+		_original(__instance);
+		Postfix(__instance);
+	}
+}

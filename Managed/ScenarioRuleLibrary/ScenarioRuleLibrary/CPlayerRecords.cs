@@ -1,0 +1,125 @@
+using System;
+using System.Runtime.Serialization;
+using System.Security.Permissions;
+using SharedLibrary.Logger;
+using StateCodeGenerator;
+
+namespace ScenarioRuleLibrary;
+
+[Serializable]
+public class CPlayerRecords : ISerializable
+{
+	public string CharacterID { get; private set; }
+
+	public string CharacterName { get; private set; }
+
+	public CharacterRecordStats ScenarioBest { get; private set; }
+
+	public CharacterRecordStats LifetimeTotal { get; private set; }
+
+	public CPlayerRecords()
+	{
+	}
+
+	public CPlayerRecords(CPlayerRecords state, ReferenceDictionary references)
+	{
+		CharacterID = state.CharacterID;
+		CharacterName = state.CharacterName;
+		ScenarioBest = references.Get(state.ScenarioBest);
+		if (ScenarioBest == null && state.ScenarioBest != null)
+		{
+			ScenarioBest = new CharacterRecordStats(state.ScenarioBest, references);
+			references.Add(state.ScenarioBest, ScenarioBest);
+		}
+		LifetimeTotal = references.Get(state.LifetimeTotal);
+		if (LifetimeTotal == null && state.LifetimeTotal != null)
+		{
+			LifetimeTotal = new CharacterRecordStats(state.LifetimeTotal, references);
+			references.Add(state.LifetimeTotal, LifetimeTotal);
+		}
+	}
+
+	[SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.SerializationFormatter)]
+	public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
+	{
+		info.AddValue("CharacterID", CharacterID);
+		info.AddValue("CharacterName", CharacterName);
+		info.AddValue("ScenarioBest", ScenarioBest);
+		info.AddValue("LifetimeTotal", LifetimeTotal);
+	}
+
+	public CPlayerRecords(SerializationInfo info, StreamingContext context)
+	{
+		SerializationInfoEnumerator enumerator = info.GetEnumerator();
+		while (enumerator.MoveNext())
+		{
+			SerializationEntry current = enumerator.Current;
+			try
+			{
+				switch (current.Name)
+				{
+				case "CharacterID":
+					CharacterID = info.GetString("CharacterID");
+					break;
+				case "CharacterName":
+					CharacterName = info.GetString("CharacterName");
+					break;
+				case "ScenarioBest":
+					ScenarioBest = (CharacterRecordStats)info.GetValue("ScenarioBest", typeof(CharacterRecordStats));
+					break;
+				case "LifetimeTotal":
+					LifetimeTotal = (CharacterRecordStats)info.GetValue("LifetimeTotal", typeof(CharacterRecordStats));
+					break;
+				}
+			}
+			catch (Exception ex)
+			{
+				DLLDebug.LogError("Exception while trying to deserialize CPlayerRecords entry " + current.Name + "\n" + ex.Message + "\n" + ex.StackTrace);
+				throw ex;
+			}
+		}
+	}
+
+	[OnDeserialized]
+	internal void OnDeserialized(StreamingContext context)
+	{
+		if (ScenarioBest == null)
+		{
+			ScenarioBest = new CharacterRecordStats();
+		}
+		if (LifetimeTotal == null)
+		{
+			LifetimeTotal = new CharacterRecordStats();
+		}
+	}
+
+	public CPlayerRecords(string characterID, string characterName)
+	{
+		CharacterID = characterID;
+		CharacterName = characterName;
+		ScenarioBest = new CharacterRecordStats();
+		LifetimeTotal = new CharacterRecordStats();
+	}
+
+	public void UpdatePlayerRecord(int kills, int damageDone, int damageTaken, int healingDone, int goldLooted, int chestsLooted, int xpEarned, int itemsUsed, int rounds, bool exhausted, bool won)
+	{
+		ScenarioBest.UpdateCharacterRecordStats(kills, damageDone, damageTaken, healingDone, goldLooted, chestsLooted, xpEarned, itemsUsed, rounds);
+		LifetimeTotal.UpdateCharacterTotalStats(kills, damageDone, damageTaken, healingDone, goldLooted, chestsLooted, xpEarned, itemsUsed, rounds, exhausted, won);
+	}
+
+	public void ScenarioReset()
+	{
+		ScenarioBest.ResetRecord();
+	}
+
+	public void LifetimeReset()
+	{
+		LifetimeTotal.ResetRecord();
+	}
+
+	public void Reset()
+	{
+		ScenarioReset();
+		LifetimeReset();
+	}
+}

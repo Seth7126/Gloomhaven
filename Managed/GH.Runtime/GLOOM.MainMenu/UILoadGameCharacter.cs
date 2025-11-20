@@ -1,0 +1,69 @@
+using ScenarioRuleLibrary;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace GLOOM.MainMenu;
+
+public class UILoadGameCharacter : MonoBehaviour
+{
+	[SerializeField]
+	private Image portrait;
+
+	[SerializeField]
+	private GameObject informationContainer;
+
+	[SerializeField]
+	private TextMeshProUGUI nameText;
+
+	[SerializeField]
+	private TextMeshProUGUI levelText;
+
+	[SerializeField]
+	private TextMeshProUGUI goldText;
+
+	[SerializeField]
+	private string goldFormat = "<sprite name=\"Gold_White\">{0}";
+
+	public void ShowCharacter(ECharacter character, int charLevel, string characterName = null, int? gold = null, bool isValid = true)
+	{
+		portrait.material = (isValid ? null : UIInfoTools.Instance.disabledGrayscaleMaterial);
+		portrait.enabled = true;
+		portrait.sprite = UIInfoTools.Instance.GetCharacterDistributionPortrait(character);
+		levelText.text = string.Format("{0} {1}", LocalizationManager.GetTranslation("GUI_LEVEL"), charLevel);
+		if (characterName == null)
+		{
+			nameText.gameObject.SetActive(value: false);
+			nameText.transform.parent.gameObject.SetActive(value: false);
+		}
+		else
+		{
+			nameText.SetTextCensored(characterName);
+			nameText.gameObject.SetActive(value: true);
+			nameText.transform.parent.gameObject.SetActive(value: true);
+		}
+		if (!gold.HasValue)
+		{
+			goldText.gameObject.SetActive(value: false);
+		}
+		else
+		{
+			goldText.text = string.Format(goldFormat, gold.Value);
+			goldText.gameObject.SetActive(value: true);
+		}
+		informationContainer.SetActive(value: true);
+	}
+
+	public void ShowEmpty()
+	{
+		portrait.enabled = false;
+		informationContainer.SetActive(value: false);
+	}
+
+	public void ShowMissing(DLCRegistry.EDLCKey dlc)
+	{
+		portrait.enabled = true;
+		informationContainer.SetActive(value: false);
+		portrait.sprite = UIInfoTools.Instance.GetMissingCharacterDLC(dlc);
+	}
+}

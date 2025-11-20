@@ -1,0 +1,19 @@
+using System.Collections.Generic;
+
+namespace ScenarioRuleLibrary;
+
+public class CActorIsAttacking_MessageData : CMessageData
+{
+	public CAbilityAttack m_AttackAbility;
+
+	public CActor m_AttackingActor;
+
+	public List<CActor> m_ActorsAttacking;
+
+	public CAttackSummary m_AttackSummary;
+
+	public CActorIsAttacking_MessageData(CActor actorSpawningMessage)
+		: base(MessageType.ActorIsAttacking, actorSpawningMessage)
+	{
+	}
+}

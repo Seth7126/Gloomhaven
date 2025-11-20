@@ -1,0 +1,72 @@
+using System.Collections.Generic;
+using SharedLibrary.Logger;
+using StateCodeGenerator;
+
+namespace ScenarioRuleLibrary;
+
+public class CAbilityShield : CAbilityTargeting
+{
+	public CAbilityShield()
+		: base(EAbilityType.Shield)
+	{
+	}
+
+	public override bool ActorIsApplying(CActor actorApplying, List<CActor> actorsAppliedTo)
+	{
+		base.ActorIsApplying(actorApplying, actorsAppliedTo);
+		CActorIsApplyingConditionActiveBonus_MessageData message = new CActorIsApplyingConditionActiveBonus_MessageData(base.AnimOverload, actorApplying)
+		{
+			m_Ability = this,
+			m_ActorsAppliedTo = actorsAppliedTo
+		};
+		ScenarioRuleClient.MessageHandler(message);
+		return false;
+	}
+
+	public override bool ApplyToActor(CActor actor)
+	{
+		if (base.ApplyToActor(actor))
+		{
+			base.AbilityHasHappened = true;
+			CShield_MessageData message = new CShield_MessageData(base.AnimOverload, base.TargetingActor)
+			{
+				m_ShieldAbility = this,
+				m_ActorAppliedTo = actor
+			};
+			ScenarioRuleClient.MessageHandler(message);
+			CBaseCard cBaseCard = base.TargetingActor.FindCardWithAbility(this);
+			if (base.ActiveBonusData.OverrideAsSong)
+			{
+				actor.AddAugmentOrSong(this, base.TargetingActor);
+			}
+			else if (cBaseCard != null)
+			{
+				cBaseCard.AddActiveBonus(this, actor, base.TargetingActor);
+			}
+			else
+			{
+				DLLDebug.LogError("Unable to find base ability card for ability " + base.Name);
+			}
+			if (m_PositiveConditions.Count > 0)
+			{
+				ProcessPositiveStatusEffects(actor);
+			}
+		}
+		return true;
+	}
+
+	public override bool CanApplyActiveBonusTogglesTo()
+	{
+		return false;
+	}
+
+	public override bool IsPositive()
+	{
+		return true;
+	}
+
+	public CAbilityShield(CAbilityShield state, ReferenceDictionary references)
+		: base(state, references)
+	{
+	}
+}

@@ -1,0 +1,537 @@
+using System;
+using System.Diagnostics;
+using Google.Protobuf;
+using Google.Protobuf.Reflection;
+using Hydra.Api.Leaderboards;
+
+namespace Hydra.Api.Zen.ZenTournaments;
+
+public sealed class ClientTournamentData : IMessage<ClientTournamentData>, IMessage, IEquatable<ClientTournamentData>, IDeepCloneable<ClientTournamentData>, IBufferMessage
+{
+	private static readonly MessageParser<ClientTournamentData> _parser = new MessageParser<ClientTournamentData>(() => new ClientTournamentData());
+
+	private UnknownFieldSet _unknownFields;
+
+	public const int TournamentIdFieldNumber = 1;
+
+	private string tournamentId_ = "";
+
+	public const int TournamentLeaderboardIdFieldNumber = 2;
+
+	private string tournamentLeaderboardId_ = "";
+
+	public const int SettingsFieldNumber = 3;
+
+	private TournamentSettings settings_;
+
+	public const int PublicDataFieldNumber = 4;
+
+	private TournamentPublicData publicData_;
+
+	public const int LeaderboardEntryFieldNumber = 5;
+
+	private LeaderboardEntry leaderboardEntry_;
+
+	public const int TournamentTypeFieldNumber = 6;
+
+	private TournamentType tournamentType_ = TournamentType.None;
+
+	public const int TournamentHashFieldNumber = 7;
+
+	private string tournamentHash_ = "";
+
+	public const int IsPasswordProtectedFieldNumber = 8;
+
+	private bool isPasswordProtected_;
+
+	public const int OwnerUserIdFieldNumber = 9;
+
+	private string ownerUserId_ = "";
+
+	[DebuggerNonUserCode]
+	public static MessageParser<ClientTournamentData> Parser => _parser;
+
+	[DebuggerNonUserCode]
+	public static MessageDescriptor Descriptor => ZenTournamentsContractsReflection.Descriptor.MessageTypes[15];
+
+	[DebuggerNonUserCode]
+	MessageDescriptor IMessage.Descriptor => Descriptor;
+
+	[DebuggerNonUserCode]
+	public string TournamentId
+	{
+		get
+		{
+			return tournamentId_;
+		}
+		set
+		{
+			tournamentId_ = ProtoPreconditions.CheckNotNull(value, "value");
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public string TournamentLeaderboardId
+	{
+		get
+		{
+			return tournamentLeaderboardId_;
+		}
+		set
+		{
+			tournamentLeaderboardId_ = ProtoPreconditions.CheckNotNull(value, "value");
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public TournamentSettings Settings
+	{
+		get
+		{
+			return settings_;
+		}
+		set
+		{
+			settings_ = value;
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public TournamentPublicData PublicData
+	{
+		get
+		{
+			return publicData_;
+		}
+		set
+		{
+			publicData_ = value;
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public LeaderboardEntry LeaderboardEntry
+	{
+		get
+		{
+			return leaderboardEntry_;
+		}
+		set
+		{
+			leaderboardEntry_ = value;
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public TournamentType TournamentType
+	{
+		get
+		{
+			return tournamentType_;
+		}
+		set
+		{
+			tournamentType_ = value;
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public string TournamentHash
+	{
+		get
+		{
+			return tournamentHash_;
+		}
+		set
+		{
+			tournamentHash_ = ProtoPreconditions.CheckNotNull(value, "value");
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public bool IsPasswordProtected
+	{
+		get
+		{
+			return isPasswordProtected_;
+		}
+		set
+		{
+			isPasswordProtected_ = value;
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public string OwnerUserId
+	{
+		get
+		{
+			return ownerUserId_;
+		}
+		set
+		{
+			ownerUserId_ = ProtoPreconditions.CheckNotNull(value, "value");
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public ClientTournamentData()
+	{
+	}
+
+	[DebuggerNonUserCode]
+	public ClientTournamentData(ClientTournamentData other)
+		: this()
+	{
+		tournamentId_ = other.tournamentId_;
+		tournamentLeaderboardId_ = other.tournamentLeaderboardId_;
+		settings_ = ((other.settings_ != null) ? other.settings_.Clone() : null);
+		publicData_ = ((other.publicData_ != null) ? other.publicData_.Clone() : null);
+		leaderboardEntry_ = ((other.leaderboardEntry_ != null) ? other.leaderboardEntry_.Clone() : null);
+		tournamentType_ = other.tournamentType_;
+		tournamentHash_ = other.tournamentHash_;
+		isPasswordProtected_ = other.isPasswordProtected_;
+		ownerUserId_ = other.ownerUserId_;
+		_unknownFields = UnknownFieldSet.Clone(other._unknownFields);
+	}
+
+	[DebuggerNonUserCode]
+	public ClientTournamentData Clone()
+	{
+		return new ClientTournamentData(this);
+	}
+
+	[DebuggerNonUserCode]
+	public override bool Equals(object other)
+	{
+		return Equals(other as ClientTournamentData);
+	}
+
+	[DebuggerNonUserCode]
+	public bool Equals(ClientTournamentData other)
+	{
+		if (other == null)
+		{
+			return false;
+		}
+		if (other == this)
+		{
+			return true;
+		}
+		if (TournamentId != other.TournamentId)
+		{
+			return false;
+		}
+		if (TournamentLeaderboardId != other.TournamentLeaderboardId)
+		{
+			return false;
+		}
+		if (!object.Equals(Settings, other.Settings))
+		{
+			return false;
+		}
+		if (!object.Equals(PublicData, other.PublicData))
+		{
+			return false;
+		}
+		if (!object.Equals(LeaderboardEntry, other.LeaderboardEntry))
+		{
+			return false;
+		}
+		if (TournamentType != other.TournamentType)
+		{
+			return false;
+		}
+		if (TournamentHash != other.TournamentHash)
+		{
+			return false;
+		}
+		if (IsPasswordProtected != other.IsPasswordProtected)
+		{
+			return false;
+		}
+		if (OwnerUserId != other.OwnerUserId)
+		{
+			return false;
+		}
+		return object.Equals(_unknownFields, other._unknownFields);
+	}
+
+	[DebuggerNonUserCode]
+	public override int GetHashCode()
+	{
+		int num = 1;
+		if (TournamentId.Length != 0)
+		{
+			num ^= TournamentId.GetHashCode();
+		}
+		if (TournamentLeaderboardId.Length != 0)
+		{
+			num ^= TournamentLeaderboardId.GetHashCode();
+		}
+		if (settings_ != null)
+		{
+			num ^= Settings.GetHashCode();
+		}
+		if (publicData_ != null)
+		{
+			num ^= PublicData.GetHashCode();
+		}
+		if (leaderboardEntry_ != null)
+		{
+			num ^= LeaderboardEntry.GetHashCode();
+		}
+		if (TournamentType != TournamentType.None)
+		{
+			num ^= TournamentType.GetHashCode();
+		}
+		if (TournamentHash.Length != 0)
+		{
+			num ^= TournamentHash.GetHashCode();
+		}
+		if (IsPasswordProtected)
+		{
+			num ^= IsPasswordProtected.GetHashCode();
+		}
+		if (OwnerUserId.Length != 0)
+		{
+			num ^= OwnerUserId.GetHashCode();
+		}
+		if (_unknownFields != null)
+		{
+			num ^= _unknownFields.GetHashCode();
+		}
+		return num;
+	}
+
+	[DebuggerNonUserCode]
+	public override string ToString()
+	{
+		return JsonFormatter.ToDiagnosticString(this);
+	}
+
+	[DebuggerNonUserCode]
+	public void WriteTo(CodedOutputStream output)
+	{
+		output.WriteRawMessage(this);
+	}
+
+	[DebuggerNonUserCode]
+	void IBufferMessage.InternalWriteTo(ref WriteContext output)
+	{
+		if (TournamentId.Length != 0)
+		{
+			output.WriteRawTag(10);
+			output.WriteString(TournamentId);
+		}
+		if (TournamentLeaderboardId.Length != 0)
+		{
+			output.WriteRawTag(18);
+			output.WriteString(TournamentLeaderboardId);
+		}
+		if (settings_ != null)
+		{
+			output.WriteRawTag(26);
+			output.WriteMessage(Settings);
+		}
+		if (publicData_ != null)
+		{
+			output.WriteRawTag(34);
+			output.WriteMessage(PublicData);
+		}
+		if (leaderboardEntry_ != null)
+		{
+			output.WriteRawTag(42);
+			output.WriteMessage(LeaderboardEntry);
+		}
+		if (TournamentType != TournamentType.None)
+		{
+			output.WriteRawTag(48);
+			output.WriteEnum((int)TournamentType);
+		}
+		if (TournamentHash.Length != 0)
+		{
+			output.WriteRawTag(58);
+			output.WriteString(TournamentHash);
+		}
+		if (IsPasswordProtected)
+		{
+			output.WriteRawTag(64);
+			output.WriteBool(IsPasswordProtected);
+		}
+		if (OwnerUserId.Length != 0)
+		{
+			output.WriteRawTag(74);
+			output.WriteString(OwnerUserId);
+		}
+		if (_unknownFields != null)
+		{
+			_unknownFields.WriteTo(ref output);
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public int CalculateSize()
+	{
+		int num = 0;
+		if (TournamentId.Length != 0)
+		{
+			num += 1 + CodedOutputStream.ComputeStringSize(TournamentId);
+		}
+		if (TournamentLeaderboardId.Length != 0)
+		{
+			num += 1 + CodedOutputStream.ComputeStringSize(TournamentLeaderboardId);
+		}
+		if (settings_ != null)
+		{
+			num += 1 + CodedOutputStream.ComputeMessageSize(Settings);
+		}
+		if (publicData_ != null)
+		{
+			num += 1 + CodedOutputStream.ComputeMessageSize(PublicData);
+		}
+		if (leaderboardEntry_ != null)
+		{
+			num += 1 + CodedOutputStream.ComputeMessageSize(LeaderboardEntry);
+		}
+		if (TournamentType != TournamentType.None)
+		{
+			num += 1 + CodedOutputStream.ComputeEnumSize((int)TournamentType);
+		}
+		if (TournamentHash.Length != 0)
+		{
+			num += 1 + CodedOutputStream.ComputeStringSize(TournamentHash);
+		}
+		if (IsPasswordProtected)
+		{
+			num += 2;
+		}
+		if (OwnerUserId.Length != 0)
+		{
+			num += 1 + CodedOutputStream.ComputeStringSize(OwnerUserId);
+		}
+		if (_unknownFields != null)
+		{
+			num += _unknownFields.CalculateSize();
+		}
+		return num;
+	}
+
+	[DebuggerNonUserCode]
+	public void MergeFrom(ClientTournamentData other)
+	{
+		if (other == null)
+		{
+			return;
+		}
+		if (other.TournamentId.Length != 0)
+		{
+			TournamentId = other.TournamentId;
+		}
+		if (other.TournamentLeaderboardId.Length != 0)
+		{
+			TournamentLeaderboardId = other.TournamentLeaderboardId;
+		}
+		if (other.settings_ != null)
+		{
+			if (settings_ == null)
+			{
+				Settings = new TournamentSettings();
+			}
+			Settings.MergeFrom(other.Settings);
+		}
+		if (other.publicData_ != null)
+		{
+			if (publicData_ == null)
+			{
+				PublicData = new TournamentPublicData();
+			}
+			PublicData.MergeFrom(other.PublicData);
+		}
+		if (other.leaderboardEntry_ != null)
+		{
+			if (leaderboardEntry_ == null)
+			{
+				LeaderboardEntry = new LeaderboardEntry();
+			}
+			LeaderboardEntry.MergeFrom(other.LeaderboardEntry);
+		}
+		if (other.TournamentType != TournamentType.None)
+		{
+			TournamentType = other.TournamentType;
+		}
+		if (other.TournamentHash.Length != 0)
+		{
+			TournamentHash = other.TournamentHash;
+		}
+		if (other.IsPasswordProtected)
+		{
+			IsPasswordProtected = other.IsPasswordProtected;
+		}
+		if (other.OwnerUserId.Length != 0)
+		{
+			OwnerUserId = other.OwnerUserId;
+		}
+		_unknownFields = UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+	}
+
+	[DebuggerNonUserCode]
+	public void MergeFrom(CodedInputStream input)
+	{
+		input.ReadRawMessage(this);
+	}
+
+	[DebuggerNonUserCode]
+	void IBufferMessage.InternalMergeFrom(ref ParseContext input)
+	{
+		uint num;
+		while ((num = input.ReadTag()) != 0)
+		{
+			switch (num)
+			{
+			default:
+				_unknownFields = UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+				break;
+			case 10u:
+				TournamentId = input.ReadString();
+				break;
+			case 18u:
+				TournamentLeaderboardId = input.ReadString();
+				break;
+			case 26u:
+				if (settings_ == null)
+				{
+					Settings = new TournamentSettings();
+				}
+				input.ReadMessage(Settings);
+				break;
+			case 34u:
+				if (publicData_ == null)
+				{
+					PublicData = new TournamentPublicData();
+				}
+				input.ReadMessage(PublicData);
+				break;
+			case 42u:
+				if (leaderboardEntry_ == null)
+				{
+					LeaderboardEntry = new LeaderboardEntry();
+				}
+				input.ReadMessage(LeaderboardEntry);
+				break;
+			case 48u:
+				TournamentType = (TournamentType)input.ReadEnum();
+				break;
+			case 58u:
+				TournamentHash = input.ReadString();
+				break;
+			case 64u:
+				IsPasswordProtected = input.ReadBool();
+				break;
+			case 74u:
+				OwnerUserId = input.ReadString();
+				break;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+
+namespace Manatee.Trello.Internal;
+
+internal static class EnumerableExtensions
+{
+	public static void Apply<T>(this IEnumerable<T> enumerable, Action<T> action)
+	{
+		if (enumerable == null)
+		{
+			throw new ArgumentNullException("enumerable");
+		}
+		if (action == null)
+		{
+			throw new ArgumentNullException("action");
+		}
+		foreach (T item in enumerable)
+		{
+			action(item);
+		}
+	}
+}

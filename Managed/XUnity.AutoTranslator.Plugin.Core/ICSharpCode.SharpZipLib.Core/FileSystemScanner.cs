@@ -1,0 +1,168 @@
+using System;
+using System.IO;
+
+namespace ICSharpCode.SharpZipLib.Core;
+
+internal class FileSystemScanner
+{
+	public ProcessDirectoryDelegate ProcessDirectory;
+
+	public ProcessFileDelegate ProcessFile;
+
+	public DirectoryFailureDelegate DirectoryFailure;
+
+	public FileFailureDelegate FileFailure;
+
+	private IScanFilter fileFilter;
+
+	private IScanFilter directoryFilter;
+
+	private bool alive;
+
+	public FileSystemScanner(string filter)
+	{
+		fileFilter = new PathFilter(filter);
+	}
+
+	public FileSystemScanner(string fileFilter, string directoryFilter)
+	{
+		this.fileFilter = new PathFilter(fileFilter);
+		this.directoryFilter = new PathFilter(directoryFilter);
+	}
+
+	public FileSystemScanner(IScanFilter fileFilter)
+	{
+		this.fileFilter = fileFilter;
+	}
+
+	public FileSystemScanner(IScanFilter fileFilter, IScanFilter directoryFilter)
+	{
+		this.fileFilter = fileFilter;
+		this.directoryFilter = directoryFilter;
+	}
+
+	public void OnDirectoryFailure(string directory, Exception e)
+	{
+		if (DirectoryFailure == null)
+		{
+			alive = false;
+			return;
+		}
+		ScanFailureEventArgs e2 = new ScanFailureEventArgs(directory, e);
+		DirectoryFailure(this, e2);
+		alive = e2.ContinueRunning;
+	}
+
+	public void OnFileFailure(string file, Exception e)
+	{
+		if (FileFailure == null)
+		{
+			alive = false;
+			return;
+		}
+		ScanFailureEventArgs e2 = new ScanFailureEventArgs(file, e);
+		FileFailure(this, e2);
+		alive = e2.ContinueRunning;
+	}
+
+	public void OnProcessFile(string file)
+	{
+		if (ProcessFile != null)
+		{
+			ScanEventArgs e = new ScanEventArgs(file);
+			ProcessFile(this, e);
+			alive = e.ContinueRunning;
+		}
+	}
+
+	public void OnProcessDirectory(string directory, bool hasMatchingFiles)
+	{
+		if (ProcessDirectory != null)
+		{
+			DirectoryEventArgs e = new DirectoryEventArgs(directory, hasMatchingFiles);
+			ProcessDirectory(this, e);
+			alive = e.ContinueRunning;
+		}
+	}
+
+	public void Scan(string directory, bool recurse)
+	{
+		alive = true;
+		ScanDir(directory, recurse);
+	}
+
+	private void ScanDir(string directory, bool recurse)
+	{
+		try
+		{
+			string[] files = Directory.GetFiles(directory);
+			bool flag = false;
+			for (int i = 0; i < files.Length; i++)
+			{
+				if (!fileFilter.IsMatch(files[i]))
+				{
+					files[i] = null;
+				}
+				else
+				{
+					flag = true;
+				}
+			}
+			OnProcessDirectory(directory, flag);
+			if (alive && flag)
+			{
+				string[] array = files;
+				int num = array.Length;
+				for (int j = 0; j < num; j++)
+				{
+					string text = array[j];
+					try
+					{
+						if (text != null)
+						{
+							OnProcessFile(text);
+							if (!alive)
+							{
+								break;
+							}
+						}
+					}
+					catch (Exception e)
+					{
+						OnFileFailure(text, e);
+					}
+				}
+			}
+		}
+		catch (Exception e2)
+		{
+			OnDirectoryFailure(directory, e2);
+		}
+		if (!alive || !recurse)
+		{
+			return;
+		}
+		try
+		{
+			string[] directories = Directory.GetDirectories(directory);
+			string[] array2 = directories;
+			int num2 = array2.Length;
+			for (int k = 0; k < num2; k++)
+			{
+				string text2 = array2[k];
+				if (directoryFilter == null || directoryFilter.IsMatch(text2))
+				{
+					ScanDir(text2, recurse: true);
+					if (!alive)
+					{
+						break;
+					}
+				}
+			}
+		}
+		catch (Exception e3)
+		{
+			OnDirectoryFailure(directory, e3);
+		}
+	}
+}

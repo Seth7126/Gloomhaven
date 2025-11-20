@@ -1,0 +1,13 @@
+namespace Steamworks;
+
+internal enum SteamNetTransportKind
+{
+	Unknown,
+	LoopbackBuffers,
+	LocalHost,
+	UDP,
+	UDPProbablyLocal,
+	TURN,
+	SDRP2P,
+	SDRHostedServer
+}

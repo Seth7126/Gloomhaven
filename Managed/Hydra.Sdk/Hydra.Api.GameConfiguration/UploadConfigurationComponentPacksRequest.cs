@@ -1,0 +1,197 @@
+using System;
+using System.Diagnostics;
+using Google.Protobuf;
+using Google.Protobuf.Collections;
+using Google.Protobuf.Reflection;
+
+namespace Hydra.Api.GameConfiguration;
+
+public sealed class UploadConfigurationComponentPacksRequest : IMessage<UploadConfigurationComponentPacksRequest>, IMessage, IEquatable<UploadConfigurationComponentPacksRequest>, IDeepCloneable<UploadConfigurationComponentPacksRequest>, IBufferMessage
+{
+	private static readonly MessageParser<UploadConfigurationComponentPacksRequest> _parser = new MessageParser<UploadConfigurationComponentPacksRequest>(() => new UploadConfigurationComponentPacksRequest());
+
+	private UnknownFieldSet _unknownFields;
+
+	public const int TitleIdFieldNumber = 1;
+
+	private string titleId_ = "";
+
+	public const int PacksFieldNumber = 2;
+
+	private static readonly FieldCodec<ConfigurationComponentPack> _repeated_packs_codec = FieldCodec.ForMessage(18u, ConfigurationComponentPack.Parser);
+
+	private readonly RepeatedField<ConfigurationComponentPack> packs_ = new RepeatedField<ConfigurationComponentPack>();
+
+	[DebuggerNonUserCode]
+	public static MessageParser<UploadConfigurationComponentPacksRequest> Parser => _parser;
+
+	[DebuggerNonUserCode]
+	public static MessageDescriptor Descriptor => GameConfigurationManagementContractsReflection.Descriptor.MessageTypes[0];
+
+	[DebuggerNonUserCode]
+	MessageDescriptor IMessage.Descriptor => Descriptor;
+
+	[DebuggerNonUserCode]
+	public string TitleId
+	{
+		get
+		{
+			return titleId_;
+		}
+		set
+		{
+			titleId_ = ProtoPreconditions.CheckNotNull(value, "value");
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public RepeatedField<ConfigurationComponentPack> Packs => packs_;
+
+	[DebuggerNonUserCode]
+	public UploadConfigurationComponentPacksRequest()
+	{
+	}
+
+	[DebuggerNonUserCode]
+	public UploadConfigurationComponentPacksRequest(UploadConfigurationComponentPacksRequest other)
+		: this()
+	{
+		titleId_ = other.titleId_;
+		packs_ = other.packs_.Clone();
+		_unknownFields = UnknownFieldSet.Clone(other._unknownFields);
+	}
+
+	[DebuggerNonUserCode]
+	public UploadConfigurationComponentPacksRequest Clone()
+	{
+		return new UploadConfigurationComponentPacksRequest(this);
+	}
+
+	[DebuggerNonUserCode]
+	public override bool Equals(object other)
+	{
+		return Equals(other as UploadConfigurationComponentPacksRequest);
+	}
+
+	[DebuggerNonUserCode]
+	public bool Equals(UploadConfigurationComponentPacksRequest other)
+	{
+		if (other == null)
+		{
+			return false;
+		}
+		if (other == this)
+		{
+			return true;
+		}
+		if (TitleId != other.TitleId)
+		{
+			return false;
+		}
+		if (!packs_.Equals(other.packs_))
+		{
+			return false;
+		}
+		return object.Equals(_unknownFields, other._unknownFields);
+	}
+
+	[DebuggerNonUserCode]
+	public override int GetHashCode()
+	{
+		int num = 1;
+		if (TitleId.Length != 0)
+		{
+			num ^= TitleId.GetHashCode();
+		}
+		num ^= packs_.GetHashCode();
+		if (_unknownFields != null)
+		{
+			num ^= _unknownFields.GetHashCode();
+		}
+		return num;
+	}
+
+	[DebuggerNonUserCode]
+	public override string ToString()
+	{
+		return JsonFormatter.ToDiagnosticString(this);
+	}
+
+	[DebuggerNonUserCode]
+	public void WriteTo(CodedOutputStream output)
+	{
+		output.WriteRawMessage(this);
+	}
+
+	[DebuggerNonUserCode]
+	void IBufferMessage.InternalWriteTo(ref WriteContext output)
+	{
+		if (TitleId.Length != 0)
+		{
+			output.WriteRawTag(10);
+			output.WriteString(TitleId);
+		}
+		packs_.WriteTo(ref output, _repeated_packs_codec);
+		if (_unknownFields != null)
+		{
+			_unknownFields.WriteTo(ref output);
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public int CalculateSize()
+	{
+		int num = 0;
+		if (TitleId.Length != 0)
+		{
+			num += 1 + CodedOutputStream.ComputeStringSize(TitleId);
+		}
+		num += packs_.CalculateSize(_repeated_packs_codec);
+		if (_unknownFields != null)
+		{
+			num += _unknownFields.CalculateSize();
+		}
+		return num;
+	}
+
+	[DebuggerNonUserCode]
+	public void MergeFrom(UploadConfigurationComponentPacksRequest other)
+	{
+		if (other != null)
+		{
+			if (other.TitleId.Length != 0)
+			{
+				TitleId = other.TitleId;
+			}
+			packs_.Add(other.packs_);
+			_unknownFields = UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+		}
+	}
+
+	[DebuggerNonUserCode]
+	public void MergeFrom(CodedInputStream input)
+	{
+		input.ReadRawMessage(this);
+	}
+
+	[DebuggerNonUserCode]
+	void IBufferMessage.InternalMergeFrom(ref ParseContext input)
+	{
+		uint num;
+		while ((num = input.ReadTag()) != 0)
+		{
+			switch (num)
+			{
+			default:
+				_unknownFields = UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+				break;
+			case 10u:
+				TitleId = input.ReadString();
+				break;
+			case 18u:
+				packs_.AddEntriesFrom(ref input, _repeated_packs_codec);
+				break;
+			}
+		}
+	}
+}

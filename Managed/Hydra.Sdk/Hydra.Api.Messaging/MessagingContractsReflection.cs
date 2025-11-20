@@ -1,0 +1,73 @@
+using System;
+using Google.Protobuf.Reflection;
+using Google.Protobuf.WellKnownTypes;
+using Hydra.Api.Infrastructure.Context;
+using Hydra.Api.Push;
+
+namespace Hydra.Api.Messaging;
+
+public static class MessagingContractsReflection
+{
+	private static FileDescriptor descriptor;
+
+	public static FileDescriptor Descriptor => descriptor;
+
+	static MessagingContractsReflection()
+	{
+		byte[] descriptorData = Convert.FromBase64String("CiJNZXNzYWdpbmcvTWVzc2FnaW5nQ29udHJhY3RzLnByb3RvEhNIeWRyYS5B" + "cGkuTWVzc2FnaW5nGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3Rv" + "GhlDb250ZXh0L1VzZXJDb250ZXh0LnByb3RvGhRQdXNoL1B1c2hUb2tlbi5w" + "cm90byKEAQoOQ29ubmVjdFJlcXVlc3QSQwoMdXNlcl9jb250ZXh0GAEgASgL" + "Mi0uSHlkcmEuQXBpLkluZnJhc3RydWN0dXJlLkNvbnRleHQuVXNlckNvbnRl" + "eHQSLQoKcHVzaF90b2tlbhgCIAEoCzIZLkh5ZHJhLkFwaS5QdXNoLlB1c2hU" + "b2tlbiJRCg9Db25uZWN0UmVzcG9uc2USPgoRY2hhbm5lbF9oaXN0b3JpZXMY" + "ASADKAsyIy5IeWRyYS5BcGkuTWVzc2FnaW5nLkNoYW5uZWxIaXN0b3J5IlgK" + "EURpc2Nvbm5lY3RSZXF1ZXN0EkMKDHVzZXJfY29udGV4dBgBIAEoCzItLkh5" + "ZHJhLkFwaS5JbmZyYXN0cnVjdHVyZS5Db250ZXh0LlVzZXJDb250ZXh0IhQK" + "EkRpc2Nvbm5lY3RSZXNwb25zZSKYAgoUQ3JlYXRlQ2hhbm5lbFJlcXVlc3QS" + "QwoMdXNlcl9jb250ZXh0GAEgASgLMi0uSHlkcmEuQXBpLkluZnJhc3RydWN0" + "dXJlLkNvbnRleHQuVXNlckNvbnRleHQSLQoHY2hhbm5lbBgCIAEoCzIcLkh5" + "ZHJhLkFwaS5NZXNzYWdpbmcuQ2hhbm5lbBJIChVjaGFubmVsX2NvbmZpZ3Vy" + "YXRpb24YAyABKAsyKS5IeWRyYS5BcGkuTWVzc2FnaW5nLkNoYW5uZWxDb25m" + "aWd1cmF0aW9uEkIKEmNoYW5uZWxfY3JlZGVudGlhbBgEIAEoCzImLkh5ZHJh" + "LkFwaS5NZXNzYWdpbmcuQ2hhbm5lbENyZWRlbnRpYWwiFwoVQ3JlYXRlQ2hh" + "bm5lbFJlc3BvbnNlItQBChRVcGRhdGVDaGFubmVsUmVxdWVzdBJDCgx1c2Vy" + "X2NvbnRleHQYASABKAsyLS5IeWRyYS5BcGkuSW5mcmFzdHJ1Y3R1cmUuQ29u" + "dGV4dC5Vc2VyQ29udGV4dBItCgdjaGFubmVsGAIgASgLMhwuSHlkcmEuQXBp" + "Lk1lc3NhZ2luZy5DaGFubmVsEkgKFWNoYW5uZWxfY29uZmlndXJhdGlvbhgD" + "IAEoCzIpLkh5ZHJhLkFwaS5NZXNzYWdpbmcuQ2hhbm5lbENvbmZpZ3VyYXRp" + "b24iFwoVVXBkYXRlQ2hhbm5lbFJlc3BvbnNlItABChRVcGRhdGVNZW1iZXJz" + "UmVxdWVzdBJDCgx1c2VyX2NvbnRleHQYASABKAsyLS5IeWRyYS5BcGkuSW5m" + "cmFzdHJ1Y3R1cmUuQ29udGV4dC5Vc2VyQ29udGV4dBItCgdjaGFubmVsGAIg" + "ASgLMhwuSHlkcmEuQXBpLk1lc3NhZ2luZy5DaGFubmVsEkQKFGNoYW5uZWxf" + "dXNlcnNfYWNjZXNzGAMgAygLMiYuSHlkcmEuQXBpLk1lc3NhZ2luZy5DaGFu" + "bmVsVXNlckFjY2VzcyIXChVVcGRhdGVNZW1iZXJzUmVzcG9uc2UikwEKE0pv" + "aW5DaGFubmVsc1JlcXVlc3QSQwoMdXNlcl9jb250ZXh0GAEgASgLMi0uSHlk" + "cmEuQXBpLkluZnJhc3RydWN0dXJlLkNvbnRleHQuVXNlckNvbnRleHQSNwoN" + "Y2hhbm5lbHNfaW5mbxgCIAMoCzIgLkh5ZHJhLkFwaS5NZXNzYWdpbmcuQ2hh" + "bm5lbEluZm8iFgoUSm9pbkNoYW5uZWxzUmVzcG9uc2UiiwEKFExlYXZlQ2hh" + "bm5lbHNSZXF1ZXN0EkMKDHVzZXJfY29udGV4dBgBIAEoCzItLkh5ZHJhLkFw" + "aS5JbmZyYXN0cnVjdHVyZS5Db250ZXh0LlVzZXJDb250ZXh0Ei4KCGNoYW5u" + "ZWxzGAIgAygLMhwuSHlkcmEuQXBpLk1lc3NhZ2luZy5DaGFubmVsIhcKFUxl" + "YXZlQ2hhbm5lbHNSZXNwb25zZSLNAQoZU2VuZENoYW5uZWxNZXNzYWdlUmVx" + "dWVzdBJDCgx1c2VyX2NvbnRleHQYASABKAsyLS5IeWRyYS5BcGkuSW5mcmFz" + "dHJ1Y3R1cmUuQ29udGV4dC5Vc2VyQ29udGV4dBItCgdjaGFubmVsGAIgASgL" + "MhwuSHlkcmEuQXBpLk1lc3NhZ2luZy5DaGFubmVsEjwKD2NoYW5uZWxfbWVz" + "c2FnZRgDIAEoCzIjLkh5ZHJhLkFwaS5NZXNzYWdpbmcuQ2hhbm5lbE1lc3Nh" + "Z2UiHAoaU2VuZENoYW5uZWxNZXNzYWdlUmVzcG9uc2Ui0gEKGVNlbmRQcml2" + "YXRlTWVzc2FnZVJlcXVlc3QSQwoMdXNlcl9jb250ZXh0GAEgASgLMi0uSHlk" + "cmEuQXBpLkluZnJhc3RydWN0dXJlLkNvbnRleHQuVXNlckNvbnRleHQSMgoI" + "Zm9yX3VzZXIYAiABKAsyIC5IeWRyYS5BcGkuTWVzc2FnaW5nLkNoYW5uZWxV" + "c2VyEjwKD2NoYW5uZWxfbWVzc2FnZRgDIAEoCzIjLkh5ZHJhLkFwaS5NZXNz" + "YWdpbmcuQ2hhbm5lbE1lc3NhZ2UiHAoaU2VuZFByaXZhdGVNZXNzYWdlUmVz" + "cG9uc2UinAEKGUdldENoYW5uZWxzSGlzdG9yeVJlcXVlc3QSQwoMdXNlcl9j" + "b250ZXh0GAEgASgLMi0uSHlkcmEuQXBpLkluZnJhc3RydWN0dXJlLkNvbnRl" + "eHQuVXNlckNvbnRleHQSOgoPY2hhbm5lbF9pbmRleGVzGAIgAygLMiEuSHlk" + "cmEuQXBpLk1lc3NhZ2luZy5DaGFubmVsSW5kZXgiXAoaR2V0Q2hhbm5lbHNI" + "aXN0b3J5UmVzcG9uc2USPgoRY2hhbm5lbF9oaXN0b3JpZXMYASADKAsyIy5I" + "eWRyYS5BcGkuTWVzc2FnaW5nLkNoYW5uZWxIaXN0b3J5Ip0BChpSZWFkQ2hh" + "bm5lbHNIaXN0b3J5UmVxdWVzdBJDCgx1c2VyX2NvbnRleHQYASABKAsyLS5I" + "eWRyYS5BcGkuSW5mcmFzdHJ1Y3R1cmUuQ29udGV4dC5Vc2VyQ29udGV4dBI6" + "Cg9jaGFubmVsX2luZGV4ZXMYAiADKAsyIS5IeWRyYS5BcGkuTWVzc2FnaW5n" + "LkNoYW5uZWxJbmRleCIdChtSZWFkQ2hhbm5lbHNIaXN0b3J5UmVzcG9uc2Ui" + "VAoMQ2hhbm5lbEluZGV4Ei0KB2NoYW5uZWwYASABKAsyHC5IeWRyYS5BcGku" + "TWVzc2FnaW5nLkNoYW5uZWwSFQoNbWVzc2FnZV9pbmRleBgCIAEoAyKmAQoO" + "Q2hhbm5lbEhpc3RvcnkSOAoNY2hhbm5lbF9pbmRleBgBIAEoCzIhLkh5ZHJh" + "LkFwaS5NZXNzYWdpbmcuQ2hhbm5lbEluZGV4EhoKEnJlYWRfbWVzc2FnZV9p" + "bmRleBgCIAEoAxI+Cg1tZXNzYWdlc19pbmZvGAMgAygLMicuSHlkcmEuQXBp" + "Lk1lc3NhZ2luZy5DaGFubmVsTWVzc2FnZUluZm8ilgMKFENoYW5uZWxDb25m" + "aWd1cmF0aW9uEhsKE2NoYW5uZWxfbWF4X21lbWJlcnMYASABKAUSTwoZY2hh" + "bm5lbF9jcmVkZW50aWFsX3BvbGljeRgCIAEoDjIsLkh5ZHJhLkFwaS5NZXNz" + "YWdpbmcuQ2hhbm5lbENyZWRlbnRpYWxQb2xpY3kSWAoeY2hhbm5lbF9vd25l" + "cl9taWdyYXRpb25fcG9saWN5GAMgASgOMjAuSHlkcmEuQXBpLk1lc3NhZ2lu" + "Zy5DaGFubmVsT3duZXJNaWdyYXRpb25Qb2xpY3kSSQoWY2hhbm5lbF93cml0" + "aW5nX3BvbGljeRgEIAEoDjIpLkh5ZHJhLkFwaS5NZXNzYWdpbmcuQ2hhbm5l" + "bFdyaXRpbmdQb2xpY3kSTwoZY2hhbm5lbF9tZW1iZXJzaGlwX3BvbGljeRgF" + "IAEoDjIsLkh5ZHJhLkFwaS5NZXNzYWdpbmcuQ2hhbm5lbE1lbWJlcnNoaXBQ" + "b2xpY3kSGgoSY2hhbm5lbF90aW1lb3V0X21zGAYgASgDIlcKB0NoYW5uZWwS" + "FAoMY2hhbm5lbF9uYW1lGAEgASgJEjYKDGNoYW5uZWxfdHlwZRgCIAEoDjIg" + "Lkh5ZHJhLkFwaS5NZXNzYWdpbmcuQ2hhbm5lbFR5cGUiGwoLQ2hhbm5lbFVz" + "ZXISDAoEdXNlchgBIAEoCSKUAQoRQ2hhbm5lbFVzZXJBY2Nlc3MSNgoMY2hh" + "bm5lbF91c2VyGAEgASgLMiAuSHlkcmEuQXBpLk1lc3NhZ2luZy5DaGFubmVs" + "VXNlchJHChVjaGFubmVsX2FjY2Vzc19wb2xpY3kYAiABKA4yKC5IeWRyYS5B" + "cGkuTWVzc2FnaW5nLkNoYW5uZWxBY2Nlc3NQb2xpY3kilQIKEkNoYW5uZWxN" + "ZXNzYWdlSW5mbxIVCg1tZXNzYWdlX2luZGV4GAEgASgDEjwKD2NoYW5uZWxf" + "bWVzc2FnZRgCIAEoCzIjLkh5ZHJhLkFwaS5NZXNzYWdpbmcuQ2hhbm5lbE1l" + "c3NhZ2USRQoUY2hhbm5lbF9tZXNzYWdlX3R5cGUYAyABKA4yJy5IeWRyYS5B" + "cGkuTWVzc2FnaW5nLkNoYW5uZWxNZXNzYWdlVHlwZRIzCglmcm9tX3VzZXIY" + "BCABKAsyIC5IeWRyYS5BcGkuTWVzc2FnaW5nLkNoYW5uZWxVc2VyEi4KCmNy" + "ZWF0ZWRfYXQYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIh4K" + "DkNoYW5uZWxNZXNzYWdlEgwKBHRleHQYAiABKAkiLQoZQ2hhbm5lbENyZWRl" + "bnRpYWxQYXNzd29yZBIQCghwYXNzd29yZBgBIAEoCSKvAQoRQ2hhbm5lbENy" + "ZWRlbnRpYWwSQwoPY3JlZGVudGlhbF90eXBlGAEgASgOMiouSHlkcmEuQXBp" + "Lk1lc3NhZ2luZy5DaGFubmVsQ3JlZGVudGlhbFR5cGUSTQoTY3JlZGVudGlh" + "bF9wYXNzd29yZBgCIAEoCzIuLkh5ZHJhLkFwaS5NZXNzYWdpbmcuQ2hhbm5l" + "bENyZWRlbnRpYWxQYXNzd29yZEgAQgYKBHR5cGUigAEKC0NoYW5uZWxJbmZv" + "Ei0KB2NoYW5uZWwYASABKAsyHC5IeWRyYS5BcGkuTWVzc2FnaW5nLkNoYW5u" + "ZWwSQgoSY2hhbm5lbF9jcmVkZW50aWFsGAIgASgLMiYuSHlkcmEuQXBpLk1l" + "c3NhZ2luZy5DaGFubmVsQ3JlZGVudGlhbCJnChpNZXNzYWdpbmdVc2VyVXBk" + "YXRlVmVyc2lvbhIPCgd2ZXJzaW9uGAEgASgFEjgKBnVwZGF0ZRgCIAEoCzIo" + "Lkh5ZHJhLkFwaS5NZXNzYWdpbmcuTWVzc2FnaW5nVXNlclVwZGF0ZSJQChNN" + "ZXNzYWdpbmdVc2VyVXBkYXRlEjkKCG1lc3NhZ2VzGAEgAygLMicuSHlkcmEu" + "QXBpLk1lc3NhZ2luZy5DaGFubmVsVXNlck1lc3NhZ2UiigEKEkNoYW5uZWxV" + "c2VyTWVzc2FnZRItCgdjaGFubmVsGAEgASgLMhwuSHlkcmEuQXBpLk1lc3Nh" + "Z2luZy5DaGFubmVsEkUKFGNoYW5uZWxfbWVzc2FnZV9pbmZvGAIgASgLMicu" + "SHlkcmEuQXBpLk1lc3NhZ2luZy5DaGFubmVsTWVzc2FnZUluZm8qegoTQ2hh" + "bm5lbEFjY2Vzc1BvbGljeRIhCh1DSEFOTkVMX0FDQ0VTU19QT0xJQ1lfVU5L" + "Tk9XThAAEh8KG0NIQU5ORUxfQUNDRVNTX1BPTElDWV9BTExPVxABEh8KG0NI" + "QU5ORUxfQUNDRVNTX1BPTElDWV9CTE9DSxACKooBChdDaGFubmVsTWVtYmVy" + "c2hpcFBvbGljeRIlCiFDSEFOTkVMX01FTUJFUlNISVBfUE9MSUNZX1VOS05P" + "V04QABIiCh5DSEFOTkVMX01FTUJFUlNISVBfUE9MSUNZX0xPQ0sQARIkCiBD" + "SEFOTkVMX01FTUJFUlNISVBfUE9MSUNZX1VOTE9DSxACKo0BChdDaGFubmVs" + "Q3JlZGVudGlhbFBvbGljeRIlCiFDSEFOTkVMX0NSRURFTlRJQUxfUE9MSUNZ" + "X1VOS05PV04QABIjCh9DSEFOTkVMX0NSRURFTlRJQUxfUE9MSUNZX0VNUFRZ" + "EAESJgoiQ0hBTk5FTF9DUkVERU5USUFMX1BPTElDWV9QQVNTV09SRBACKssB" + "ChtDaGFubmVsT3duZXJNaWdyYXRpb25Qb2xpY3kSKgomQ0hBTk5FTF9PV05F" + "Ul9NSUdSQVRJT05fUE9MSUNZX1VOS05PV04QABInCiNDSEFOTkVMX09XTkVS" + "X01JR1JBVElPTl9QT0xJQ1lfTk9ORRABEiwKKENIQU5ORUxfT1dORVJfTUlH" + "UkFUSU9OX1BPTElDWV9BVVRPTUFUSUMQAhIpCiVDSEFOTkVMX09XTkVSX01J" + "R1JBVElPTl9QT0xJQ1lfU0VSVkVSEAMqfQoUQ2hhbm5lbFdyaXRpbmdQb2xp" + "Y3kSIgoeQ0hBTk5FTF9XUklUSU5HX1BPTElDWV9VTktOT1dOEAASIAocQ0hB" + "Tk5FTF9XUklUSU5HX1BPTElDWV9XUklURRABEh8KG0NIQU5ORUxfV1JJVElO" + "R19QT0xJQ1lfUkVBRBACKngKEkNoYW5uZWxNZXNzYWdlVHlwZRIdChlDSEFO" + "TkVMX01FU1NBR0VfVFlQRV9OT05FEAASIAocQ0hBTk5FTF9NRVNTQUdFX1RZ" + "UEVfUFJJVkFURRBkEiEKHENIQU5ORUxfTUVTU0FHRV9UWVBFX0NIQU5ORUwQ" + "yAEqbwoLQ2hhbm5lbFR5cGUSFQoRQ0hBTk5FTF9UWVBFX05PTkUQABIYChRD" + "SEFOTkVMX1RZUEVfUFJJVkFURRABEhgKFENIQU5ORUxfVFlQRV9TRVJWSUNF" + "EAISFQoRQ0hBTk5FTF9UWVBFX1VTRVIQAypiChVDaGFubmVsQ3JlZGVudGlh" + "bFR5cGUSIwofQ0hBTk5FTF9DUkVERU5USUFMX1RZUEVfVU5LTk9XThAAEiQK" + "IENIQU5ORUxfQ1JFREVOVElBTF9UWVBFX1BBU1NXT1JEEAFiBnByb3RvMw==");
+		descriptor = FileDescriptor.FromGeneratedCode(descriptorData, new FileDescriptor[3]
+		{
+			TimestampReflection.Descriptor,
+			UserContextReflection.Descriptor,
+			PushTokenReflection.Descriptor
+		}, new GeneratedClrTypeInfo(new System.Type[8]
+		{
+			typeof(ChannelAccessPolicy),
+			typeof(ChannelMembershipPolicy),
+			typeof(ChannelCredentialPolicy),
+			typeof(ChannelOwnerMigrationPolicy),
+			typeof(ChannelWritingPolicy),
+			typeof(ChannelMessageType),
+			typeof(ChannelType),
+			typeof(ChannelCredentialType)
+		}, null, new GeneratedClrTypeInfo[36]
+		{
+			new GeneratedClrTypeInfo(typeof(ConnectRequest), ConnectRequest.Parser, new string[2] { "UserContext", "PushToken" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ConnectResponse), ConnectResponse.Parser, new string[1] { "ChannelHistories" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(DisconnectRequest), DisconnectRequest.Parser, new string[1] { "UserContext" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(DisconnectResponse), DisconnectResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(CreateChannelRequest), CreateChannelRequest.Parser, new string[4] { "UserContext", "Channel", "ChannelConfiguration", "ChannelCredential" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(CreateChannelResponse), CreateChannelResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(UpdateChannelRequest), UpdateChannelRequest.Parser, new string[3] { "UserContext", "Channel", "ChannelConfiguration" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(UpdateChannelResponse), UpdateChannelResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(UpdateMembersRequest), UpdateMembersRequest.Parser, new string[3] { "UserContext", "Channel", "ChannelUsersAccess" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(UpdateMembersResponse), UpdateMembersResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(JoinChannelsRequest), JoinChannelsRequest.Parser, new string[2] { "UserContext", "ChannelsInfo" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(JoinChannelsResponse), JoinChannelsResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(LeaveChannelsRequest), LeaveChannelsRequest.Parser, new string[2] { "UserContext", "Channels" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(LeaveChannelsResponse), LeaveChannelsResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(SendChannelMessageRequest), SendChannelMessageRequest.Parser, new string[3] { "UserContext", "Channel", "ChannelMessage" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(SendChannelMessageResponse), SendChannelMessageResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(SendPrivateMessageRequest), SendPrivateMessageRequest.Parser, new string[3] { "UserContext", "ForUser", "ChannelMessage" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(SendPrivateMessageResponse), SendPrivateMessageResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(GetChannelsHistoryRequest), GetChannelsHistoryRequest.Parser, new string[2] { "UserContext", "ChannelIndexes" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(GetChannelsHistoryResponse), GetChannelsHistoryResponse.Parser, new string[1] { "ChannelHistories" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ReadChannelsHistoryRequest), ReadChannelsHistoryRequest.Parser, new string[2] { "UserContext", "ChannelIndexes" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ReadChannelsHistoryResponse), ReadChannelsHistoryResponse.Parser, null, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelIndex), ChannelIndex.Parser, new string[2] { "Channel", "MessageIndex" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelHistory), ChannelHistory.Parser, new string[3] { "ChannelIndex", "ReadMessageIndex", "MessagesInfo" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelConfiguration), ChannelConfiguration.Parser, new string[6] { "ChannelMaxMembers", "ChannelCredentialPolicy", "ChannelOwnerMigrationPolicy", "ChannelWritingPolicy", "ChannelMembershipPolicy", "ChannelTimeoutMs" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(Channel), Channel.Parser, new string[2] { "ChannelName", "ChannelType" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelUser), ChannelUser.Parser, new string[1] { "User" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelUserAccess), ChannelUserAccess.Parser, new string[2] { "ChannelUser", "ChannelAccessPolicy" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelMessageInfo), ChannelMessageInfo.Parser, new string[5] { "MessageIndex", "ChannelMessage", "ChannelMessageType", "FromUser", "CreatedAt" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelMessage), ChannelMessage.Parser, new string[1] { "Text" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelCredentialPassword), ChannelCredentialPassword.Parser, new string[1] { "Password" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelCredential), ChannelCredential.Parser, new string[2] { "CredentialType", "CredentialPassword" }, new string[1] { "Type" }, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelInfo), ChannelInfo.Parser, new string[2] { "Channel", "ChannelCredential" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(MessagingUserUpdateVersion), MessagingUserUpdateVersion.Parser, new string[2] { "Version", "Update" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(MessagingUserUpdate), MessagingUserUpdate.Parser, new string[1] { "Messages" }, null, null, null, null),
+			new GeneratedClrTypeInfo(typeof(ChannelUserMessage), ChannelUserMessage.Parser, new string[2] { "Channel", "ChannelMessageInfo" }, null, null, null, null)
+		}));
+	}
+}

@@ -1,0 +1,11 @@
+namespace Steamworks;
+
+internal enum LobbyComparison
+{
+	EqualToOrLessThan = -2,
+	LessThan,
+	Equal,
+	GreaterThan,
+	EqualToOrGreaterThan,
+	NotEqual
+}

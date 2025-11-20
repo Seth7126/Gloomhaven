@@ -1,0 +1,110 @@
+using System.Collections.Generic;
+using AStar;
+using StateCodeGenerator;
+
+namespace ScenarioRuleLibrary;
+
+public class CShieldActiveBonus_ShieldAndRetaliate : CBespokeBehaviour
+{
+	public CShieldActiveBonus_ShieldAndRetaliate(CActor actor, CAbilityShield ability, CActiveBonus activeBonus)
+		: base(actor, ability, activeBonus)
+	{
+	}
+
+	public override void OnBeingAttacked(CAbilityAttack ability, int modifiedStrength)
+	{
+		if (!IsValidTarget(ability, m_Actor) || m_ActiveBonusData.IsToggleBonus || modifiedStrength <= 0)
+		{
+			return;
+		}
+		Retaliate(ability.TargetingActor, ability);
+		m_ActiveBonus.RestrictActiveBonus(ability.TargetingActor);
+		if (m_ActiveBonus.HasTracker)
+		{
+			OnBehaviourTriggered();
+			m_ActiveBonus.UpdateXPTracker();
+			if (m_ActiveBonus.Remaining <= 0)
+			{
+				Finish();
+			}
+		}
+	}
+
+	public override void OnPreventDamageTriggered(int damagePrevented, CActor damageSource, CActor damagedActor, CAbility damagingAbility)
+	{
+		base.OnPreventDamageTriggered(damagePrevented, damageSource, damagedActor, damagingAbility);
+		if (!IsValidTarget(damagingAbility, damagedActor))
+		{
+			return;
+		}
+		Retaliate(damageSource, damagingAbility);
+		m_ActiveBonus.RestrictActiveBonus(damagedActor);
+		if (m_ActiveBonus.HasTracker)
+		{
+			OnBehaviourTriggered();
+			m_ActiveBonus.UpdateXPTracker();
+			if (m_ActiveBonus.Remaining <= 0)
+			{
+				Finish();
+			}
+		}
+	}
+
+	public void Retaliate(CActor damageSource, CAbility damagingAbility)
+	{
+		CAbilityRetaliate obj = m_Ability.ActiveBonusData.AbilityData as CAbilityRetaliate;
+		int strength = obj.Strength;
+		int retaliateRange = obj.RetaliateRange;
+		if (damageSource != null && !damageSource.IsDead && damagingAbility != null && strength > 0 && retaliateRange > 0)
+		{
+			bool foundPath;
+			List<Point> list = ScenarioManager.PathFinder.FindPath(damageSource.ArrayIndex, m_Actor.ArrayIndex, ignoreBlocked: true, ignoreMoveCost: true, out foundPath);
+			if (foundPath && list.Count <= retaliateRange)
+			{
+				CAbilityRetaliate retaliateAbility = new CAbilityRetaliate(retaliateRange)
+				{
+					Strength = strength
+				};
+				CRetaliate_MessageData message = new CRetaliate_MessageData("", m_Actor)
+				{
+					m_RetaliateAbility = retaliateAbility,
+					m_ActorAppliedTo = m_Actor
+				};
+				ScenarioRuleClient.MessageHandler(message);
+				damageSource.ApplyRetaliateToAttack(m_Actor, damagingAbility, strength);
+			}
+		}
+	}
+
+	public override int ReferenceStrength(CAbility ability, CActor target)
+	{
+		if (m_ActiveBonusData.StrengthIsScalar)
+		{
+			return 0;
+		}
+		return m_Strength;
+	}
+
+	public override int ReferenceStrengthScalar(CAbility ability, CActor target)
+	{
+		if (!m_ActiveBonusData.StrengthIsScalar)
+		{
+			return 1;
+		}
+		return m_Strength;
+	}
+
+	public override int ReferenceXP(CAbility ability, CActor target)
+	{
+		return m_ActiveBonusData.ProcXP;
+	}
+
+	public CShieldActiveBonus_ShieldAndRetaliate()
+	{
+	}
+
+	public CShieldActiveBonus_ShieldAndRetaliate(CShieldActiveBonus_ShieldAndRetaliate state, ReferenceDictionary references)
+		: base(state, references)
+	{
+	}
+}

@@ -1,0 +1,126 @@
+using GLOOM;
+using ScenarioRuleLibrary;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ConsumeElement : MonoBehaviour
+{
+	private enum ConsumeState
+	{
+		Disabled,
+		Unavailable,
+		Available,
+		Clicked
+	}
+
+	[SerializeField]
+	private Image elementImage;
+
+	[SerializeField]
+	private Image availableHighlight;
+
+	[SerializeField]
+	private Sprite[] elementSprites;
+
+	[SerializeField]
+	private Sprite[] highlightElementSprites;
+
+	[HideInInspector]
+	[SerializeField]
+	public bool isAnyElement;
+
+	[SerializeField]
+	private ElementInfusionBoardManager.EElement selectedElement;
+
+	[SerializeField]
+	private UITextTooltipTarget tooltipTarget;
+
+	private bool isSelected;
+
+	private int elementIndex;
+
+	private bool available;
+
+	private bool isEnabled;
+
+	public bool IsInitialised { get; private set; }
+
+	public ElementInfusionBoardManager.EElement SelectedElement => selectedElement;
+
+	private void Awake()
+	{
+		RefreshTooltip();
+	}
+
+	public void Init(ElementInfusionBoardManager.EElement element, int elementIndex = 0)
+	{
+		this.elementIndex = elementIndex;
+		isAnyElement = element == ElementInfusionBoardManager.EElement.Any;
+		selectedElement = element;
+		if (elementSprites.Length > (int)element)
+		{
+			elementImage.sprite = elementSprites[(int)element];
+		}
+		else
+		{
+			Debug.LogError("Element image sprite is not set.");
+		}
+		IsInitialised = true;
+		availableHighlight.color = UIInfoTools.Instance.GetElementHighlightColor(element, availableHighlight.color.a);
+		SetAvailable(available: false);
+		SetUnselected();
+	}
+
+	public void SetSelected(ElementInfusionBoardManager.EElement element)
+	{
+		if (isAnyElement)
+		{
+			selectedElement = element;
+			elementImage.sprite = elementSprites[(int)element];
+			availableHighlight.color = UIInfoTools.Instance.GetElementHighlightColor(element, availableHighlight.color.a);
+		}
+		isSelected = true;
+		RefreshTooltip();
+	}
+
+	public void SetUnselected()
+	{
+		if (isAnyElement)
+		{
+			selectedElement = ElementInfusionBoardManager.EElement.Any;
+			elementImage.sprite = elementSprites[6];
+			availableHighlight.color = UIInfoTools.Instance.GetElementHighlightColor(ElementInfusionBoardManager.EElement.Any, availableHighlight.color.a);
+		}
+		isSelected = false;
+		RefreshTooltip();
+	}
+
+	private void SetTooltipText(ConsumeState consumeState, bool refreshTooltip = false)
+	{
+		tooltipTarget?.SetText(LocalizationManager.GetTranslation("Glossary_Consume" + selectedElement) + ": " + LocalizationManager.GetTranslation("GUI_TOOLTIP_CONSUMING_" + consumeState.ToString().ToUpperInvariant()), refreshTooltip);
+	}
+
+	public void SetAvailable(bool available)
+	{
+		this.available = available;
+		availableHighlight.gameObject.SetActive(available && isEnabled);
+	}
+
+	public void SetEnabled(bool isEnabled)
+	{
+		this.isEnabled = isEnabled;
+		availableHighlight.gameObject.SetActive(available && isEnabled);
+	}
+
+	private void RefreshTooltip()
+	{
+		if (isSelected)
+		{
+			SetTooltipText(ConsumeState.Clicked, refreshTooltip: true);
+		}
+		else
+		{
+			SetTooltipText(ConsumeState.Disabled);
+		}
+	}
+}
