@@ -1,7 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_Shield3_Self
-ScenarioAbility:
-    AShield:
-        Shield: 3
-        Filter: Self
-        ActiveBonusDuration: Persistent
