@@ -1,0 +1,30 @@
+Parser: ItemCard
+ID: 4
+StringID: LeatherArmorID
+Name: $ITEM_NAME_LeatherArmor$
+Art: Leather Armor
+TotalInGame: 2
+Cost: 20
+Rarity: Rare
+Slot: Body 
+Usage: Spent
+Trigger: PassiveEffect
+ProsperityRequirement: 1
+Data: 
+    Abilities:
+        Disadvantage:
+            AttackersGainDisadvantage: 1
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                XPTracker: [0,0]
+    CompareAbility:
+        AbilityType: Attack
+Layout: 
+    - Active:
+        Ability: Disadvantage
+        ListLayout: "$Item_LeatherArmor$"
+        Layout: "$Item_LeatherArmor$"
+        Icon: "Shield"
+    - Row: "<size=50%> "
+    - XPTracker: Disadvantage

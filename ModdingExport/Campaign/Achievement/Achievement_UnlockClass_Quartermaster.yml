@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_UnlockClass_Quartermaster
+LocalisedName: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+LocalisedDescription: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+UnlockCondition:
+    - UnlockClass: QuartermasterID
+AchievementCondition:
+    - UnlockClass: QuartermasterID
+TreasureTables: [TT_Achievement_UnlockClass_Quartermaster]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 2202

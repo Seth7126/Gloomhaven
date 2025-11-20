@@ -1,0 +1,75 @@
+Parser: Scenario
+ID: Scenario_Story_Summoner_2
+BaseBiome: City
+BaseSubBiome: Shack
+BaseTone: Gaslight
+ScenarioMeshes: [B1_WoodShack_01_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Summoner_2_START_1
+          Character: Merchant
+        - Text: SCENARIO_STORY_Summoner_2_START_2
+          Character: Trainer
+        - Text: SCENARIO_STORY_Summoner_2_START_3
+          Character: Merchant
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Summoner_2_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_Summoner_2_SUCCESS_2
+          Character: Narrator
+ScenarioLayout:
+
+    Objectives:
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                PlayerClasses: [SummonerID]
+                EnemyClasses: [HarrowerInfesterEliteID]    
+
+            ObjectiveDescription: Scenario_Story_Summoner_2_Fail_Objective
+        KillAllEnemies: Win          
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: CityInoxBandit
+                    Theme: Library
+                    TerrainRubble: [100, 100]
+                    TerrainThorns: [100]
+                    AllyMonsters:
+                        - [HarrowerInfesterEliteID, 1, 1, 1, 1]                        
+        Room2:
+            Threat: 75
+            PossibleRooms:
+                - EmptyRandomLongCorridor: 
+                    MonsterGroup: CityInoxBandit
+                    TwoHexObstacles: [100] 
+                    TerrainRubble: [100]
+                    TerrainThorns: [100]
+        Room2:
+            Threat: 125
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_Summoner_2_Room_3_1
+                      Character: Trainer
+                    - Text: SCENARIO_STORY_Summoner_2_Room_3_2
+                      Character: Merchant
+                    - Text: SCENARIO_STORY_Summoner_2_Room_3_3
+                      Character: Trainer
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    MonsterGroup: CityInoxBanditCannon
+                    SubBiome: Default
+                    OneHexObstacles: [100, 100] 
+                    TwoHexObstacles: [100] 
+                    Traps: [100,100]
+                    GoldPiles: [100,100,50]
+                    TerrainRubble: [100, 50]
+                    TerrainThorns: [50]

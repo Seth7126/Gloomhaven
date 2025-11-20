@@ -1,0 +1,23 @@
+Parser: Quest
+ID: Quest_Campaign_009
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_009
+LoadoutImageId: CA_Mine_01
+NarrativeTextImageOverride:
+    - [Quest_Campaign_009_OUTRO_GH_1, 009_OUTRO_GH_1_Art]
+    - [Quest_Campaign_009_OUTRO_GH_2, 009_OUTRO_GH_2_Art]
+    - [Quest_Campaign_009_OUTRO_GH_3, 009_OUTRO_GH_3_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_003
+BlockCondition:
+    - CompletedQuest: Quest_Campaign_008
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: WatcherMountains
+IconType: Boss
+
+Scenario:
+    MapLocation: [428, 1441]
+    ScenarioPool: 
+      - [Scenario_Campaign_009, 100]

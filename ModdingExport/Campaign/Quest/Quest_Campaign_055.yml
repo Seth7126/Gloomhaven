@@ -1,0 +1,19 @@
+Parser: Quest
+ID: Quest_Campaign_055
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_055
+LoadoutImageId: FO_DF_01_Undead
+UnlockCondition:
+    - CompletedPersonalQuestStep: PERSONALQUEST_Take_Back_the_Trees
+    - PersonalQuestStep: 0
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LinkedQuestID: Quest_Campaign_056
+LocationArea: DaggerForest
+IconType: Side
+
+Scenario:
+    MapLocation: [660, 872]
+    ScenarioPool: 
+      - [Scenario_Campaign_055, 100]

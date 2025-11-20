@@ -1,0 +1,15 @@
+Parser: BattleGoal
+ID: BattleGoal_Egotist
+LocalisedName: BATTLEGOAL_Egotist
+LocalisedDescription: BATTLEGOAL_Egotist_Desc
+#Collect more money tokens than any other character.
+PerkPoints: 1
+CheckAtEndOfScenario: True
+BattleGoalCondition:
+    - Targets:
+        Filter: LootMost
+        LootType: MoneyToken
+        Value: 1
+        ScenarioResult: Win
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

@@ -1,0 +1,34 @@
+Parser: Headquarters
+ID: Gloomhaven
+StartupTreasureTables: StartingTreasureTable_JOTL
+CreateCharacterGoldPerLevelAmount: 15
+
+Quests: 
+#FTUE
+    - Quest_JOTL_001_RoadsideAmbush
+    - Quest_JOTL_002_AHoleInTheWall
+    - Quest_JOTL_003_TheBlackShip
+    - Quest_JOTL_004_ARitualInStone
+    - Quest_JOTL_005_ADeeperUnderstanding
+    - Quest_JOTL_006_CorruptedResearch
+    - Quest_JOTL_007_SunkenTumor
+    - Quest_JOTL_008_HiddenTumor
+    - Quest_JOTL_009_ExplosiveEvolution
+    - Quest_JOTL_009B_ExplosiveEvolution
+    - Quest_JOTL_010_TheGauntlet
+    - Quest_JOTL_011_DefiledSewers
+    - Quest_JOTL_012_BeguilingSewers
+    - Quest_JOTL_013_VileHarvest
+    - Quest_JOTL_014_ToxicHarvest
+    - Quest_JOTL_015_TaintedBlood
+    - Quest_JOTL_016_MixedResults
+    - Quest_JOTL_017_RedTwilight
+    - Quest_JOTL_018_TheHeist
+    - Quest_JOTL_019_DenOfThieves
+    - Quest_JOTL_020_MisplacedGoods
+    - Quest_JOTL_021_AgentsOfChaos
+    - Quest_JOTL_022_UnfriendlyMessage
+    - Quest_JOTL_023_BestOfTheBest
+    - Quest_JOTL_024_WardingTheVoid
+    - Quest_JOTL_025_TheGreatestJobInTheWorld
+    

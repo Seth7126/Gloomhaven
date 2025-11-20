@@ -1,0 +1,14 @@
+Parser: Character
+ID: SpellweaverID
+LocKey: $Spellweaver$
+Model: Spellweaver
+DefaultSkin: 1
+# PlayerLevel:  [  1,   2,   3,   4,   5,   6,   7,   8,   9 ]
+HealthTable:    [  6,   7,   8,   9,  10,  11,  12,  13,  14 ]
+NumberAbilityCardsInBattle: 8
+Role: $Spellweaver_ROLE$
+Description: $Spellweaver_DESCRIPTION$
+Difficulty: $DIFFICULTY_HIGH$
+Strengths: $Spellweaver_STRENGTHS$
+Weaknesses: $Spellweaver_WEAKNESSES$
+Adventure_Description: $Spellweaver_ADVENTURE_DESCRIPTION$

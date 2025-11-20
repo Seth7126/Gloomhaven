@@ -1,0 +1,14 @@
+Parser: EnemyCard
+ID: 57700086
+Initiative: 73
+Shuffle: False
+Data:
+    Abilities:
+        Heal1:
+            Heal: 2
+            Target: -1
+            Targeting: All
+            TargetIsBase: True
+            Filter: [Ally, Self]
+            AnimOverload: HealAll
+            Text: "$Affect_SelfAndAllAllies$"

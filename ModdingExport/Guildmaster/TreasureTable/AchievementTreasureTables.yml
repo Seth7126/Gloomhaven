@@ -1,0 +1,44 @@
+Parser: TreasureTable
+
+TT_Achievement_1_1_UnlockLocations:
+  UnlockChapter: [1,2]
+  UnlockEnhancer: True
+  EnhancementSlots: 1
+
+TT_Achievement_1_2_UnlockLocations:
+  UnlockChapter: [1,3]
+  EnhancementSlots: 1
+
+TT_Achievement_1_3_UnlockLocations:
+  UnlockChapter: [1,4]
+  EnhancementSlots: 1
+
+TT_Achievement_1_4_UnlockLocations:
+  UnlockChapter: [1,5]
+  EnhancementSlots: 1
+
+TT_Achievement_1_5_UnlockLocations:
+  Gold: 100
+  EnhancementSlots: 1
+
+TT_Achievement_1_2_ReachDemonspineHollow:
+  UnlockChapter: [2,1]
+  EnhancementSlots: 1
+
+TT_Achievement_1_2_ReachTheSloshedSquirrel:
+  UnlockChapter: [3,1]  
+  EnhancementSlots: 1
+
+TT_Achievement_1_2_ReachFordingbridge:
+  UnlockChapter: [4,1]  
+  EnhancementSlots: 1
+  
+TT_Achievement_1_1_DestroyObstacles:
+  UnlockQuest: Relic01
+
+TT_Achievement_1_1_KillBandits:
+  Gold: 20
+  
+TT_Quest_Story_3A:
+  UnlockQuest: Quest_Story_3B
+ 

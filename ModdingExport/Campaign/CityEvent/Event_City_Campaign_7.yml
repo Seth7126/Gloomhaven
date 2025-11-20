@@ -1,0 +1,45 @@
+Parser: CityEvent
+ID: Event_City_Campaign_7ID
+# LocKey: $CITY_EVENT_7$
+LocKey: $CITY_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_CITY_CAMPAIGN_7_INTRO"
+        Options:
+            A:
+                Text: "EVENT_CITY_CAMPAIGN_7_OPTION_A"
+                Next: EVENT_CITY_CAMPAIGN_7_OPTION_A
+            B:
+                Text: "EVENT_CITY_CAMPAIGN_7_OPTION_B"
+                Next: EVENT_CITY_CAMPAIGN_7_OPTION_B
+    EVENT_CITY_CAMPAIGN_7_OPTION_A:
+        Reputation:
+            Amount: "> 9"
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_7_RESULT_A"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_7_OPTION_A_A
+                End: True
+        Reputation:
+            Amount: "< -4"
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_7_RESULT_A"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_7_OPTION_A_B
+                End: True
+        Text: "EVENT_CITY_CAMPAIGN_7_RESULT_A"
+        TreasureTables: TT_EVENT_CITY_CAMPAIGN_7_OPTION_A_C
+        End: True
+    EVENT_CITY_CAMPAIGN_7_OPTION_B:
+        Reputation:
+            Amount: "> 4"
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_7_RESULT_B"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_7_OPTION_B_A
+                End: True
+        Reputation:
+            Amount: "< -9"
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_7_RESULT_B"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_7_OPTION_B_B
+                End: True
+        Text: "EVENT_CITY_CAMPAIGN_7_RESULT_B"
+        End: True

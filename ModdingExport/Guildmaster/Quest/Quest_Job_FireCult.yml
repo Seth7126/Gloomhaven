@@ -1,0 +1,11 @@
+Parser: Quest
+ID: Quest_Job_FireCult
+Chapter: 1
+QuestType: Job
+CompletionRewards: TT_Quest_Job_Chapter_1_1
+LoadoutImageId: LA_CryptRuin_02
+UnlockCondition:
+    - UnlockedVillage: Fordingbridge
+Scenario:
+    MapLocation: [400, 400]
+    ScenarioPool: [Scenario_Job_FireCult, 100]

@@ -1,0 +1,26 @@
+Parser: Achievement
+ID: Achievement_Demolitionist_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Demolitionist_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Demolitionist_2_Desc$
+#The Demolitionist attacks the Same Enemy 3 times in a single Round 15 Times 
+#Need attack same enemy
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        DemolitionistID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: DemolitionistID   
+        AbilityTypes: Attack        
+        Filter: DealDamage
+        SameTarget: true
+        Times: 3
+        Amount: 15
+        SubFilter: RoundNoReset
+
+TreasureTables: [TT_Achievement_Demolitionist]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 302
+ 

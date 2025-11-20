@@ -1,0 +1,26 @@
+Parser: Quest
+ID: Quest_Relic_DoomedCompass
+Chapter: 1
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_DoomedCompass_Unlock_1
+      Character: Merchant
+      CameraLocation: [546, 1148]        
+    - Text: QUEST_RELIC_DoomedCompass_Unlock_2
+      Character: Trainer
+      CameraLocation: [546, 1148] 
+#CompletionRewards: TT_Quest_Travel_TheCityOfSlate
+LoadoutImageId: CA_DF_04
+UnlockRevealFoWSphere:
+    - MapLocation: [546, 1148]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: Sahmyrt
+    - CompletedAchievement: Achievement_1_5_TrapKills
+StartingVillage: Sahmyrt
+EndingVillage: Sahmyrt
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [546, 1148]
+    ScenarioPool: [Scenario_Relic_DoomedCompass, 100]

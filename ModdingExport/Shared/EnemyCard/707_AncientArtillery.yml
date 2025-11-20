@@ -1,0 +1,13 @@
+Parser: EnemyCard
+ID: 707
+Initiative: 46
+Shuffle: False
+Data:
+    Abilities:
+        Attack1:
+            Attack: -1
+            AreaEffect: "0,0,R|2,0,R|1,1,R"
+            Filter: Enemy
+            Conditions: Immobilize
+            MultiPassAttack: False
+            AnimOverload: Mortar

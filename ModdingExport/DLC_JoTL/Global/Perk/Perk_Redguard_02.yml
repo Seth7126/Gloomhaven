@@ -1,0 +1,7 @@
+Parser: Perk
+ID: Redguard02
+Name: PERK_Redguard_02
+Description: PERK_Redguard_02_Desc
+CharacterID: RedGuardID
+Available: 2
+CardsToRemove: [AMC_Basic_M1,AMC_Basic_M1]

@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 87
+StringID: WandOfBrillianceID
+Name: $ITEM_NAME_WandofBrilliance$
+Art: Wand of Brilliance
+TotalInGame: 2
+Cost: 30
+Slot: OneHand 
+Rarity: Rare
+Usage: Spent
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        AInfuse:
+            Infuse: Light
+            Filter: Self
+Layout: 
+    - Row: $Item_WandOfBrilliance$
+    - Row: "<size=20%> "
+    - Infuse: Light

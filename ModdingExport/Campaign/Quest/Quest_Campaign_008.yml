@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_Campaign_008
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_Campaign_008
+LoadoutImageId: GH_JekserahsWarehouse
+NarrativeTextImageOverride:
+    - [Quest_Campaign_008_OUTRO_GH_1, 008_OUTRO_GH_1_Art]
+    - [Quest_Campaign_008_OUTRO_GH_2, 008_OUTRO_GH_1_Art]
+UnlockCondition:
+    - Required:
+        CompletedQuest: 1
+    - CompletedQuest: Quest_Campaign_003
+    - CompletedQuest: Quest_Campaign_006
+BlockCondition:
+    - CompletedQuest: Quest_Campaign_009
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: Boss
+
+Scenario:
+    MapLocation: [1951, 954]
+    ScenarioPool: 
+      - [Scenario_Campaign_008, 100]

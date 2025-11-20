@@ -1,0 +1,8 @@
+Parser: HeroSummon
+ID: SkeletonID
+LocKey: $Skeleton$
+Model: Skeleton
+Health: 3
+Move: 2
+Attack: 2
+Range: 1

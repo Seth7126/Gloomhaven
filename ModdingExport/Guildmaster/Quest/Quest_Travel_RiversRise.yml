@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_Travel_RiversRise
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_RiversRise_1
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1343,255]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1343,255]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_RiversRise]
+LoadoutImageId: CR_DF_05
+UnlockCondition:
+    - UnlockedVillage: TheMarches
+    - Chapter: [1,4] 
+StartingVillage: TheMarches
+EndingVillage: RiversRise
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_RiversRise, 100]

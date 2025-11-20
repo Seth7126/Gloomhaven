@@ -1,0 +1,52 @@
+Parser: RoadEvent
+ID: Event_Road_Campaign_28ID
+# LocKey: $ROAD_EVENT_28$
+LocKey: $ROAD_EVENT$
+Screens:
+    Decision:
+        InParty:
+            ClassIDs: [ScoundrelID,SawbonesID,SoothsingerID]
+            Screen:
+                Text: "EVENT_ROAD_CAMPAIGN_28_INTRO"
+                Options:
+                    A:
+                        Text: "EVENT_ROAD_CAMPAIGN_28_OPTION_A"
+                        Next: EVENT_ROAD_CAMPAIGN_28_OPTION_A
+                        OptionConditions:
+                            HaveItem: MinorStaminaPotionID
+                        UnavailableText: "EVENT_ROAD_CAMPAIGN_28_OPTION_A_UNAVAILABLE"
+                    B:
+                        Text: "EVENT_ROAD_CAMPAIGN_28_OPTION_B"
+                        Next: EVENT_ROAD_CAMPAIGN_28_OPTION_B
+        Text: "EVENT_ROAD_CAMPAIGN_28_INTRO"
+        Options:
+            A:
+                Text: "EVENT_ROAD_CAMPAIGN_28_OPTION_A"
+                Next: EVENT_ROAD_CAMPAIGN_28_OPTION_A1
+                OptionConditions:
+                    HaveItem: MinorStaminaPotionID
+                UnavailableText: "EVENT_ROAD_CAMPAIGN_28_OPTION_A_UNAVAILABLE"
+            B:
+                Text: "EVENT_ROAD_CAMPAIGN_28_OPTION_B"
+                Next: EVENT_ROAD_CAMPAIGN_28_OPTION_B
+    EVENT_ROAD_CAMPAIGN_28_OPTION_A:
+        HaveItem:
+            Items: MinorStaminaPotionID
+            Screen:
+                Text: "EVENT_ROAD_CAMPAIGN_28_RESULT_A"
+                TreasureTables: TT_EVENT_ROAD_CAMPAIGN_28_OPTION_A_A
+                End: True
+        Text: "EVENT_ROAD_CAMPAIGN_28_RESULT_B"
+        End: True
+    EVENT_ROAD_CAMPAIGN_28_OPTION_A1:
+        HaveItem:
+            Items: MinorStaminaPotionID
+            Screen:
+                Text: "EVENT_ROAD_CAMPAIGN_28_RESULT_A"
+                TreasureTables: TT_EVENT_ROAD_CAMPAIGN_28_OPTION_A_B
+                End: True
+        Text: "EVENT_ROAD_CAMPAIGN_28_RESULT_B"
+        End: True
+    EVENT_ROAD_CAMPAIGN_28_OPTION_B:
+        Text: "EVENT_ROAD_CAMPAIGN_28_RESULT_B"
+        End: True

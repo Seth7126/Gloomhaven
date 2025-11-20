@@ -1,0 +1,29 @@
+Parser: EnemyCard
+ID: 57600029
+Initiative: 79
+Shuffle: False
+Data:
+    Abilities:
+        Summon1:
+            Summons: 
+                - ZephyrID
+                - ZephyrID
+                - ZephyrID
+                - ZephyrID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: Summon
+        Summon2:
+            Summons: 
+                - ZephyrID
+                - ZephyrID
+                - ZephyrID
+                - ZephyrID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: Summon
+            TriggeredScenarioModifiers: TeleportElderDrake
+        ANull:
+            Null: True
+            Text: $Boss_ElderDrake_Special1$
+            TextOnly: True

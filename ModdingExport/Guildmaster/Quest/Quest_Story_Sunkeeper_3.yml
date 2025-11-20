@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Story_Sunkeeper_3
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Sunkeeper_3_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Sunkeeper_3_2
+      Character: Merchant
+CompletionRewards: TT_Quest_Story_Sunkeeper_3
+LoadoutImageId: TO_DF_01
+UnlockRevealFoWSphere:
+    - MapLocation: [1700, 115] 
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: Bloodford
+    - CompletedQuest: Quest_Story_Sunkeeper_2
+RequiredCharacters:
+  - Character: SunkeeperID    
+    Level: 5
+StartingVillage: MistfellCopse
+EndingVillage: MistfellCopse
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1700, 115] 
+    ScenarioPool: [Scenario_Story_Sunkeeper_3, 100]

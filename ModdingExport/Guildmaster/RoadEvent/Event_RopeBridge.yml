@@ -1,0 +1,31 @@
+Parser: RoadEvent
+ID: RopeBridgeID
+LocKey: $ROAD_EVENT_ROPE_BRIDGE$
+Screens:
+    Decision:
+        Text: EVENT_RopeBridge
+        Options:
+            A:
+                Text: EVENT_RopeBridge_A
+                TreasureTables: RopeBridge_Cross
+                Next: Cross
+            B:
+                Text: EVENT_RopeBridge_B
+                TreasureTables: RopeBridge_AnotherWay
+                Next: AnotherWay
+    Cross:
+        Lost:
+            Gold: True
+            Screen:
+                Text: EVENT_RopeBridge_Cross_Lost
+                End: True
+        Text: EVENT_RopeBridge_Cross
+        End: True
+    AnotherWay:
+        Gained:
+            Condition: Muddle
+            Screen:
+                Text: EVENT_RopeBridge_AnotherWay_Gained
+                End: True
+        Text: EVENT_RopeBridge_AnotherWay
+        End: True

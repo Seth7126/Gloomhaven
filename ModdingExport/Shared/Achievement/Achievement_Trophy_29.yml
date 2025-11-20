@@ -1,0 +1,18 @@
+Parser: Achievement
+ID: Achievement_Trophy29
+LocalisedName: $TROPHY_ACHIEVEMENT_29$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_29_Desc$
+AchievementCondition:
+    - Targets:
+        Filter: DealDamage
+        AbilityTypes: Attack
+        AttackTypes: Melee
+        Conditional:
+            Amount: "< 99999"
+        Value: 0
+        SubFilter: Scenario
+        ScenarioResult: Win
+TreasureTables: [TT_Achievement_Trophy29]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4029

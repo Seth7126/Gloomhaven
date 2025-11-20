@@ -1,0 +1,21 @@
+Parser: ItemCard
+ID: 21
+StringID: StunPowderID
+Name: $ITEM_NAME_StunPowder$
+Art: Stun Powder
+TotalInGame: 2
+Cost: 20
+Slot: SmallItem 
+Rarity: Rare
+Usage: Consumed
+Trigger: SingleTarget
+ProsperityRequirement: 2
+Data:     
+    Overrides:
+        OStun:
+            Conditions: Stun
+    CompareAbility:
+        AbilityType: Attack
+        Filter: Enemy
+Layout: 
+    - Row: $Item_StunPowder$

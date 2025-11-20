@@ -1,0 +1,39 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_RevivingShock$
+Character: TinkererID
+ID: 42
+Level: X
+Initiative: 34
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 1
+                Range: 3
+                Target:
+                    Amount: 2
+                    Enhancements: 1
+                AnimOverload: RangedAttack
+    Bottom:
+        Abilities:
+            BHeal:
+                Heal:
+                    Amount: 5
+                    Enhancements: 2
+                Range: 2
+                Filter: [Self, Ally]
+                AnimOverload: Heal
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "$Target$ <sprite name=Target> *TAttack.Target* @TAttack.Target@"
+    Bottom:
+        - Row: "<b><size=130%>$Heal$ <sprite name=Heal> *BHeal* <size=100%><voffset=1>@BHeal@"
+        - Row: "$Range$ <sprite name=Range> *BHeal.Range*"
+        - Row: "<size=20%> "
+        - XP: 2

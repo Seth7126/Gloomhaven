@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_Travel_ShadowfieldManor
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_ShadowfieldManor_1
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1630,652]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1630,652]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_ShadowfieldManor]
+LoadoutImageId: FO_DF_02_Undead
+UnlockCondition:
+    - UnlockedVillage: TheSloshedSquirrel
+#    - Chapter: [1,2]    
+StartingVillage: TheSloshedSquirrel
+EndingVillage: ShadowfieldManor
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_ShadowfieldManor, 100]

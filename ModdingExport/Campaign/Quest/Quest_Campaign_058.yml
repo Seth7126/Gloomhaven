@@ -1,0 +1,20 @@
+Parser: Quest
+ID: Quest_Campaign_058
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_Campaign_058
+LoadoutImageId: TO_IN_01_Militia
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_057
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: Side
+
+RequiredCharacters:
+  - PersonalQuest: PERSONALQUEST_Vengeance
+
+Scenario:
+    MapLocation: [1113, 1664]
+    ScenarioPool: 
+      - [Scenario_Campaign_058, 100]

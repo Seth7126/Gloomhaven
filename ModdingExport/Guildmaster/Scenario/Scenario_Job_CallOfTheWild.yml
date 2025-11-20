@@ -1,0 +1,54 @@
+Parser: Scenario
+ID: Scenario_Job_CallOfTheWild
+BaseBiome: Cave
+BaseSubBiome: Default
+BaseTheme: Default
+BaseSubTheme: Animal
+BaseTone: Natural
+MonsterFamily: Drakes
+ScenarioMeshes: [DGN_Cave_01_MAT, DGN_Cave_02_MAT, DGN_Cave_03_MAT, DGN_Cave_04_MAT, DGN_Cave_05_MAT, DGN_Cave_06_MAT, DGN_Barrow_06_MAT, DGN_Barrow_05_MAT, DGN_Barrow_04_MAT]
+ChestTreasureTables: [TT_Chapter_1_1_Chest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_CallOfTheWild_Start_1
+          Character: Narrator
+        - Text: SCENARIO_JOB_CallOfTheWild_Start_2
+          Character: Narrator
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_CallOfTheWild_Success_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:       
+            Result: Win
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - MediumEmptyRoom:
+                    MonsterGroup: Hounds_BearsVipersDrakes
+                    OneHexObstacles: [50,50] 
+                    TwoHexObstacles: [20]
+                    Traps: [100,50,20]
+        Room2:
+            Threat: 75
+            PossibleRooms:
+                - EmptyRandomCorridor:
+                    MonsterGroup: Hounds_BearsVipersDrakes
+                    OneHexObstacles: [50,50] 
+                    TwoHexObstacles: [20]
+                    Traps: [100,50,20]
+                    GoldPiles: [50]
+        Room3:
+            Threat: 125
+            PossibleRooms:
+                - EmptySummoningCircle:
+                    MonsterGroup: Hounds_BearsVipersDrakes
+                    OneHexObstacles: [100,50,20] 
+                    TwoHexObstacles: [20, 20]
+                    Traps: [100,50,20]
+                    GoldPiles: [100,80,50,20,5]
+                    TreasureChestChance: [33]

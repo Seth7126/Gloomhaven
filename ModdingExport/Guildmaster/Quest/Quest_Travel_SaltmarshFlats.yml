@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_Travel_SaltmarshFlats
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_SaltmarshFlats_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_SaltmarshFlats_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_SaltmarshFlats_3
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_SaltmarshFlats_4
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [322, 231]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [322, 231]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_SaltmarshFlats]
+LoadoutImageId: FO_DF_01
+UnlockCondition:
+    - UnlockedVillage: Keyport
+    - Chapter: [3,1]  
+StartingVillage: Keyport
+EndingVillage: SaltmarshFlats
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_SaltmarshFlats, 100]

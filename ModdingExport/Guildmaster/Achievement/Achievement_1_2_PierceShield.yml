@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_2_PierceShield
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_2_PierceShield$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_2_PierceShield_Desc$
+   
+UnlockCondition:
+    - Chapter: [1,2]
+AchievementCondition:
+    - Targets:
+        Filter: PierceDamage
+        Amount: 30
+TreasureTables: [TT_Achievement_1_2_PierceShield]
+AchievementType: Relics
+
+AchievementLevel: 1 
+AchievementOrderId: 435

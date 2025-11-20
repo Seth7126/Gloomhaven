@@ -1,0 +1,37 @@
+Parser: Quest
+ID: Quest_Relic_SteamArmor
+Chapter: 2
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_SteamArmor_Unlock_1
+      Character: Trainer
+    - Text: QUEST_RELIC_SteamArmor_Unlock_2
+      Character: Trainer
+      CameraLocation: [1590, 850] 
+    - Text: QUEST_RELIC_SteamArmor_Unlock_3
+      Character: Merchant
+    - Text: QUEST_RELIC_SteamArmor_Unlock_4
+      Character: Trainer
+
+CompleteDialogueLines:
+    - Text: QUEST_RELIC_SteamArmor_Complete_1
+      Character: Trainer
+    - Text: QUEST_RELIC_SteamArmor_Complete_2
+      Character: Trainer
+    - Text: QUEST_RELIC_SteamArmor_Complete_3
+      Character: Merchant
+    - Text: QUEST_RELIC_SteamArmor_Complete_4
+      Character: Trainer
+LoadoutImageId: ICE_CryptRuin_01_Demon
+UnlockRevealFoWSphere:
+    - MapLocation: [1590, 850]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_2_1_PreventDamageArmor
+StartingVillage: BlackrockAsylum
+EndingVillage: BlackrockAsylum
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1590, 850]
+    ScenarioPool: [Scenario_Relic_SteamArmor, 100]

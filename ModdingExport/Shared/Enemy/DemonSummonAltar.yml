@@ -1,0 +1,24 @@
+Parser: Enemy
+ID: DemonSummonAltarID
+LocKey: $DemonSummonAltar$
+MonsterType: Object
+Model: Summons Altar
+StandeeLimit: 10
+AbilityCards: [1010, 1011, 1012]
+# Base Stats
+Level0:
+    Health: 4
+Level1:
+    Health: 5
+Level2:
+    Health: 6
+Level3:
+    Health: 6
+Level4:
+    Health: 8
+Level5:
+    Health: 10
+Level6:
+    Health: 10  
+Level7:
+    Health: 13   

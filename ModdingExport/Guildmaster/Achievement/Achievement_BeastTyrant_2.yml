@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_BeastTyrant_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_BeastTyrant_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_BeastTyrant_2_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        BeastTyrantID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: BeastTyrantID    
+        Filter: UseAbility
+        AbilityTypes: [Summon]
+        Value: 30
+
+
+TreasureTables: [TT_Achievement_BeastTyrant]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 252
+
+ 

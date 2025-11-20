@@ -1,0 +1,14 @@
+Parser: Achievement
+ID: Achievement_Voidwarden_Levelling_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Voidwarden_Levelling_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Voidwarden_Levelling_3_Desc$
+   
+UnlockCondition:
+    - Chapter: [1,1]
+AchievementCondition:
+    - RequiredHeroes: 
+        VoidwardenID: 7    
+TreasureTables: [TT_Achievement_Voidwarden_Levelling_3]
+AchievementType: Mercenaries
+AchievementLevel: 0  
+AchievementOrderId: 242

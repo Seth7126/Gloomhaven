@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_2_1_PreventDamageArmor
+LocalisedName: $ADVENTURE_ACHIEVEMENT_2_1_PreventDamageArmor$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_2_1_PreventDamageArmor_Desc$
+UnlockCondition:
+    - Chapter: [2,1]
+AchievementCondition:
+    - Targets:
+        Filter: ItemShielded
+        Amount: 40
+
+TreasureTables: [TT_Achievement_2_1_PreventDamageArmor]
+AchievementType: Relics
+
+AchievementLevel: 2  
+AchievementOrderId: 400

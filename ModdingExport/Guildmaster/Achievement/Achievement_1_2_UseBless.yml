@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_2_UseBless
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_2_UseBless$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_2_UseBless_Desc$
+UnlockCondition:
+    - Chapter: [1,2]
+AchievementCondition:
+    - Targets:
+        Filter: UseAbility
+        AbilityTypes: Bless
+        Value: 20
+TreasureTables: [TT_Achievement_1_2_UseBless]
+AchievementType: Enhancements
+
+AchievementLevel: 1 
+AchievementOrderId: 300

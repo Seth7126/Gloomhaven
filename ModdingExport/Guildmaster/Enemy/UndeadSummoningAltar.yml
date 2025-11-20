@@ -1,0 +1,24 @@
+Parser: Enemy
+ID: UndeadSummoningAltarID
+LocKey: $UndeadSummoningAltar$
+MonsterType: Object
+StandeeLimit: 10
+Model: Summons Altar
+AbilityCards: [1013, 1014, 1015, 1016]
+# Base Stats
+Level0:
+    Health: 4
+Level1:
+    Health: 5
+Level2:
+    Health: 6
+Level3:
+    Health: 6
+Level4:
+    Health: 8
+Level5:
+    Health: 10
+Level6:
+    Health: 10  
+Level7:
+    Health: 13   

@@ -1,0 +1,28 @@
+Parser: ItemCard
+ID: 52
+StringID: SereneSandalsID
+Name: $ITEM_NAME_SereneSandals$
+Art: Serene Sandals
+TotalInGame: 2
+Cost: 75
+Slot: Legs
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+ProsperityRequirement: 8
+Data: 
+    Abilities:
+        AMove:
+            Move: 2
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: BuffMove
+                MoveType: Default
+Layout: 
+    - Active:
+        Ability: AMove
+        ListLayout: "$Item_SereneSandals$"
+        Layout: "$Item_SereneSandals$"
+        Icon: "Move"
+    - Row: "<size=50%> "

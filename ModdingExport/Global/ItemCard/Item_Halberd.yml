@@ -1,0 +1,31 @@
+Parser: ItemCard
+ID: 68
+StringID: HalberdID
+Name: $ITEM_NAME_Halberd$
+Art: Halberd
+TotalInGame: 2
+Cost: 75
+Slot: TwoHand 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+ProsperityRequirement: 9
+Data:     
+    Abilities:
+        AAttack:
+            AddRange: 1
+            TreatAsMelee: true
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: BuffRange
+                AttackType: Melee
+                Target: 1
+                ActiveBonusAnimOverload: HalberdUseItem
+Layout: 
+    - Active:
+        Ability: AAttack
+        ListLayout: "$Item_Halberd$"
+        Layout: "$Item_Halberd$"
+        Icon: "Damage"
+    - Row: "<size=50%> "

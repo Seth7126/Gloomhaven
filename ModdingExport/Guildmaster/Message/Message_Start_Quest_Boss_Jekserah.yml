@@ -1,0 +1,18 @@
+Parser: Message
+Name: Start_Quest_Boss_Jekserah
+DialogueLines:
+    - Text: Message_Start_Quest_Boss_Jekserah_1
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_Jekserah_2
+      Character: Enchantress
+    - Text: Message_Start_Quest_Boss_Jekserah_3
+      Character: Enchantress
+    - Text: Message_Start_Quest_Boss_Jekserah_4
+      Character: Trainer
+      CameraLocation: [1202, 566]  
+MapMessageTrigger: Map
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Summoner_3
+    - CompletedQuest: Quest_Story_Quartermaster_3    
+    
+    

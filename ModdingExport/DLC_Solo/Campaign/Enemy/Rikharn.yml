@@ -1,0 +1,57 @@
+Parser: Enemy
+ID: RikharnID
+LocKey: $Rikharn$
+MonsterType: Monster
+StandeeLimit: 6
+Model: Rikharn
+PredominantlyMelee: True
+AbilityCards: [529607]
+# Base Stats
+Level0:
+    Health: 15
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level1:
+    Health: 20
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level2:
+    Health: 25
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level3:
+    Health: 30
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level4:
+    Health: 35
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level5:
+    Health: 40
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level6:
+    Health: 45
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level7:
+    Health: 50
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1

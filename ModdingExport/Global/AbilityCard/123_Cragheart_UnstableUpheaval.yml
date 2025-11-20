@@ -1,0 +1,79 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_UnstableUpheaval$
+Character: CragheartID
+ID: 123
+Level: 1
+Initiative: 13
+Discard: [Lost,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 3
+                    Enhancements: 1
+                AnimOverload: MeleeSmashUnstableUpheaval
+                Target: -1
+                MultiPassAttack: False
+                TreatAsMelee: True
+            TDamage:
+                Damage: 2
+                Range: 1
+                Target: -1
+                Filter: Ally
+                AnimOverload: Footstomp
+                SkipAnim: True
+        Consumes:
+            TCEarth:
+                Elements: Earth
+                AbilityOverrides:
+                    TCEarthRangeBuff:
+                        ParentName: TAttack
+                        Range: 1
+                XP: 1
+        XP: 1
+    Bottom:
+        Abilities:
+            BShield:
+                Shield: 2
+                Target: -1
+                Filter: Ally
+                Targeting: All
+                AnimOverload: TargetedUnstableUpheavalBottom
+                ActiveBonusDuration: Round
+                SubAbilities:
+                    BShieldSubDamage:
+                        Damage: 1
+                        Target: -1
+                        UseParentTiles: True
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Target_AllAdjacentEnemies$"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: TCEarth
+            Text: "$Target_TwoHexInstead$, <sprite name=XP1>"
+        - Row: "<size=50%> "
+        - Row: "$123_T_2$"
+        - Row: "<size=20%> "
+        - XP: 1
+    Bottom:
+        - Row: "$123_B$"
+        - Row: "<size=50%> "
+        - Active:
+            Ability: BShield
+            Icon: "Shield"
+            ListLayout: "$Shield$ <sprite name=Shield> *BShield*, $Affect_AllAllies$"
+            Layout:
+                - Row: "<b><size=130%>$Shield$ <sprite name=Shield> *BShield*"
+                - Row: "$Affect_AllAllies$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Round

@@ -1,0 +1,21 @@
+Parser: Quest
+ID: Quest_JOTL_009B_ExplosiveEvolution
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_009_ExplosiveEvolution
+LoadoutImageId: 009B_ExplosiveEvolution_Loadout
+NarrativeTextImageOverride:
+    - [Quest_JOTL_009B_ExplosiveEvolution_OUTRO_GH_1, 009B_ExplosiveEvolution_OUTRO_GH_1_Art]
+#    - [Quest_Campaign_001_INTRO_GH_2, 001_Intro_GH_2_Art]
+#    - [Quest_Campaign_001_INTRO_GH_3, 001_Intro_GH_3_Art]
+#    - [Quest_Campaign_001_INTRO_GH_4, 001_Intro_GH_4_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_JOTL_007_SunkenTumor       
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLBoss
+Scenario:
+    MapLocation: [1306, 963]
+    ScenarioPool: 
+      - [Scenario_JOTL_009_ExplosiveEvolution, 100]

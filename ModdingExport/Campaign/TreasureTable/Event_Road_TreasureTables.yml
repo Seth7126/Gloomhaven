@@ -1,0 +1,459 @@
+Parser: TreasureTable
+TT_EVENT_ROAD_CAMPAIGN_1_OPTION_A:
+    Condition: Poison
+TT_EVENT_ROAD_CAMPAIGN_1_OPTION_B:
+    Damage: 3
+
+TT_EVENT_ROAD_CAMPAIGN_2_OPTION_A:
+    Condition: Bless
+
+TT_EVENT_ROAD_CAMPAIGN_3_OPTION_A:
+    Condition: Poison
+
+TT_EVENT_ROAD_CAMPAIGN_4_OPTION_A_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 3
+TT_EVENT_ROAD_CAMPAIGN_4_OPTION_A_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 2
+TT_EVENT_ROAD_CAMPAIGN_4_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    Reputation: -2
+
+TT_EVENT_ROAD_CAMPAIGN_5_OPTION_A:
+    Item:
+        Name: NecklaceOfTeethID
+TT_EVENT_ROAD_CAMPAIGN_5_OPTION_B:
+    Reputation: 1
+    Condition: Curse
+
+TT_EVENT_ROAD_CAMPAIGN_6_OPTION_A:
+    PerkCheck: -1
+TT_EVENT_ROAD_CAMPAIGN_6_OPTION_B:
+    Condition: Wound
+
+TT_EVENT_ROAD_CAMPAIGN_7_OPTION_A:
+    XP: 5
+    PerkCheck: -1
+
+TT_EVENT_ROAD_CAMPAIGN_8_OPTION_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -5
+TT_EVENT_ROAD_CAMPAIGN_8_OPTION_B:
+    Damage: 3
+
+TT_EVENT_ROAD_CAMPAIGN_9_OPTION_A:
+    ConsumeItem:
+        TreasureDistributionType: Combined
+        Slot: SmallItem
+TT_EVENT_ROAD_CAMPAIGN_9_OPTION_B:
+    Reputation: -1
+
+TT_EVENT_ROAD_CAMPAIGN_10_OPTION_A:
+    Damage: 1
+TT_EVENT_ROAD_CAMPAIGN_10_OPTION_B:
+    CityEvent: Event_City_Campaign_71ID
+    Damage: 1
+    
+TT_EVENT_ROAD_CAMPAIGN_11_OPTION_A:
+    Damage: 2
+TT_EVENT_ROAD_CAMPAIGN_11_OPTION_B_A:
+    CityEvent: Event_City_Campaign_73ID
+TT_EVENT_ROAD_CAMPAIGN_11_OPTION_B_B:
+    Damage: 4
+
+TT_EVENT_ROAD_CAMPAIGN_12_OPTION_B:
+    AddModifiers:
+        Modifiers:
+            - [AMC_Basic_M1, 3]
+        TreasureDistributionType: Combined
+    Reputation: 1
+
+TT_EVENT_ROAD_CAMPAIGN_13_OPTION_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 2
+TT_EVENT_ROAD_CAMPAIGN_13_OPTION_B:
+    Condition: Curse
+    
+TT_EVENT_ROAD_CAMPAIGN_14_OPTION_A:
+    Condition: Bless
+
+TT_EVENT_ROAD_CAMPAIGN_15_OPTION_A:
+    Condition: Muddle
+    Damage: 2
+
+TT_EVENT_ROAD_CAMPAIGN_16_OPTION_A:
+    Condition: Curse
+    Damage: 2
+TT_EVENT_ROAD_CAMPAIGN_16_OPTION_B:
+    Condition: Bless
+    
+TT_EVENT_ROAD_CAMPAIGN_17_OPTION_A:
+    Gold:
+        TreasureDistributionType: Combined
+        Amount: 5
+TT_EVENT_ROAD_CAMPAIGN_17_OPTION_B:
+    Prosperity: 1
+
+TT_EVENT_ROAD_CAMPAIGN_18_OPTION_A_B:
+    Condition: Curse
+TT_EVENT_ROAD_CAMPAIGN_18_OPTION_B:
+    Damage: 3
+
+TT_EVENT_ROAD_CAMPAIGN_19_OPTION_A_B:
+    Reputation: 1
+TT_EVENT_ROAD_CAMPAIGN_19_OPTION_B_A:
+    Reputation: -2
+    Item:
+        Name: MajorPowerPotionID
+TT_EVENT_ROAD_CAMPAIGN_19_OPTION_B_B:
+    Reputation: -2
+
+TT_EVENT_ROAD_CAMPAIGN_20_OPTION_A:
+    Condition: Poison
+    Damage: 2
+TT_EVENT_ROAD_CAMPAIGN_20_OPTION_B:
+    XP: 3
+
+TT_EVENT_ROAD_CAMPAIGN_21_OPTION_A:
+    PerkCheck: -1
+    Condition: Wound
+    Damage: 3
+TT_EVENT_ROAD_CAMPAIGN_21_OPTION_B:
+    Discard: 2
+
+TT_EVENT_ROAD_CAMPAIGN_22_OPTION_A:
+    CityEvent: Event_City_Campaign_74ID
+TT_EVENT_ROAD_CAMPAIGN_22_OPTION_B:
+    XP: 2
+    Condition: Curse
+
+TT_EVENT_ROAD_CAMPAIGN_23_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 2
+    Reputation: -1
+
+TT_EVENT_ROAD_CAMPAIGN_24_OPTION_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+    Discard: 2
+    UnlockQuest: Quest_Campaign_082
+TT_EVENT_ROAD_CAMPAIGN_24_OPTION_B:
+    UnlockQuest: Quest_Campaign_082
+
+TT_EVENT_ROAD_CAMPAIGN_25_OPTION_A_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -5
+TT_EVENT_ROAD_CAMPAIGN_25_OPTION_B:
+    Damage: 3
+
+TT_EVENT_ROAD_CAMPAIGN_26_OPTION_A_A:
+    Condition: Bless
+    Reputation: 1
+TT_EVENT_ROAD_CAMPAIGN_26_OPTION_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+    Reputation: -1
+
+TT_EVENT_ROAD_CAMPAIGN_27_OPTION_A_B:
+    Discard: 3
+TT_EVENT_ROAD_CAMPAIGN_27_OPTION_B:
+    Damage: 2
+    
+TT_EVENT_ROAD_CAMPAIGN_28_OPTION_A_A:
+    LoseItem:
+        TreasureDistributionType: Combined
+        Name: MinorStaminaPotionID
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 20
+TT_EVENT_ROAD_CAMPAIGN_28_OPTION_A_B:
+    LoseItem:
+        TreasureDistributionType: Combined
+        Name: MinorStaminaPotionID
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+
+TT_EVENT_ROAD_CAMPAIGN_29_OPTION_A_B:
+    Discard: 2
+TT_EVENT_ROAD_CAMPAIGN_29_OPTION_B:
+    Condition: Wound
+
+TT_EVENT_ROAD_CAMPAIGN_30_OPTION_A_B:
+    ConsumeItem:
+        Slot: SmallItem
+    Reputation: 1        
+TT_EVENT_ROAD_CAMPAIGN_30_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 2
+
+TT_EVENT_ROAD_CAMPAIGN_31_OPTION_A_A:
+    Reputation: 2
+TT_EVENT_ROAD_CAMPAIGN_31_OPTION_A_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+    Damage: 3
+TT_EVENT_ROAD_CAMPAIGN_31_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+    Damage: 1
+    
+TT_EVENT_ROAD_CAMPAIGN_32_OPTION_A_A:
+    Reputation: 1
+TT_EVENT_ROAD_CAMPAIGN_32_OPTION_A_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -5
+    Reputation: 1
+TT_EVENT_ROAD_CAMPAIGN_32_OPTION_B:
+    Reputation: -1
+
+TT_EVENT_ROAD_CAMPAIGN_33_OPTION_A_B:
+    Damage: 1
+    Discard: 1
+TT_EVENT_ROAD_CAMPAIGN_33_OPTION_B:
+    Damage: 3
+    
+TT_EVENT_ROAD_CAMPAIGN_34_OPTION_A_B:
+    Damage: 4
+TT_EVENT_ROAD_CAMPAIGN_34_OPTION_B_B:
+    Discard: 2
+
+TT_EVENT_ROAD_CAMPAIGN_35_OPTION_A_A:
+    Damage: 1
+TT_EVENT_ROAD_CAMPAIGN_35_OPTION_A_B:
+    Condition: Poison
+    Damage: 3
+TT_EVENT_ROAD_CAMPAIGN_35_OPTION_B_A:
+    Gold: 
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -5
+
+TT_EVENT_ROAD_CAMPAIGN_36_OPTION_A_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+TT_EVENT_ROAD_CAMPAIGN_36_OPTION_A_B:
+    Condition: Poison
+    Damage: 2
+TT_EVENT_ROAD_CAMPAIGN_36_OPTION_B:
+    Discard: 1
+
+TT_EVENT_ROAD_CAMPAIGN_37_OPTION_A_B:
+    Discard: 2
+TT_EVENT_ROAD_CAMPAIGN_37_OPTION_B:
+    Condition: Disarm
+
+TT_EVENT_ROAD_CAMPAIGN_38_OPTION_A_A:
+    Prosperity: 1
+TT_EVENT_ROAD_CAMPAIGN_38_OPTION_A_B:
+    PerkCheck: -1
+    Discard: 1
+    
+TT_EVENT_ROAD_CAMPAIGN_39_OPTION_A_A:
+    Reputation: 1
+TT_EVENT_ROAD_CAMPAIGN_39_OPTION_A_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -10
+    Reputation: 1
+    Condition: Poison
+    
+TT_EVENT_ROAD_CAMPAIGN_40_OPTION_A_B:
+    Condition: Muddle
+    Condition: Immobilize
+TT_EVENT_ROAD_CAMPAIGN_40_OPTION_B:
+    Discard: 2
+
+TT_EVENT_ROAD_CAMPAIGN_41_OPTION_A_B:
+    Condition: Wound
+    Damage: 3
+TT_EVENT_ROAD_CAMPAIGN_41_OPTION_B:
+    Damage: 2
+
+TT_EVENT_ROAD_CAMPAIGN_42_OPTION_A:
+    Discard: 3
+TT_EVENT_ROAD_CAMPAIGN_42_OPTION_B:
+    RoadEvent: Event_Road_Campaign_60ID
+    
+TT_EVENT_ROAD_CAMPAIGN_43_OPTION_A:
+    AddModifiers:
+        Modifiers:
+            - [AMC_Basic_M1, 3]
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+    
+TT_EVENT_ROAD_CAMPAIGN_44_OPTION_A:
+    UnlockQuest: Quest_Campaign_090
+
+TT_EVENT_ROAD_CAMPAIGN_45_OPTION_A:
+    Condition: Poison
+    Damage: 2
+
+TT_EVENT_ROAD_CAMPAIGN_46_OPTION_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+
+TT_EVENT_ROAD_CAMPAIGN_47_OPTION_B:
+    Condition: Poison
+    Damage: 2
+
+TT_EVENT_ROAD_CAMPAIGN_48_OPTION_A:
+    RoadEvent: Event_Road_Campaign_61ID
+TT_EVENT_ROAD_CAMPAIGN_48_OPTION_B:
+    Condition: Muddle
+    Condition: Wound
+    Damage: 3
+    
+TT_EVENT_ROAD_CAMPAIGN_49_OPTION_A:
+    UnlockQuest: Quest_Campaign_080
+TT_EVENT_ROAD_CAMPAIGN_49_OPTION_B:
+    UnlockQuest: Quest_Campaign_080
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+    Damage: 4
+
+TT_EVENT_ROAD_CAMPAIGN_50_OPTION_A:
+    CityEvent: Event_City_Campaign_68ID
+TT_EVENT_ROAD_CAMPAIGN_50_OPTION_B:
+    Discard: 2
+    
+##### Placeholder ##### Black Card
+TT_EVENT_ROAD_CAMPAIGN_51_OPTION_A:
+    Item:
+        Name: BlackCardID
+
+TT_EVENT_ROAD_CAMPAIGN_52_OPTION_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+    Condition: Poison
+    Condition: Curse
+    
+TT_EVENT_ROAD_CAMPAIGN_53_OPTION_A:
+    Damage: 3
+TT_EVENT_ROAD_CAMPAIGN_53_OPTION_B:
+    Item:
+        Name: BloodyAxeID
+    ConsumeItem:
+        Slot: SmallItem
+
+TT_EVENT_ROAD_CAMPAIGN_54_OPTION_A:
+    Reputation: 1
+    Discard: 2
+TT_EVENT_ROAD_CAMPAIGN_54_OPTION_B_A:
+    Reputation: 1
+TT_EVENT_ROAD_CAMPAIGN_54_OPTION_B_B:
+    CityEvent: Event_City_Campaign_69ID
+    
+TT_EVENT_ROAD_CAMPAIGN_55_OPTION_B:
+    Condition: Poison
+
+TT_EVENT_ROAD_CAMPAIGN_56_OPTION_A:
+    Reputation: 1
+TT_EVENT_ROAD_CAMPAIGN_56_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 3
+
+TT_EVENT_ROAD_CAMPAIGN_57_OPTION_B:
+    RoadEvent: Event_Road_Campaign_63ID
+    Discard: 2
+
+TT_EVENT_ROAD_CAMPAIGN_58_OPTION_B:
+    Discard: 3
+
+TT_EVENT_ROAD_CAMPAIGN_59_OPTION_A:
+    Condition: Poison
+    Condition: Muddle
+    Condition: Bless
+    Damage: 2
+TT_EVENT_ROAD_CAMPAIGN_59_OPTION_B:
+    Condition: Curse
+    Discard: 2
+
+TT_EVENT_ROAD_CAMPAIGN_60_OPTION_A:
+    Reputation: 1
+TT_EVENT_ROAD_CAMPAIGN_60_OPTION_B:
+    Item:
+        Name: BattleAxeID
+
+TT_EVENT_ROAD_CAMPAIGN_61_OPTION_A:
+    RoadEvent: Event_Road_Campaign_62ID
+TT_EVENT_ROAD_CAMPAIGN_61_OPTION_B:
+    UnlockQuest: Quest_Campaign_085
+    
+TT_EVENT_ROAD_CAMPAIGN_62_OPTION_A:
+    UnlockQuest: Quest_Campaign_085
+TT_EVENT_ROAD_CAMPAIGN_62_OPTION_B:
+    Condition: Muddle
+    Condition: Wound
+    Damage: 3
+
+TT_EVENT_ROAD_CAMPAIGN_63_OPTION_B:
+    Item:
+        Name: SunEarringID
+
+TT_EVENT_ROAD_CAMPAIGN_64_OPTION_A:
+    PerkCheck: -1
+    Damage: 4
+    Discard: 4
+TT_EVENT_ROAD_CAMPAIGN_64_OPTION_B:
+    PerkCheck: -1
+    Damage: 2
+    Discard: 2
+
+TT_EVENT_ROAD_CAMPAIGN_65_OPTION_A:
+    Reputation: 2
+TT_EVENT_ROAD_CAMPAIGN_65_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 3
+    
+TT_EVENT_ROAD_CAMPAIGN_66_OPTION_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 25
+TT_EVENT_ROAD_CAMPAIGN_66_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 25
+    Condition: Wound
+    Damage: 2
+
+TT_EVENT_ROAD_CAMPAIGN_67_OPTION_A:
+    Prosperity: 1
+TT_EVENT_ROAD_CAMPAIGN_67_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 20
+
+TT_EVENT_ROAD_CAMPAIGN_68_OPTION_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+TT_EVENT_ROAD_CAMPAIGN_68_OPTION_B:
+    Reputation: 2
+
+TT_EVENT_ROAD_CAMPAIGN_69_OPTION_A:
+    XP: 5
+TT_EVENT_ROAD_CAMPAIGN_69_OPTION_B:
+    PerkCheck: -1
+    Prosperity: 1

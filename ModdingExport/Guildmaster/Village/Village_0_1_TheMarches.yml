@@ -1,0 +1,53 @@
+Parser: Village
+ID: TheMarches
+LocalisedName: $TheMarches$
+LocalisedDescription: $ADVENTURE_LOCATION_TheMarches_Desc$
+Mesh: Ca21_TheMarches_MAT
+MapLocation: [1370,413]
+JobLocations: 
+    - [1415, 442]
+    - [1309, 433]
+    - [1379, 337]
+UnlockCondition:
+    - Chapter: [1,1]
+#    - CompletedQuest: Quest_Travel_TheMarches
+Quests: 
+#FTUE
+    - Quest_Story_7A    
+    - Quest_Story_7B    
+
+#TRAVEL
+    - Quest_Travel_DemonspineHollow
+    - Quest_Travel_RiversRise
+    - Quest_Travel_Wayward
+    
+    
+    
+#JOBS-FOREST    
+    - Quest_Job_Chapter_1_1_Bandit_Forest
+    - Quest_Job_Imps_Spirits_Forest
+    - Quest_Job_Inox_Vermling_Forest
+    - Quest_Job_MindControl
+    - Quest_Job_TheHaunting
+    - Quest_Job_TheStoneMan    
+#JOBS-CRYPT
+    - Quest_Job_Chapter_1_1_Undead_Crypt
+    - Quest_Job_Chapter_1_1_Undead_Bandit_Crypt 
+    - Quest_Job_Snakes_Undead_Crypt    
+    - Quest_Job_Mysterious_Maze
+    - Quest_Job_AnEyeForAnEye
+    - Quest_Job_DemonicDissent
+    - Quest_Job_TheVaultsOfPus    
+#JOBS-CAVE
+    - Quest_Job_Vermling_Cave
+    - Quest_Job_TwoTribes
+    - Quest_Job_CallOfTheWild
+    - Quest_Job_DemonAltars
+    - Quest_Job_FireCult
+    - Quest_Job_SavvasAid
+    - Quest_Job_SavvasInfighting  
+
+#JOBS-FOREST    
+    - Quest_Job_FellHounds
+#JOBS-CRYPT
+    - Quest_Job_DungeonOfMisfortune

@@ -1,0 +1,34 @@
+Parser: Quest
+ID: Quest_Relic_AncientDrill
+Chapter: 1
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_AncientDrill_Unlock_1
+      Character: Trainer
+    - Text: QUEST_RELIC_AncientDrill_Unlock_2
+      Character: Trainer
+      CameraLocation: [704, 1385]    
+    - Text: QUEST_RELIC_AncientDrill_Unlock_3
+      Character: Trainer
+      CameraLocation: [704, 1385]    
+    - Text: QUEST_RELIC_AncientDrill_Unlock_4
+      Character: Merchant
+      CameraLocation: [704, 1385] 
+CompleteDialogueLines:
+    - Text: QUEST_RELIC_AncientDrill_Complete_1
+      Character: Merchant
+LoadoutImageId: CA_DF_03
+UnlockRevealFoWSphere:
+    - MapLocation: [704, 1385]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: SouthShield
+    - CompletedAchievement: Achievement_1_2_PierceShield
+StartingVillage: SouthShield
+EndingVillage: SouthShield
+
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [704, 1385]
+    ScenarioPool: [Scenario_Relic_AncientDrill, 100]

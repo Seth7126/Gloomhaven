@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_Quartermaster_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Quartermaster_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Quartermaster_3_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        QuartermasterID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: QuartermasterID    
+        Filter: UseItem
+        Value: 30
+    
+
+
+TreasureTables: [TT_Achievement_Quartermaster]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 280
+
+ 

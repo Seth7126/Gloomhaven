@@ -1,0 +1,98 @@
+Parser: Enemy
+ID: TheGloomID
+LocKey: $TheGloom$
+MonsterType: Boss
+StandeeLimit: 1
+Model: The Gloom
+PredominantlyMelee: True
+AbilityCards: [57200097,57300098,57400099,57500100,57600101,57700102,57800103,57900104]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 2
+    Attack: 5
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 20
+Level1:
+    Health: 0
+    Move: 2
+    Attack: 5
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 25
+Level2:
+    Health: 0
+    Move: 2
+    Attack: 6
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 29
+ Level3:
+    Health: 0
+    Move: 2
+    Attack: 6
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 35
+ Level4:
+    Health: 0
+    Move: 3
+    Attack: 7
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 39
+ Level5:
+    Health: 0
+    Move: 3
+    Attack: 7
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 46
+ Level6:
+    Health: 0
+    Move: 3
+    Attack: 8
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 50
+ Level7:
+    Health: 0
+    Move: 3
+    Attack: 9
+    Range: 1
+    Target: 1
+    Immunities: [Wound, Muddle, Stun, Disarm, Immobilize, Poison, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 56
+    

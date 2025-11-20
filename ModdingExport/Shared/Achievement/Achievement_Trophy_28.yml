@@ -1,0 +1,14 @@
+Parser: Achievement
+ID: Achievement_Trophy28
+LocalisedName: $TROPHY_ACHIEVEMENT_28$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_28_Desc$
+AchievementCondition:
+    - Targets:
+        Filter: UseAbility
+        AbilityTypes: Heal
+        Amount: 60
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy28]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4028

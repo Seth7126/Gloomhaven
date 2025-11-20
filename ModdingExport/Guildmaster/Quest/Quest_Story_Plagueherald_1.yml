@@ -1,0 +1,52 @@
+Parser: Quest
+ID: Quest_Story_Plagueherald_1
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+UnlockDialogueLines:
+    - Text: Message_Complete_Achievement_1_1_PlagueheraldReachLevel2_1
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_PlagueheraldReachLevel2_2
+      Character: Merchant
+    - Text: Message_Complete_Achievement_1_1_PlagueheraldReachLevel2_3
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_PlagueheraldReachLevel2_4
+      Character: Merchant
+    - Text: Message_Complete_Achievement_1_1_PlagueheraldReachLevel2_5
+      Character: Trainer
+      CameraLocation: [857, 1012] 
+    - Text: Message_Complete_Achievement_1_1_PlagueheraldReachLevel2_6
+      Character: Merchant
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Plagueherald_1_1
+      Character: Merchant
+    - Text: Message_End_Quest_Story_Plagueherald_1_2
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Plagueherald_1_3
+      Character: Merchant
+    - Text: Message_End_Quest_Story_Plagueherald_1_4
+      Character: Trainer
+      CameraLocation: [1660, 493]
+    - Text: Message_End_Quest_Story_Plagueherald_1_5
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Plagueherald_1_6
+      Character: Merchant
+CompletionRewards: TT_Quest_Story_Plagueherald_1
+LoadoutImageId: SE_06
+UnlockRevealFoWSphere:
+    - MapLocation: [857, 1012]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: Sahmyrt
+    - CompletedAchievement: Achievement_1_1_PlagueheraldReachLevel2
+    - Chapter: [1,1]
+RequiredCharacters:
+  - Character: PlagueheraldID    
+    Level: 2
+StartingVillage: Nasitra
+EndingVillage: Nasitra
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [857, 1012]
+    ScenarioPool: [Scenario_Story_Plagueherald_1, 100]

@@ -1,0 +1,44 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_BounceBack$
+Character: BerserkerID
+ID: 328
+Level: 1
+Initiative: 14
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TRet:
+                Retaliate:
+                    Amount: 2
+                    Enhancements: 1
+                Filter: Self
+                ActiveBonusDuration: Round
+                AnimOverload: PowerUp
+    Bottom:
+        Abilities:
+            BMove:
+                Move: 3
+            BHeal:
+                Heal:
+                    Amount: 1
+                    Enhancements: 1
+                Filter: Self
+                AnimOverload: Heal
+Layout:
+    Top:
+        - Active:
+            Ability: TRet
+            Icon: Retaliate
+            ListLayout: "$Retaliate$ <sprite name=Retaliate> *TRet*, $Self$"
+            Layout:
+                - Row: "<b><size=130%>$Retaliate$ <sprite name=Retaliate> *TRet* <size=100%><voffset=1>@TRet@"
+                - Row: "$Self$"
+                - Row: "<size=50%> "
+                - Duration: Round
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Heal$ <sprite name=Heal> *BHeal* <size=100%><voffset=1>@BHeal@"
+        - Row: "$Self$"
+

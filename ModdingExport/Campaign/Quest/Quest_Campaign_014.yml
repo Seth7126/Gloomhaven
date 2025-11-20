@@ -1,0 +1,35 @@
+Parser: Quest
+ID: Quest_Campaign_014
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_014
+LoadoutImageId: ICE_Cave_01_Undead
+NarrativeTextImageOverride:
+    - [Quest_Campaign_014_INTRO_GH_1, 014_INTRO_GH_1_Art]
+    - [Quest_Campaign_014_INTRO_GH_2, 014_INTRO_GH_2_Art]
+    - [Quest_Campaign_014_INTRO_GH_3, 014_INTRO_GH_3_Art]
+    - [Quest_Campaign_014_INTRO_GH_4, 014_INTRO_GH_4_Art]
+    - [Quest_Campaign_014_INTRO_GH_5, 014_INTRO_GH_5_Art]
+    - [Quest_Campaign_014_OUTRO_GH_1, 014_OUTRO_GH_1_Art]
+    - [Quest_Campaign_014_OUTRO_GH_2, 014_OUTRO_GH_2_Art]
+    - [Quest_Campaign_014_OUTRO_GH_3, 014_OUTRO_GH_3_Art]
+    - [Quest_Campaign_014_OUTRO_GH_4, 014_OUTRO_GH_4_Art]
+    - [Quest_Campaign_014_OUTRO_GH_5, 014_OUTRO_GH_5_Art]
+    - [Quest_Campaign_014_OUTRO_GH_6, 014_OUTRO_GH_1_Art]
+    - [Quest_Campaign_014_OUTRO_GH_7, 014_OUTRO_GH_7_Art]
+    - [Quest_Campaign_014_OUTRO_GH_8, 014_OUTRO_GH_5_Art]
+    - [Quest_Campaign_014_OUTRO_GH_9, 014_OUTRO_GH_9_Art]
+UnlockCondition:
+    - Required:
+        CompletedQuest: 1
+    - CompletedQuest: Quest_Campaign_008
+    - CompletedQuest: Quest_Campaign_005
+    - CompletedQuest: Quest_Campaign_018
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: CopperneckMountains
+
+Scenario:
+    MapLocation: [1319, 457]
+    ScenarioPool: 
+      - [Scenario_Campaign_014, 100]

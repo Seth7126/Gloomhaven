@@ -1,0 +1,33 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_TwinRestoration$
+Character: SpellweaverID
+ID: 82
+Level: 7
+Initiative: 75
+Discard: [Permanently Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TRecover:
+                RecoverLostCards: 2
+                Filter: [Self]
+    Bottom:
+        Abilities:
+            BHeal:
+                Heal:
+                    Amount: 3
+                    Enhancements: 1
+                Range:
+                    Amount: 3
+                Target:
+                    Amount: 2
+                    Enhancements: 1
+                Filter: [Self, Ally]
+                AnimOverload: Heal
+Layout:
+    Top:
+        - Row: "$082_T$"
+    Bottom:
+        - Row: "<b><size=130%>$Heal$ <sprite name=Heal> *BHeal* <size=100%><voffset=1>@BHeal@"
+        - Row: "$Range$ <sprite name=Range> *BHeal.Range*"
+        - Row: "$Target$ <sprite name=Target> *BHeal.Target* @BHeal.Target@"

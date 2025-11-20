@@ -1,0 +1,19 @@
+Parser: Achievement
+ID: Achievement_1_1_KillSummonLivingBones
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_KillSummonLivingBones$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_KillSummonLivingBones_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [LivingBonesID, LivingBonesEliteID]
+        CharacterTypes:
+            Target: EnemySummon
+        Value: 30
+TreasureTables: [TT_Achievement_1_1_KillSummonLivingBones]
+AchievementType: Relics
+
+AchievementLevel: 2  
+AchievementOrderId: 430

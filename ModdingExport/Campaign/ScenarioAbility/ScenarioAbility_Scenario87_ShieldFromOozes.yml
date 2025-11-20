@@ -1,0 +1,21 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_87_ShieldFromOozes
+ScenarioAbility:
+    AOozeShield:
+        Shield: 2
+        AttackSourcesOnly: True
+        AnimOverload: PowerUp
+        ActiveBonus:
+            ListLayoutOverride: [$ScenarioAbility_87_1OozeShield$, Shield]
+            Duration: Persistent
+            Behaviour: ShieldIncomingAttacks
+            ValidAbilityType: Attack            
+            Filter:
+                EnemyClasses: [OozeID, OozeEliteID, GiantOozeID]
+    APoisonImmunity:
+        ImmunityTo: [Poison]
+        Filter: Self
+        AutoTrigger: True
+        ActiveBonus:
+            ListLayoutOverride: [$ScenarioAbility_87_2PoisonImmunity$, Immune]
+            Duration: Persistent

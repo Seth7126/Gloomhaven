@@ -1,0 +1,145 @@
+Parser: Enemy
+ID: RatMonstrosityID
+LocKey: $RatMonstrosity$
+MonsterType: Monster
+StandeeLimit: 10
+Model: Rat Monstrosity
+PredominantlyMelee: True
+AbilityCards: [11420, 11421, 11422, 11423, 11424, 11425, 11426, 11427]
+# Base Stats
+Level0:
+    Health: 4
+    Move: 1
+    Attack: 1
+    Range: 1
+    Target: 1
+    OnDeathAbilities:
+        AOnDeathDamage:
+            Damage: 1
+            Range: 1
+            Target: -1
+            OnDeath: True
+            Filter:
+                EnemyType: Object
+                Invert: True
+            AnimOverload: Radial Attack
+            Text: "Monstrosity_OnDeath"
+Level1:
+    Health: 4
+    Move: 1
+    Attack: 2
+    Range: 1
+    Target: 1
+    OnDeathAbilities:
+        AOnDeathDamage:
+            Damage: 1
+            Range: 1
+            Target: -1
+            OnDeath: True
+            Filter:
+                EnemyType: Object
+                Invert: True
+            AnimOverload: Radial Attack
+            Text: "Monstrosity_OnDeath"
+Level2:
+    Health: 5
+    Move: 2
+    Attack: 2
+    Range: 1
+    Target: 1
+    OnDeathAbilities:
+        AOnDeathDamage:
+            Damage: 1
+            Range: 1
+            Target: -1
+            OnDeath: True
+            Filter:
+                EnemyType: Object
+                Invert: True
+            AnimOverload: Radial Attack
+            Text: "Monstrosity_OnDeath"
+Level3:
+    Health: 6
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 1
+    OnDeathAbilities:
+        AOnDeathDamage:
+            Damage: 2
+            Range: 1
+            Target: -1
+            OnDeath: True
+            Filter:
+                EnemyType: Object
+                Invert: True
+            AnimOverload: Radial Attack
+            Text: "Monstrosity_OnDeath"
+Level4:
+    Health: 8
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 1
+    OnDeathAbilities:
+        AOnDeathDamage:
+            Damage: 2
+            Range: 1
+            Target: -1
+            OnDeath: True
+            Filter:
+                EnemyType: Object
+                Invert: True
+            AnimOverload: Radial Attack
+            Text: "Monstrosity_OnDeath"
+Level5:
+    Health: 10
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    OnDeathAbilities:
+        AOnDeathDamage:
+            Damage: 2
+            Range: 1
+            Target: -1
+            OnDeath: True
+            Filter:
+                EnemyType: Object
+                Invert: True
+            AnimOverload: Radial Attack
+            Text: "Monstrosity_OnDeath"
+Level6:
+    Health: 12
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    OnDeathAbilities:
+        AOnDeathDamage:
+            Damage: 3
+            Range: 1
+            Target: -1
+            OnDeath: True
+            Filter:
+                EnemyType: Object
+                Invert: True
+            AnimOverload: Radial Attack
+            Text: "Monstrosity_OnDeath"
+Level7:
+    Health: 12
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    OnDeathAbilities:
+        AOnDeathDamage:
+            Damage: 3
+            Range: 1
+            Target: -1
+            OnDeath: True
+            Filter:
+                EnemyType: Object
+                Invert: True
+            AnimOverload: Radial Attack
+            Text: "Monstrosity_OnDeath"

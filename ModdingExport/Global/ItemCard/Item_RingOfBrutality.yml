@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 51
+StringID: RingOfBrutalityID
+Name: $ITEM_NAME_RingOfBrutality$
+Art: Ring Of Brutality
+TotalInGame: 2
+Cost: 40
+Slot: SmallItem 
+Rarity: Rare
+Usage: Consumed
+Trigger: AtEndOfTurn
+ProsperityRequirement: 7
+Data: 
+    Abilities:      
+        AExtraTurn:
+            ExtraTurn: TopAction
+            Filter: Self
+Layout: 
+    - Row: $Item_RingOfBrutality$

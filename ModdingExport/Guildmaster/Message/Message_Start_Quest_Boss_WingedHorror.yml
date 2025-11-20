@@ -1,0 +1,21 @@
+Parser: Message
+Name: Start_Quest_Boss_WingedHorror
+DialogueLines:
+    - Text: Message_Start_Quest_Boss_WingedHorror_1
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_WingedHorror_2
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_WingedHorror_3
+      Character: CityGuard
+    - Text: Message_Start_Quest_Boss_WingedHorror_4
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_WingedHorror_5
+      Character: Enchantress
+      CameraLocation: [574, 196]        
+    - Text: Message_Start_Quest_Boss_WingedHorror_6
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_WingedHorror_7
+      Character: Merchant
+MapMessageTrigger: Map
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Sawbones_3

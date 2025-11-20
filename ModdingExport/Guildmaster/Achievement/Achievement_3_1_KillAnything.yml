@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_3_1_KillAnything
+LocalisedName: $ADVENTURE_ACHIEVEMENT_3_1_KillAnything$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_3_1_KillAnything_Desc$
+UnlockCondition:
+    - Chapter: [4,1]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        Value: 200
+        
+TreasureTables: [TT_Achievement_3_1_KillAnything]
+AchievementType: Relics
+AchievementOrderId: 433
+
+AchievementLevel: 2 

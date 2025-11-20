@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_Travel_GibbetHill
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_Rewards_Quest_Story_4A_1
+      Character: Merchant
+      CameraLocation: [979,516]
+    - Text: Message_End_Quest_Story_4A_1
+      Character: Trainer
+      CameraLocation: [1002, 469]
+UnlockRevealFoWSphere:
+    - MapLocation: [979,516]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [979,516]
+      Radius: 18
+LoadoutImageId: FO_DF_01
+UnlockCondition:
+    - UnlockedVillage: Demonsgate
+
+    - CompletedQuest: Quest_Story_3B  
+StartingVillage: Demonsgate
+EndingVillage: GibbetHill
+EventChance: [0, 0, 0, 0, 0, 0, 0, 0]
+EventPool:
+ - [AbandonedCartID, 100]
+Scenario:
+    PathDistancePercentage: 0.5
+    ScenarioPool: [4A, 100]

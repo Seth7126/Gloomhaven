@@ -1,0 +1,87 @@
+Parser: Scenario
+ID: Scenario_Relic_NecklaceOfTeeth
+BaseBiome: Forest
+BaseSubBiome: Default
+BaseTheme: Default
+BaseSubTheme: Default
+BaseTone: Default
+ScenarioMeshes: [DGN_Forest_10_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_RELIC_NecklaceOfTeeth_Start_1
+          Character: Merchant
+        - Text: SCENARIO_RELIC_NecklaceOfTeeth_Start_2
+          Character: Enchantress
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_RELIC_NecklaceOfTeeth_Success_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:       
+            Result: Win
+        LootX: 
+            Result: Win
+            LootAmount: [1,1,1,1]
+            Filter:
+                LootType: GoalChest
+    ScenarioModifiers:
+        SM1:
+            Type: TriggerAbility
+            TriggerPhase: EndTurn
+            ScenarioAbilityID: ScenarioAbility_Heal1_Self
+            Filter:
+                ActorType: [Enemy]
+
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: Vermling_Hunters
+                    OneHexObstacles: [50] 
+                    Traps: [100,100, 100, 100, 100, 100]
+        Room2:
+            Threat: 75
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    Biome: City
+                    SubBiome: Shack
+                    MonsterGroup: HarrowerVermlings
+                    OneHexObstacles: [100] 
+                    Traps: [100,100]
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_RELIC_NecklaceOfTeeth_Room_3_1
+                      Character: Narrator                 
+                DialogueLines:
+                    - Text: SCENARIO_RELIC_NecklaceOfTeeth_Room_3_2
+                      Character: Trainer                    
+        Room3:
+            Threat: 100
+            PossibleRooms:
+                - MediumEmptyRoom:
+                    Biome: City
+                    SubBiome: Shack
+                    MonsterGroup: HarrowerVermlings
+                    Traps: [100,100,50]
+                    GoldPiles: [100, 100]
+                    GoalChest: [£NecklaceOfTeethID£] 
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_RELIC_NecklaceOfTeeth_Room_4_1
+                      Character: Trainer           
+        Room4:
+            Threat: 75
+            ParentRoom: Room2   
+            IsAdditionalDungeonEntrance: True
+            PossibleRooms:
+                - MediumEmptyRoom:
+                    MonsterGroup: HoundsVipersBears
+                    OneHexObstacles: [50] 
+                    Traps: [100]             

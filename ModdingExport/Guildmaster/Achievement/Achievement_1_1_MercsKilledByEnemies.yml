@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_1_1_MercsKilledByEnemies
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_MercsKilledByEnemies$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_MercsKilledByEnemies_Desc$
+CompleteDialogueLines:
+    - Text: Message_Unlock_Sawbones_1
+      Character: Trainer
+    - Text: Message_Unlock_Sawbones_2
+      Character: Narrator
+UnlockCondition:
+    - Chapter: [1,1]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        CharacterTypes:
+            Actor: [Enemy,Neutral,EnemySummon]
+            Target: Player
+        Value: 10       
+
+TreasureTables: [TT_Achievement_1_1_MercsKilledByEnemies]
+AchievementType: Mercenaries
+
+AchievementLevel: 0  
+AchievementOrderId: 249

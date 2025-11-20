@@ -1,0 +1,42 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_DuelistsAdvance$
+Character: ScoundrelID
+ID: 103
+Level: 3
+Initiative: 16
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TMove:
+                Move:
+                    Amount: 3
+                    Enhancements: 1
+            TAttack:
+                Attack:
+                    Amount: 3
+                    Enhancements: 1
+    Bottom:
+        Abilities:
+            BActive:
+                Attack: 2
+                Filter: Self
+                ActiveBonus:
+                    Duration: Round
+                    Behaviour: BuffAttack
+                    Filter:
+                        TargetType: Enemy
+                        TargetAdjacentAlliesOfTarget: "== 0"
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *TMove* <size=100%><voffset=1>@TMove@"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+    Bottom:
+        - Active:
+            Ability: BActive
+            ListLayout: "$103_B$"
+            Layout: "$103_B$"
+            Icon: "Damage"
+        - Row: "<size=20%> "
+        - Duration: Round

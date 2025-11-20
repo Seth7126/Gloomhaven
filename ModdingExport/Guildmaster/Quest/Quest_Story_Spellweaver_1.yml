@@ -1,0 +1,33 @@
+Parser: Quest
+ID: Quest_Story_Spellweaver_1
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompletionRewards: TT_Quest_Story_Spellweaver_1
+UnlockDialogueLines:
+    - Text: Message_Complete_Achievement_1_1_SpellweaverReachLevel2_1
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_SpellweaverReachLevel2_2
+      Character: Trainer
+      CameraLocation: [1557, 510] 
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Spellweaver_1_1
+      Character: Merchant
+      CameraLocation: [1051, 157]
+UnlockRevealFoWSphere:
+    - MapLocation: [1557, 510]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_1_1_SpellweaverReachLevel2
+    - Chapter: [1,1]
+LoadoutImageId: FO_DF_04
+RequiredCharacters:
+  - Character: SpellweaverID    
+    Level: 2    
+StartingVillage: TheSloshedSquirrel
+EndingVillage: TheSloshedSquirrel
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1557, 510]
+    ScenarioPool: [Scenario_Story_Spellweaver_1, 100]

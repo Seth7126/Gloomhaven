@@ -1,0 +1,34 @@
+Parser: Quest
+ID: Quest_Story_Doomstalker_3
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompletionRewards: TT_Quest_Story_Doomstalker_3
+LoadoutImageId: CA_Mine_03
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Doomstalker_3_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Doomstalker_3_2
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Doomstalker_3_3
+      Character: Merchant
+    - Text: Message_End_Quest_Story_Doomstalker_3_4
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Doomstalker_3_5
+      Character: Trainer
+UnlockRevealFoWSphere:
+    - MapLocation: [713, 841]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: GibbetHill
+    - CompletedQuest: Quest_Story_Doomstalker_2
+RequiredCharacters:
+  - Character: DoomstalkerID    
+    Level: 5
+StartingVillage: Shaderest
+EndingVillage: Shaderest
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [713, 841]
+    ScenarioPool: [Scenario_Story_Doomstalker_3, 100]

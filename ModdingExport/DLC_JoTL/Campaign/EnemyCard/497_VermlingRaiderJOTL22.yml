@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 11497
+Initiative: 70
+Shuffle: False
+Data:
+    Abilities:
+        Attack1:
+            Attack: -1
+            Range: 3
+            RangeIsBase: True
+            Filter: Enemy
+            Condition: Disarm

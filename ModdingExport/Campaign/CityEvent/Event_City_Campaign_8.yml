@@ -1,0 +1,57 @@
+Parser: CityEvent
+ID: Event_City_Campaign_8ID
+# LocKey: $CITY_EVENT_8$
+LocKey: $CITY_EVENT$
+Screens:
+    Decision:
+        Reputation:
+            Amount: "< 10"
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_8_INTRO"
+                Options:
+                    A:
+                        Text: "EVENT_CITY_CAMPAIGN_8_OPTION_A"
+                        Next: EVENT_CITY_CAMPAIGN_8_OPTION_A_A_A
+                    B:
+                        Text: "EVENT_CITY_CAMPAIGN_8_OPTION_B"
+                        Next: EVENT_CITY_CAMPAIGN_8_OPTION_B
+        Reputation:
+            Amount: "> 9"
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_8_INTRO"
+                Options:
+                    A:
+                        Text: "EVENT_CITY_CAMPAIGN_8_OPTION_A"
+                        Next: EVENT_CITY_CAMPAIGN_8_OPTION_A_A_B
+                    B:
+                        Text: "EVENT_CITY_CAMPAIGN_8_OPTION_B"
+                        Next: EVENT_CITY_CAMPAIGN_8_OPTION_B
+        Text: "EVENT_CITY_CAMPAIGN_8_INTRO"
+            Options:
+                A:
+                    Text: "EVENT_CITY_CAMPAIGN_8_OPTION_A"
+                    Next: EVENT_CITY_CAMPAIGN_8_OPTION_B
+                B:
+                    Text: "EVENT_CITY_CAMPAIGN_8_OPTION_B"
+                    Next: EVENT_CITY_CAMPAIGN_8_OPTION_B
+    EVENT_CITY_CAMPAIGN_8_OPTION_A_A_A:
+        MinGold:
+            Amount: 20
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_8_RESULT_A_A"        
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_8_OPTION_A_A_A
+                End: True        
+        Text: "EVENT_CITY_CAMPAIGN_8_RESULT_A_B"
+        End: Reuse
+    EVENT_CITY_CAMPAIGN_8_OPTION_A_A_B:
+        MinGold:
+            Amount: 15
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_8_RESULT_A_A"        
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_8_OPTION_A_A_B
+                End: True        
+        Text: "EVENT_CITY_CAMPAIGN_8_RESULT_A_B"
+        End: Reuse
+    EVENT_CITY_CAMPAIGN_8_OPTION_B:
+        Text: "EVENT_CITY_CAMPAIGN_8_RESULT_B"
+        End: True

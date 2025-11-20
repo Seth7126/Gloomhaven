@@ -1,0 +1,14 @@
+Parser: HeroSummon
+ID: BattlebotID
+LocKey: $Battlebot$
+Model: Battlebot
+Health:
+    Amount: 6
+    Enhancements: 1
+Move:
+    Amount: 2
+    Enhancements: 1
+Attack:
+    Amount: 2
+    Enhancements: 1
+Range: 1

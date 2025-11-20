@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_Trophy30
+LocalisedName: $TROPHY_ACHIEVEMENT_30$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_30_Desc$
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        Conditions:
+            Target: [Disarm, Immobilize, Wound, Muddle, Poison, Stun]
+            TargetMinimum: 4
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy30]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4030

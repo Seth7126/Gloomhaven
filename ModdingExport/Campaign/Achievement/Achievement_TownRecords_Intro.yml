@@ -1,0 +1,41 @@
+Parser: Achievement
+ID: Achievement_TownRecords_Intro
+LocalisedName: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+LocalisedDescription: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+CompleteDialogueLines:
+    - Text: Town_Records_FirstRetirement_1
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_2
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_3
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_4
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_5
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_6
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_7
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_8
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_9
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_10
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_11
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_12
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_13
+      Character: Narrator
+    - Text: Town_Records_FirstRetirement_14
+      Character: Narrator
+UnlockCondition:
+    - Retirement: ANY
+AchievementCondition:
+    - Retirement: ANY
+TreasureTables: [TT_Achievement_TownRecords_Chapter_01]
+AchievementType: TownRecord
+AchievementLevel: 0  
+AchievementOrderId: 2021

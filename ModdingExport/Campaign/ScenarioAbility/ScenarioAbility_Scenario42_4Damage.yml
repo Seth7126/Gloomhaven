@@ -1,0 +1,20 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_42_4Damage
+ScenarioAbility:
+    ADamage:
+        AddActiveBonus:
+            Damage: 1
+            Target: 1
+            Filter: Self
+            Text: $ScenarioAbility_42_4Damage$
+        Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: StartTurnAbility
+            IsAura: True
+            AuraFilter:
+                ActorType: [Player, Summon]
+            AuraTargeting: All
+            ListLayoutOverride: [$ScenarioAbility_42_4Damage$, Attack]
+        AnimOverload: None
+        AutoTrigger: True

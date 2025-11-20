@@ -1,0 +1,44 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_HolyStrike$
+Character: SunkeeperID
+ID: 182
+Level: 1
+Initiative: 85
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 2
+                    Enhancements: 1
+                Condition: Stun
+                AnimOverload: MeleeSmite
+    Bottom:
+        Abilities:
+            BAttack:
+                AnimOverload: RangedSmite
+                Attack:
+                    Amount: 5
+                    Enhancements: 1
+                Range:
+                    Amount: 3
+                    Enhancements: 1
+        Infuse: Light
+        XP: 2
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Stun$ <sprite name=Stun>"
+    Bottom:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAttack* <size=100%><voffset=1>@BAttack@"
+        - Row: "$Range$ <sprite name=Range> *BAttack.Range* @BAttack.Range@"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - Infuse: Light
+            - Column:
+                - XP: 2
+

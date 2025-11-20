@@ -1,0 +1,17 @@
+Parser: Achievement
+ID: Achievement_Trophy40
+LocalisedName: $TROPHY_ACHIEVEMENT_40$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_40_Desc$
+AchievementCondition:
+    - Targets:
+        CharacterIDs: BerserkerID
+        Filter: UseAbility
+        AbilityTypes: [Damage]
+        CharacterTypes:
+            Target: OnlySelf
+        Value: 10
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy40]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4040

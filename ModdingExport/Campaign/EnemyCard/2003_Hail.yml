@@ -1,0 +1,10 @@
+Parser: EnemyCard
+ID: 2003
+Initiative: 99
+Shuffle: True
+Data:
+    Abilities: 
+        Move1:
+            Null: true
+
+            

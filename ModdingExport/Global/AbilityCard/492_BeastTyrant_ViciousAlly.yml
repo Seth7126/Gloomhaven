@@ -1,0 +1,59 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_ViciousAlly$
+Character: BeastTyrantID
+ID: 492
+Level: 3
+Initiative: 86
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TSummon:
+                Summon: SwampLizardID
+                AnimOverload: Summon
+        XP: 2
+    Bottom:
+        Abilities:
+            BAlly:
+                ControlActor:
+                    Abilities:
+                        BAllyAttack:
+                            Attack:
+                                Amount: 2
+                                Enhancements: 1
+                            Target:
+                                Amount: 2
+                                Enhancements: 1
+                            StrengthIsBase: True
+                            RangeIsBase: True
+                            TargetIsBase: True
+                    ControlActorType: Player
+                Target: -1
+                Targeting: All
+                Filter: Companion
+                AnimOverload: Command
+        XP: 1
+Layout:
+    Top:
+        - Active:
+            Ability: "TSummon"
+            Icon: "Summon"
+            Layout:
+                - Summon:
+                    Ability: TSummon
+                    SummonName: $SwampLizard$
+                    SpecialText: "$Immobilize$ <sprite name=Immobilize>"
+        - Row: "<size=20%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Persistent
+    Bottom:
+        - Command: True
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *BAllyAttack* <size=100%><voffset=1>@BAllyAttack@"
+        - Row: "$Target$ <sprite name=Target> *BAllyAttack.Target* @BAllyAttack.Target@"
+        - Row: "<size=50%> "
+        - XP: 1

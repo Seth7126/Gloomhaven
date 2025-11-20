@@ -1,0 +1,16 @@
+Parser: Quest
+ID: Quest_Campaign_006
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_006
+LoadoutImageId: CR_RU_01_Undead
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_004
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: UnnamedLocation
+
+Scenario:
+    MapLocation: [1242,828]
+    ScenarioPool: 
+      - [Scenario_Campaign_006, 100]

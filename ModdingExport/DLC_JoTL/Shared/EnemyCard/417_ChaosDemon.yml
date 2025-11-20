@@ -1,0 +1,26 @@
+Parser: EnemyCard
+ID: 11417
+Initiative: 52
+Shuffle: False
+Data:
+    Abilities:
+        Move1:
+            Move: -1
+        Attack1:
+            Attack: 1
+            Filter: Enemy
+    Consumes:
+        CDark:
+            Elements: Dark
+            AbilityOverrides:
+                CDarkAttackBuff:
+                    ParentName: Attack1
+                    SubAbilities:
+                        Attack1SubDamage:
+                            IsInlineSubAbility: True
+                            Damage: 1
+                            Range: 1
+                            Target: -1
+                            Filter: Enemy
+                            AllTargetsAdjacentToParentTargets: True
+                    Text: "$JOTL_417$"

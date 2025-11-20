@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 11377
+Initiative: 70
+Shuffle: False
+Data:
+    Abilities:
+        Move1:
+            Move: 0
+        Attack1:
+            Attack: -1
+            Filter: Enemy
+            Condition: Disarm

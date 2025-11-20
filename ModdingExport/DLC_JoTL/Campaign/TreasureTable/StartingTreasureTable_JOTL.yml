@@ -1,0 +1,11 @@
+Parser: TreasureTable
+StartingTreasureTable_JOTL:
+
+  UnlockProsperityItemStocks: [ThrowingHammerID, ThrowingHammerID, ChainArmorID, ChainArmorID] 
+  
+  UnlockCharacter: RedGuardID
+  UnlockCharacter: VoidwardenID  
+  UnlockCharacter: HatchetID  
+  UnlockCharacter: DemolitionistID  
+
+  

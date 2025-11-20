@@ -1,0 +1,13 @@
+Parser: BattleGoal
+ID: BattleGoal_Insomniac
+LocalisedName: BATTLEGOAL_Insomniac
+LocalisedDescription: BATTLEGOAL_Insomniac_Desc
+#Suffer damage from an attack the same round you long rest.
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: ReceiveDamageWhileResting
+        DamageSource: EnemyAttack
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

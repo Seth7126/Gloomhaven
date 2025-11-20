@@ -1,0 +1,19 @@
+Parser: Quest
+ID: Quest_JOTL_014_ToxicHarvest
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_014_ToxicHarvest
+LoadoutImageId: 014_ToxicHarvest_Loadout
+#NarrativeTextImageOverride:
+#    - [Quest_Campaign_001_INTRO_GH_1, 001_Intro_GH_1_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_JOTL_012_BeguilingSewers
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTL
+Scenario:
+    MapLocation: [1054, 772]
+    ScenarioPool: 
+      - [Scenario_JOTL_014_ToxicHarvest, 100]

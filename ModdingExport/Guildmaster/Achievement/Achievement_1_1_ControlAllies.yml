@@ -1,0 +1,23 @@
+Parser: Achievement
+ID: Achievement_1_1_ControlAllies
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_ControlAllies$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_ControlAllies_Desc$
+CompleteDialogueLines:
+    - Text: Message_Unlock_BeastTyrant_1
+      Character: Trainer
+    - Text: Message_Unlock_BeastTyrant_2
+      Character: Narrator
+UnlockCondition:
+    - Chapter: [1,1]
+AchievementCondition:
+    - Targets:
+        Filter: UseAbility
+        AbilityTypes: [ControlActor]
+        Value: 30
+
+
+TreasureTables: [TT_Achievement_1_1_ControlAllies]
+AchievementType: Mercenaries
+
+AchievementLevel: 0  
+AchievementOrderId: 247

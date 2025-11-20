@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_1_ElementalistItem
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_ElementalistItem$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_ElementalistItem_Desc$
+   
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes: 
+        ElementalistID: 1     
+AchievementCondition:
+    - CompletedQuest: Quest_Story_Elementalist_2
+TreasureTables: [TT_Achievement_1_1_ElementalistItem]
+AchievementType: Mercenaries
+AchievementLevel: 0  
+AchievementOrderId: 202
+

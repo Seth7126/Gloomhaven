@@ -1,0 +1,11 @@
+Parser: BattleGoal
+ID: BattleGoal_Sadist
+LocalisedName: BATTLEGOAL_Sadist
+LocalisedDescription: BATTLEGOAL_Sadist_Desc
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: Kill
+        Value: 5
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

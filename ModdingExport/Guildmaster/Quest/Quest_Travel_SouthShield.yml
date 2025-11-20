@@ -1,0 +1,26 @@
+Parser: Quest
+ID: Quest_Travel_SouthShield
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_SouthShield_1
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [595, 1361]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [595, 1361]
+      Radius: 18
+RequiredCharacters:
+  - Character: BruteID   
+CompletionRewards: [TT_Quest_Travel_SouthShield]
+LoadoutImageId: FO_DF_04_Inox
+UnlockCondition:
+    - UnlockedVillage: Sahmyrt
+StartingVillage: Sahmyrt
+EndingVillage: SouthShield
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.5
+    ScenarioPool: [Scenario_Travel_SouthShield, 100]

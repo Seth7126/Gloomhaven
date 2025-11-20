@@ -1,0 +1,23 @@
+Parser: Achievement
+ID: Achievement_Doomstalker_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Doomstalker_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Doomstalker_2_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        DoomstalkerID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: DoomstalkerID    
+        Filter: UseAbility
+        AbilityTypes: [AddDoom] #DOOM!
+        Value: 30
+     
+
+TreasureTables: [TT_Achievement_Doomstalker]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 264
+ 

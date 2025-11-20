@@ -1,0 +1,13 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_Augmented_Abilities
+LocalisedName: PERSONALQUEST_Augmented_Abilities
+LocalisedDescription: PERSONALQUEST_Augmented_Abilities_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_Augmented_Abilities_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_Augmented_Abilities_Objective_PROGRESS_TOOLTIP
+Discard: True
+PersonalQuestCondition:
+#Purchase four enhancements (requires "The Power of Enhancement" global achievement).
+    - Targets:
+        Filter: Enhancement
+        Value: 4
+TreasureTables: [TT_PERSONALQUEST_Augmented_Abilities]

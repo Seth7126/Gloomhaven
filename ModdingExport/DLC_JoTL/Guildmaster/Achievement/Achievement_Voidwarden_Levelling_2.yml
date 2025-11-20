@@ -1,0 +1,14 @@
+Parser: Achievement
+ID: Achievement_Voidwarden_Levelling_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Voidwarden_Levelling_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Voidwarden_Levelling_2_Desc$
+   
+UnlockCondition:
+    - Chapter: [1,1]
+AchievementCondition:
+    - RequiredHeroes: 
+        VoidwardenID: 5    
+TreasureTables: [TT_Achievement_Voidwarden_Levelling_2]
+AchievementType: Mercenaries
+AchievementLevel: 0  
+AchievementOrderId: 241

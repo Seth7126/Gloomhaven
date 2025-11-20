@@ -1,0 +1,6 @@
+Parser: AttackModifier
+Name: AMC_Push2_P1
+MathModifier: "+1"
+Abilities:
+    PushAbility:
+        Push: 2

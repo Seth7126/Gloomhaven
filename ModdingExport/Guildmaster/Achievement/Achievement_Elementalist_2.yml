@@ -1,0 +1,26 @@
+Parser: Achievement
+ID: Achievement_Elementalist_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Elementalist_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Elementalist_2_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        ElementalistID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: ElementalistID    
+        Filter: UseAbility
+        AbilityTypes: [Curse, Disarm, Immobilize, Wound, Muddle, Poison, Stun]
+        Value: 30
+        CharacterTypes:
+            Target: [Enemy]     
+     
+
+
+TreasureTables: [TT_Achievement_Elementalist]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 267
+ 

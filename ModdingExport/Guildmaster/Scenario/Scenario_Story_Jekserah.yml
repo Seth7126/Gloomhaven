@@ -1,0 +1,88 @@
+Parser: Scenario
+ID: Scenario_Story_Jekserah
+BaseBiome: City
+BaseSubBiome: Sewers
+BaseTone: Gaslight
+ScenarioMeshes: [DGN_Maus_09_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Jekserah_START_1
+          Character: Trainer
+        - Text: SCENARIO_STORY_Jekserah_START_2
+          Character: Jekserah
+        - Text: SCENARIO_STORY_Jekserah_START_3
+          Character: Merchant
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Jekserah_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_Jekserah_SUCCESS_2
+          Character: Narrator
+        - Text: SCENARIO_STORY_Jekserah_SUCCESS_3
+          Character: Merchant
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                ActorType: Player            
+                PlayerClasses: [SummonerID, QuartermasterID]
+            ObjectiveDescription: Scenario_Story_Jekserah_Fail_Objective 
+                
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    Traps: [100,100]
+                    MonsterGroup: Undead_NonFamily                    
+        Room2:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_Jekserah_ROOM_2_1
+                      Character: Merchant        
+                    - Text: SCENARIO_STORY_Jekserah_ROOM_2_2
+                      Character: Jekserah         
+                    - Text: SCENARIO_STORY_Jekserah_ROOM_2_3
+                      Character: Trainer        
+            Threat: 100
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    Biome: Dungeon
+                    SubBiome: Default
+                    MonsterGroup: Demon_All
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100,100]
+        Room3:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_Jekserah_ROOM_3_1
+                      Character: Trainer       
+                    - Text: SCENARIO_STORY_Jekserah_ROOM_3_2
+                      Character: Jekserah         
+                    - Text: SCENARIO_STORY_Jekserah_ROOM_3_3
+                      Character: Merchant        
+            Threat: 100
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    Biome: Dungeon
+                    SubBiome: Default
+                    MonsterGroup: Demon_All
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100,100, 100, 100]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [JekserahID, JekserahID, JekserahID, JekserahID]
+                    

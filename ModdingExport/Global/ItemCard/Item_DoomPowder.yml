@@ -1,0 +1,21 @@
+Parser: ItemCard
+ID: 62
+StringID: DoomPowderID
+Name: $ITEM_NAME_DoomPowder$
+Art: Doom Powder
+TotalInGame: 2
+Cost: 40
+Slot: SmallItem 
+Rarity: Rare
+Usage: Consumed
+Trigger: SingleTarget
+ProsperityRequirement: 8
+Data:     
+    Overrides:
+        OConditions:
+            Conditions: [Stun, Poison, Curse]
+    CompareAbility:
+        AbilityType: Attack
+        Filter: Enemy
+Layout: 
+    - Row: $Item_DoomPowder$

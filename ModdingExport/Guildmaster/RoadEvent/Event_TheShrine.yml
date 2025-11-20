@@ -1,0 +1,53 @@
+Parser: RoadEvent
+ID: TheShrineID
+LocKey: $ROAD_EVENT_THE_SHRINE$
+Screens:
+    Decision:
+        Text: EVENT_TheShrine
+        Options:
+            A:
+                Text: EVENT_TheShrine_A
+                Subtext: EVENT_TheShrine_A_Subtext
+                OptionConditions:
+                    MinGold: TheShrine_Small.GoldAmount
+                UnavailableText: EVENT_Unavailable_Gold
+                TreasureTables: TheShrine_Small
+                Next: Small
+            B:
+                Text: EVENT_TheShrine_B
+                Subtext: EVENT_TheShrine_B_Subtext
+                OptionConditions:
+                    MinGold: TheShrine_Medium.GoldAmount
+                UnavailableText: EVENT_Unavailable_Gold
+                TreasureTables: TheShrine_Medium
+                Next: Medium
+            C:
+                Text: EVENT_TheShrine_C
+                Subtext: EVENT_TheShrine_C_Subtext
+                OptionConditions:
+                    MinGold: TheShrine_Large.GoldAmount
+                UnavailableText: EVENT_Unavailable_Gold
+                TreasureTables: TheShrine_Large
+                Next: Large
+            D:
+                Text: EVENT_TheShrine_D
+                TreasureTables: TheShrine_Smash
+                Next: Smash
+            E:
+                Text: EVENT_TheShrine_E
+                Next: Leave
+    Small:
+        Text: EVENT_TheShrine_Small
+        End: True
+    Medium:
+        Text: EVENT_TheShrine_Medium
+        End: True
+    Large:
+        Text: EVENT_TheShrine_Large
+        End: True
+    Smash:
+        Text: EVENT_TheShrine_Smash
+        End: True
+    Leave:
+        Text: EVENT_TheShrine_Leave
+        End: True

@@ -1,0 +1,52 @@
+Parser: Scenario
+ID: Scenario_Travel_Toadmoor
+BaseBiome: Cave
+MonsterFamily: Drakes
+BaseTone: Default
+ScenarioMeshes: [DGN_Cave_01_MAT, DGN_Cave_02_MAT, DGN_Cave_03_MAT, DGN_Cave_04_MAT, DGN_Cave_05_MAT, DGN_Cave_06_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_TOADMOOR_START_1
+          Character: Trainer
+        - Text: SCENARIO_TRAVEL_TOADMOOR_START_2
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_TOADMOOR_SUCCESS
+          Character: Trainer
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    OneHexObstacles: [100, 50]
+                    TwoHexObstacles: [100, 50]
+                    Traps: [30, 30, 30]
+
+        Room2:
+            Threat: 75
+            PossibleRooms:
+                - ShortEmptyCorridor:
+                    OneHexObstacles: [100,50] 
+                    TwoHexObstacles: [50]
+                    Traps: [50,50]
+                    GoldPiles: [30,30]
+        Room3:
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    OneHexObstacles: [100,50] 
+                    TwoHexObstacles: [100, 50]
+                    Traps: [100,50,50]
+                    GoldPiles: [40,20,20]
+#                   TreasureChestChance: [5]
+     
+
+
+

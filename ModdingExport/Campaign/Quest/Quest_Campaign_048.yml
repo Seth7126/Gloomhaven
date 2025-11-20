@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_048
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_048
+LoadoutImageId: FO_CW_01
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_038
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: DaggerForest
+IconType: Boss
+
+Scenario:
+    MapLocation: [280, 675]
+    ScenarioPool: 
+      - [Scenario_Campaign_048, 100]

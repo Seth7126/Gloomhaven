@@ -1,0 +1,18 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_Loot
+ScenarioAbility:
+    TActive:
+        AddActiveBonus:
+            Loot: 1
+            LootData:
+                LootableObjectImportTypes: [GoalChest]   
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: DuringTurnAbility
+            Restriction: OncePerTurn
+            IsToggleBonus: True
+            Requirements: 
+                ForgoBottomAction: True 
+                LootInRange: "> 0"
+                ObjectImportTypes: [GoalChest]
+            ListLayoutOverride: [$ScenarioAbility_LootGoalChest$, Loot]

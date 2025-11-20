@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 20
+StringID: MinorManaPotionID
+Name: $ITEM_NAME_MinorManaPotion$
+Art: Minor Mana Potion
+TotalInGame: 4
+Cost: 10
+Slot: SmallItem 
+Rarity: Common
+Usage: Consumed
+Trigger: DuringOwnTurn
+ProsperityRequirement: 2
+Data:     
+    Abilities:
+        InfuseAbility:
+            Infuse: Any
+            Filter: Self
+Layout: 
+    - Row: $Item_MinorManaPotion$
+    - Infuse: Any

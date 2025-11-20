@@ -1,0 +1,29 @@
+Parser: ItemCard
+ID: 45
+StringID: PendantOfDarkPactsID
+Name: $ITEM_NAME_PendantofDarkPacts$
+Art: Pendant of Dark Pacts
+TotalInGame: 2
+Cost: 75
+Slot: Head 
+Rarity: Rare
+Usage: Consumed
+Trigger: DuringOwnTurn
+ProsperityRequirement: 6
+Data: 
+    Abilities:
+        BRefreshItems:
+            RefreshItems: 2
+            SlotToRefresh: SmallItem
+            SlotStateToRefresh: Consumed
+            Target: -1
+            Filter:
+                TargetType: Self
+            SubAbilities:
+                ACurse:
+                    Curse: True
+                    Amount: 1
+                    Filter:
+                        TargetType: Self
+Layout: 
+    - Row: $Item_PendantOfDarkPacts$

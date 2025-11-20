@@ -1,0 +1,71 @@
+Parser: Scenario
+ID: Scenario_Travel_Fordingbridge
+BaseBiome: Cave
+MonsterFamily: Demon_SunNight
+ScenarioMeshes: [DGN_Cave_05_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_START_1
+          Character: Narrator
+        - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_START_2
+          Character: Narrator
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_SUCCESS_2
+          Character: Trainer
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win
+    Rooms:
+        Room1:
+            Threat: 50
+            PossibleRooms:
+                - SmallEmptyRoom: 
+                    MonsterGroup: HoundsVipers
+                    OneHexObstacles: [100, 50]
+                    TwoHexObstacles: [100, 25]
+
+        Room2:
+            Threat: 50
+            PossibleRooms:
+                - EmptyRandomCorridor:
+                    MonsterGroup: HoundsVipers             
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100]
+        Room3:
+            Threat: 75
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_ROOM_3_1
+                      Character: Narrator              
+                    - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_ROOM_3_2
+                      Character: Trainer              
+                    - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_ROOM_3_3
+                      Character: Trainer              
+            PossibleRooms:
+                - EmptyRandomCorridor:
+                    MonsterGroup: HoundsVipersBears                
+                    Theme: Volcanic
+                    TerrainHotCoals: [100,100]
+        Room4:
+            Threat: 125
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_ROOM_4_1
+                      Character: Trainer            
+                    - Text: SCENARIO_TRAVEL_FORDINGBRIDGE_ROOM_4_2
+                      Character: Enchantress              
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: Demon_FlameOnly                 
+                    Theme: Volcanic
+                    TerrainHotCoals: [100,100]
+                    GoldPiles: [100,100]
+

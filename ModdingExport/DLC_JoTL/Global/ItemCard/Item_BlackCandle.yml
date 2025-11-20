@@ -1,0 +1,21 @@
+Parser: ItemCard
+ID: 219
+StringID: BlackCandleID
+Name: $ITEM_NAME_BlackCandle$
+Art: Black Candle
+TotalInGame: 1
+Cost: 40
+Slot: OneHand
+Rarity: Rare
+Usage: Spent
+Trigger: SingleTarget
+Data:     
+    Overrides:
+        OABuff:
+            Condition: Curse
+    CompareAbility:
+        AbilityType: Attack
+        IsRanged: True
+        Filter: Enemy
+Layout: 
+    - Row: $Item_BlackCandle$

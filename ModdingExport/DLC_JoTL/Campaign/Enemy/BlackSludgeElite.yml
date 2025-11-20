@@ -1,0 +1,70 @@
+Parser: Enemy
+ID: BlackSludgeEliteID
+LocKey: $BlackSludgeElite$
+MonsterType: Monster
+StandeeLimit: 6
+Model: Black Sludge Elite
+NonEliteVariant: BlackSludgeID
+PredominantlyMelee: False
+AbilityCards: [11428, 11429, 11430, 11431, 11432, 11433, 11434, 11435]
+# Base Stats
+Level0:
+    Health: 8
+    Move: 1
+    Attack: 2
+    Range: 1
+    Target: 1
+Level1:
+    Health: 9
+    Move: 1
+    Attack: 2
+    Range: 1
+    Target: 1
+    Shield: 1
+Level2:
+    Health: 11
+    Move: 1
+    Attack: 3
+    Range: 1
+    Target: 1
+    Shield: 1
+Level3:
+    Health: 11
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 1
+    Conditions: [Poison]
+    Shield: 1
+Level4:
+    Health: 13
+    Move: 2
+    Attack: 4
+    Range: 1
+    Target: 1
+    Conditions: [Poison]
+    Shield: 1
+Level5:
+    Health: 15
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Conditions: [Poison]
+    Shield: 1
+Level6:
+    Health: 16
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Conditions: [Poison]
+    Shield: 2
+Level7:
+    Health: 18
+    Move: 3
+    Attack: 5
+    Range: 1
+    Target: 1
+    Conditions: [Poison]
+    Shield: 2

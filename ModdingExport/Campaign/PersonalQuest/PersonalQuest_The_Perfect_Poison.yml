@@ -1,0 +1,21 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_The_Perfect_Poison
+LocalisedName: PERSONALQUEST_The_Perfect_Poison
+LocalisedDescription: PERSONALQUEST_The_Perfect_Poison_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_The_Perfect_Poison_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_The_Perfect_Poison_Objective_PROGRESS_TOOLTIP
+PersonalQuestCondition:
+#Kill three Oozes, three Lurkers, and Three Spitting Drakes.
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [OozeID, OozeEliteID, GiantOozeID]
+        Value: 3
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [LurkerID, LurkerEliteID]
+        Value: 3
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [SpittingDrakeID, SpittingDrakeEliteID]
+        Value: 3
+TreasureTables: [TT_PERSONALQUEST_The_Perfect_Poison]

@@ -1,0 +1,29 @@
+Parser: Achievement
+ID: Achievement_Trophy21
+LocalisedName: $TROPHY_ACHIEVEMENT_21$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_21_Desc$
+AchievementCondition:
+    - CompletedQuest: Quest_Relic_AncientDrill
+    - CompletedQuest: Quest_Relic_CuriousGear
+    - CompletedQuest: Quest_Relic_DoomedCompass
+    - CompletedQuest: Quest_Relic_DrakescaleArmor
+    - CompletedQuest: Quest_Relic_DrakescaleBoots
+    - CompletedQuest: Quest_Relic_DrakescaleHelm
+    - CompletedQuest: Quest_Relic_EnduranceFootwraps
+    - CompletedQuest: Quest_Relic_FleaBittenShawl
+    - CompletedQuest: Quest_Relic_NecklaceOfTeeth
+    - CompletedQuest: Quest_Relic_OrbOfDawn
+    - CompletedQuest: Quest_Relic_OrbOfTwilight
+    - CompletedQuest: Quest_Relic_RemoteSpider
+    - CompletedQuest: Quest_Relic_RingOfSkulls
+    - CompletedQuest: Quest_Relic_SacrificialRobes
+    - CompletedQuest: Quest_Relic_SecondSkin
+    - CompletedQuest: Quest_Relic_StaffOfElements
+    - CompletedQuest: Quest_Relic_StaffOfSummoning
+    - CompletedQuest: Quest_Relic_StaffOfXorn
+    - CompletedQuest: Quest_Relic_SteamArmor
+    - CompletedQuest: Quest_Relic_SteelRing
+TreasureTables: [TT_Achievement_Trophy21]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4021

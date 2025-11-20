@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 122
+StringID: OrbOfTwilightID
+Name: $ITEM_NAME_OrbofTwilight$
+Art: Orb of Twilight
+TotalInGame: 1
+Cost: 50
+Slot: OneHand 
+Rarity: Relic
+Usage: Unrestricted
+Trigger: DuringOwnTurn
+Consumes: Light
+Data: 
+    Abilities:
+        AInfuse:
+            Infuse: Dark
+            Filter: Self
+Layout: 
+    - Row: $Item_OrbOfTwilight$

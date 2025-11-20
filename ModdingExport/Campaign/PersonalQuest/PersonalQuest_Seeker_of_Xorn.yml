@@ -1,0 +1,36 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_Seeker_of_Xorn
+LocalisedName: PERSONALQUEST_Seeker_of_Xorn
+LocalisedDescription: PERSONALQUEST_Seeker_of_Xorn_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_Seeker_of_Xorn_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_Seeker_of_Xorn_Objective_PROGRESS_TOOLTIP
+#Complete three "Crypt" scenarios.  Then unlock "Noxious Cellar" (Scenario 52) and follow it to a conclusion.
+Discard: True
+QuestSteps:
+    - QuestStep1:  
+        PersonalQuestCondition:
+            - Required:
+                CompletedQuest: 3
+            - CompletedQuest: Quest_Campaign_004
+            - CompletedQuest: Quest_Campaign_005
+            - CompletedQuest: Quest_Campaign_006
+            - CompletedQuest: Quest_Campaign_019
+            - CompletedQuest: Quest_Campaign_053
+        TreasureTables: [TT_PERSONALQUEST_Seeker_of_Xorn_Step0]
+        LocalisedObjectiveDescription: PERSONALQUEST_Seeker_of_Xorn_Objective_Step0_Desc
+    - QuestStep2:
+        PersonalQuestCondition:
+            - CompletedQuest: Quest_Campaign_052
+        TreasureTables: [TT_PERSONALQUEST_Seeker_of_Xorn_Step1a]
+        LocalisedObjectiveDescription: PERSONALQUEST_Seeker_of_Xorn_Objective_Step1_Desc
+    - QuestStep3:
+        PersonalQuestCondition:
+            - CompletedQuest: Quest_Campaign_053
+        TreasureTables: [TT_PERSONALQUEST_Seeker_of_Xorn_Step1b]
+        LocalisedObjectiveDescription: PERSONALQUEST_Seeker_of_Xorn_Objective_Step2_Desc
+    - QuestStep4:
+        PersonalQuestCondition:
+            - CompletedQuest: Quest_Campaign_054
+        TreasureTables: [TT_PERSONALQUEST_Seeker_of_Xorn_Step1]
+        LocalisedObjectiveDescription: PERSONALQUEST_Seeker_of_Xorn_Objective_Step3_Desc
+

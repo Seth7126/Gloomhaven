@@ -1,0 +1,20 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario23_Change_Ally_Crowd_To_Enemy
+ScenarioAbility:
+    AActive:
+        AddActiveBonus:
+            ChangeAllegiance:
+                ChangeToType: Enemy
+            Target: 1
+            Targeting: All
+            Filter:
+                EnemyClasses: [CrowdMemberID]
+                ActorType: Ally
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: DuringActionAbilityOnAttacking
+            Filter:
+                PlayerClasses: [HatchetID]
+            Hidden: True
+
+#When rats attack the hatchet then we randomly change an ally crowd to an enemy

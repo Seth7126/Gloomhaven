@@ -1,0 +1,59 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_TheBigOne$
+Character: DemolitionistID
+ID: 11089
+Level: 1
+Initiative: 37
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack: 3
+                Range: 2
+                AreaEffect: "0,0,R|2,0,R|1,1,R|-1,1,R|-2,0,R|-1,-1,R|1,-1,R"
+                AnimOverload: AreaAttack
+                MultiPassAttack: False
+        Infuse: [Fire, Earth]
+        XP: 1
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 3
+                    Enhancements: 1
+            BDestroyObstacle:
+                DestroyObstacle: True
+                SpawnDelay: 2.16
+                SubAbilities:
+                    BDestroyObstacleSubBless:
+                        Bless: True
+                        Filter: Self
+                        AbilityXP: 1
+                AnimOverload: DestroyObstacle
+Layout:
+    Top:
+        - Row:
+            - ColumnWidths: "65,30"
+            - Column:
+                - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack*"
+                - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+            - Column:
+                - Row: "£Area£"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "20,20,20,20"
+            - Column:
+            - Column:
+                - Infuse: Fire
+            - Column:
+                - Infuse: Earth
+            - Column:
+                - XP: 1
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <voffset=1>@BMove@"
+        - Row: "<size=50%> "
+        - Row: "$JOTL_089_B$"
+        - Row: "<size=20%> "
+        - Row: "<b><size=130%>$Bless$ <sprite name=Bless>"
+        - Row: "$Self$"

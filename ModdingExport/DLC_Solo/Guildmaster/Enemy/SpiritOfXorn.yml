@@ -1,0 +1,57 @@
+Parser: Enemy
+ID: SpiritOfXornID
+LocKey: $SpiritOfXorn$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Spirit Of Xorn
+PredominantlyMelee: True
+AbilityCards: [2003606]
+# Base Stats
+Level0:
+    Health: 4
+    Move: 0
+    Attack: 0
+    Range: 1
+    Target: 1
+Level1:
+    Health: 5
+    Move: 0
+    Attack: 0
+    Range: 1
+    Target: 1
+Level2:
+    Health: 6
+    Move: 0
+    Attack: 0
+    Range: 1
+    Target: 1
+Level3:
+    Health: 7
+    Move: 0
+    Attack: 0
+    Range: 1
+    Target: 1
+Level4:
+    Health: 8
+    Move: 0
+    Attack: 0
+    Range: 1
+    Target: 1
+Level5:
+    Health: 9
+    Move: 0
+    Attack: 0
+    Range: 1
+    Target: 1
+Level6:
+    Health: 10
+    Move: 0
+    Attack: 0
+    Range: 1
+    Target: 1
+Level7:
+    Health: 11
+    Move: 0
+    Attack: 0
+    Range: 1
+    Target: 1

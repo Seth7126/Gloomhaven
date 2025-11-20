@@ -1,0 +1,13 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_A_Study_of_Anatomy
+LocalisedName: PERSONALQUEST_A_Study_of_Anatomy
+LocalisedDescription: PERSONALQUEST_A_Study_of_Anatomy_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_A_Study_of_Anatomy_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_A_Study_of_Anatomy_Objective_PROGRESS_TOOLTIP
+PersonalQuestCondition:
+#Experience your party members becoming exhausted fifteen times.
+    - Targets:
+        Filter: Exhaust
+        Who: [Player,NotSelf]
+        Value: 15
+TreasureTables: [TT_PERSONALQUEST_A_Study_of_Anatomy]

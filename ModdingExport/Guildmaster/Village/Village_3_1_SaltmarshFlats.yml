@@ -1,0 +1,45 @@
+Parser: Village
+ID: SaltmarshFlats
+LocalisedName: $SaltmarshFlats$
+LocalisedDescription: $ADVENTURE_LOCATION_SaltmarshFlats_Desc$
+Mesh: Ca10_TheShimmeringShallows_MAT
+MapLocation: [322, 231]
+JobLocations: 
+    - [383, 153]
+    - [385, 256]
+    - [277, 191]
+UnlockCondition:
+    - Chapter: [3,1]
+    - CompletedQuest: Quest_Travel_SaltmarshFlats
+Quests:
+    - Quest_Travel_StaybrightFort
+ 
+#STORY
+    - Quest_Story_Sawbones_3
+
+
+#JOBS-FOREST    
+    - Quest_Job_Chapter_1_1_Bandit_Forest
+    - Quest_Job_Imps_Spirits_Forest
+    - Quest_Job_Inox_Vermling_Forest
+    - Quest_Job_MindControl
+    - Quest_Job_TheHaunting
+    - Quest_Job_TheStoneMan 
+    - Quest_Job_FellHounds    
+#JOBS-CRYPT
+    - Quest_Job_Chapter_1_1_Undead_Crypt
+    - Quest_Job_Chapter_1_1_Undead_Bandit_Crypt 
+    - Quest_Job_Snakes_Undead_Crypt    
+    - Quest_Job_Mysterious_Maze
+    - Quest_Job_AnEyeForAnEye
+    - Quest_Job_DemonicDissent
+    - Quest_Job_TheVaultsOfPus    
+    - Quest_Job_DungeonOfMisfortune
+#JOBS-CAVE
+    - Quest_Job_Vermling_Cave
+    - Quest_Job_TwoTribes
+    - Quest_Job_CallOfTheWild
+    - Quest_Job_DemonAltars
+    - Quest_Job_FireCult
+    - Quest_Job_SavvasAid
+    - Quest_Job_SavvasInfighting  

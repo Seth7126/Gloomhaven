@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Relic_FleaBittenShawl
+Chapter: 2
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_FleaBittenShawl_Unlock_1
+      Character: Enchantress
+    - Text: QUEST_RELIC_FleaBittenShawl_Unlock_2
+      Character: Enchantress
+      CameraLocation: [458, 761] 
+    - Text: QUEST_RELIC_FleaBittenShawl_Unlock_3
+      Character: Merchant
+    - Text: QUEST_RELIC_FleaBittenShawl_Unlock_4
+      Character: Enchantress
+    - Text: QUEST_RELIC_FleaBittenShawl_Unlock_5
+      Character: Merchant
+LoadoutImageId: SE_01
+UnlockRevealFoWSphere:
+    - MapLocation: [458, 761]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_4_1_KillEliteVermlings
+StartingVillage: Kailej
+EndingVillage: Kailej
+Scenario:
+    MapLocation: [458, 761]
+    ScenarioPool: [Scenario_Relic_FleaBittenShawl, 100]
+

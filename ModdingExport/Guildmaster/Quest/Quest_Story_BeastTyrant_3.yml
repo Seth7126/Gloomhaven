@@ -1,0 +1,26 @@
+Parser: Quest
+ID: Quest_Story_BeastTyrant_3
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_BeastTyrant_3_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_BeastTyrant_3_2
+      Character: Merchant
+
+CompletionRewards: TT_Quest_Story_BeastTyrant_3
+LoadoutImageId: SE_Rot_02
+UnlockRevealFoWSphere:
+    - MapLocation: [1640, 1104]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_BeastTyrant_2
+RequiredCharacters:
+  - Character: BeastTyrantID  
+    Level: 5  
+StartingVillage: Rockfall
+EndingVillage: Rockfall
+Scenario:
+    MapLocation: [1640, 1104]
+    ScenarioPool: [Scenario_Story_BeastTyrant_3, 100]

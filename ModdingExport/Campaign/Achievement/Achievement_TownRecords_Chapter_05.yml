@@ -1,0 +1,29 @@
+Parser: Achievement
+ID: Achievement_TownRecords_Chapter_05
+LocalisedName: $Achievement_TownRecords_Chapter_05$
+LocalisedDescription: $Achievement_TownRecords_Chapter_05$
+CompleteDialogueLines:
+    - Text: Town_Records_ReachProsperity6_1
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity6_2
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity6_3
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity6_4
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity6_5
+      Character: Narrator
+    - Text: Town_Records_ReachProsperity6_6
+      Character: Narrator
+UnlockCondition:
+    - Retirement: ANY
+    - CompletedQuest: Quest_Campaign_072
+    - Prosperity: 6
+AchievementCondition:
+    - Retirement: ANY
+    - CompletedQuest: Quest_Campaign_072
+    - Prosperity: 6
+TreasureTables: [TT_Achievement_TownRecords_Chapter_05]
+AchievementType: TownRecord
+AchievementLevel: 0  
+AchievementOrderId: 2005

@@ -1,0 +1,21 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_42_3Heal
+ScenarioAbility:
+    AActive:
+        AddActiveBonus:
+            Heal: 1
+            Target: 1
+            Filter: Self
+            PreviewEffectText: <sprite name="Heal">
+        ActiveBonus:
+            Duration: Persistent
+            Behaviour: StartTurnAbility
+            IsAura: True
+            AuraFilter:
+                ActorType: [Enemy]
+                EnemyType: [Normal, Elite, Boss]
+            AuraTargeting: All
+            ListLayoutOverride: [$ScenarioAbility_42_3Heal$, Heal]
+        AnimOverload: None
+        AutoTrigger: True
+        Filter: Self

@@ -1,0 +1,20 @@
+Parser: Quest
+ID: Quest_Campaign_060
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_Campaign_060
+LoadoutImageId: GH_HailsLab
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_059
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: Side
+
+RequiredCharacters:
+  - PersonalQuest: PERSONALQUEST_Finding_the_Cure
+
+Scenario:
+    MapLocation: [1071, 562]
+    ScenarioPool: 
+      - [Scenario_Campaign_060, 100]

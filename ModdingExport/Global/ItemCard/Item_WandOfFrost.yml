@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 83
+StringID: WandOfFrostID
+Name: $ITEM_NAME_WandofFrost$
+Art: Wand of Frost
+TotalInGame: 2
+Cost: 30
+Slot: OneHand 
+Rarity: Rare
+Usage: Spent
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        AInfuse:
+            Infuse: Ice
+            Filter: Self
+Layout: 
+    - Row: $Item_WandOfFrost$
+    - Row: "<size=20%> "
+    - Infuse: Ice

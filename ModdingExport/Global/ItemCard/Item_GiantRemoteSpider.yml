@@ -1,0 +1,18 @@
+Parser: ItemCard
+ID: 127
+StringID: GiantRemoteSpiderID
+Name: $ITEM_NAME_GiantRemoteSpider$
+Art: Giant Remote Spider
+TotalInGame: 1
+Cost: 60
+Slot: SmallItem 
+Rarity: Relic
+Usage: Consumed
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        ALoot:
+            Loot: 1
+            Target: -1
+Layout: 
+    - Row: $Item_GiantRemoteSpider$

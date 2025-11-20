@@ -1,0 +1,14 @@
+Parser: Achievement
+ID: Achievement_Trophy26
+LocalisedName: $TROPHY_ACHIEVEMENT_26$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_26_Desc$
+AchievementCondition:
+    - Targets:
+        Filter: DealDamage
+        SingleTarget: true
+        Value: 20
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy26]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4026

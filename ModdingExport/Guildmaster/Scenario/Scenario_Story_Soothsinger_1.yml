@@ -1,0 +1,90 @@
+Parser: Scenario
+ID: Scenario_Story_Soothsinger_1
+BaseBiome: Forest
+BaseTone: ForestMoonlight
+BaseSubTheme: Bandit
+ScenarioMeshes: [DGN_Forest_19_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SOOTHSINGER_1_START_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_SOOTHSINGER_1_START_2
+          Character: Narrator
+        - Text: SCENARIO_STORY_SOOTHSINGER_1_START_3
+          Character: BanditGuard      
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SOOTHSINGER_1_SUCCESS_1
+          Character: Narrator
+        
+ScenarioLayout:
+    Objectives:
+        XCharactersDie:
+            Result: Win
+            Filter:
+                EnemyClasses: [LivingBonesID, LivingBonesEliteID, LivingCorpseID, LivingCorpseEliteID, BoneRangerID, BoneRangerEliteID, LivingSpiritID, LivingSpiritEliteID]
+            KillAmount: [8, 8, 12, 16]
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]                
+            Filter:
+                ActorType: Player
+                PlayerClasses: [SoothsingerID]
+            ObjectiveDescription: Scenario_Story_Soothsinger_Character_Fail_Objective      
+    ScenarioModifiers:
+        SM1:
+            Type: ApplyConditionToActor
+            TriggerPhase: StartRound
+            ApplyToEachActorOnce: True
+            Conditions: [Muddle]
+            Filter:
+                ActorType: [Player, Ally]                 
+    Rooms:
+        Room1:
+            Threat: 150 #+75
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    MonsterGroup: Undead_NonFamily
+                    Theme: DeepForestGlade
+                    OneHexObstacles: [100, 100, 100]
+                    AllyMonsters:
+                        - [BanditGuardID, 1, 2, 1, 0]
+                        - [BanditGuardEliteID, 0, 0, 1, 2]
+                        - [BanditArcherID, 1, 1, 0, 0]
+                        - [BanditArcherEliteID, 0, 0, 1, 1]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [LivingBonesID,  LivingBonesID,  LivingBonesEliteID,    LivingBonesEliteID]
+                                - SpawnClasses: [Empty,         LivingSpiritID,  LivingSpiritID,          LivingSpiritEliteID]
+                                - SpawnClasses: [LivingCorpseID,  LivingCorpseID,   LivingCorpseEliteID,     LivingCorpseEliteID]
+                            Easy:
+                                - SpawnClasses: [LivingBonesID, LivingBonesID,  LivingBonesEliteID,    LivingBonesEliteID]
+                                - SpawnClasses: [Empty,         Empty,          LivingSpiritID,          LivingSpiritID]
+                                - SpawnClasses: [LivingCorpseID,  LivingCorpseID,   LivingCorpseEliteID,     LivingCorpseEliteID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [Empty,         BoneRangerID,   BoneRangerID,           BoneRangerEliteID]
+                                - SpawnClasses: [LivingBonesID, LivingBonesID,  LivingBonesEliteID,    LivingBonesEliteID]
+                                - SpawnClasses: [Empty,         LivingCorpseID,  LivingCorpseID,          LivingCorpseEliteID]
+                            Easy:
+                                - SpawnClasses: [Empty,         BoneRangerID,   BoneRangerID,           BoneRangerEliteID]
+                                - SpawnClasses: [LivingBonesID, LivingBonesID,  LivingBonesID,          LivingBonesEliteID]
+                                - SpawnClasses: [Empty,         LivingCorpseID,  LivingCorpseID,          LivingCorpseEliteID]
+                               
+                    TwoHexObstacles: [100, 100]
+                    GoldPiles: [100]
+
+
+

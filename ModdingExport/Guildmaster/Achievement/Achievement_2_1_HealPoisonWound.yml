@@ -1,0 +1,20 @@
+Parser: Achievement
+ID: Achievement_2_1_HealPoisonWound
+LocalisedName: $ADVENTURE_ACHIEVEMENT_2_1_HealPoisonWound$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_2_1_HealPoisonWound_Desc$
+
+UnlockCondition:
+    - Chapter: [2,1]
+
+AchievementCondition:
+    - Targets:
+        Filter: UseAbility
+        AbilityTypes: Heal
+        Conditions:
+            Target: [Poison, Wound]        
+        Value: 40
+
+TreasureTables: [TT_Achievement_2_1_HealPoisonWound]
+AchievementType: Relics
+AchievementLevel: 2  
+AchievementOrderId: 424

@@ -1,0 +1,19 @@
+Parser: Quest
+ID: Quest_JOTL_013_VileHarvest
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_013_VileHarvest
+LoadoutImageId: 013_VileHarvest_Loadout
+#NarrativeTextImageOverride:
+#    - [Quest_Campaign_001_INTRO_GH_1, 001_Intro_GH_1_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_JOTL_011_DefiledSewers
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTL
+Scenario:
+    MapLocation: [712, 977]
+    ScenarioPool: 
+      - [Scenario_JOTL_013_VileHarvest, 100]

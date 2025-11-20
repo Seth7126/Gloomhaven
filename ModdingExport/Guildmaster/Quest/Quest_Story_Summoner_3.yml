@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_Story_Summoner_3
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Summoner_3_1
+      Character: Enchantress
+    - Text: Message_End_Quest_Story_Summoner_3_2
+      Character: Enchantress
+    - Text: Message_End_Quest_Story_Summoner_3_3
+      Character: Enchantress
+
+CompletionRewards: TT_Quest_Story_Summoner_3
+LoadoutImageId: SE_Rot_02
+UnlockRevealFoWSphere:
+    - MapLocation: [1632,288]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Summoner_2
+RequiredCharacters:
+  - Character: SummonerID  
+    Level: 5  
+StartingVillage: Wayward
+EndingVillage: Wayward
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1632,288]
+    ScenarioPool: [Scenario_Story_Summoner_3, 100]

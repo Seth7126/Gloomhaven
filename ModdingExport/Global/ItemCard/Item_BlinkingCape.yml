@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 73
+StringID: BlinkingCapeID
+Name: $ITEM_NAME_BlinkingCape$
+Art: Blinking Cape
+TotalInGame: 2
+Cost: 50
+Slot: Body 
+Rarity: Rare
+Usage: Consumed
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        AMove:
+            Move: 
+                Amount: 4
+                Jump: True
+            Filter: Self
+Layout: 
+    - Row: $Item_BlinkingCape$

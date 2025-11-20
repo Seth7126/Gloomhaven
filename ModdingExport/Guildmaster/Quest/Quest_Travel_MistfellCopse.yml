@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Travel_MistfellCopse
+Chapter: 2
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Travel_MistfellCopse_1 
+      Character: Merchant
+    
+      
+UnlockRevealFoWSphere:
+    - MapLocation: [1674,176]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1674,176]
+      Radius: 18
+CompletionRewards: TT_Quest_Travel_MistfellCopse
+LoadoutImageId: CR_NE_03_Demon
+UnlockCondition:
+    - UnlockedVillage: TheHole
+    - Chapter: [2,1]    
+StartingVillage: Wayward
+EndingVillage: MistfellCopse
+#EventChance:
+#EventPool:
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_MistfellCopse, 100]

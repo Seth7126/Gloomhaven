@@ -1,0 +1,17 @@
+Parser: HeroSummon
+ID: WarHawkID
+LocKey: $WarHawk$
+Model: WarHawk
+Health:
+    Amount: 3
+    Enhancements: 1
+Move:
+    Amount: 3
+    Enhancements: 1
+Attack:
+    Amount: 3
+    Enhancements: 1
+
+Range:
+    Amount: 1
+Flying: True

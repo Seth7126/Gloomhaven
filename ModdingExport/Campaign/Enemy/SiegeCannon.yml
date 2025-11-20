@@ -1,0 +1,58 @@
+Parser: Enemy
+ID: SiegeCannonID
+LocKey: $SiegeCannon$
+MonsterType: Boss
+StandeeLimit: 6
+Model: Siege Cannon
+PredominantlyMelee: False
+AbilityCards: [2006]
+UseNormalSizeAvatarForBoss: True
+# Base Stats
+Level0:
+    Health: 14
+    Move: 0
+    Attack: 3
+    Range: 5
+    Target: 1
+Level1:
+    Health: 18
+    Move: 0
+    Attack: 3
+    Range: 5
+    Target: 1
+Level2:
+    Health: 22
+    Move: 0
+    Attack: 3
+    Range: 6
+    Target: 1
+Level3:
+    Health: 26
+    Move: 0
+    Attack: 4
+    Range: 6
+    Target: 1
+Level4:
+    Health: 26
+    Move: 0
+    Attack: 4
+    Range: 6
+    Target: 2
+Level5:
+    Health: 30
+    Move: 0
+    Attack: 4
+    Range: 7
+    Target: 2
+Level6:
+    Health: 32
+    Move: 0
+    Attack: 5
+    Range: 7
+    Target: 2
+Level7:
+    Health: 40
+    Move: 0
+    Attack: 5
+    Range: 7
+    Target: 2

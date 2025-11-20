@@ -1,0 +1,36 @@
+Parser: Village
+ID: Sweetwater
+LocalisedName: $Sweetwater$
+LocalisedDescription: $ADVENTURE_LOCATION_Sweetwater_Desc$
+Mesh: V15_Sweetwater_MAT
+MapLocation: [1247, 800]
+JobLocations: 
+    - [1321, 765]
+    - [1312, 815]
+    - [1281, 860]
+UnlockCondition:
+    - Chapter: [4,1]
+    - CompletedQuest: Quest_Travel_Sweetwater
+Quests: 
+#STORY
+    - Quest_Story_BeastTyrant_1
+#TRAVEL
+    - Quest_Travel_TheBuriedTrenches
+
+#JOBS-CRYPT
+    - Quest_Job_Chapter_1_1_Undead_Crypt
+    - Quest_Job_Chapter_1_1_Undead_Bandit_Crypt 
+    - Quest_Job_Snakes_Undead_Crypt    
+    - Quest_Job_Mysterious_Maze
+    - Quest_Job_AnEyeForAnEye
+    - Quest_Job_DemonicDissent
+    - Quest_Job_TheVaultsOfPus    
+    - Quest_Job_DungeonOfMisfortune
+#JOBS-CAVE
+    - Quest_Job_Vermling_Cave
+    - Quest_Job_TwoTribes
+    - Quest_Job_CallOfTheWild
+    - Quest_Job_DemonAltars
+    - Quest_Job_FireCult
+    - Quest_Job_SavvasAid
+    - Quest_Job_SavvasInfighting  

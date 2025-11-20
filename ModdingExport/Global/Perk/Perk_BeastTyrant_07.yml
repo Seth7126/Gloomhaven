@@ -1,0 +1,7 @@
+Parser: Perk
+ID: BeastTyrant07
+Name: PERK_BeastTyrant_07
+Description: PERK_BeastTyrant_07_Desc
+CharacterID: BeastTyrantID
+Available: 1
+CardsToAdd: [AMC_Earth_R,AMC_Earth_R]

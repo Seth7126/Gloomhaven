@@ -1,0 +1,35 @@
+Parser: Quest
+ID: Quest_Travel_Wayward
+Chapter: 2
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Wayward_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Wayward_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Wayward_3
+      Character: Trainer
+    - Text: Message_End_Quest_Travel_Wayward_4
+      Character: Trainer
+    - Text: Message_End_Quest_Travel_Wayward_5
+      Character: Trainer
+      CameraLocation: [1654, 420]    
+UnlockRevealFoWSphere:
+    - MapLocation: [1522,303]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1522,303]
+      Radius: 18
+CompletionRewards: TT_Quest_Travel_Wayward
+LoadoutImageId: FO_DF_04_Demon
+UnlockCondition:
+    - UnlockedVillage: Silverwick
+    - Chapter: [2,1]    
+StartingVillage: TheMarches
+EndingVillage: Wayward
+#EventChance:
+#EventPool:
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Wayward, 100]

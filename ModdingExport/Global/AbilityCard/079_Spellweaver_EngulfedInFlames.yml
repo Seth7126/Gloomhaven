@@ -1,0 +1,44 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_EngulfedinFlames$
+Character: SpellweaverID
+ID: 79
+Level: 5
+Initiative: 44
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                AnimOverload: TargetedGenericFlame
+                Attack:
+                    Amount: 4
+                    Enhancements: 1
+                Range:
+                    Amount: 3
+                    Enhancements: 1
+        Infuse: Fire
+    Bottom:
+        Abilities:
+            BRetaliate:
+                Retaliate: 3
+                Filter: Self
+                AnimOverload: PowerUp
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: Retaliate
+                    AttackType: Melee
+                    XPTracker: [1,0,1,0,1]
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range* @TAttack.Range@"
+        - Row: "<size=20%> "
+        - Infuse: Fire
+    Bottom:
+        - Active:
+            Ability: BRetaliate
+            Icon: "Retaliate"
+            ListLayout: "$079_B$"
+            Layout: "$079_B$"
+        - Row: "<size=50%> "
+        - XPTracker: BRetaliate

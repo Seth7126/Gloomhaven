@@ -1,0 +1,28 @@
+Parser: RoadEvent
+ID: Event_Road_Campaign_31ID
+# LocKey: $ROAD_EVENT_31$
+LocKey: $ROAD_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_ROAD_CAMPAIGN_31_INTRO"
+        Options:
+            A:
+                Text: "EVENT_ROAD_CAMPAIGN_31_OPTION_A"
+                Next: EVENT_ROAD_CAMPAIGN_31_OPTION_A
+            B:
+                Text: "EVENT_ROAD_CAMPAIGN_31_OPTION_B"
+                TreasureTables: TT_EVENT_ROAD_CAMPAIGN_31_OPTION_B
+                Next: EVENT_ROAD_CAMPAIGN_31_OPTION_B
+    EVENT_ROAD_CAMPAIGN_31_OPTION_A:
+        InParty:
+            ClassIDs: [BruteID,SunkeeperID]
+            Screen:
+                Text: "EVENT_ROAD_CAMPAIGN_31_RESULT_A_A"
+                TreasureTables: TT_EVENT_ROAD_CAMPAIGN_31_OPTION_A_A
+                End: True
+        Text: "EVENT_ROAD_CAMPAIGN_31_RESULT_A_B"
+        TreasureTables: TT_EVENT_ROAD_CAMPAIGN_31_OPTION_A_B
+        End: True
+    EVENT_ROAD_CAMPAIGN_31_OPTION_B:
+        Text: "EVENT_ROAD_CAMPAIGN_31_RESULT_B"
+        End: True

@@ -1,0 +1,22 @@
+Parser: Quest
+ID: Quest_Campaign_074
+Chapter: 1
+QuestType: CityAdjacent
+CompletionRewards: TT_Quest_Campaign_074
+NarrativeTextImageOverride:
+    - [Quest_Campaign_074_INTRO_GH_1, 074_INTRO_GH_1_Art]
+    - [Quest_Campaign_074_INTRO_GH_2, 074_INTRO_GH_2_Art]
+    - [Quest_Campaign_074_OUTRO_GH_1, 074_OUTRO_GH_1_Art]
+    - [Quest_Campaign_074_OUTRO_GH_2, 074_OUTRO_GH_2_Art]
+LoadoutImageId: TO_IN_01_Bandit
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_CityEventScenario74
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: MistySea
+IconType: Side
+
+Scenario:
+    MapLocation: [1813, 1142]
+    ScenarioPool: 
+      - [Scenario_Campaign_074, 100]

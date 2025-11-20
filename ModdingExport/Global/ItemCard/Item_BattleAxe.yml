@@ -1,0 +1,26 @@
+Parser: ItemCard
+ID: 18
+StringID: BattleAxeID
+Name: $ITEM_NAME_BattleAxe$
+Art: Battle Axe
+TotalInGame: 2
+Cost: 20
+Slot: OneHand 
+Rarity: Rare
+Usage: Consumed
+Trigger: SingleAbility
+ProsperityRequirement: 2
+Data:     
+    Overrides:
+        OAoE:
+            AreaEffect: "0,0,G|2,0,R|1,1,R"
+            MultiPassAttack: false
+    CompareAbility:
+        AbilityType: Attack
+        Target: 1
+        IsMelee: True
+        Filter: Enemy
+Layout: 
+    - Row: "<size=100%>$Item_BattleAxe$"
+    - Row: "<size=100%> "
+    - Row: "£Area£"

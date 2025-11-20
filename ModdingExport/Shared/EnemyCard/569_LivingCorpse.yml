@@ -1,0 +1,13 @@
+Parser: EnemyCard
+ID: 569
+Initiative: 91
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: 1
+        Damage1:
+            Damage: 1
+            Filter: Self
+            Text: "$569$"
+            TextOnly: True

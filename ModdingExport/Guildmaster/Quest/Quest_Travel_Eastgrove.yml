@@ -1,0 +1,24 @@
+Parser: Quest
+ID: Quest_Travel_Eastgrove
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Eastgrove_1
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1069, 114]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1069, 114]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_Eastgrove]
+LoadoutImageId: CR_DF_01_Demon
+UnlockCondition:
+    - UnlockedVillage: TheEnclave
+StartingVillage: TheEnclave
+EndingVillage: Eastgrove
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Eastgrove, 100]

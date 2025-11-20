@@ -1,0 +1,65 @@
+Parser: Enemy
+ID: WoundedGuardID
+LocKey: $WoundedGuard$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Wounded Guard
+PredominantlyMelee: True
+AbilityCards: [529606]
+# Base Stats
+Level0:
+    Health: 5
+    Move: 0
+    Attack: 0
+    Range: 0
+    Target: 0
+    Shield: 0
+Level1:
+    Health: 5
+    Move: 0
+    Attack: 0
+    Range: 0
+    Target: 0
+    Shield: 0
+Level2:
+    Health: 7
+    Move: 0
+    Attack: 0
+    Range: 0
+    Target: 0
+    Shield: 0
+Level3:
+    Health: 8
+    Move: 0
+    Attack: 0
+    Range: 0
+    Target: 0
+    Shield: 0
+Level4:
+    Health: 9
+    Move: 0
+    Attack: 0
+    Range: 0
+    Target: 0
+    Shield: 0
+Level5:
+    Health: 10
+    Move: 0
+    Attack: 0
+    Range: 0
+    Target: 0
+    Shield: 0
+Level6:
+    Health: 11
+    Move: 0
+    Attack: 0
+    Range: 0
+    Target: 0
+    Shield: 0
+Level7:
+    Health: 13
+    Move: 0
+    Attack: 0
+    Range: 0
+    Target: 0
+    Shield: 0

@@ -1,0 +1,17 @@
+Parser: Achievement
+ID: Achievement_Trophy24
+LocalisedName: $TROPHY_ACHIEVEMENT_24$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_24_Desc$
+AchievementCondition:
+    - Targets:
+        Filter: Exhaust
+        Conditional:
+            Amount: "== 0"
+        ScenarioResult: Win
+        CharacterTypes:
+            Actor: [Player]
+        Value: 1
+TreasureTables: [TT_Achievement_Trophy24]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4024

@@ -1,0 +1,8 @@
+Parser: TreasureTable
+TT_Quest_Relic_ResonantCrystal:
+  UnlockChapter: [1,1]
+  UnlockMerchant: True  
+  UnlockTrainer: True  
+  UnlockPartyUI: True  
+  UnlockTemple: True  
+  UnlockMultiplayer: True  

@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Travel_TheShiftingSands
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_TheShiftingSands_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_TheShiftingSands_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_TheShiftingSands_3
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1120, 1107]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1120, 1107]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_TheShiftingSands]
+LoadoutImageId: CR_DF_01
+UnlockCondition:
+    - UnlockedVillage: TheBuriedTrenches
+    - Chapter: [4,1]  
+StartingVillage: TheBuriedTrenches
+EndingVillage: TheShiftingSands
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_TheShiftingSands, 100]

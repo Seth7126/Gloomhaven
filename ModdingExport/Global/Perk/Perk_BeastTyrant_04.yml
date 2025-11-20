@@ -1,0 +1,7 @@
+Parser: Perk
+ID: BeastTyrant04
+Name: PERK_BeastTyrant_04
+Description: PERK_BeastTyrant_04_Desc
+CharacterID: BeastTyrantID
+Available: 2
+CardsToAdd: [AMC_Wound_P1]

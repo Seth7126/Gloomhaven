@@ -1,0 +1,40 @@
+Parser: Village
+ID: ThePyre
+LocalisedName: $ThePyre$
+LocalisedDescription: $ADVENTURE_LOCATION_ThePyre_Desc$
+Mesh: DGN_Grave_02_MAT
+MapLocation: [996,890]
+JobLocations: 
+    - [949, 928]
+    - [999, 820]
+    - [1084, 950]
+UnlockCondition:
+    - Chapter: [1,0]
+    - CompletedQuest: Quest_Travel_ThePyre
+Quests: 
+#STORY
+    - Quest_Story_Spellweaver_3
+    - Quest_Story_Nightshroud_1
+#TRAVEL
+    - Quest_Travel_Nasitra
+
+#JOBS-CRYPT
+    - Quest_Job_Chapter_1_1_Undead_Crypt
+    - Quest_Job_Chapter_1_1_Undead_Bandit_Crypt 
+    - Quest_Job_Snakes_Undead_Crypt    
+    - Quest_Job_Mysterious_Maze
+    - Quest_Job_AnEyeForAnEye
+    - Quest_Job_DemonicDissent
+    - Quest_Job_TheVaultsOfPus    
+    - Quest_Job_TheDjinnPalace    
+#JOBS-CAVE
+    - Quest_Job_Vermling_Cave
+    - Quest_Job_TwoTribes
+    - Quest_Job_CallOfTheWild
+    - Quest_Job_DemonAltars
+    - Quest_Job_FireCult
+    - Quest_Job_SavvasAid
+    - Quest_Job_SavvasInfighting  
+
+#JOBS-CRYPT
+    - Quest_Job_DungeonOfMisfortune

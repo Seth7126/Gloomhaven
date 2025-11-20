@@ -1,0 +1,72 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_LashOut$
+Character: BeastTyrantID
+ID: 502
+Level: 8
+Initiative: 18
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAlly:
+                ControlActor:
+                    Abilities:
+                        TAllyAttack:
+                            Attack: 
+                                Amount: 4
+                                Enhancements: 1
+                            Range: 1
+                            Target: -1
+                            StrengthIsBase: True
+                            RangeIsBase: True
+                            TargetIsBase: True
+                            AnimOverload: RadialAttack
+                            MultiPassAttack: false
+                    ControlActorType: Player
+                Target: -1
+                Targeting: All
+                Filter: Companion
+                AnimOverload: Command
+        XP: 1
+    Bottom:
+        Abilities:
+            BAlly:
+                ControlActor:
+                    Abilities:
+                        BAllyMove:
+                            Move: 
+                                Amount: 3
+                                Enhancements: 1
+                            StrengthIsBase: True
+                        BAllyPush:
+                            Push:
+                                Amount: 2
+                                Enhancements: 1
+                            Range: 1
+                            Target: -1
+                            Filter: Enemy
+                            RangeIsBase: True
+                            TargetIsBase: True
+                            AnimOverload: RadialAttack
+                    ControlActorType: Player
+                Target: -1
+                Targeting: All
+                Filter: Companion
+                AnimOverload: Command
+        XP: 1
+Layout:
+    Top:
+        - Command: True
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAllyAttack* <size=100%><voffset=1>@TAllyAttack@"
+        - Row: "$Target_AllAdjacentEnemies$"
+        - Row: "<size=50%> "
+        - XP: 1
+    Bottom:
+        - Command: True
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BAllyMove* <size=100%><voffset=1>@BAllyMove@"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Push$ <sprite name=Push> *BAllyPush* <size=100%><voffset=1>@BAllyPush@"
+        - Row: "$Target_AllAdjacentEnemies$"
+        - Row: "<size=50%> "
+        - XP: 1
+

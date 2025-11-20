@@ -1,0 +1,68 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_TheFavorite$
+Character: HatchetID
+ID: 11010
+Level: 1
+Initiative: 17
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TActive:
+                AddActiveBonus:
+                    Attack: 0
+                ActiveBonus:
+                    Behaviour: OverrideAbility
+                    Duration: Persistent
+                    ValidAbilityType: Attack
+                    AttackType: Ranged
+                    FullCopy: true
+                    RequiredResources:
+                        - ["TheFavorite", 1]
+                    IsToggleBonus: True
+                    IsSingleTargetBonus: True
+                    CancelActiveBonusesOnBaseCardIDs: 11030
+                    RemoveAllInstancesOfResourcesOnFinish: ["TheFavorite"]
+                    ActiveBonusAbilityOverrides:
+                        BCTypeOverride:
+                            AbilityType: Attack
+                            Strength: 3
+                            ResourcesToGiveToTargets: #Give to target of Attack with +3
+                                - ["TheFavorite", 1]
+                ResourcesToAddOnAbilityEnd: #Give to the Hatchet on cast
+                                - ["TheFavorite", 1]
+                AnimOverload: PowerUpFavorite
+        XP: 2
+    Bottom:
+        Abilities:
+            BWound:
+                Wound: True
+                Filter: Enemy
+                AnimOverload: TargetedDebuff
+            BMove:
+                Move:
+                    Amount: 3
+                    Enhancements: 1
+                    Jump: True
+Layout:
+    Top:
+        - Row: "<size=0%>"
+        - Active:
+            Ability: TActive
+            ListLayout: "$JOTL_010_T$"
+            Layout: "$JOTL_010_T$"
+            Icon: "AA_Hatchet"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - XP: 2
+            - Column:
+                - Duration: Persistent
+    Bottom:
+        - Row: "<b><size=130%>$Wound$ <sprite name=Wound>"
+        - Row: "$Target_OneAdjacentEnemy$"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove* <size=100%><voffset=1>@BMove@"
+        - Row: "$Jump$ <sprite name=Jump>"

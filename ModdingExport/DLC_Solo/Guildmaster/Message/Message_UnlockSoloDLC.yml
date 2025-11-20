@@ -1,0 +1,23 @@
+Parser: Message
+Name: UnlockSoloDLC
+DialogueLines:
+    - Text: Message_Unlock_Solo_DLC_1
+      Character: Trainer
+    - Text: Message_Unlock_Solo_DLC_2
+      Character: Trainer
+    - Text: Message_Unlock_Solo_DLC_3
+      Character: Trainer
+    - Text: Message_Unlock_Solo_DLC_4
+      Character: Merchant
+    - Text: Message_Unlock_Solo_DLC_5
+      Character: Trainer
+    - Text: Message_Unlock_Solo_DLC_6
+      Character: Merchant
+    - Text: Message_Unlock_Solo_DLC_7
+      Character: Trainer
+    - Text: Message_Unlock_Solo_DLC_8
+      Character: Trainer
+
+MapMessageTrigger: Map
+UnlockCondition:
+    - Chapter: [1,1]    

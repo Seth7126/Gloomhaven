@@ -1,0 +1,8 @@
+Parser: VisibilitySphere
+ID: VisSphere_ThePyre~Nasitra
+UnlockCondition:
+    - UnlockedVillage: ThePyre
+    - UnlockedVillage: Nasitra
+SphereDefinitions:
+    - MapLocation: [898,978]
+      Radius: 18

@@ -1,0 +1,26 @@
+Parser: Quest
+ID: Quest_SOLO_Summoner_PlaneOfWildBeasts
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_Summoner_PlaneofWildBeasts
+NarrativeTextImageOverride:
+    - [Quest_SOLO_Summoner_PlaneOfWildBeasts_INTRO_GH_1, SOLO_Summoner_PlaneOfWildBeasts_INTRO_GH_1]
+    - [Quest_SOLO_Summoner_PlaneOfWildBeasts_INTRO_GH_2, SOLO_Summoner_PlaneOfWildBeasts_INTRO_GH_2]
+    - [Quest_SOLO_Summoner_PlaneOfWildBeasts_INTRO_GH_3, SOLO_Summoner_PlaneOfWildBeasts_INTRO_GH_3]
+    - [Quest_SOLO_Summoner_PlaneOfWildBeasts_INTRO_GH_4, SOLO_Summoner_PlaneOfWildBeasts_INTRO_GH_4]
+UnlockCondition:
+    - RequiredHeroes: 
+        SummonerID: 5
+RequiredCharacters:
+  - Character: SummonerID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_Summoner_PlaneOfWildBeasts
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [932, 1055]
+
+    ScenarioPool: 
+      - [Scenario_SOLO_Summoner_PlaneOfWildBeasts, 100]

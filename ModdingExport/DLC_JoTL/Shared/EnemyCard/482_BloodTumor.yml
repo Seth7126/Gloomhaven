@@ -1,0 +1,9 @@
+Parser: EnemyCard
+ID: 11482
+Initiative: 36
+Shuffle: False
+Data:
+    Abilities:
+        Attack1:
+            Attack: 0
+            Filter: Enemy

@@ -1,0 +1,96 @@
+Parser: Scenario
+ID: Scenario_Travel_Kailej
+BaseBiome: City
+BaseSubBiome: Sewers
+BaseTone: Toxic
+
+ScenarioMeshes: [DGN_Cesspit_07_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_Kailej_START_1
+          Character: Trainer
+        - Text: SCENARIO_TRAVEL_Kailej_START_2
+          Character: Merchant
+        - Text: SCENARIO_TRAVEL_Kailej_START_3
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_Kailej_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_TRAVEL_Kailej_SUCCESS_2
+          Character: Trainer
+        - Text: SCENARIO_TRAVEL_Kailej_SUCCESS_3
+          Character: Trainer
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    Biome: Forest
+                    SubBiome: Default
+                    Theme: InoxCamp
+                    MonsterGroup: BlackImps
+                    TerrainRubble: [100, 100]
+                    TerrainThorns: [50, 50]
+                    TwoHexObstacles: [100,50] 
+                    AllyMonsters:
+                        - [InoxShamanID,      1, 1, 0, 0] 
+                        - [InoxShamanEliteID, 0, 0, 1, 1] 
+                        - [InoxGuardEliteID,  1, 1, 1, 1]                         
+                        - [InoxArcherID,      1, 1, 1, 0]    
+                        - [InoxArcherEliteID, 0, 0, 0, 1]                           
+        Room2:
+            Threat: 50
+            PossibleRooms:
+                - SmallEmptyRoom: 
+                    SubBiome: Shack
+                    MonsterGroup: BlackImpOozes
+                    TerrainRubble: [100,100]
+                    OneHexObstacles: [100,100] 
+                    TerrainThorns: [50, 50]
+        Room3:   
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_TRAVEL_Kailej_Room_2_1
+                      Character: Merchant             
+                    - Text: SCENARIO_TRAVEL_Kailej_Room_2_2
+                      Character: Trainer    
+                    - Text: SCENARIO_TRAVEL_Kailej_Room_2_3
+                      Character: Merchant             
+                    - Text: SCENARIO_TRAVEL_Kailej_Room_2_4
+                      Character: Trainer                       
+            Threat: 50
+            PossibleRooms:
+                - EmptyRandomLongCorridor: 
+                    MonsterGroup: DeepTerrors
+                    TerrainRubble: [100,50]
+                    TwoHexObstacles: [100,50] 
+                    Traps: [100, 100, 100]
+                    GoldPiles: [100,100,10]
+                    TerrainThorns: [50, 50]
+        Room4:   
+            Threat: 50
+            PossibleRooms:
+                - EmptyRandomLongCorridor: 
+                    MonsterGroup: BlackImpOozesTerrors
+                    TerrainRubble: [100,10]
+                    TwoHexObstacles: [100,50] 
+                    Traps: [100, 100, 100]
+                    GoldPiles: [100,100,10]
+                    TerrainThorns: [50, 50]
+        Room5:   
+            Threat: 75
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    MonsterGroup: BlackImpOozesTerrors
+                    TerrainRubble: [100,100]
+                    TwoHexObstacles: [100,50] 
+                    Traps: [100,50,50]
+                    GoldPiles: [100,100,50]                    

@@ -1,0 +1,22 @@
+Parser: EnemyCard
+ID: 697
+Initiative: 94
+Shuffle: True
+Data:
+    Abilities: 
+        Damage1:
+            Damage: 2
+            Filter: Self
+            Text: "$697_A$"
+            TextOnly: True
+        Summon1:
+            Summon: OozeID
+            Target: 1
+            TargetIsBase: True
+            StatIsBasedOnX:
+                Strength:
+                    BasedOn: PercentageOfCurrentHP
+                    Multiplier: 1.0 # 100%
+            AnimOverload: Summon
+            Text: "$697_B$"
+            TextOnly: True

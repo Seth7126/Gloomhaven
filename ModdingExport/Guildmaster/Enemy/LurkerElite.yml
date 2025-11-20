@@ -1,0 +1,74 @@
+Parser: Enemy
+ID: LurkerEliteID
+LocKey: $LurkerElite$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Lurker Elite
+NonEliteVariant: LurkerID
+PredominantlyMelee: True
+AbilityCards: [612,613,614,615,616,617,618,619]
+# Base Stats
+Level0:
+    Health: 7
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 2
+    Shield: 1
+    Pierce: 0
+Level1:
+    Health: 9
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 2
+    Shield: 1
+    Pierce: 1
+Level2:
+    Health: 12
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 2
+    Shield: 1
+    Pierce: 2
+ Level3:
+    Health: 14
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 2
+    Shield: 1
+    Pierce: 2
+ Level4:
+    Health: 14
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 2
+    Shield: 2
+    Pierce: 3
+ Level5:
+    Health: 15
+    Move: 3
+    Attack: 5
+    Range: 1
+    Target: 2
+    Shield: 2
+    Pierce: 3
+ Level6:
+    Health: 16
+    Move: 4
+    Attack: 5
+    Range: 1
+    Target: 2
+    Shield: 2
+    Pierce: 4    
+ Level7:
+    Health: 18
+    Move: 4
+    Attack: 5
+    Range: 1
+    Target: 2
+    Shield: 2
+    Pierce: 4

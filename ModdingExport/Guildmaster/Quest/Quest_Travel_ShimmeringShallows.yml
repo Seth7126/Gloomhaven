@@ -1,0 +1,29 @@
+Parser: Quest
+ID: Quest_Travel_ShimmeringShallows
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_ShimmeringShallows_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_ShimmeringShallows_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_ShimmeringShallows_3
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [291, 508]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [291, 508]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_ShimmeringShallows]
+LoadoutImageId: TO_ST_03_Militia
+UnlockCondition:
+    - UnlockedVillage: ScurvyBay
+    - UnlockedVillage: Ironbell
+    - Chapter: [3,1]  
+StartingVillage: Millpond
+EndingVillage: ShimmeringShallows
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_ShimmeringShallows, 100]

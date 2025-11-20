@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_JOTL_022_UnfriendlyMessage
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_022_UnfriendlyMessage
+LoadoutImageId: 022_UnfriendlyMessage_Loadout
+#NarrativeTextImageOverride:
+#    - [Quest_Campaign_001_INTRO_GH_1, 001_Intro_GH_1_Art]
+#    - [Quest_Campaign_001_INTRO_GH_2, 001_Intro_GH_2_Art]
+#    - [Quest_Campaign_001_INTRO_GH_3, 001_Intro_GH_3_Art]
+#    - [Quest_Campaign_001_INTRO_GH_4, 001_Intro_GH_4_Art]
+UnlockCondition:
+    - CompletedAchievement: Achievement_JOTL_022_UnfriendlyMessage
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLSide
+RequiredCharacters:
+  - Character: RedGuardID 
+    Level: 1  
+Scenario:
+    MapLocation: [336, 1068]
+    ScenarioPool: 
+      - [Scenario_JOTL_022_UnfriendlyMessage, 100]

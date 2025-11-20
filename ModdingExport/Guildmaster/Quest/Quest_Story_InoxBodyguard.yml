@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Story_InoxBodyguard
+Chapter: 1
+QuestType: Story
+IconType: Boss
+CompletionRewards: TT_Quest_Story_InoxBodyguard
+LoadoutImageId: DU_DF_01
+UnlockRevealFoWSphere:
+    - MapLocation: [1455, 105]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Brute_3
+    - CompletedQuest: Quest_Story_Scoundrel_3
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_InoxBodyguard_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_InoxBodyguard_2
+      Character: Merchant
+RequiredCharacters:
+  - Character: BruteID    
+    Level: 6
+  - Character: ScoundrelID    
+    Level: 6
+StartingVillage: Eaglecrest
+EndingVillage: Eaglecrest
+Scenario:
+    MapLocation: [1455, 105]
+    ScenarioPool: [Scenario_Story_InoxBodyguard, 100]

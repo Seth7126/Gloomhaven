@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 709
+Initiative: 98
+Shuffle: False
+Data:
+    Abilities:
+        Summon1:
+            Summon: WindDemonID
+            Target: 1
+            TargetIsBase: True
+            AnimOverload: Summon
+    Infuse: Air  

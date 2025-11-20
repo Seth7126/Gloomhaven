@@ -1,0 +1,78 @@
+Parser: Scenario
+ID: Scenario_Story_Scoundrel_2
+BaseBiome: Forest
+BaseTone: ForestMoonlight
+MonsterFamily: Vermling 
+ScenarioMeshes: [DGN_Forest_18_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SCOUNDREL_2_START_1
+          Character: Narrator
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SCOUNDREL_2_SUCCESS_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        XCharactersDie:
+            Result: Win
+            Filter:
+                ActorType: Enemy
+                EnemyClasses: [InoxShamanID, InoxShamanEliteID]
+            KillAmount: [1,1,2,3]
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]                
+            Filter:
+                ActorType: Player
+                PlayerClasses: [ScoundrelID]                  
+            ObjectiveDescription: Scenario_Story_Scoundrel_Character_Fail_Objective   
+    Rooms:
+        Room1:
+            Threat: 150
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    MonsterGroup: Vermling_Hounds
+                    Theme: VermlingVillage
+                    OneHexObstacles: [100, 100] 
+                    TwoHexObstacles: [100]
+        Room2:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_SCOUNDREL_2_ROOM_2
+                      Character: Trainer            
+            Threat: 100            
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    MonsterGroup: Vermling_Hounds
+                    Theme: VermlingVillage
+                    OneHexObstacles: [100, 100] 
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100,100]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [InoxShamanEliteID, InoxShamanEliteID, InoxShamanEliteID, InoxShamanEliteID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [Empty, Empty, InoxShamanEliteID, InoxShamanEliteID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [Empty, Empty, Empty, InoxShamanEliteID]
+                        

@@ -1,0 +1,27 @@
+Parser: Quest
+ID: Quest_SOLO_Sunkeeper_CaravanEscort
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_Sunkeeper_CaravanEscort
+NarrativeTextImageOverride:
+    - [Quest_SOLO_Sunkeeper_CaravanEscort_INTRO_GH_1, SOLO_Sunkeeper_CaravanEscort_INTRO_GH_1]
+    - [Quest_SOLO_Sunkeeper_CaravanEscort_INTRO_GH_2, SOLO_Sunkeeper_CaravanEscort_INTRO_GH_2]
+    - [Quest_SOLO_Sunkeeper_CaravanEscort_INTRO_GH_3, SOLO_Sunkeeper_CaravanEscort_INTRO_GH_3]
+    - [Quest_SOLO_Sunkeeper_CaravanEscort_INTRO_GH_4, SOLO_Sunkeeper_CaravanEscort_INTRO_GH_4]
+UnlockCondition:
+    - RequiredHeroes: 
+        SunkeeperID: 5
+RequiredCharacters:
+  - Character: SunkeeperID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_Sunkeeper_CaravanEscort
+
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [839, 794]
+
+    ScenarioPool: 
+      - [Scenario_SOLO_Sunkeeper_CaravanEscort, 100]

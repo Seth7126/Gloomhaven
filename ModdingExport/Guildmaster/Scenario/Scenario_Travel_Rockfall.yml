@@ -1,0 +1,57 @@
+Parser: Scenario
+ID: Scenario_Travel_Rockfall
+BaseBiome: Cave
+BaseTheme: OldMine
+BaseTone: LavaLamp
+MonsterFamily: Bandit
+ScenarioMeshes: [DGN_Cave_Mine_01_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_ROCKFALL_START_1
+          Character: Trainer
+        - Text: SCENARIO_TRAVEL_ROCKFALL_START_2
+          Character: Enchantress
+
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_ROCKFALL_SUCCESS_1
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win
+    ScenarioModifiers:
+        SM1:
+            Type: SetElements
+            TriggerPhase: StartRound
+            StrongElements: [Earth, Fire, Ice, Air]
+        
+    Rooms:
+        Room1:
+            Threat: 76
+            PossibleRooms:
+                - EmptyRoomTileM: 
+                    Theme: Volcanic
+                    MonsterGroup: Demon_EarthFlameWindFrost
+                    TerrainRubble: [100, 100] 
+                    TerrainHotCoals: [100, 100]
+
+        Room2:
+            Threat: 114
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: Demon_EarthFlameWindFrost
+                    TerrainRubble: [100, 100, 100]
+                    TerrainHotCoals: [100, 100]
+        Room3:
+            ParentRoom: Room1           
+            Threat: 114
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    MonsterGroup: Demon_EarthFlameWindFrost
+                    TerrainRubble: [100, 100, 100]
+                    TerrainHotCoals: [100, 100, 100, 100]
+                    GoldPiles: [100, 100]
+ 

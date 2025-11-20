@@ -1,0 +1,63 @@
+Parser: EnemyCard
+ID: 57400035
+Initiative: 17
+Shuffle: False
+Data:
+    Abilities:
+        Teleport1:
+            Teleport: True
+            TeleportData:
+                TeleportType: TeleportToCaster
+            Filter: Enemy
+            Targeting: All
+            Target: -1
+            TargetIsBase: True
+            AnimOverload: MindControl
+            TextOnly: True
+            Text: $Boss_TheBetrayer_Teleport$
+        ControlActor1:
+            ControlActor:
+                Abilities:
+                    ControlMove:
+                        Move: 2
+                        Jump: True
+                        StrengthIsBase: True
+                    ControlAttack:
+                        Attack: 1
+                        StrengthIsBase: True
+                        Range: 3
+                        RangeIsBase: True
+                        StatIsBasedOnX:
+                            Strength:
+                                BasedOn: ScenarioLevel
+                                AddTo: True
+                            Range:
+                                BasedOn: ScenarioLevel
+                                AddTo: True
+                        Target: 1
+                        TargetIsBase: True
+                        ShowTarget: False
+                        Conditions: Immobilize
+                    ControlHeal:
+                        Heal: 2
+                        StrengthIsBase: True
+                        Range: 3
+                        RangeIsBase: True
+                        StatIsBasedOnX:
+                            Strength:
+                                BasedOn: ScenarioLevel
+                                AddTo: True
+                            Range:
+                                BasedOn: ScenarioLevel
+                                AddTo: True
+                        Target: 1
+                        TargetIsBase: True
+                        ShowTarget: False
+                        Filter: Ally
+                ControlDurationType: ControlForOneTurn
+                ControlActorType: Enemy
+            Target: 1
+            Targeting: All
+            Filter:
+                ActorType: Player
+            AnimOverload: None

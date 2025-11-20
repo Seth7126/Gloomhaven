@@ -1,0 +1,26 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_Finding_the_Cure
+LocalisedName: PERSONALQUEST_Finding_the_Cure
+LocalisedDescription: PERSONALQUEST_Finding_the_Cure_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_Finding_the_Cure_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_Finding_the_Cure_Objective_PROGRESS_TOOLTIP
+#Kill Eight Forest Imps then unlock scenario 59 and follow to conclusion
+QuestSteps:
+    - QuestStep1:  
+        PersonalQuestCondition:
+            - Targets:
+                Filter: Kill
+                EnemyClasses: [ForestImpID, ForestImpEliteID]
+                Value: 8
+        TreasureTables: [TT_PERSONALQUEST_Finding_the_Cure_Step0]
+        LocalisedObjectiveDescription: PERSONALQUEST_Finding_the_Cure_Objective_Step0_Desc
+    - QuestStep2:
+        PersonalQuestCondition:
+            - CompletedQuest: Quest_Campaign_059
+        TreasureTables: [TT_PERSONALQUEST_Finding_the_Cure_Step1a]
+        LocalisedObjectiveDescription: PERSONALQUEST_Finding_the_Cure_Objective_Step1_Desc
+    - QuestStep3:
+        PersonalQuestCondition:
+            - CompletedQuest: Quest_Campaign_060
+        TreasureTables: [TT_PERSONALQUEST_Finding_the_Cure_Step1]
+        LocalisedObjectiveDescription: PERSONALQUEST_Finding_the_Cure_Objective_Step2_Desc

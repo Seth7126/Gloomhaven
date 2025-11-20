@@ -1,0 +1,61 @@
+Parser: Scenario
+ID: Scenario_Job_FellHounds
+BaseBiome: Forest
+BaseSubBiome: CorpseWood
+BaseTheme: Default
+BaseSubTheme: Default
+BaseTone: ForestDefault
+MonsterFamily: ForestDenizens
+ScenarioMeshes: [DGN_Forest_01_MAT, DGN_Forest_02_MAT, DGN_Forest_03_MAT, DGN_Forest_04_MAT, DGN_Forest_14_MAT, DGN_Forest_15_MAT]
+ChestTreasureTables: [TT_Chapter_1_1_Chest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_FellHounds_Start_1
+          Character: Narrator
+        - Text: SCENARIO_JOB_FellHounds_Start_2
+          Character: Narrator
+        - Text: SCENARIO_JOB_FellHounds_Start_3
+          Character: Trainer
+        - Text: SCENARIO_JOB_FellHounds_Start_4
+          Character: Merchant
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_JOB_FellHounds_Success_1
+          Character: Trainer
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:       
+            Result: Win
+    ScenarioModifiers:
+        SM1:
+            Type: AddConditionsToAbilities
+            Conditions: [Poison]
+            Filter:
+                AbilityType: Attack
+                ActorType: Enemy
+                EnemyClasses: [HoundID, HoundEliteID]
+    Rooms:
+        Room1:
+            Threat: 125
+            PossibleRooms:
+                - EmptyRandomLongCorridor:
+                    MonsterGroup: Cultist_Hounds
+                    OneHexObstacles: [50,50] 
+                    Traps: [100,50]
+        Room2:
+            Threat: 150
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    MonsterGroup: Cultist_Hounds
+                    OneHexObstacles: [100,50,20] 
+                    TwoHexObstacles: [70, 50]
+                    Traps: [100,100,50,5,5]
+                    GoldPiles: [100,80,50,20,5]
+                    TreasureChestChance: [33]
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_JOB_FellHounds_Room_2_1
+                      Character: Narrator

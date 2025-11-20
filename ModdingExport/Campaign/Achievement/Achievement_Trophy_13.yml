@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Trophy13
+LocalisedName: $TROPHY_ACHIEVEMENT_13$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_13_Desc$
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - CompletedQuest: Quest_Campaign_046
+TreasureTables: [TT_Achievement_Trophy13]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4013

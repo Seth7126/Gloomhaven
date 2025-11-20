@@ -1,0 +1,97 @@
+Parser: Enemy
+ID: WingedHorrorID
+LocKey: $WingedHorror$
+MonsterType: Boss
+Model: Winged Horror
+StandeeLimit: 1
+PredominantlyMelee: True
+AbilityCards: [57200065,57300066,57400067,57500068,57600069,57700070,57800071,57900072]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Disarm, Muddle, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 6
+Level1:
+    Health: 0
+    Move: 4
+    Attack: 3
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Disarm, Muddle, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 7
+Level2:
+    Health: 0
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Disarm, Muddle, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 8
+Level3:
+    Health: 0
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Disarm, Muddle, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 10
+Level4:
+    Health: 0
+    Move: 5
+    Attack: 4
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Disarm, Muddle, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 12
+Level5:
+    Health: 0
+    Move: 5
+    Attack: 5
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Disarm, Muddle, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 14
+Level6:
+    Health: 0
+    Move: 5
+    Attack: 5
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Disarm, Muddle, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 17
+Level7:
+    Health: 0
+    Move: 5
+    Attack: 5
+    Range: 1
+    Target: 1
+    Immunities: [Poison, Disarm, Muddle, Stun, Curse]
+    StatIsBasedOnX:
+        Health:
+            BasedOn: InitialPlayerCharacterCount
+            Multiplier: 20

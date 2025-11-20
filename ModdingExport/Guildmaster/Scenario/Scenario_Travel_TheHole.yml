@@ -1,0 +1,63 @@
+Parser: Scenario
+ID: Scenario_Travel_TheHole
+BaseBiome: Crypt
+BaseSubBiome: Ruined
+BaseSubTheme: Undead
+BaseTheme: Ice
+
+BaseTone: Natural
+ScenarioMeshes: [DGN_Cave_Ice_Temple_01_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_THEHOLE_START_1
+          Character: Narrator
+        - Text: SCENARIO_TRAVEL_THEHOLE_START_2
+          Character: Trainer
+        - Text: SCENARIO_TRAVEL_THEHOLE_START_3
+          Character: Enchantress
+        - Text: SCENARIO_TRAVEL_THEHOLE_START_4
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_THEHOLE_SUCCESS
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win
+    Rooms:
+        Room1:
+            Threat: 76
+            PossibleRooms:
+                - MediumEmptyRoom: 
+                    MonsterGroup: Demon_FrostWind
+                    Theme: BurialChamber
+                    Traps: [100, 100] 
+                    PressurePlates: [100]
+
+        Room2:
+            Threat: 38
+            PossibleRooms:
+                - ShortEmptyCorridor: 
+                    Theme: Shrine
+                    MonsterGroup: Demon_FrostWind
+                    Traps: [100, 100]
+                    PressurePlates: [100, 100]                    
+        Room3:
+            Threat: 76
+            PossibleRooms:
+                - LongEmptyCorridor: 
+                    MonsterGroup: Demon_FrostWind
+                    TerrainWater: [100, 100]
+                    PressurePlates: [100, 100]                    
+        Room4:
+            Threat: 115
+            PossibleRooms:
+                - MediumEmptyRoom: 
+                    Theme: AlchemyLab
+                    MonsterGroup: Demon_FrostWind
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]                    
+                    GoldPiles: [100, 100, 100]

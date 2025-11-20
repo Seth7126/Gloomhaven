@@ -1,0 +1,58 @@
+Parser: Enemy
+ID: AncientArtilleryEliteID
+LocKey: $AncientArtilleryElite$
+MonsterType: Monster
+StandeeLimit: 16
+Model: Ancient Artillery Elite
+NonEliteVariant: AncientArtilleryID
+PredominantlyMelee: False
+AbilityCards: [700,701,702,703,704,705,706,707]
+# Base Stats
+Level0:
+    Health: 7
+    Move: 0
+    Attack: 3
+    Range: 5
+    Target: 1
+Level1:
+    Health: 9
+    Move: 0
+    Attack: 3
+    Range: 5
+    Target: 1
+Level2:
+    Health: 11
+    Move: 0
+    Attack: 3
+    Range: 6
+    Target: 1
+Level3:
+    Health: 13
+    Move: 0
+    Attack: 4
+    Range: 6
+    Target: 1
+Level4:
+    Health: 13
+    Move: 0
+    Attack: 4
+    Range: 6
+    Target: 2
+Level5:
+    Health: 15
+    Move: 0
+    Attack: 4
+    Range: 7
+    Target: 2
+Level6:
+    Health: 16
+    Move: 0
+    Attack: 5
+    Range: 7
+    Target: 2    
+Level7:
+    Health: 20
+    Move: 0
+    Attack: 5
+    Range: 7
+    Target: 2    

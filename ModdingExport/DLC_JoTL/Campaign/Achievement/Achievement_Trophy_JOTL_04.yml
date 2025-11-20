@@ -1,0 +1,23 @@
+Parser: Achievement
+ID: Achievement_Trophy_JOTL_04
+LocalisedName: $TROPHY_ACHIEVEMENT_JOTL_04$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_JOTL_04_Desc$
+#Complete all Jaws of The Lion side scenarios (Scenarios 18 to 25)
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - UnlockChoice:
+        This:
+            CompletedQuest: Quest_JOTL_018_TheHeist
+        OrThis:
+            CompletedQuest: Quest_JOTL_019_DenOfThieves
+    - CompletedQuest: Quest_JOTL_020_MisplacedGoods
+    - CompletedQuest: Quest_JOTL_021_AgentsOfChaos
+    - CompletedQuest: Quest_JOTL_022_UnfriendlyMessage
+    - CompletedQuest: Quest_JOTL_023_BestOfTheBest
+    - CompletedQuest: Quest_JOTL_024_WardingTheVoid
+    - CompletedQuest: Quest_JOTL_025_TheGreatestJobInTheWorld
+TreasureTables: [TT_Achievement_Trophy_JOTL_04]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 5004

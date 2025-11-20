@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 48
+StringID: MajorManaPotionID
+Name: $ITEM_NAME_MajorManaPotion$
+Art: Major Mana Potion
+TotalInGame: 4
+Cost: 30
+Slot: SmallItem 
+Rarity: Common
+Usage: Consumed
+Trigger: DuringOwnTurn
+ProsperityRequirement: 6
+Data:     
+    Abilities:
+        InfuseAbility:
+            Infuse: Any
+            Filter: Self
+Layout: 
+    - Row: $Item_MajorManaPotion$
+    - Infuse: [Any, Any]

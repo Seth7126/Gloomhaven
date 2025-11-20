@@ -1,0 +1,21 @@
+Parser: Achievement
+ID: Achievement_Redguard_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Redguard_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Redguard_3_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        RedGuardID: 1  
+AchievementCondition:
+    - Targets:
+        CharacterIDs: RedGuardID
+        Filter: Consume
+        Elements: [Earth, Air, Ice, Fire, Light, Dark]
+        Value: 60
+
+TreasureTables: [TT_Achievement_Redguard]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 302
+ 

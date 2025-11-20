@@ -1,0 +1,37 @@
+Parser: ItemCard
+ID: 74
+StringID: SwordedgeArmorID
+Name: $ITEM_NAME_SwordedgeArmor$
+Art: Swordedge Armor
+TotalInGame: 2
+Cost: 50
+Slot: Body 
+Rarity: Rare
+Usage: Spent
+Trigger: PassiveEffect
+Data: 
+    ShieldValue: 1
+    Abilities:
+        AShield:
+            Shield: 1
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: ShieldAndRetaliate
+                AbilityData:
+                    Retaliate: 1
+                XPTracker: [0,0,0]
+                IsToggleBonus: True
+                ValidAbilityType: Attack
+    CompareAbility:
+        AbilityType: Attack
+    AddModifiers:
+        - [AMC_Basic_M1, 4]
+Layout: 
+    - Active:
+        Ability: AShield
+        ListLayout: "$Item_SwordedgeArmor$"
+        Layout: "$Item_SwordedgeArmor$"
+        Icon: "Shield"
+    - Row: "<size=50%> "
+    - XPTracker: AShield

@@ -1,0 +1,60 @@
+Parser: TreasureTable
+TT_Achievement_1_1_TakeDamage:
+  UnlockQuest: Quest_Relic_SteelRing
+  
+TT_Achievement_1_1_KillSummonLivingBones:
+  UnlockQuest: Quest_Relic_RingOfSkulls
+
+TT_Achievement_1_1_KillMuddlePoison:
+  UnlockQuest: Quest_Relic_StaffOfXorn
+
+TT_Achievement_1_2_DealRangedDamage:
+  UnlockQuest: Quest_Relic_SacrificialRobes
+
+TT_Achievement_1_2_PierceShield:
+  UnlockQuest: Quest_Relic_AncientDrill
+
+TT_Achievement_1_2_DamagePoison:
+  UnlockQuest: Quest_Relic_RemoteSpider
+
+TT_Achievement_1_3_DisarmTrap:
+  UnlockQuest: Quest_Relic_CuriousGear
+
+TT_Achievement_1_5_KillNightDemonLight:
+  UnlockQuest: Quest_Relic_OrbOfTwilight
+
+TT_Achievement_1_5_KillSunDemonDark:
+  UnlockQuest: Quest_Relic_OrbOfDawn
+
+TT_Achievement_1_5_TrapKills:
+  UnlockQuest: Quest_Relic_DoomedCompass 
+
+TT_Achievement_2_1_InfuseElements:
+  UnlockQuest: Quest_Relic_StaffOfElements
+
+TT_Achievement_2_1_SummonKills:
+  UnlockQuest: Quest_Relic_StaffOfSummoning
+  
+TT_Achievement_2_1_HealPoisonWound:
+  UnlockQuest: Quest_Relic_DrakescaleArmor 
+
+TT_Achievement_2_1_PreventDamageArmor:  
+  UnlockQuest: Quest_Relic_SteamArmor 
+  
+TT_Achievement_3_1_DrawNegativeAttackMods:  
+  UnlockQuest: Quest_Relic_SecondSkin  
+
+TT_Achievement_3_1_KillAnything:  
+  UnlockQuest: Quest_Relic_NecklaceOfTeeth
+
+TT_Achievement_3_1_TakeDamageHazardous:  
+  UnlockQuest: Quest_Relic_DrakescaleBoots
+
+TT_Achievement_3_1_MoveXDistance:  
+  UnlockQuest: Quest_Relic_EnduranceFootwraps
+
+TT_Achievement_4_1_MuddledAttacks:  
+  UnlockQuest: Quest_Relic_DrakescaleHelm
+
+TT_Achievement_4_1_KillEliteVermlings:  
+  UnlockQuest: Quest_Relic_FleaBittenShawl 

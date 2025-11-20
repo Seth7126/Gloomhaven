@@ -1,0 +1,46 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_Cauterize$
+Character: BerserkerID
+ID: 325
+Level: 1
+Initiative: 40
+Discard: [Discard,Lost]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 1
+                    Enhancements: 1
+                Range: 3
+                Target:
+                    Amount: 2
+                    Enhancements: 1
+                Condition: Wound
+                AnimOverload: RangedAttack
+        Infuse: Fire
+    Bottom:
+        Abilities:
+            BActive:
+                AddHeal: 2
+                Filter: Self
+                ActiveBonus:
+                    Duration: Persistent
+                    Behaviour: BuffIncomingHeal
+                    XPTracker: [0,1,0,1]
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "$Target$ <sprite name=Target> *TAttack.Target* <size=100%><voffset=1>@TAttack.Target@"
+        - Row: "$Wound$ <sprite name=Wound>"
+        - Row: "<size=50%> "
+        - Infuse: Fire
+    Bottom:
+        - Active:
+            Ability: BActive
+            ListLayout: "$325_B$"
+            Layout: "$325_B$"
+            Icon: "Heal"
+        - Row: "<size=50%> "
+        - XPTracker: BActive

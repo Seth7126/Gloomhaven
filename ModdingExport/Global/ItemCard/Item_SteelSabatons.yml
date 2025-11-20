@@ -1,0 +1,35 @@
+Parser: ItemCard
+ID: 50
+StringID: SteelSabatonsID
+Name: $ITEM_NAME_SteelSabatons$
+Art: Steel Sabatons
+TotalInGame: 2
+Cost: 60
+Slot: Legs 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+ProsperityRequirement: 7
+Data: 
+    Abilities:
+        TActive:
+            AddActiveBonus:
+                Shield: 1
+                CanUndo: False
+                ActiveBonusDuration: Round
+                StartAbilityRequirements:
+                    Type: ThisAbility
+                    HexesMovedThisTurn: "<= 1"
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: EndTurnAbility
+                #Target: -1
+    AddModifiers:
+        - [AMC_Basic_M1, 2]
+Layout: 
+    - Active:
+        Ability: TActive
+        ListLayout: "$Item_SteelSabatons$"
+        Layout: "$Item_SteelSabatons$"
+        Icon: "Shield"
+    - Row: "<size=50%> "

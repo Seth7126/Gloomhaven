@@ -1,0 +1,83 @@
+Parser: Scenario
+ID: Scenario_Relic_SacrificialRobes
+BaseBiome: Crypt
+BaseSubBiome: Default
+BaseTheme: Default
+BaseSubTheme: Bandit
+BaseTone: Default
+MonsterFamily: Bandit
+ScenarioMeshes: [DGN_Necro_04_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_RELIC_SacrificialRobes_Start_1
+          Character: Trainer
+        - Text: SCENARIO_RELIC_SacrificialRobes_Start_2
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_RELIC_SacrificialRobes_Success_1
+          Character: Trainer
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies:       
+            Result: Win
+        LootX: 
+            Result: Win
+            LootAmount: [1,1,1,1]
+            Filter:
+                LootType: GoalChest
+    ScenarioModifiers:
+        SM1:
+            Type: TriggerAbility
+            TriggerPhase: StartTurn
+            IsPositive: True
+            ScenarioAbilityID: ScenarioAbility_AttackBuffRanged1_Self
+            ApplyToEachActorOnce: True
+            Filter:
+                ActorType: [Player, Summon, Enemy, Ally, Neutral]
+    Rooms:
+        Room1:
+            Threat: 75
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    Theme: Torture
+                    MonsterGroup: Undead_CultistsSkellies
+                    OneHexObstacles: [50,50] 
+                    TwoHexObstacles: [20, 20]
+                    Traps: [100,50,20]
+        Room2:
+            Threat: 100
+            PossibleRooms:
+                - EmptyRandomCorridor:
+                    Theme: Armoury
+                    MonsterGroup: Bandit_ArchersWithRangers
+                    OneHexObstacles: [100] 
+                    Traps: [100,50]
+                    GoldPiles: [50]
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_RELIC_SacrificialRobes_Room_2_1
+                      Character: Merchant
+                    - Text: SCENARIO_RELIC_SacrificialRobes_Room_2_2
+                      Character: Trainer
+        Room3:
+            Threat: 125
+            PossibleRooms:
+                - EmptySummoningCircle:
+                    MonsterGroup: Bandit_ArchersWithRangers
+                    Theme: AlchemyLab
+                    TwoHexObstacles: [50]
+                    Traps: [100,100,50]
+                    GoldPiles: [100, 50]
+                    GoalChest: [£SacrificialRobesID£]
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_RELIC_SacrificialRobes_Room_3_1
+                      Character: Trainer
+                    - Text: SCENARIO_RELIC_SacrificialRobes_Room_3_2
+                      Character: Merchant

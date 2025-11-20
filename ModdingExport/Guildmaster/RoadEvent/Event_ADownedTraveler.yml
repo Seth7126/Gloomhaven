@@ -1,0 +1,38 @@
+Parser: RoadEvent
+ID: ADownedTravelerID
+LocKey: $ROAD_EVENT_A_DOWNED_TRAVELER$
+Screens:
+    Decision:
+        Text: EVENT_ADownedTraveler
+        Options:
+            A:
+                Text: EVENT_ADownedTraveler_A
+                Next: Help
+            B:
+                Text: EVENT_ADownedTraveler_B
+                TreasureTables: ADownedTraveler_Leave
+                Next: Leave
+    Help:
+        Text: EVENT_ADownedTraveler_Help
+        Options:
+            A:
+                Text: EVENT_ADownedTraveler_Help_A
+                Subtext: EVENT_ADownedTraveler_Help_A_Subtext
+                TreasureTables: ADownedTraveler_Pity
+                OptionConditions:
+                    MinGold: ADownedTraveler_Pity.GoldAmount
+                UnavailableText: EVENT_Unavailable_Gold
+                Next: Pity
+            B:
+                Text: EVENT_ADownedTraveler_Help_B
+                TreasureTables: ADownedTraveler_Scoff
+                Next: Scoff
+    Leave:
+        Text: EVENT_ADownedTraveler_Leave
+        End: True
+    Pity:
+        Text: EVENT_ADownedTraveler_Pity
+        End: True
+    Scoff:
+        Text: EVENT_ADownedTraveler_Scoff
+        End: True

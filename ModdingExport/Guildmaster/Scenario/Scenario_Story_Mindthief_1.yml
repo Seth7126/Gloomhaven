@@ -1,0 +1,102 @@
+Parser: Scenario
+ID: Scenario_Story_Mindthief_1
+BaseBiome: Cave
+BaseTone: Natural
+BaseSubTheme: Bandit
+MonsterFamily: Bandit
+ScenarioMeshes: [DGN_Barrow_02_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_MINDTHIEF_1_START_1
+          Character: Narrator
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_MINDTHIEF_1_START_2
+          Character: Narrator
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_MINDTHIEF_1_SUCCESS_1
+          Character: Narrator
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_MINDTHIEF_1_SUCCESS_2
+          Character: Narrator          
+ScenarioLayout:
+    Objectives:
+        XCharactersDie:
+            Result: Win
+            Filter:
+                EnemyClasses: [BanditGuardID, BanditGuardEliteID]
+            KillAmount: [2, 2, 3, 4]
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]                
+            Filter:
+                ActorType: Player
+                PlayerClasses: [MindthiefID]                
+            ObjectiveDescription: Scenario_Story_Mindthief_Character_Fail_Objective   
+    Rooms:
+        Room1:
+            Threat: 75
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    Theme: OldMine
+                    MonsterGroup: BanditArcherHounds
+                    OneHexObstacles: [100, 100, 100]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [BanditGuardEliteID,    BanditGuardEliteID, BanditGuardEliteID, BanditGuardEliteID]
+                              - SpawnClasses: [Empty,                 Empty,              Empty,              Empty]
+                              - SpawnClasses: [Empty,                 Empty,              Empty,              Empty]
+                              - SpawnClasses: [Empty,                 Empty,              Empty,              BanditGuardEliteID]
+                              - SpawnClasses: [Empty,                 Empty,              Empty,              Empty]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [Empty,                 Empty,              Empty,              Empty]
+                              - SpawnClasses: [Empty,                 Empty,              Empty,              Empty]
+                              - SpawnClasses: [Empty,                 Empty,              BanditGuardEliteID, BanditGuardEliteID]
+                              - SpawnClasses: [Empty,                 Empty,              Empty,              Empty]
+                              - SpawnClasses: [BanditGuardEliteID,    BanditGuardEliteID, BanditGuardEliteID, BanditGuardEliteID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [BanditArcherID,         BanditArcherID,      BanditArcherID,          BanditArcherEliteID]
+                              - SpawnClasses: [HoundEliteID,           HoundID,              HoundID,                  HoundEliteID]
+                              - SpawnClasses: [HoundID,                 HoundID,              HoundID,                  HoundID]
+                            Easy:
+                              - SpawnClasses: [BanditArcherID,         BanditArcherID,      BanditArcherEliteID,    BanditArcherEliteID]
+                              - SpawnClasses: [HoundEliteID,           HoundID,              HoundID,                  HoundEliteID]
+                              - SpawnClasses: [HoundID,                 Empty,              Empty,                  HoundID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [HoundID,                 HoundID,              HoundID,                  HoundEliteID]
+                              - SpawnClasses: [Empty,                 Empty,              BanditArcherID,          BanditArcherID]
+                              - SpawnClasses: [HoundID,                 HoundID,              HoundEliteID,            HoundEliteID]
+                            Easy:
+                              - SpawnClasses: [HoundID,                 HoundID,              HoundID,                  HoundEliteID]
+                              - SpawnClasses: [Empty,                 Empty,              BanditArcherID,          BanditArcherID]
+                              - SpawnClasses: [HoundID,                 HoundID,              HoundEliteID,            HoundEliteID]
+                    TwoHexObstacles: [100, 100]
+                    GoldPiles: [100]
+
+
+

@@ -1,0 +1,29 @@
+Parser: ItemCard
+ID: 147
+StringID: CloakOfTheHunterID
+Name: $ITEM_NAME_CloakOfTheHunter$
+Art: Cloak of the Hunter
+TotalInGame: 1
+Cost: 50
+Slot: Body 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: PassiveEffect
+ValidEquipCharacterClassIDs: DoomstalkerID
+Tradeable: False
+Data: 
+    Abilities:
+        AActive:
+            AddActiveBonus:
+                Move: 1
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: EndActionAbility
+                ValidAbilityType: AddDoom
+Layout: 
+    - Active:
+        Ability: AActive
+        ListLayout: "$Item_CloakOfTheHunter$"
+        Layout: "$Item_CloakOfTheHunter$"
+        Icon: "Doomstalker"
+    - Row: "<size=50%> "

@@ -1,0 +1,52 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_PurifyingAura$
+Character: SunkeeperID
+ID: 175
+Level: 1
+Initiative: 21
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TRetaliate:
+                Retaliate: 2
+                Filter: Self
+                AnimOverload: PowerUp
+                ActiveBonus:
+                    Duration: Persistent
+                    AttackType: Melee
+                    Behaviour: Retaliate
+                    XPTracker: [1,0,1,0,1]
+    Bottom:
+        Abilities:
+            BStrengthen:
+                Strengthen:
+                    Enhancements: 1
+                Range: 1
+                Target: -1
+                Filter: Ally
+                AnimOverload: PositiveBuffRadial
+        Consumes:
+            BCLight:
+                Elements: Light
+                AbilityOverrides:
+                    BCLightRangeBuff:
+                        ParentName: BStrengthen
+                        Range: 1
+Layout:
+    Top:
+        - Active:
+            Ability: TRetaliate
+            ListLayout: "$175_T$"
+            Layout: "$175_T$"
+            Icon: "Retaliate"
+        - Row: "<size=50%> "
+        - XPTracker: TRetaliate
+    Bottom:
+        - Row: "<b><size=130%>$Strengthen$ <sprite name=Strengthen> <size=100%><voffset=1>@BStrengthen@"
+        - Row: "$Affect_AllAdjacentAllies$"
+        - Row: "<size=50%> "
+        - Consume:
+            Name: BCLight
+            Text: "$Affect_AllAlliesWithin$ <nobr>$Range$ <sprite name=Range> 2</nobr> $instead$"
+

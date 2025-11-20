@@ -1,0 +1,25 @@
+Parser: Achievement
+ID: Achievement_Tinkerer_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Tinkerer_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Tinkerer_2_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        TinkererID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: TinkererID    
+        Filter: UseAbility
+        AbilityTypes: [Curse, Disarm, Immobilize, Wound, Muddle, Poison, Stun]
+        Value: 30
+        CharacterTypes:
+            Target: [Enemy]        
+
+
+TreasureTables: [TT_Achievement_Tinkerer]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 299
+ 

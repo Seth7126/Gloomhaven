@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_Trophy04
+LocalisedName: $TROPHY_ACHIEVEMENT_04$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_04_Desc$
+UnlockCondition:
+    - Prosperity: 1
+AchievementCondition:
+    - UnlockChoice:
+        This:
+            CompletedQuest: Quest_Campaign_012
+        OrThis:
+            CompletedQuest: Quest_Campaign_020
+TreasureTables: [TT_Achievement_Trophy04]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4004

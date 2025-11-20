@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_1_BerserkerItem
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_BerserkerItem$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_BerserkerItem_Desc$
+   
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes: 
+        BerserkerID: 1     
+AchievementCondition:
+    - CompletedQuest: Quest_Story_Berserker_2
+TreasureTables: [TT_Achievement_1_1_BerserkerItem]
+AchievementType: Mercenaries
+AchievementLevel: 0  
+AchievementOrderId: 202
+

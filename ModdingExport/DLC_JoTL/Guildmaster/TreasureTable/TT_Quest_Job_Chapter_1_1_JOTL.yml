@@ -1,0 +1,8 @@
+Parser: TreasureTable
+TT_Quest_Job_Chapter_1_1:
+    Group:
+        Update: true
+        ItemStock: BarbedAxeID
+        ItemStock: OakCharmID
+        ItemStock: RobesOfCommandID
+        ItemStock: JetBootsID

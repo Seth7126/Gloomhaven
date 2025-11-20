@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 226
+StringID: OakCharmID
+Name: $ITEM_NAME_OakCharm$
+Art: Oak Charm
+TotalInGame: 2
+Cost: 30
+Slot: SmallItem
+Rarity: Rare
+Usage: Consumed
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        ABless:
+            Bless: True
+            Range: 5
+            Filter: [Self, Ally]
+Layout: 
+    - Row: $Item_OakCharm$

@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 36
+StringID: BootsOfDashingID
+Name: $ITEM_NAME_BootsofDashing$
+Art: Boots of Dashing
+TotalInGame: 2
+Cost: 40
+Slot: Legs 
+Rarity: Rare
+Usage: Spent
+Trigger: SingleAbility
+ProsperityRequirement: 5
+Data:     
+    Overrides:
+        OMove:
+            Strength: 3
+    CompareAbility:
+        AbilityType: Move
+Layout: 
+    - Row: $Item_BootsOfDashing$

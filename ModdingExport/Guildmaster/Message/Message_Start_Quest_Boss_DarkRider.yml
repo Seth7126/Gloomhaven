@@ -1,0 +1,28 @@
+Parser: Message
+Name: Start_Quest_Boss_DarkRider
+DialogueLines:
+    - Text: Message_Start_Quest_Boss_DarkRider_1
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_DarkRider_2
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_DarkRider_3
+      Character: Narrator
+      CameraLocation: [1104, 521]  
+    - Text: Message_Start_Quest_Boss_DarkRider_4
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_DarkRider_5
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_DarkRider_6
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_DarkRider_7
+      Character: DarkRider
+    - Text: Message_Start_Quest_Boss_DarkRider_8
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_DarkRider_9
+      Character: Merchant
+MapMessageTrigger: Map
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Summoner_3
+    - CompletedQuest: Quest_Story_Quartermaster_3    
+    
+    

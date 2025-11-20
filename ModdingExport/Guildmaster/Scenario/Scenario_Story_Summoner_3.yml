@@ -1,0 +1,83 @@
+Parser: Scenario
+ID: Scenario_Story_Summoner_3
+BaseBiome: Dungeon
+BaseTone: Demonic
+ScenarioMeshes: [DGN_Maus_10_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Summoner_3_START_1
+          Character: Trainer
+        - Text: SCENARIO_STORY_Summoner_3_START_2
+          Character: Merchant
+        - Text: SCENARIO_STORY_Summoner_3_START_3
+          Character: Trainer
+        - Text: SCENARIO_STORY_Summoner_3_START_4
+          Character: Merchant
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Summoner_3_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_Summoner_3_SUCCESS_2
+          Character: Narrator          
+ScenarioLayout:
+    Objectives:
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]                
+            Filter:
+                ActorType: Player
+                PlayerClasses: [SummonerID]
+            ObjectiveDescription: Scenario_Story_Summoner_Character_Fail_Objective                 
+        ReachRound:
+            Result: Win
+            ReachRound: 10
+                
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - HugeEmptyRoom: 
+                    MonsterGroup: Demon_EarthNight
+                    OneHexObstacles: [100]
+                    TwoHexObstacles: [100]                    
+                    TerrainWater: [100, 100]
+                    TerrainThorns: [100, 100]
+                    Traps: [100, 100]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [NightDemonID,   NightDemonID,    NightDemonID,        NightDemonEliteID]
+                                - SpawnClasses: [Empty,         SunDemonID,    SunDemonID,        SunDemonID]
+                                - SpawnClasses: [Empty,         NightDemonID,    NightDemonID,        NightDemonID]
+                                - SpawnClasses: [Empty,         SunDemonID,    SunDemonEliteID,  SunDemonEliteID]
+                            Easy:
+                                - SpawnClasses: [NightDemonID,   NightDemonID,    NightDemonID,        NightDemonEliteID]
+                                - SpawnClasses: [Empty,         SunDemonID,    SunDemonID,        SunDemonID]
+                                - SpawnClasses: [Empty,         Empty,          NightDemonID,        NightDemonID]
+                                - SpawnClasses: [Empty,         SunDemonID,    SunDemonID,        SunDemonEliteID]
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: ScenarioStart
+                          LoopSpawnPattern: True
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [Empty,         Empty,          WindDemonID,        WindDemonID]
+                                - SpawnClasses: [EarthDemonID,   EarthDemonID,    EarthDemonEliteID,  EarthDemonEliteID]
+                                - SpawnClasses: [Empty,         WindDemonID,          WindDemonID,        WindDemonID]
+                                - SpawnClasses: [EarthDemonID,   EarthDemonID,    EarthDemonID,        EarthDemonID]
+                            Easy:
+                                - SpawnClasses: [Empty,         Empty,          WindDemonID,        WindDemonID]
+                                - SpawnClasses: [EarthDemonID,   EarthDemonID,    EarthDemonEliteID,  EarthDemonID]
+                                - SpawnClasses: [Empty,         WindDemonID,          WindDemonID,        WindDemonID]
+                                - SpawnClasses: [EarthDemonID,   EarthDemonID,    EarthDemonID,        EarthDemonID]
+
+                            
+
+

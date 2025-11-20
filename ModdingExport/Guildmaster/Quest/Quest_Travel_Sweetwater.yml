@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Travel_Sweetwater
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Sweetwater_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Sweetwater_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Sweetwater_3
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [1247, 800]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1247, 800]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_Sweetwater]
+LoadoutImageId: SE_05
+UnlockCondition:
+    - UnlockedVillage: TheCopperOasis
+    - Chapter: [4,1]  
+StartingVillage: TheCopperOasis
+EndingVillage: Sweetwater
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Sweetwater, 100]

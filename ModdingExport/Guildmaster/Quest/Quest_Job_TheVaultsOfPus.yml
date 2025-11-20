@@ -1,0 +1,13 @@
+Parser: Quest
+ID: Quest_Job_TheVaultsOfPus
+Chapter: 1
+QuestType: Job
+CompletionRewards: TT_Quest_Job_Chapter_1_1
+LoadoutImageId: CR_DF_04
+UnlockCondition:
+    - UnlockedVillage: Shaderest
+    - Chapter: [1,2]    
+    
+Scenario:
+    MapLocation: [400, 400]
+    ScenarioPool: [Scenario_Job_TheVaultsOfPus, 100]

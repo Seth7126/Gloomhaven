@@ -1,0 +1,71 @@
+City, ShackParser: Scenario
+ID: Scenario_Story_Sawbones_1
+BaseBiome: Forest
+BaseSubBiome: Default
+BaseTone: ForestEerie
+
+#BaseSubTheme: Undead
+MonsterFamily: Inox
+ScenarioMeshes: [DGN_Forest_23_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Sawbones_1_START_1
+          Character: Merchant
+        - Text: SCENARIO_STORY_Sawbones_1_START_2
+          Character: Merchant
+        - Text: SCENARIO_STORY_Sawbones_1_START_3
+          Character: Enchantress
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Sawbones_1_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_Sawbones_1_SUCCESS_2
+          Character: Narrator
+        - Text: SCENARIO_STORY_Sawbones_1_SUCCESS_3
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                PlayerClasses: [SawbonesID]
+            ObjectiveDescription: Scenario_Story_Sawbones_Character_Fail_Objective 
+    Rooms:
+        Room1:
+            Threat: 75
+            PossibleRooms:
+                - EmptyWindingCorridor:
+                    MonsterGroup: ForestImps
+                    Theme: DeepForestGlade
+                    OneHexObstacles: [100] 
+                    TerrainRubble: [100, 100]
+        Room2:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_Sawbones_1_ROOM_2_1
+                      Character: Narrator           
+                    - Text: SCENARIO_STORY_Sawbones_1_ROOM_2_2
+                      Character: Merchant           
+                    - Text: SCENARIO_STORY_Sawbones_1_ROOM_2_3
+                      Character: Trainer          
+            Threat: 100
+            PossibleRooms:
+                - MediumEmptyRoom: 
+                    MonsterGroup: InoxCultist
+                    Theme: AncientTemple
+                    TwoHexObstacles: [100, 100] 
+                    Traps: [100, 100, 100]
+        Room3:
+            Threat: 125
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    MonsterGroup: InoxCultistImps
+                    Theme: StillWaters
+                    GoldPiles: [100,100, 100]
+                    TerrainWater: [100, 100, 100, 100, 100]

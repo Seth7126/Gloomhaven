@@ -1,0 +1,10 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario5_Damage
+ScenarioAbility:
+    ADamage:
+        Damage: 0
+        StatIsBasedOnX:
+            Strength:
+                BasedOn: InitialPlayerCharacterCount
+                Multiplier: 4
+        Filter: Self

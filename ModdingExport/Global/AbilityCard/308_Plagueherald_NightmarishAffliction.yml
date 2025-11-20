@@ -1,0 +1,45 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_NightmarishAffliction$
+Character: PlagueheraldID
+ID: 308
+Level: 4
+Initiative: 43
+Discard: [Discard,Discard]
+Data:
+    Top:
+        Abilities:
+            TAttack:
+                Attack:
+                    Amount: 1
+                    Enhancements: 1
+                Range: 3
+                Target:
+                    Amount: 2
+                    Enhancements: 1
+                Condition: [Poison, Curse]
+                AnimOverload: RangedAttack
+        Infuse: Dark
+    Bottom:
+        Abilities:
+            BImmobilize:
+                Immobilize: True
+                Range: 3
+                Target:
+                    Amount: 2
+                    Enhancements: 1
+                Filter: Enemy
+                MultiPassAttack: False                    
+                AnimOverload: RadialNegative
+Layout:
+    Top:
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack* <size=100%><voffset=1>@TAttack@"
+        - Row: "$Range$ <sprite name=Range> *TAttack.Range*"
+        - Row: "$Target$ <sprite name=Target> *TAttack.Target* <size=100%><voffset=1>@TAttack.Target@"
+        - Row: "$Poison$ <sprite name=Poison>"
+        - Row: "$Curse$ <sprite name=Curse>"
+        - Row: "<size=20%> "
+        - Infuse: Dark
+    Bottom:
+        - Row: "<b><size=130%>$Immobilize$ <sprite name=Immobilize>"
+        - Row: "$Range$ <sprite name=Range> *BImmobilize.Range*"
+        - Row: "$Target$ <sprite name=Target> *BImmobilize.Target* <size=100%><voffset=1>@BImmobilize.Target@"

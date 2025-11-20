@@ -1,0 +1,18 @@
+Parser: Achievement
+ID: Achievement_4_1_KillLurkers_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_4_1_KillLurkers_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_4_1_KillLurkers_2_Desc$
+UnlockCondition:
+    - Chapter: [4,1]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [LurkerID,LurkerEliteID]
+        Value: 75
+TreasureTables: [TT_Achievement_Kill_Level_2]
+AchievementType: Kill
+
+AchievementLevel: 1 
+AchievementOrderId: 573
+
+

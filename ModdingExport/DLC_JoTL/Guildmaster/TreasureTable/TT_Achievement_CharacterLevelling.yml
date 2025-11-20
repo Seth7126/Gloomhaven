@@ -1,0 +1,83 @@
+Parser: TreasureTable
+TT_Achievement_Demolitionist_Levelling_1:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: DemolitionistID    
+    
+TT_Achievement_Demolitionist_Levelling_2:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: DemolitionistID 
+
+TT_Achievement_Demolitionist_Levelling_3:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: DemolitionistID 
+    
+TT_Achievement_Hatchet_Levelling_1:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: HatchetID    
+    
+TT_Achievement_Hatchet_Levelling_2:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: HatchetID 
+
+TT_Achievement_Hatchet_Levelling_3:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: HatchetID     
+    
+TT_Achievement_Redguard_Levelling_1:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: RedGuardID  
+    
+TT_Achievement_Redguard_Levelling_2:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: RedGuardID
+
+TT_Achievement_Redguard_Levelling_3:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: RedGuardID
+    
+TT_Achievement_Voidwarden_Levelling_1:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: VoidwardenID    
+    
+TT_Achievement_Voidwarden_Levelling_2:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: VoidwardenID 
+
+TT_Achievement_Voidwarden_Levelling_3:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: VoidwardenID     
+    
+TT_Achievement_Demolitionist:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: DemolitionistID     
+
+TT_Achievement_Hatchet:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: HatchetID     
+
+TT_Achievement_Redguard:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: RedGuardID     
+
+TT_Achievement_Voidwarden:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: VoidwardenID         
+
+
+

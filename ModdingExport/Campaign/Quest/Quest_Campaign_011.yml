@@ -1,0 +1,23 @@
+Parser: Quest
+ID: Quest_Campaign_011
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_Campaign_011
+LoadoutImageId: GH_GhostFortress
+NarrativeTextImageOverride:
+    - [Quest_Campaign_011_INTRO_GH_1, 011_INTRO_GH_1_Art]
+    - [Quest_Campaign_011_INTRO_GH_2, 011_INTRO_GH_2_Art]
+    - [Quest_Campaign_011_INTRO_GH_3, 011_INTRO_GH_3_Art]
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_009
+BlockCondition:
+    - CompletedQuest: Quest_Campaign_012
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: Boss
+
+Scenario:
+    MapLocation: [1389, 760]
+    ScenarioPool: 
+      - [Scenario_Campaign_011, 100]

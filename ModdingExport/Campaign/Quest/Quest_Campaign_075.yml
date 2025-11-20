@@ -1,0 +1,19 @@
+Parser: Quest
+ID: Quest_Campaign_075
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_075
+LoadoutImageId: FO_CW_01_Demon_01
+NarrativeTextImageOverride:
+    - [Quest_Campaign_075_INTRO_GH_1, 075_INTRO_GH_1_Art]
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_CityEventScenario75
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Corpsewood
+IconType: Side
+
+Scenario:
+    MapLocation: [1536, 916]
+    ScenarioPool: 
+      - [Scenario_Campaign_075, 100]

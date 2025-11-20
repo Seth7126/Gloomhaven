@@ -1,0 +1,45 @@
+Parser: EnemyCard
+ID: 57200033
+Initiative: 11
+Shuffle: False
+Data:
+    Abilities:
+        Teleport1:
+            Teleport: True
+            TeleportData:
+                TeleportType: TeleportToCaster
+            Filter: Enemy
+            Targeting: All
+            Target: -1
+            TargetIsBase: True
+            AnimOverload: MindControl
+            TextOnly: True
+            Text: $Boss_TheBetrayer_Teleport$
+        ControlActor1:
+            ControlActor:
+                Abilities:
+                    ControlMove:
+                        Move: 4
+                        Jump: True
+                        StrengthIsBase: True
+                    ControlAttack:
+                        Attack: 3
+                        StrengthIsBase: True
+                        StatIsBasedOnX:
+                            Strength:
+                                BasedOn: ScenarioLevel
+                                AddTo: True
+                        Range: 1
+                        RangeIsBase: True
+                        ShowRange: False
+                        Target: 1
+                        TargetIsBase: True
+                        ShowTarget: False
+                        Conditions: Curse
+                ControlDurationType: ControlForOneTurn
+                ControlActorType: Enemy
+            Target: 1
+            Targeting: All
+            Filter:
+                ActorType: Player
+            AnimOverload: None

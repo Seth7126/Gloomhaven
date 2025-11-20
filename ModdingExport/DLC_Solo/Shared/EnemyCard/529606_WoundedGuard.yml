@@ -1,0 +1,9 @@
+Parser: EnemyCard
+ID: 529606
+Initiative: 99
+Shuffle: True
+Data:
+    Abilities: 
+        ANull:
+            Null: True
+            Text: "$DoNothing$"

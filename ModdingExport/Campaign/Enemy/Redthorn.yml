@@ -1,0 +1,97 @@
+Parser: Enemy
+ID: RedthornID
+LocKey: $Redthorn$
+MonsterType: Monster
+StandeeLimit: 1
+Model: Redthorn
+PredominantlyMelee: False
+AbilityCards: [2000]
+# Base Stats
+Level0:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 6
+            SecondVariable: 3
+Level1:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 6
+            SecondVariable: 3
+Level2:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 6
+            SecondVariable: 3
+ Level3:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 6
+            SecondVariable: 3
+ Level4:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 6
+            SecondVariable: 3
+ Level5:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 6
+            SecondVariable: 3
+ Level6:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 6
+            SecondVariable: 3
+ Level7:
+    Health: 0
+    Move: 3
+    Attack: 3
+    Range: 3
+    Target: 1
+    StatIsBasedOnX:
+        Health:
+            BasedOn: XAddedToYTimesLevel
+            Multiplier: 6
+            SecondVariable: 3

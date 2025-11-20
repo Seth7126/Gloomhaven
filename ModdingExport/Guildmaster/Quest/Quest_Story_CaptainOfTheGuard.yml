@@ -1,0 +1,39 @@
+Parser: Quest
+ID: Quest_Story_CaptainOfTheGuard
+Chapter: 1
+QuestType: Story
+IconType: Boss
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_CaptainOfTheGuard_1
+      Character: CityGuard
+    - Text: Message_End_Quest_Story_CaptainOfTheGuard_2
+      Character: CityGuard
+    - Text: Message_End_Quest_Story_CaptainOfTheGuard_3
+      Character: Trainer
+    - Text: Message_End_Quest_Story_CaptainOfTheGuard_4
+      Character: Enchantress
+    - Text: Message_End_Quest_Story_CaptainOfTheGuard_5
+      Character: Merchant
+    - Text: Message_End_Quest_Story_CaptainOfTheGuard_6
+      Character: Trainer
+    - Text: Message_End_Quest_Story_CaptainOfTheGuard_7
+      Character: Merchant
+CompletionRewards: TT_Quest_Story_CaptainOfTheGuard
+LoadoutImageId: TO_ST_01_Bandit
+UnlockRevealFoWSphere:
+    - MapLocation: [1105, 632]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Doomstalker_3
+    - CompletedQuest: Quest_Story_Plagueherald_3
+
+RequiredCharacters:
+  - Character: DoomstalkerID   
+    Level: 6
+  - Character: PlagueheraldID    
+    Level: 6
+StartingVillage: Demonsgate
+EndingVillage: Demonsgate
+Scenario:
+    MapLocation: [1105, 632]
+    ScenarioPool: [Scenario_Story_CaptainOfTheGuard, 100]

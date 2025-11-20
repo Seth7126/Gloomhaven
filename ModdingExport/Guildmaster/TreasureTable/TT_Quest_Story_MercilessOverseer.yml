@@ -1,0 +1,5 @@
+Parser: TreasureTable
+TT_Quest_Story_MercilessOverseer:
+  Item: AncientDrillID
+  EnhancementSlots: 1
+  

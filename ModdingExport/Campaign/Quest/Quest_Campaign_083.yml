@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_083
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_Campaign_083
+LoadoutImageId: DU_DF_02_Undead
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_CityEventScenario83
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: Side
+
+Scenario:
+    MapLocation: [904, 940]
+    ScenarioPool: 
+      - [Scenario_Campaign_083, 100]

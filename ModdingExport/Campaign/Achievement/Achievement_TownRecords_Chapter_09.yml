@@ -1,0 +1,43 @@
+Parser: Achievement
+ID: Achievement_TownRecords_Chapter_09
+LocalisedName: $Achievement_TownRecords_Chapter_09$
+LocalisedDescription: $Achievement_TownRecords_Chapter_09$
+CompleteDialogueLines:
+    - Text: Town_Records_Scenario051Complete_1
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_2
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_3
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_4
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_5
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_6
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_7
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_8
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_9
+      Character: Narrator
+    - Text: Town_Records_Scenario051Complete_10
+      Character: Narrator
+UnlockCondition:
+    - Retirement: ANY
+    - CompletedQuest: Quest_Campaign_051
+    - CompletedQuest: Quest_Campaign_077
+    - CompletedQuest: Quest_Campaign_072
+    - CompletedQuest: Quest_Campaign_073
+    - Prosperity: 7
+AchievementCondition:
+    - Retirement: ANY
+    - CompletedQuest: Quest_Campaign_051
+    - CompletedQuest: Quest_Campaign_077
+    - CompletedQuest: Quest_Campaign_072
+    - CompletedQuest: Quest_Campaign_073
+    - Prosperity: 7
+TreasureTables: [TT_Achievement_TownRecords_Chapter_09]
+AchievementType: TownRecord
+AchievementLevel: 0  
+AchievementOrderId: 2009

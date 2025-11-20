@@ -1,0 +1,20 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario23_Change_Ally_Crowd_To_Enemy_Wave2
+ScenarioAbility:
+    AChangeAllegiance:
+        ChangeAllegiance:
+            ChangeToType: Enemy
+        Target: 0
+        StatIsBasedOnX:
+            Target:
+                BasedOn: ActorCount
+                Filter:
+                    EnemyClasses: [CrowdMemberID]
+                    ActorType: Ally
+                Multiplier: 1
+                MinValue: 0
+        Targeting: All
+        AutoTrigger: True
+        Filter:
+            EnemyClasses: [CrowdMemberID]
+            ActorType: Ally

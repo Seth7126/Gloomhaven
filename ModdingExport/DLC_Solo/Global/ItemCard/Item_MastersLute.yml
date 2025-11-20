@@ -1,0 +1,34 @@
+Parser: ItemCard    
+ID: 146
+StringID: MastersLuteID
+Name: $ITEM_NAME_MastersLute$
+Art: Masters Lute
+TotalInGame: 1
+Cost: 50
+Slot: TwoHand 
+Rarity: Rare
+Usage: Spent
+Trigger: DuringOwnTurn
+ValidEquipCharacterClassIDs: SoothsingerID
+Tradeable: False
+Usage: Spent
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        AChooseAbility:
+            Choose:
+                Strength: 1
+                Abilities:
+                    TMove:
+                        Move: 2
+                        PreviewEffectText: <sprite name="Move">
+                    TAttack:
+                        Attack: 2
+                        PreviewEffectText: <sprite name="Attack">
+            Filter: Self
+            PreviewEffectText: <sprite name="Song">
+    ItemRequirements:
+        ActorHasPerformedValidAbilityTypesThisAction: ">= 1"
+        AbilityTypes: PlaySong
+Layout: 
+    - Row: "$Item_MastersLute$"

@@ -1,0 +1,27 @@
+Parser: Quest
+ID: Quest_SOLO_Doomstalker_CorruptedHunt
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_Doomstalker_CorruptedHunt
+NarrativeTextImageOverride:
+    - [Quest_SOLO_Doomstalker_CorruptedHunt_INTRO_GH_1, SOLO_Doomstalker_CorruptedHunt_INTRO_GH_1]
+    - [Quest_SOLO_Doomstalker_CorruptedHunt_INTRO_GH_2, SOLO_Doomstalker_CorruptedHunt_INTRO_GH_2]
+    - [Quest_SOLO_Doomstalker_CorruptedHunt_INTRO_GH_3, SOLO_Doomstalker_CorruptedHunt_INTRO_GH_3]
+    - [Quest_SOLO_Doomstalker_CorruptedHunt_INTRO_GH_4, SOLO_Doomstalker_CorruptedHunt_INTRO_GH_4]
+UnlockCondition:
+    - RequiredHeroes: 
+        DoomstalkerID: 5
+RequiredCharacters:
+  - Character: DoomstalkerID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_Doomstalker_CorruptedHunt  
+
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [402, 1147]
+
+    ScenarioPool: 
+      - [Scenario_SOLO_Doomstalker_CorruptedHunt, 100]

@@ -1,0 +1,20 @@
+Parser: Quest
+ID: Quest_JOTL_021_AgentsOfChaos
+Chapter: 1
+QuestType: City
+CompletionRewards: TT_Quest_JOTL_021_AgentsOfChaos
+LoadoutImageId: 021_AgentsOfChaos_Loadout
+NarrativeTextImageOverride:
+    - [Quest_JOTL_021_AgentsOfChaos_INTRO_GH_1, 021_AgentsOfChaos_INTRO_GH_1_Art]
+    - [Quest_JOTL_021_AgentsOfChaos_OUTRO_GH_1, 021_AgentsOfChaos_OUTRO_GH_1_Art]
+UnlockCondition:
+    - CompletedAchievement: Achievement_JOTL_021_AgentsOfChaos
+    
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Gloomhaven
+IconType: JOTLSide
+Scenario:
+    MapLocation: [2114, 991]
+    ScenarioPool: 
+      - [Scenario_JOTL_021_AgentsOfChaos, 100]

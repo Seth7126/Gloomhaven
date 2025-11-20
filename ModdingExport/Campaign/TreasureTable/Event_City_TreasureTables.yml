@@ -1,0 +1,703 @@
+Parser: TreasureTable
+TT_EVENT_CITY_CAMPAIGN_1_OPTION_A_A:
+    XP: 10
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -5
+TT_EVENT_CITY_CAMPAIGN_1_OPTION_A_B:
+    XP: 10
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_1_OPTION_B:
+    Reputation: 1
+
+TT_EVENT_CITY_CAMPAIGN_2_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -10
+
+TT_EVENT_CITY_CAMPAIGN_3_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -10
+    UnlockAchievement: Achievement_AncientTechnology
+    Item:
+        Name: CuriousGearID
+
+TT_EVENT_CITY_CAMPAIGN_4_OPTION_B:
+    PerkCheck: -1
+    Reputation: 1
+
+TT_EVENT_CITY_CAMPAIGN_5_OPTION_A:
+    PerkCheck: -1
+    Reputation: 1
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_5_OPTION_B_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+TT_EVENT_CITY_CAMPAIGN_5_OPTION_B_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+
+TT_EVENT_CITY_CAMPAIGN_6_OPTION_A:
+    XP: 5
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_6_OPTION_B_A:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_6_OPTION_B_B:
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+        ItemStocks: [DampeningRingID, DampeningRingID]
+        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+TT_EVENT_CITY_CAMPAIGN_7_OPTION_A_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_7_OPTION_A_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_7_OPTION_A_C:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+TT_EVENT_CITY_CAMPAIGN_7_OPTION_B_A:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_7_OPTION_B_B:
+    Reputation: -1
+    
+TT_EVENT_CITY_CAMPAIGN_8_OPTION_A_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -20
+    UnlockQuest: Quest_Campaign_093
+    UnlockAchievement: Achievement_AMapToTreasure
+TT_EVENT_CITY_CAMPAIGN_8_OPTION_A_A_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -15
+    UnlockQuest: Quest_Campaign_093
+    UnlockAchievement: Achievement_AMapToTreasure
+    
+TT_EVENT_CITY_CAMPAIGN_9_OPTION_A_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 15
+TT_EVENT_CITY_CAMPAIGN_9_OPTION_A_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+TT_EVENT_CITY_CAMPAIGN_9_OPTION_B:
+    Prosperity: 1
+
+TT_EVENT_CITY_CAMPAIGN_10_OPTION_A_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -5
+TT_EVENT_CITY_CAMPAIGN_10_OPTION_A_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+TT_EVENT_CITY_CAMPAIGN_10_OPTION_B:
+    Reputation: 1
+
+
+TT_EVENT_CITY_CAMPAIGN_11_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -5
+    Group:
+        ItemStocks: [BootsOfLevitationID, BootsOfLevitationID]
+        ItemStocks: [ShoesOfHappinessID, ShoesOfHappinessID]
+        ItemStocks: [BlinkingCapeID, BlinkingCapeID]
+        ItemStocks: [SwordedgeArmorID, SwordedgeArmorID] 
+        ItemStocks: [CircletOfElementsID, CircletOfElementsID]
+#        ItemStocks: [ChainHoodID, ChainHoodID]
+        ItemStocks: [FrigidBladeID, FrigidBladeID]
+        ItemStocks: [StormBladeID, StormBladeID]
+        ItemStocks: [InfernoBladeID, InfernoBladeID]
+        ItemStocks: [TremorBladeID, TremorBladeID]
+        ItemStocks: [BrilliantBladeID, BrilliantBladeID]
+        ItemStocks: [NightBladeID, NightBladeID]
+        ItemStocks: [WandOfFrostID, WandOfFrostID]
+        ItemStocks: [WandOfStormsID, WandOfStormsID]
+        ItemStocks: [WandOfInfernosID, WandOfInfernosID]
+        ItemStocks: [WandOfTremorsID, WandOfTremorsID]
+        ItemStocks: [WandOfBrillianceID, WandOfBrillianceID]
+        ItemStocks: [WandOfDarknessID, WandOfDarknessID]
+#        ItemStocks: [MinorCurePotionID, MinorCurePotionID]
+#        ItemStocks: [MajorCurePotionID, MajorCurePotionID]
+        ItemStocks: [SteelRingID, SteelRingID]
+#        ItemStocks: [DampeningRingID, DampeningRingID]
+#        ItemStocks: [ScrollOfPowerID, ScrollOfPowerID]
+        ItemStocks: [ScrollOfHealingID, ScrollOfHealingID]
+        ItemStocks: [ScrollOfStaminaID, ScrollOfStaminaID]
+
+TT_EVENT_CITY_CAMPAIGN_11_OPTION_A_B:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_11_OPTION_B:
+    Reputation: 1
+
+TT_EVENT_CITY_CAMPAIGN_12_OPTION_A:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_12_OPTION_B:
+    PerkCheck: -1
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    Reputation: 1
+
+TT_EVENT_CITY_CAMPAIGN_13_OPTION_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -3
+    Condition: Bless
+    
+TT_EVENT_CITY_CAMPAIGN_14_OPTION_A:
+    XP: 10
+TT_EVENT_CITY_CAMPAIGN_14_OPTION_B:
+    Reputation: 2
+    
+TT_EVENT_CITY_CAMPAIGN_15_OPTION_A_B:
+    Reputation: -2
+TT_EVENT_CITY_CAMPAIGN_15_OPTION_B_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -15
+TT_EVENT_CITY_CAMPAIGN_15_OPTION_B_B:
+    PerkCheck: -1
+
+TT_EVENT_CITY_CAMPAIGN_16_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -10
+    CityEvent: Event_City_Campaign_70ID
+
+TT_EVENT_CITY_CAMPAIGN_17_OPTION_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+TT_EVENT_CITY_CAMPAIGN_17_OPTION_B:
+    UnlockQuest: Quest_Campaign_081
+
+TT_EVENT_CITY_CAMPAIGN_18_OPTION_A:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_18_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 2
+
+TT_EVENT_CITY_CAMPAIGN_19_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -20
+    Reputation: 2
+TT_EVENT_CITY_CAMPAIGN_19_OPTION_A_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -20
+TT_EVENT_CITY_CAMPAIGN_19_OPTION_B_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -5
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_19_OPTION_B_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -5
+
+TT_EVENT_CITY_CAMPAIGN_20_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+TT_EVENT_CITY_CAMPAIGN_20_OPTION_A_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+    XP: 5
+TT_EVENT_CITY_CAMPAIGN_20_OPTION_B:
+    Prosperity: -1
+
+TT_EVENT_CITY_CAMPAIGN_21_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 5
+    RoadEvent: Event_Road_Campaign_65ID
+TT_EVENT_CITY_CAMPAIGN_21_OPTION_B:
+    RoadEvent: Event_Road_Campaign_65ID
+
+TT_EVENT_CITY_CAMPAIGN_22_OPTION_A:
+    Reputation: 2
+TT_EVENT_CITY_CAMPAIGN_22_OPTION_B:
+    PerkCheck: 1
+
+TT_EVENT_CITY_CAMPAIGN_23_OPTION_A:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_23_OPTION_B:
+    Condition: Bless
+    
+TT_EVENT_CITY_CAMPAIGN_24_OPTION_A:
+    XP: 10
+TT_EVENT_CITY_CAMPAIGN_24_OPTION_B:
+    Prosperity: 1
+
+TT_EVENT_CITY_CAMPAIGN_25_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 5
+TT_EVENT_CITY_CAMPAIGN_25_OPTION_A_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -10
+        
+TT_EVENT_CITY_CAMPAIGN_26_OPTION_A_A:
+    Reputation: 2
+TT_EVENT_CITY_CAMPAIGN_26_OPTION_B_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+TT_EVENT_CITY_CAMPAIGN_26_OPTION_B_B:
+    Reputation: -1
+
+TT_EVENT_CITY_CAMPAIGN_27_OPTION_A_A:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_27_OPTION_A_B:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_27_OPTION_B:
+    CityEvent: Event_City_Campaign_60ID
+
+TT_EVENT_CITY_CAMPAIGN_28_OPTION_A_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+TT_EVENT_CITY_CAMPAIGN_28_OPTION_A_B:
+    Reputation: -3
+
+TT_EVENT_CITY_CAMPAIGN_29_OPTION_A_A:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_29_OPTION_B_A:
+    Prosperity: 1
+
+TT_EVENT_CITY_CAMPAIGN_30_OPTION_A_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+    Item:
+        Name: FleaBittenShawlID
+TT_EVENT_CITY_CAMPAIGN_30_OPTION_A_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -5
+TT_EVENT_CITY_CAMPAIGN_30_OPTION_B:
+    Reputation: -1
+
+TT_EVENT_CITY_CAMPAIGN_31_OPTION_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 20
+    UnlockQuest: Quest_Campaign_083
+    UnlockAchievement: Achievement_BadBusiness
+TT_EVENT_CITY_CAMPAIGN_31_OPTION_B_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -10
+
+TT_EVENT_CITY_CAMPAIGN_32_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 15
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_32_OPTION_A_B:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_32_OPTION_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 15
+
+TT_EVENT_CITY_CAMPAIGN_33_OPTION_A_A:
+    Reputation: 2
+    
+TT_EVENT_CITY_CAMPAIGN_34_OPTION_A_A:
+    UnlockQuest: Quest_Campaign_078
+TT_EVENT_CITY_CAMPAIGN_34_OPTION_B:
+    Reputation: 1
+
+TT_EVENT_CITY_CAMPAIGN_35_OPTION_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 1
+TT_EVENT_CITY_CAMPAIGN_35_OPTION_B_A:
+    Prosperity: 1
+
+TT_EVENT_CITY_CAMPAIGN_36_OPTION_A_A:
+    XP: 5
+    Reputation: -2
+TT_EVENT_CITY_CAMPAIGN_36_OPTION_A_B:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_36_OPTION_B_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -10
+TT_EVENT_CITY_CAMPAIGN_36_OPTION_B_B:
+    Reputation: 1
+    
+TT_EVENT_CITY_CAMPAIGN_37_OPTION_A_A:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_37_OPTION_A_B:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_37_OPTION_B_A:
+    Prosperity: 1
+    
+TT_EVENT_CITY_CAMPAIGN_38_OPTION_A_A:
+    Reputation: -1
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_38_OPTION_A_B:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_38_OPTION_B_A:
+    Reputation: -1
+
+TT_EVENT_CITY_CAMPAIGN_39_OPTION_A_A:
+    CityEvent: Event_City_Campaign_65ID
+    
+TT_EVENT_CITY_CAMPAIGN_40_OPTION_A_A:
+    Reputation: 2
+TT_EVENT_CITY_CAMPAIGN_40_OPTION_A_B:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_40_OPTION_B:
+    Reputation: 1
+    Item:
+        Name: SacrificialRobesID
+
+TT_EVENT_CITY_CAMPAIGN_41_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -10
+    Item:
+        Name: MajorStaminaPotionID
+TT_EVENT_CITY_CAMPAIGN_41_OPTION_A_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -25
+    Item:
+        Name: MajorStaminaPotionID
+        
+TT_EVENT_CITY_CAMPAIGN_42_OPTION_A:
+    Reputation: 1
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_42_OPTION_B:
+    Reputation: -1
+
+TT_EVENT_CITY_CAMPAIGN_43_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -5
+    CityEvent: Event_City_Campaign_61ID
+TT_EVENT_CITY_CAMPAIGN_43_OPTION_B:
+    Item:
+        Name: RemoteSpiderID
+
+TT_EVENT_CITY_CAMPAIGN_44_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 10
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_44_OPTION_A_B:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_44_OPTION_B:
+    Reputation: 1
+
+TT_EVENT_CITY_CAMPAIGN_45_OPTION_A:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_45_OPTION_B:
+    CityEvent: Event_City_Campaign_62ID
+
+TT_EVENT_CITY_CAMPAIGN_46_OPTION_A:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: -5
+    Reputation: 1
+    
+TT_EVENT_CITY_CAMPAIGN_47_OPTION_A:
+    UnlockQuest: Quest_Campaign_087
+    Reputation: -1
+    UnlockAchievement: Achievement_ThePoisonsSource
+TT_EVENT_CITY_CAMPAIGN_47_OPTION_B:
+    CityEvent: Event_City_Campaign_63ID
+
+TT_EVENT_CITY_CAMPAIGN_48_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -5
+    UnlockAchievement: Achievement_SunBlessed
+TT_EVENT_CITY_CAMPAIGN_48_OPTION_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 3
+
+TT_EVENT_CITY_CAMPAIGN_49_OPTION_A:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_49_OPTION_B_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 15
+
+TT_EVENT_CITY_CAMPAIGN_50_OPTION_A:
+    XP: 5
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_50_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 10
+    
+TT_EVENT_CITY_CAMPAIGN_51_OPTION_A:
+    CityEvent: Event_City_Campaign_64ID
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_51_OPTION_B_B:
+    Reputation: -1
+
+TT_EVENT_CITY_CAMPAIGN_52_OPTION_A:
+    Reputation: -2
+TT_EVENT_CITY_CAMPAIGN_52_OPTION_B:
+    Prosperity: 1
+
+TT_EVENT_CITY_CAMPAIGN_53_OPTION_A:
+    Reputation: -1
+    Item:
+        Name: BloodyAxeID
+        
+TT_EVENT_CITY_CAMPAIGN_54_OPTION_A:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_54_OPTION_B_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 20
+
+TT_EVENT_CITY_CAMPAIGN_55_OPTION_A:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_55_OPTION_B:
+    Reputation: 1
+
+TT_EVENT_CITY_CAMPAIGN_56_OPTION_A:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_56_OPTION_B:
+    CityEvent: Event_City_Campaign_66ID
+
+TT_EVENT_CITY_CAMPAIGN_57_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -10
+    Item:
+        Name: StaffOfElementsID
+TT_EVENT_CITY_CAMPAIGN_57_OPTION_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 3
+
+TT_EVENT_CITY_CAMPAIGN_58_OPTION_A:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_58_OPTION_B:
+    UnlockQuest: Quest_Campaign_091
+
+TT_EVENT_CITY_CAMPAIGN_59_OPTION_A:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_59_OPTION_B:
+    Prosperity: -1
+
+TT_EVENT_CITY_CAMPAIGN_60_OPTION_A_A:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_60_OPTION_B:
+    Gold:
+        TreasureDistributionType: PerMercenaryInParty
+        Amount: 5
+    Prosperity: -1
+    
+TT_EVENT_CITY_CAMPAIGN_61_OPTION_A:
+    Item:
+        Name: GiantRemoteSpiderID
+TT_EVENT_CITY_CAMPAIGN_61_OPTION_B:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: 30
+
+TT_EVENT_CITY_CAMPAIGN_62_OPTION_A:
+    Item:
+        Name: ThiefsHoodID
+TT_EVENT_CITY_CAMPAIGN_62_OPTION_B:
+    Reputation: 3
+
+TT_EVENT_CITY_CAMPAIGN_63_OPTION_A:
+    UnlockQuest: Quest_Campaign_086
+TT_EVENT_CITY_CAMPAIGN_63_OPTION_B:
+    Reputation: -1
+    Prosperity: -1
+
+TT_EVENT_CITY_CAMPAIGN_64_OPTION_A:
+    UnlockQuest: Quest_Campaign_089
+    UnlockAchievement: Achievement_SinRa
+TT_EVENT_CITY_CAMPAIGN_64_OPTION_B:
+    RoadEvent: Event_Road_Campaign_64ID
+
+TT_EVENT_CITY_CAMPAIGN_65_OPTION_A:
+    Reputation: 2
+TT_EVENT_CITY_CAMPAIGN_65_OPTION_B_A:
+    Reputation: 3
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_65_OPTION_B_B:
+    Reputation: 2
+    Prosperity: 1
+    
+TT_EVENT_CITY_CAMPAIGN_66_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -40
+    Item:
+        Name: SuperHealingPotionID
+TT_EVENT_CITY_CAMPAIGN_66_OPTION_B:
+    CityEvent: Event_City_Campaign_67ID
+
+TT_EVENT_CITY_CAMPAIGN_67_OPTION_A_A:
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -60
+TT_EVENT_CITY_CAMPAIGN_67_OPTION_B:
+    UnlockQuest: Quest_Campaign_092
+    UnlockAchievement: Achievement_DebtCollection
+
+TT_EVENT_CITY_CAMPAIGN_68_OPTION_A_A:
+    UnlockQuest: Quest_Campaign_088
+    UnlockAchievement: Achievement_WaterStaff
+TT_EVENT_CITY_CAMPAIGN_68_OPTION_A_B:
+    UnlockQuest: Quest_Campaign_088
+    UnlockAchievement: Achievement_WaterStaff
+    Gold: 
+        TreasureDistributionType: Combined
+        Amount: -15
+
+TT_EVENT_CITY_CAMPAIGN_69_OPTION_A:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_69_OPTION_B:
+    Reputation: -1
+    
+TT_EVENT_CITY_CAMPAIGN_70_OPTION_A_A:
+    Prosperity: 1
+TT_EVENT_CITY_CAMPAIGN_70_OPTION_A_B:
+    Reputation: -1
+
+TT_EVENT_CITY_CAMPAIGN_71_OPTION_A:
+    CityEvent: Event_City_Campaign_72ID
+TT_EVENT_CITY_CAMPAIGN_71_OPTION_B:
+    PerkCheck: -1
+
+TT_EVENT_CITY_CAMPAIGN_72_OPTION_A:
+    UnlockQuest: Quest_Campaign_079
+    UnlockAchievement: Achievement_FishsAid
+
+TT_EVENT_CITY_CAMPAIGN_73_OPTION_A:
+    Gold:
+        TreasureDistributionType: Combined
+        Amount: -5
+    UnlockQuest: Quest_Campaign_084
+    UnlockAchievement: Achievement_Tremors
+TT_EVENT_CITY_CAMPAIGN_73_OPTION_B:
+    Prosperity: -1
+
+TT_EVENT_CITY_CAMPAIGN_74_OPTION_A:
+    Reputation: 1
+TT_EVENT_CITY_CAMPAIGN_74_OPTION_B:
+    XP: 2
+    Condition: Curse
+
+TT_EVENT_CITY_CAMPAIGN_75_OPTION_A:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_75_OPTION_B:
+    Reputation: -2
+
+TT_EVENT_CITY_CAMPAIGN_76_OPTION_A_A:
+    UnlockQuest: Quest_Campaign_074
+    UnlockAchievement: Achievement_HighSeaEscort
+    
+TT_EVENT_CITY_CAMPAIGN_77_OPTION_A_A:
+    UnlockQuest: Quest_Campaign_075
+    UnlockAchievement: Achievement_GraveJob
+
+TT_EVENT_CITY_CAMPAIGN_78_OPTION_A:
+    UnlockQuest: Quest_Campaign_094
+TT_EVENT_CITY_CAMPAIGN_78_OPTION_B:
+    Gold:
+        TreasureDistributionType: Combined
+        Amount: 5
+
+TT_EVENT_CITY_CAMPAIGN_79_OPTION_A:
+    Prosperity: -1
+TT_EVENT_CITY_CAMPAIGN_79_OPTION_B:
+    Reputation: -1
+
+TT_EVENT_CITY_CAMPAIGN_80_OPTION_A_B:
+    Reputation: -1
+TT_EVENT_CITY_CAMPAIGN_80_OPTION_B:
+    Reputation: -2
+
+TT_EVENT_CITY_CAMPAIGN_81_OPTION_A:
+    Reputation: 2
+TT_EVENT_CITY_CAMPAIGN_81_OPTION_B:
+    Reputation: -2
+
+TT_EVENT_CITY_CAMPAIGN_82_OPTION_A:
+    Gold:
+        TreasureDistributionType: Combined
+        Amount: 1
+        
+TT_EVENT_CITY_CAMPAIGN_82_OPTION_B:
+    UnlockQuest: Quest_Campaign_076

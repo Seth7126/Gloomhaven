@@ -1,0 +1,22 @@
+Parser: EnemyCard
+ID: 57400083
+Initiative: 17
+Shuffle: False
+Data:
+    Abilities:
+        TActive:
+            Attack: 1
+            StrengthIsBase: True
+            Filter: Self
+            ActiveBonus:
+                Duration: Round
+                Behaviour: BuffAttack
+                IsAura: True
+                AuraFilter: [Ally]
+                AuraTargeting: All
+            AnimOverload: BuffAllies
+            Text: "$197_T$"
+            TextOnly: True
+        Attack1:
+            Attack: 1
+            Filter: Enemy

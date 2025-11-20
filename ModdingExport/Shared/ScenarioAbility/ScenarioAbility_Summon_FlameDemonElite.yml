@@ -1,0 +1,8 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_Summon_FlameDemonElite
+ScenarioAbility:
+    Summon1:
+        Summon: FlameDemonEliteID
+        Target: 1
+        TargetIsBase: True
+        AnimOverload: Summon

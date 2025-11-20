@@ -1,0 +1,73 @@
+Parser: Scenario
+ID: Scenario_Story_Sunkeeper_2
+BaseBiome: Forest
+BaseTone: Default
+ScenarioMeshes: [DGN_Forest_09_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Sunkeeper_2_START_1
+          Character: Trainer
+
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_Sunkeeper_2_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_STORY_Sunkeeper_2_SUCCESS_2
+          Character: Narrator
+ScenarioLayout:
+    Objectives:
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                PlayerClasses: [SunkeeperID]
+            ObjectiveDescription: Scenario_Story_Sunkeeper_Character_Fail_Objective 
+    ScenarioModifiers:
+        SM1:
+            Type: ApplyConditionToActor
+            TriggerPhase: StartRound
+            ApplyToEachActorOnce: True
+            Conditions: [Muddle]
+            Filter:
+                ActorType: [Enemy]                    
+            
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - LargeEmptyRoom:
+                    MonsterGroup: InoxArtillery
+                    Traps: [100,100]
+                    TerrainRubble: [100, 100]
+                    TwoHexObstacles: [100, 100, 100]
+                    AllyMonsters:
+                        - [VermlingScoutID, 1, 1, 1, 1]                        
+        Room2:
+            Threat: 100
+            PossibleRooms:
+                - LongEmptyCorridor: 
+                    MonsterGroup: CityTypesArtillery
+                    TerrainRubble: [100, 100]
+
+        Room3:
+            Threat: 150
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    Biome: City
+                    SubBiome: Shack
+                    MonsterGroup: InoxHarrower
+                    TerrainRubble: [100, 100]
+                    TwoHexObstacles: [100, 100, 100]
+                    
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_Sunkeeper_2_Room_3_1
+                      Character: Trainer
+
+                    
+

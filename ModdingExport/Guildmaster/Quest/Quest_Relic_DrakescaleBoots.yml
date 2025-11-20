@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Relic_DrakescaleBoots
+Chapter: 1
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_DrakescaleBoots_Unlock_1
+      Character: Trainer
+    - Text: QUEST_RELIC_DrakescaleBoots_Unlock_2
+      Character: Trainer
+      CameraLocation: [337, 617] 
+    - Text: QUEST_RELIC_DrakescaleBoots_Unlock_3
+      Character: Merchant
+    - Text: QUEST_RELIC_DrakescaleBoots_Unlock_4
+      Character: Trainer
+CompleteDialogueLines:
+    - Text: QUEST_RELIC_DrakescaleBoots_Complete_1
+      Character: Merchant
+LoadoutImageId: FO_DF_02_Inox
+UnlockRevealFoWSphere:
+    - MapLocation: [337, 617] 
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_3_1_TakeDamageHazardous
+StartingVillage: Ironbell
+EndingVillage: Ironbell
+Scenario:
+    MapLocation: [337, 617] 
+    ScenarioPool: [Scenario_Relic_DrakescaleBoots, 100]

@@ -1,0 +1,20 @@
+Parser: EnemyCard
+ID: 689
+Initiative: 58
+Shuffle: False
+Data:
+    Abilities:
+        Move1:
+            Move: 1
+            Jump: True            
+        Attack1:
+            Attack: -1
+            Filter: Enemy
+        BDisadvantage:
+            AttackersGainDisadvantage: 1
+            Filter: Self
+            AnimOverload: GainDisadvantage
+            ActiveBonusDuration: Round
+            AnimOverload: PowerUp
+            Text: "$689$"
+            TextOnly: True

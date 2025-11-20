@@ -1,0 +1,16 @@
+Parser: EnemyCard
+ID: 601
+Initiative: 80
+Shuffle: True
+Data:
+    Abilities:
+        Attack1:
+            Attack: -1
+            Filter: Enemy
+        Move1:
+            Move: -2
+        Attack2:
+            Attack: -1
+            Conditions: Wound     
+            Filter: Enemy
+            AnimOverload: HeavyAttack

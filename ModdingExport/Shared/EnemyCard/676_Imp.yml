@@ -1,0 +1,17 @@
+Parser: EnemyCard
+ID: 676
+Initiative: 5
+Shuffle: False
+Data:
+    Abilities: 
+        Shield1:
+            Shield: 5
+            Filter: Self
+            ActiveBonusDuration: Round
+            AnimOverload: PowerUp           
+        Heal1:
+            Heal: 1
+            Filter: Self
+            AnimOverload: None
+            SkipAnim: True             
+            

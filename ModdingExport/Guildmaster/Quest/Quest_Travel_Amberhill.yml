@@ -1,0 +1,26 @@
+Parser: Quest
+ID: Quest_Travel_Amberhill
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Amberhill_1
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Amberhill_2
+      Character: Merchant
+UnlockRevealFoWSphere:
+    - MapLocation: [779, 515]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [779, 515]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_Amberhill]
+LoadoutImageId: TO_ST_02
+UnlockCondition:
+    - UnlockedVillage: GibbetHill
+    - Chapter: [3,1]  
+StartingVillage: GibbetHill
+EndingVillage: Amberhill
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Amberhill, 100]

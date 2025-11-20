@@ -1,0 +1,29 @@
+Parser: Quest
+ID: Quest_Campaign_020
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_020
+LoadoutImageId: DU_DF_02_Undead
+NarrativeTextImageOverride:
+    - [Quest_Campaign_020_OUTRO_GH_1, 020_OUTRO_GH_1_Art]
+    - [Quest_Campaign_020_OUTRO_GH_2, 020_OUTRO_GH_2_Art]
+    - [Quest_Campaign_020_OUTRO_GH_3, 020_OUTRO_GH_3_Art]
+    - [Quest_Campaign_020_OUTRO_GH_4, 020_OUTRO_GH_4_Art]
+UnlockCondition:
+    - Required:
+        CompletedQuest: 1
+    - CompletedQuest: Quest_Campaign_007
+    - CompletedQuest: Quest_Campaign_013
+    
+BlockCondition:
+    - Required:
+        CompletedQuest: 1
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: Corpsewood
+IconType: Boss
+
+Scenario:
+    MapLocation: [1614, 876]
+    ScenarioPool: 
+      - [Scenario_Campaign_020, 100]

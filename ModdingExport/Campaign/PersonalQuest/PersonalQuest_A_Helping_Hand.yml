@@ -1,0 +1,13 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_A_Helping_Hand
+LocalisedName: PERSONALQUEST_A_Helping_Hand
+LocalisedDescription: PERSONALQUEST_A_Helping_Hand_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_A_Helping_Hand_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_A_Helping_Hand_Objective_PROGRESS_TOOLTIP
+PersonalQuestCondition:
+#Experience two other characters achieving their personal quests.
+    - Targets:
+        Filter: PersonalQuest
+        Who: NotSelf
+        Value: 2
+TreasureTables: [TT_PERSONALQUEST_A_Helping_Hand]

@@ -1,0 +1,66 @@
+Parser: Enemy
+ID: CultistandVictimID
+LocKey: $CultistandVictim$
+MonsterType: Boss
+StandeeLimit: 10
+Model: CultistandVictim
+PredominantlyMelee: True
+AbilityCards: [2005]
+UseNormalSizeAvatarForBoss: True
+# Base Stats
+Level0:
+    Health: 14
+    Move: 2
+    Attack: 0
+    Range: 1
+    Target: 1
+    Immunities: [Immobilize, Push, Pull, Stun]    
+Level1:
+    Health: 18
+    Move: 2
+    Attack: 0
+    Range: 1
+    Target: 1
+    Immunities: [Immobilize, Push, Pull, Stun]    
+Level2:
+    Health: 24
+    Move: 2
+    Attack: 0
+    Range: 1
+    Target: 1
+    Immunities: [Immobilize, Push, Pull, Stun]    
+Level3:
+    Health: 26
+    Move: 3
+    Attack: 0
+    Range: 1
+    Target: 1
+    Immunities: [Immobilize, Push, Pull, Stun]    
+Level4:
+    Health: 30
+    Move: 3
+    Attack: 0
+    Range: 1
+    Target: 1
+    Immunities: [Immobilize, Push, Pull, Stun]    
+Level5:
+    Health: 36
+    Move: 3
+    Attack: 0
+    Range: 1
+    Target: 1
+    Immunities: [Immobilize, Push, Pull, Stun]    
+Level6:
+    Health: 44
+    Move: 3
+    Attack: 0
+    Range: 1
+    Target: 1    
+    Immunities: [Immobilize, Push, Pull, Stun]    
+Level7:
+    Health: 50
+    Move: 3
+    Attack: 0
+    Range: 1
+    Target: 1    
+    Immunities: [Immobilize, Push, Pull, Stun]    

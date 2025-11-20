@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_046
+Chapter: 1
+QuestType: Story
+#CompletionRewards: TT_Quest_Campaign_046
+LoadoutImageId: CA_DF_05_Demon
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_039
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: CopperneckMountains
+IconType: Boss
+
+Scenario:
+    MapLocation: [1420, 254]
+    ScenarioPool: 
+      - [Scenario_Campaign_046, 100]

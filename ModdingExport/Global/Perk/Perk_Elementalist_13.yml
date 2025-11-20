@@ -1,0 +1,8 @@
+Parser: Perk
+ID: Elementalist13
+Name: PERK_Elementalist_13
+Description: PERK_Elementalist_13_Desc
+CharacterID: ElementalistID
+Available: 1
+CardsToAdd: [AMC_AddTarget]
+

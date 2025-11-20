@@ -1,0 +1,11 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_49_CannonFire
+ScenarioAbility:
+    ADamage:
+        Damage: 0
+        Target: -1
+        Filter: Enemy
+        AddAttackBaseStat: True
+        TargetIsBase: True
+        IsInlineSubAbility: True
+        AnimOverload: Mortar

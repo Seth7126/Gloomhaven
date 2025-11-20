@@ -1,0 +1,29 @@
+Parser: Quest
+ID: Quest_Story_Cragheart_2
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Cragheart_2_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Cragheart_2_2
+      Character: Enchantress
+      CameraLocation: [1378, 599]
+CompletionRewards: TT_Quest_Story_Cragheart_2
+LoadoutImageId: CA_DF_03_Bandit
+UnlockRevealFoWSphere:
+    - MapLocation: [1390,611]
+      Radius: 14
+UnlockCondition:
+    - Chapter: [1,1]
+    - CompletedQuest: Quest_Story_Cragheart_1    
+RequiredCharacters:
+  - Character: CragheartID
+    Level: 3
+StartingVillage: LowTown
+EndingVillage: LowTown
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation:  [1378,599]
+    ScenarioPool: [Scenario_Story_Cragheart_2, 100]

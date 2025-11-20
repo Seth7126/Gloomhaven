@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_5_KillStoneGolems_2
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_5_KillStoneGolems_2$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_5_KillStoneGolems_2_Desc$
+UnlockCondition:
+    - Chapter: [1,5]
+AchievementCondition:
+    - Targets:
+        Filter: Kill
+        EnemyClasses: [StoneGolemID, StoneGolemEliteID]
+        Value: 50
+TreasureTables: [TT_Achievement_Kill_Level_2]
+AchievementType: Kill
+
+AchievementLevel: 1 
+AchievementOrderId: 591

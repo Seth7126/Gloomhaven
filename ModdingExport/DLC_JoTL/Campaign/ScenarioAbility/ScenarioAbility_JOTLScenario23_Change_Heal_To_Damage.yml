@@ -1,0 +1,20 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario23_Change_Heal_To_Damage
+ScenarioAbility:
+    AActive:
+        AddActiveBonus:
+            Heal: 0
+        ActiveBonus:
+            Behaviour: OverrideAbility
+            Duration: Persistent
+            IsToggleBonus: True
+            ValidAbilityType: Heal
+            ValidTargetTypes: Ally #Can only convert heals that would allow you to heal an ally
+            ActiveBonusAbilityOverrides:
+                BCTypeOverride:
+                    AbilityType: Damage
+                    Filter:
+                        TargetType: Enemy
+                        EnemyClasses: [CrowdMemberID]
+            ListLayoutOverride: [$Scenario_JOTL_023_BestOfTheBest_Modifier_6$, Heal]
+            Hidden: True

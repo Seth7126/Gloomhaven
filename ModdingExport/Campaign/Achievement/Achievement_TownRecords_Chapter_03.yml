@@ -1,0 +1,41 @@
+Parser: Achievement
+ID: Achievement_TownRecords_Chapter_03
+LocalisedName: $Achievement_TownRecords_Chapter_03$
+LocalisedDescription: $Achievement_TownRecords_Chapter_03$
+CompleteDialogueLines:
+    - Text: Town_Records_Scenario072Complete_1
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_2
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_3
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_4
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_5
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_6
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_7
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_8
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_9
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_10
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_11
+      Character: Narrator
+    - Text: Town_Records_Scenario072Complete_12
+      Character: Narrator
+UnlockCondition:
+    - Retirement: ANY
+    - Prosperity: 4
+    - CompletedQuest: Quest_Campaign_072
+AchievementCondition:
+    - Retirement: ANY
+    - Prosperity: 4
+    - CompletedQuest: Quest_Campaign_072
+TreasureTables: [TT_Achievement_TownRecords_Chapter_03]
+AchievementType: TownRecord
+AchievementLevel: 0  
+AchievementOrderId: 2003

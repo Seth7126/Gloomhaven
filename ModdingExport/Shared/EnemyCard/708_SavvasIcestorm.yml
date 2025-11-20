@@ -1,0 +1,28 @@
+Parser: EnemyCard
+ID: 708
+Initiative: 70
+Shuffle: False
+Data:
+    Abilities:
+        Push1:
+            Push: 2
+            Range: 1
+            Target: -1
+            RangeIsBase: True
+            TargetIsBase: True
+            ShowRange: False
+            Filter: Enemy
+            AnimOverload: RadialPush
+            Text: $Target_AllAdjacentEnemies$
+        Attack1:
+            Attack: 1
+            Range: 1
+    Consumes:
+        CAir:
+            Elements: Air
+            LayoutPriorTo: Attack1
+            AbilityOverrides:
+                CEarthPushBuff:
+                    ParentName: Push1
+                    Strength: 2
+

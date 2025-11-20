@@ -1,0 +1,17 @@
+Parser: Quest
+ID: Quest_Campaign_085
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_085
+LoadoutImageId: CA_DF_05_Demon
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_RoadEventScenario85
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: WatcherMountains
+IconType: Side
+
+Scenario:
+    MapLocation: [679, 1631]
+    ScenarioPool: 
+      - [Scenario_Campaign_085, 100]

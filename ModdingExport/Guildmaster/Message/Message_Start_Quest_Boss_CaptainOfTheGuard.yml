@@ -1,0 +1,22 @@
+Parser: Message
+Name: Start_Quest_Boss_CaptainOfTheGuard
+DialogueLines:
+    - Text: Message_Start_Quest_Boss_CaptainOfTheGuard_1
+      Character: Merchant
+      CameraLocation: [1105, 632]       
+    - Text: Message_Start_Quest_Boss_CaptainOfTheGuard_2
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_CaptainOfTheGuard_3
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_CaptainOfTheGuard_4
+      Character: Trainer
+    - Text: Message_Start_Quest_Boss_CaptainOfTheGuard_5
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_CaptainOfTheGuard_6
+      Character: Enchantress
+    - Text: Message_Start_Quest_Boss_CaptainOfTheGuard_7
+      Character: Merchant
+MapMessageTrigger: Map
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Doomstalker_3
+    - CompletedQuest: Quest_Story_Plagueherald_3    

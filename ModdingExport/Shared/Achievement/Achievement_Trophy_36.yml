@@ -1,0 +1,46 @@
+Parser: Achievement
+ID: Achievement_Trophy36
+LocalisedName: $TROPHY_ACHIEVEMENT_36$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_36_Desc$
+AchievementCondition:
+    - SingleScenario: true
+    - Targets:
+        CharacterIDs: ElementalistID
+        Filter: Consume
+        Elements: Air
+        Value: 1
+        SubFilter: Scenario
+    - Targets:
+        CharacterIDs: ElementalistID
+        Filter: Consume
+        Elements: Ice
+        Value: 1
+        SubFilter: Scenario
+    - Targets:
+        CharacterIDs: ElementalistID
+        Filter: Consume
+        Elements: Fire
+        Value: 1
+        SubFilter: Scenario
+    - Targets:
+        CharacterIDs: ElementalistID
+        Filter: Consume
+        Elements: Earth
+        Value: 1
+        SubFilter: Scenario
+    - Targets:
+        CharacterIDs: ElementalistID
+        Filter: Consume
+        Elements: Dark
+        Value: 1
+        SubFilter: Scenario
+    - Targets:
+        CharacterIDs: ElementalistID
+        Filter: Consume
+        Elements: Light
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy36]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4036

@@ -1,0 +1,7 @@
+Parser: Perk
+ID: Cragheart07
+Name: PERK_Cragheart_07
+Description: PERK_Cragheart_07_Desc
+CharacterID: CragheartID
+Available: 2
+CardsToAdd: [AMC_Earth_R,AMC_Earth_R]

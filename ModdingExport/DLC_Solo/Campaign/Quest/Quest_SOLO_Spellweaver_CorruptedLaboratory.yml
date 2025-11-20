@@ -1,0 +1,21 @@
+Parser: Quest
+ID: Quest_SOLO_Spellweaver_CorruptedLaboratory
+Chapter: 1
+QuestType: City
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_Spellweaver_CorruptedLab
+UnlockCondition:
+    - RequiredHeroes: 
+        SpellweaverID: 5
+RequiredCharacters:
+  - Character: SpellweaverID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_Spellweaver_CorruptedLaboratory
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [951, 728]
+
+    ScenarioPool: 
+      - [Scenario_SOLO_Spellweaver_CorruptedLaboratory, 100]

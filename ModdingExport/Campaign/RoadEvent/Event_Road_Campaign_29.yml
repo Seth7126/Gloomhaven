@@ -1,0 +1,27 @@
+Parser: RoadEvent
+ID: Event_Road_Campaign_29ID
+# LocKey: $ROAD_EVENT_29$
+LocKey: $ROAD_EVENT$
+Screens:
+    Decision:
+        Text: "EVENT_ROAD_CAMPAIGN_29_INTRO"
+        Options:
+            A:
+                Text: "EVENT_ROAD_CAMPAIGN_29_OPTION_A"
+                Next: EVENT_ROAD_CAMPAIGN_29_OPTION_A
+            B:
+                Text: "EVENT_ROAD_CAMPAIGN_29_OPTION_B"
+                TreasureTables: TT_EVENT_ROAD_CAMPAIGN_29_OPTION_B
+                Next: EVENT_ROAD_CAMPAIGN_29_OPTION_B
+    EVENT_ROAD_CAMPAIGN_29_OPTION_A:
+        InParty:
+            ClassIDs: [CragheartID]
+            Screen:
+                Text: "EVENT_ROAD_CAMPAIGN_29_RESULT_A_A"
+                End: True
+        Text: "EVENT_ROAD_CAMPAIGN_29_RESULT_A_B"
+        TreasureTables: TT_EVENT_ROAD_CAMPAIGN_29_OPTION_A_B
+        End: True
+    EVENT_ROAD_CAMPAIGN_29_OPTION_B:
+        Text: "EVENT_ROAD_CAMPAIGN_29_RESULT_B"
+        End: Reuse

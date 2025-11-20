@@ -1,0 +1,25 @@
+Parser: ItemCard
+ID: 15
+StringID: BootsOfSpeedID
+Name: $ITEM_NAME_BootsofSpeed$
+Art: Boots of Speed
+TotalInGame: 2
+Cost: 30
+Slot: Legs
+Rarity: Rare
+Usage: Spent
+Trigger: PassiveEffect
+ProsperityRequirement: 2
+Data: 
+    Abilities:
+        AAdjustInitiative:
+            AdjustInitiative: 10
+            Filter: Self
+            ActiveBonus:
+                Duration: Persistent
+                Behaviour: AdjustInitiative
+                XPTracker: [0]
+                IsToggleBonus: True
+                ValidAbilityType: AdjustInitiative
+Layout: 
+    - Row: $Item_BootsOfSpeed$

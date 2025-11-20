@@ -1,0 +1,29 @@
+Parser: Quest
+ID: Quest_Story_Brute_2
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Brute_2_1
+      Character: Scabwit
+    - Text: Message_End_Quest_Story_Brute_2_2
+      Character: Scabwit
+      CameraLocation: [1069, 114]
+CompletionRewards: TT_Quest_Story_Brute_2
+LoadoutImageId: FO_DF_02_Vermling
+UnlockRevealFoWSphere:
+    - MapLocation: [1186, 884]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: Bloodford
+    - CompletedQuest: Quest_Story_Brute_1
+RequiredCharacters:
+  - Character: BruteID    
+    Level: 3
+StartingVillage: TheCopperOasis
+EndingVillage: TheCopperOasis
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1186, 884]
+    ScenarioPool: [Scenario_Story_Brute_2, 100]

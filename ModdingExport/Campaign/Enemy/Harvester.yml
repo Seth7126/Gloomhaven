@@ -1,0 +1,147 @@
+Parser: Enemy
+ID: HarvesterID
+LocKey: $Harvester$
+MonsterType: Boss
+StandeeLimit: 6
+Model: Harvester
+PredominantlyMelee: True
+AbilityCards: [524,525,526,527,528,529,530,531]
+UseNormalSizeAvatarForBoss: True
+# Base Stats
+Level0:
+    Health: 6
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 1
+    Shield: 2
+    Retaliate: 0
+    RetaliateRange: 0
+    StatIsBasedOnX:
+        Shield:
+            BasedOn: ActorCount
+            AddTo: True
+            Filter:
+                ActorType: Enemy
+                EnemyType: Object
+            IncludeUnrevealed: True
+Level1:
+    Health: 9
+    Move: 2
+    Attack: 3
+    Range: 1
+    Target: 1
+    Shield: 2
+    Retaliate: 0
+    RetaliateRange: 0
+    StatIsBasedOnX:
+        Shield:
+            BasedOn: ActorCount
+            AddTo: True
+            Filter:
+                ActorType: Enemy
+                EnemyType: Object
+            IncludeUnrevealed: True
+Level2:
+    Health: 9
+    Move: 2
+    Attack: 4
+    Range: 1
+    Target: 1
+    Shield: 2
+    Retaliate: 1
+    RetaliateRange: 1
+    StatIsBasedOnX:
+        Shield:
+            BasedOn: ActorCount
+            AddTo: True
+            Filter:
+                ActorType: Enemy
+                EnemyType: Object
+            IncludeUnrevealed: True
+Level3:
+    Health: 10
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Shield: 2
+    Retaliate: 2
+    RetaliateRange: 1
+    StatIsBasedOnX:
+        Shield:
+            BasedOn: ActorCount
+            AddTo: True
+            Filter:
+                ActorType: Enemy
+                EnemyType: Object
+            IncludeUnrevealed: True
+Level4:
+    Health: 12
+    Move: 3
+    Attack: 4
+    Range: 1
+    Target: 1
+    Shield: 3
+    Retaliate: 2
+    RetaliateRange: 1
+    StatIsBasedOnX:
+        Shield:
+            BasedOn: ActorCount
+            AddTo: True
+            Filter:
+                ActorType: Enemy
+                EnemyType: Object
+            IncludeUnrevealed: True
+Level5:
+    Health: 13
+    Move: 3
+    Attack: 5
+    Range: 1
+    Target: 1
+    Shield: 3
+    Retaliate: 3
+    RetaliateRange: 1
+    StatIsBasedOnX:
+        Shield:
+            BasedOn: ActorCount
+            AddTo: True
+            Filter:
+                ActorType: Enemy
+                EnemyType: Object
+            IncludeUnrevealed: True
+Level6:
+    Health: 14
+    Move: 3
+    Attack: 6
+    Range: 1
+    Target: 1
+    Shield: 3
+    Retaliate: 3
+    RetaliateRange: 1
+    StatIsBasedOnX:
+        Shield:
+            BasedOn: ActorCount
+            AddTo: True
+            Filter:
+                ActorType: Enemy
+                EnemyType: Object
+            IncludeUnrevealed: True
+Level7:
+    Health: 15
+    Move: 3
+    Attack: 7
+    Range: 1
+    Target: 1
+    Shield: 3
+    Retaliate: 3
+    RetaliateRange: 1
+    StatIsBasedOnX:
+        Shield:
+            BasedOn: ActorCount
+            AddTo: True
+            Filter:
+                ActorType: Enemy
+                EnemyType: Object
+            IncludeUnrevealed: True
+    

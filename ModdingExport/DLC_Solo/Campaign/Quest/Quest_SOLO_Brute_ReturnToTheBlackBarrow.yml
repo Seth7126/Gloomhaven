@@ -1,0 +1,22 @@
+Parser: Quest
+ID: Quest_SOLO_Brute_ReturnToTheBlackBarrow
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_Brute_ReturntoBB
+UnlockCondition:
+    - RequiredHeroes: 
+        BruteID: 5
+RequiredCharacters:
+  - Character: BruteID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_Brute_ReturnToTheBlackBarrow   
+
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [1245, 934]
+
+    ScenarioPool: 
+      - [Scenario_SOLO_Brute_ReturnToTheBlackBarrow, 100]

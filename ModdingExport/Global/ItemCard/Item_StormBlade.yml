@@ -1,0 +1,22 @@
+Parser: ItemCard
+ID: 78
+StringID: StormBladeID
+Name: $ITEM_NAME_StormBlade$
+Art: Storm Blade
+TotalInGame: 2
+Cost: 30
+Slot: OneHand 
+Rarity: Rare
+Usage: Unrestricted
+Trigger: SingleTarget
+Consumes: Air
+Data: 
+    Overrides:
+        OAttack:
+            Strength: 2
+    CompareAbility:
+        AbilityType: Attack
+        IsMelee: True
+        Filter: Enemy
+Layout: 
+    - Row: $Item_StormBlade$

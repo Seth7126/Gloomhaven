@@ -1,0 +1,7 @@
+Parser: Perk
+ID: Quartermaster06
+Name: PERK_Quartermaster_06
+Description: PERK_Quartermaster_06_Desc
+CharacterID: QuartermasterID
+Available: 1
+CardsToAdd: [AMC_Pierce3_R,AMC_Pierce3_R]

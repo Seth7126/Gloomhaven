@@ -1,0 +1,23 @@
+Parser: Achievement
+ID: Achievement_Summoner_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Summoner_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Summoner_1_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        SummonerID: 1  
+AchievementCondition:
+       
+    - Targets:
+        CharacterIDs: [IronBeastID, ThornShooterID, ShadowWolfID, LavaGolemID, GiantBatID, LivingBombID, SlimeSpiritID, RockColossusID, HealingSpriteID, NailSphereID, VoidEaterID, BlackUnicornID]
+        Filter: ReceiveDamage
+        Value: 40        
+
+
+TreasureTables: [TT_Achievement_Summoner]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 293
+
+ 

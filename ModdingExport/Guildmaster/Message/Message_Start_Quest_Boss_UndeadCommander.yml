@@ -1,0 +1,15 @@
+Parser: Message
+Name: Start_Quest_Boss_UndeadCommander
+DialogueLines:
+    - Text: Message_Start_Quest_Boss_UndeadCommander_1
+      Character: Merchant
+    - Text: Message_Start_Quest_Boss_UndeadCommander_2
+      Character: Trainer
+      CameraLocation: [1814, 312]     
+    - Text: Message_Start_Quest_Boss_UndeadCommander_3
+      Character: Merchant
+
+MapMessageTrigger: Map
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Elementalist_3
+    - CompletedQuest: Quest_Story_Soothsinger_3    

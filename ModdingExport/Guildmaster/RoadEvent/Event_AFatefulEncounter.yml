@@ -1,0 +1,53 @@
+Parser: RoadEvent
+ID: AFatefulEncounterID
+LocKey: $ROAD_EVENT_A_FATEFUL_ENCOUNTER$
+Screens:
+    Decision:
+        Text: EVENT_AFatefulEncounter
+        Options:
+            A:
+                Text: EVENT_AFatefulEncounter_A
+                Next: Wait
+            B:
+                Text: EVENT_AFatefulEncounter_B
+                TreasureTables: AFatefulEncounter_Take
+                Next: Take
+    Wait:
+        Text: EVENT_AFatefulEncounter_Wait
+        Options:
+            A:
+                Text: EVENT_AFatefulEncounter_Wait_A
+                TreasureTables: AFatefulEncounter_Wait
+                Next: Wait2
+    Wait2:
+        Gained:
+            Condition: Curse
+            EnemyCondition: Poison
+            Screen:
+                Text: EVENT_AFatefulEncounter_Wait_Curse
+                End: True
+        Gained:
+            Condition: Muddle
+            Gold: True
+            Screen:
+                Text: EVENT_AFatefulEncounter_Wait_Gold
+                End: True
+        Gained:
+            Condition: Wound
+            XP: True
+            Screen:
+                Text: EVENT_AFatefulEncounter_Wait_XP
+                End: True
+    Take:
+        Gained:
+            Condition: Muddle
+            Damage: True
+            Screen:
+                Text: EVENT_AFatefulEncounter_Take_Muddle
+                End: True
+        Gained:
+            Gold: True
+            Screen:
+                Text: EVENT_AFatefulEncounter_Take_Gold
+                End: True
+

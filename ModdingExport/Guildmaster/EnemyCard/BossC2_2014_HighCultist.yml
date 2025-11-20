@@ -1,0 +1,21 @@
+Parser: EnemyCard
+ID: 2014
+Initiative: 73
+Shuffle: False
+Data:
+    Abilities:
+        Heal1:
+            Heal: 2
+            Target: -1
+            AnimOverload: Heal
+            TargetIsBase: True
+            ShowTarget: False
+            Filter: [Self, Ally]
+            Text: "$Target_SelfAndAllAlliesWithinRange$"
+    Consumes:
+        CLight:
+            Elements: Light
+            AbilityOverrides:
+                CDarkMuddle:
+                    ParentName: Heal1
+                    Conditions: Bless

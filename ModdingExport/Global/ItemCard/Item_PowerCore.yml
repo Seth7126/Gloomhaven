@@ -1,0 +1,24 @@
+Parser: ItemCard
+ID: 132
+StringID: PowerCoreID
+Name: $ITEM_NAME_PowerCore$
+Art: Power Core
+TotalInGame: 1
+Cost: 75
+Slot: SmallItem 
+Rarity: Rare
+Usage: Consumed
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        ASummon:
+            Summon: SteelConstructID
+            AnimOverload: Summon
+Layout:
+    - Active:
+        Ability: ASummon
+        Icon: Summon
+        Layout:
+            - Summon:
+                Ability: ASummon
+                SummonName: $SteelConstruct$

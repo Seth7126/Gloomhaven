@@ -1,0 +1,12 @@
+Parser: Message
+Name: Start_Quest_Travel_Keyport
+DialogueLines:
+    - Text: Message_Start_Quest_Travel_Keyport_1
+      Character: Trainer
+      CameraLocation: [286, 336]
+    - Text: Message_Start_Quest_Travel_Keyport_2
+      Character: Trainer
+
+MapMessageTrigger: Map
+UnlockCondition:
+    - UnlockedVillage: ShimmeringShallows

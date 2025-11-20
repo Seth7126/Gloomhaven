@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_Trophy48
+LocalisedName: $TROPHY_ACHIEVEMENT_48$
+LocalisedDescription: $TROPHY_ACHIEVEMENT_48_Desc$
+AchievementCondition:
+    - Targets:
+        CharacterIDs: DoomstalkerID    
+        Filter: Kill
+        Conditions:
+            Target: [Doom]
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Achievement_Trophy48]
+AchievementType: Trophy
+AchievementLevel: 0
+AchievementOrderId: 4048

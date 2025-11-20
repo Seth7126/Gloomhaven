@@ -1,0 +1,23 @@
+Parser: Achievement
+ID: Achievement_Hatchet_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Hatchet_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Hatchet_1_Desc$
+#The Hatchet kills 30 Enemies with their Favourite
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        HatchetID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: HatchetID    
+        Filter: Kill
+        HasFavorite: true
+        Value: 30
+
+
+TreasureTables: [TT_Achievement_Hatchet]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 302
+ 

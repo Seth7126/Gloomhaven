@@ -1,0 +1,32 @@
+Parser: Quest
+ID: Quest_Travel_Spitepeak
+Chapter: 2
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Spitepeak_1  
+      Character: Enchantress
+    - Text: Message_End_Quest_Travel_Spitepeak_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Spitepeak_3
+      Character: Merchant
+
+      
+UnlockRevealFoWSphere:
+    - MapLocation: [1721,1254]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1721,1254]
+      Radius: 18
+CompletionRewards: TT_Quest_Travel_Spitepeak
+LoadoutImageId: CA_DF_05_Undead
+UnlockCondition:
+    - UnlockedVillage: Rockfall
+    - Chapter: [2,1]    
+StartingVillage: Rockfall
+EndingVillage: Spitepeak
+#EventChance:
+#EventPool:
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Spitepeak, 100]

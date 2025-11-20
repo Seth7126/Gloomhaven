@@ -1,0 +1,10 @@
+Parser: EnemyCard
+ID: 2006
+Initiative: 99
+Shuffle: True
+Data:
+    Abilities: 
+        ANull:
+            Null: True
+            Text: "$Campaign_SiegeCannon$"
+            TextOnly: True

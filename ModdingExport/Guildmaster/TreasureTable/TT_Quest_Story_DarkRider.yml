@@ -1,0 +1,5 @@
+Parser: TreasureTable
+TT_Quest_Story_DarkRider:
+  Item: HornedHelmID
+  EnhancementSlots: 1
+  

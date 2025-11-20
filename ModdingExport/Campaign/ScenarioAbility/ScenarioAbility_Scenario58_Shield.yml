@@ -1,0 +1,12 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_58_Shield
+ScenarioAbility:
+    AActive:
+        AddActiveBonus:
+            Null: True
+        ActiveBonus:
+            Duration: Persistent
+            ListLayoutOverride: [$ScenarioAbility_58_Shield$, Shield]
+        AnimOverload: None
+        AutoTrigger: True
+        Filter: Self

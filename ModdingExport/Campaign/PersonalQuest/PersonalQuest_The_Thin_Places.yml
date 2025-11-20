@@ -1,0 +1,56 @@
+Parser: PersonalQuest
+ID: PERSONALQUEST_The_Thin_Places
+LocalisedName: PERSONALQUEST_The_Thin_Places
+LocalisedDescription: PERSONALQUEST_The_Thin_Places_Desc
+LocalisedObjectiveDescription: PERSONALQUEST_The_Thin_Places_Objective_Desc
+LocalisedObjectiveTitle: PERSONALQUEST_The_Thin_Places_Objective_PROGRESS_TOOLTIP
+PersonalQuestCondition:
+#Complete six side scenarios (scenario number > 51).
+    - Required:
+        CompletedQuest: 6
+    - CompletedQuest: Quest_Campaign_052
+    - CompletedQuest: Quest_Campaign_053
+    - CompletedQuest: Quest_Campaign_054
+    - CompletedQuest: Quest_Campaign_055
+    - CompletedQuest: Quest_Campaign_056
+    - CompletedQuest: Quest_Campaign_057
+    - CompletedQuest: Quest_Campaign_058
+    - CompletedQuest: Quest_Campaign_059
+    - CompletedQuest: Quest_Campaign_060
+    - CompletedQuest: Quest_Campaign_061
+    - CompletedQuest: Quest_Campaign_062
+    - CompletedQuest: Quest_Campaign_063
+    - CompletedQuest: Quest_Campaign_064
+    - CompletedQuest: Quest_Campaign_065
+    - CompletedQuest: Quest_Campaign_066
+    - CompletedQuest: Quest_Campaign_067
+    - CompletedQuest: Quest_Campaign_068
+    - CompletedQuest: Quest_Campaign_069
+    - CompletedQuest: Quest_Campaign_070
+    - CompletedQuest: Quest_Campaign_071
+    - CompletedQuest: Quest_Campaign_072
+    - CompletedQuest: Quest_Campaign_073
+    - CompletedQuest: Quest_Campaign_074
+    - CompletedQuest: Quest_Campaign_075
+    - CompletedQuest: Quest_Campaign_076
+    - CompletedQuest: Quest_Campaign_077
+    - CompletedQuest: Quest_Campaign_078
+    - CompletedQuest: Quest_Campaign_079
+    - CompletedQuest: Quest_Campaign_080
+    - CompletedQuest: Quest_Campaign_081
+    - CompletedQuest: Quest_Campaign_082
+    - CompletedQuest: Quest_Campaign_083
+    - CompletedQuest: Quest_Campaign_084
+    - CompletedQuest: Quest_Campaign_085
+    - CompletedQuest: Quest_Campaign_086
+    - CompletedQuest: Quest_Campaign_087
+    - CompletedQuest: Quest_Campaign_088
+    - CompletedQuest: Quest_Campaign_089
+    - CompletedQuest: Quest_Campaign_090
+    - CompletedQuest: Quest_Campaign_091
+    - CompletedQuest: Quest_Campaign_092
+    - CompletedQuest: Quest_Campaign_093
+    - CompletedQuest: Quest_Campaign_094
+    - CompletedQuest: Quest_Campaign_095
+
+TreasureTables: [TT_PERSONALQUEST_The_Thin_Places]

@@ -1,0 +1,46 @@
+Parser: CityEvent
+ID: Event_City_Campaign_41ID
+# LocKey: $CITY_EVENT_41$
+LocKey: $CITY_EVENT$
+Screens:
+    Decision:
+        InParty:
+            ClassIDs: [BeastTyrantID]
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_41_INTRO"
+                Options:
+                    A:
+                        Text: "EVENT_CITY_CAMPAIGN_41_OPTION_A"
+                        Next: EVENT_CITY_CAMPAIGN_41_OPTION_A1
+                    B:
+                        Text: "EVENT_CITY_CAMPAIGN_41_OPTION_B"
+                        Next: EVENT_CITY_CAMPAIGN_41_OPTION_B
+        Text: "EVENT_CITY_CAMPAIGN_41_INTRO"
+        Options:
+            A:
+                Text: "EVENT_CITY_CAMPAIGN_41_OPTION_A"
+                Next: EVENT_CITY_CAMPAIGN_41_OPTION_A2
+            B:
+                Text: "EVENT_CITY_CAMPAIGN_41_OPTION_B"
+                Next: EVENT_CITY_CAMPAIGN_41_OPTION_B
+    EVENT_CITY_CAMPAIGN_41_OPTION_A1:
+        MinGold:
+            Amount: 10
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_41_RESULT_A_A"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_41_OPTION_A_A
+                End: True        
+        Text: "EVENT_CITY_CAMPAIGN_41_RESULT_A_C"
+        End: Reuse
+    EVENT_CITY_CAMPAIGN_41_OPTION_A2:
+        MinGold:
+            Amount: 25
+            Screen:
+                Text: "EVENT_CITY_CAMPAIGN_41_RESULT_A_B"
+                TreasureTables: TT_EVENT_CITY_CAMPAIGN_41_OPTION_A_B
+                End: True        
+        Text: "EVENT_CITY_CAMPAIGN_41_RESULT_A_C"
+        End: Reuse
+    EVENT_CITY_CAMPAIGN_41_OPTION_B:
+        Text: "EVENT_CITY_CAMPAIGN_41_RESULT_B"
+        End: True

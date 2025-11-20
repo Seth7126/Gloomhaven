@@ -1,0 +1,11 @@
+Parser: HeroSummon
+ID: WarriorSpiritID
+LocKey: $WarriorSpirit$
+Model: WarriorSpirit
+Health:
+    Amount: 4
+Move:
+    Amount: 1
+Attack:
+    Amount: 3
+Range: 1

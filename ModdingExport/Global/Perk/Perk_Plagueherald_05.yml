@@ -1,0 +1,8 @@
+Parser: Perk
+ID: Plagueherald05
+Name: PERK_Plagueherald_05
+Description: PERK_Plagueherald_05_Desc
+CharacterID: PlagueheraldID
+Available: 3
+CardsToAdd: [AMC_Air_P1]
+

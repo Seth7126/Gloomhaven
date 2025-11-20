@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 96
+StringID: RocketBootsID
+Name: $ITEM_NAME_RocketBoots$
+Art: Rocket Boots
+TotalInGame: 2
+Cost: 80
+Slot: Legs 
+Rarity: Rare
+Usage: Spent
+Trigger: SingleAbility
+Data:     
+    Overrides:
+        OMove:
+            Strength: 3
+            Jump: True
+    CompareAbility:
+        AbilityType: Move
+Layout: 
+    - Row: $Item_RocketBoots$

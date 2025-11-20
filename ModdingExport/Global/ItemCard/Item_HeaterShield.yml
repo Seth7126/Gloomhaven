@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 8
+StringID: HeaterShieldID
+Name: $ITEM_NAME_HeaterShield$
+Art: Heater Shield
+TotalInGame: 2
+Cost: 20
+Slot: OneHand 
+Rarity: Rare
+Usage: Spent
+Trigger: OnAttacked
+ProsperityRequirement: 1
+Data: 
+    ShieldValue: 1
+    CompareAbility:
+        AbilityType: Attack
+        Filter: Enemy
+Layout: 
+    - Row: $Item_HeaterShield$

@@ -1,0 +1,21 @@
+Parser: Achievement
+ID: Achievement_Hatchet_3
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Hatchet_3$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Hatchet_3_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        HatchetID: 1  
+AchievementCondition:
+    - Targets:
+        CharacterIDs: HatchetID
+        Filter: Consume
+        Elements: [Air]
+        Value: 40
+
+TreasureTables: [TT_Achievement_Hatchet]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 302
+ 

@@ -1,0 +1,25 @@
+Parser: ItemCard
+ID: 148
+StringID: DoctorsCoatID
+Name: $ITEM_NAME_DoctorsCoat$
+Art: Doctors Coat
+TotalInGame: 1
+Cost: 50
+Slot: Body 
+Rarity: Rare
+Usage: Spent
+Trigger: DuringOwnTurn
+ValidEquipCharacterClassIDs: SawbonesID
+Tradeable: False
+Data: 
+    Abilities:
+        AGiveSupply:
+            GiveSupplyCard: 417
+            Filter: Self
+            PreviewEffectText: <sprite name="Sawbone">
+    ItemRequirements:
+        ActorHasPerformedValidAbilityTypesThisTurn: ">= 1"
+        AbilityTypes: GiveSupplyCard
+Layout: 
+    - Row: "$Item_DoctorsCoat$"
+    - Row: "<size=50%> "

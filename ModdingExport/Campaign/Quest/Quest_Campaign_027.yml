@@ -1,0 +1,19 @@
+Parser: Quest
+ID: Quest_Campaign_027
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_027
+LoadoutImageId: CR_DF_03_Demon
+UnlockCondition:
+    - CompletedQuest: Quest_Campaign_019
+BlockCondition:
+    - CompletedQuest: Quest_Campaign_035
+    - NotCompletedQuest: Quest_Campaign_021
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: UnnamedLocation
+
+Scenario:
+    MapLocation: [922, 880]
+    ScenarioPool: 
+      - [Scenario_Campaign_027, 100]

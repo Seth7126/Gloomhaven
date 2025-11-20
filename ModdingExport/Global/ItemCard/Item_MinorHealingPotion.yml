@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 12
+StringID: MinorHealingPotionID
+Name: $ITEM_NAME_MinorHealingPotion$
+Art: Minor Healing Potion
+TotalInGame: 4
+Cost: 10
+Slot: SmallItem 
+Rarity: Common
+Usage: Consumed
+Trigger: DuringOwnTurn
+ProsperityRequirement: 1
+Data: 
+    Abilities:
+        AHeal:
+            Heal: 3
+            Filter: Self
+Layout: 
+    - Row: $Item_MinorHealingPotion$

@@ -1,0 +1,16 @@
+Parser: RoadEvent
+ID: Event_Road_JOTL_21ID
+LocKey: $ROAD_EVENT$
+Expansion: JOTL
+RequiredClass: VoidwardenID
+Screens:
+    Decision:
+        Text: "Event_Road_JOTL_21_INTRO"
+        Options:
+            A:
+                Text: "Event_Road_JOTL_21_OPTION_A"
+                TreasureTables: TT_Event_Road_JOTL_21_OPTION_A
+                Next: Event_Road_JOTL_21_OPTION_A
+    Event_Road_JOTL_21_OPTION_A:
+        Text: "Event_Road_JOTL_21_RESULT_A"
+        End: True

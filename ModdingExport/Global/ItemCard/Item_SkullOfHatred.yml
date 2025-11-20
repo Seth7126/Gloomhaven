@@ -1,0 +1,20 @@
+Parser: ItemCard
+ID: 119
+StringID: SkullOfHatredID
+Name: $ITEM_NAME_SkullofHatred$
+Art: Skull of Hatred
+TotalInGame: 1
+Cost: 50
+Slot: OneHand 
+Rarity: Relic
+Usage: Consumed
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        ACurse:
+            Curse: True
+            Range: 1
+            Target: -1
+            Filter: Enemy
+Layout: 
+    - Row: $Item_SkullOfHatred$

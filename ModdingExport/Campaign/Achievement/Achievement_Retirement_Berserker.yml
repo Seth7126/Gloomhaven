@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Retirement_Berserker
+LocalisedName: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+LocalisedDescription: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+UnlockCondition:
+    - Retirement: BerserkerID
+AchievementCondition:
+    - Retirement: BerserkerID
+TreasureTables: [TT_Achievement_Retirement_Berserker]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 2107

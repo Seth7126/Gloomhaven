@@ -1,0 +1,16 @@
+Parser: Achievement
+ID: Achievement_1_1_SoothsingerItem
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_1_SoothsingerItem$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_1_SoothsingerItem_Desc$
+   
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes: 
+        SoothsingerID: 1     
+AchievementCondition:
+    - CompletedQuest: Quest_Story_Soothsinger_2
+TreasureTables: [TT_Achievement_1_1_SoothsingerItem]
+AchievementType: Mercenaries
+AchievementLevel: 0  
+AchievementOrderId: 202
+

@@ -1,0 +1,28 @@
+Parser: Quest
+ID: Quest_Travel_TempleOfTheAcorn
+Chapter: 1
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_TempleOfTheAcorn_1
+      Character: Priestess
+    - Text: Message_End_Quest_Travel_TempleOfTheAcorn_2
+      Character: Priestess 
+UnlockRevealFoWSphere:
+    - MapLocation: [701,964]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [701,964]
+      Radius: 18
+CompletionRewards: [TT_Quest_Travel_TempleOfTheAcorn]
+LoadoutImageId: CR_NE_02_Undead
+RequiredCharacters:
+  - Character: CragheartID   
+UnlockCondition:
+    - UnlockedVillage: Shaderest
+StartingVillage: Shaderest
+EndingVillage: TempleOfTheAcorn
+# EventChance:
+# EventPool:
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_TempleOfTheAcorn, 100]

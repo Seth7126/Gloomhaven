@@ -1,0 +1,13 @@
+Parser: BattleGoal
+ID: BattleGoal_Hoarder
+LocalisedName: BATTLEGOAL_Hoarder
+LocalisedDescription: BATTLEGOAL_Hoarder_Desc
+#Loot five or more money tokens during the scenario
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: Loot
+        LootType: [MoneyToken]
+        Value: 5
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

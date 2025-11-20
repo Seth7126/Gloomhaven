@@ -1,0 +1,33 @@
+Parser: Quest
+ID: Quest_Travel_Silverwick
+Chapter: 2
+QuestType: Travel
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Travel_Silverwick_1
+      Character: Narrator
+    - Text: Message_End_Quest_Travel_Silverwick_2
+      Character: Merchant
+    - Text: Message_End_Quest_Travel_Silverwick_3
+      Character: Enchantress
+    - Text: Message_End_Quest_Travel_Silverwick_4
+      Character: Enchantress
+      CameraLocation: [1522,303]      
+UnlockRevealFoWSphere:
+    - MapLocation: [1525,1039]
+      Radius: 14
+CompleteRevealFoWSphere:
+    - MapLocation: [1525,1039]
+      Radius: 18
+CompletionRewards: TT_Quest_Travel_Silverwick
+LoadoutImageId: LA_Cave_04
+UnlockCondition:
+    - UnlockedVillage: BlackrockAsylum
+    - Chapter: [2,1]    
+StartingVillage: BlackrockAsylum
+EndingVillage: Silverwick
+#EventChance:
+#EventPool:
+
+Scenario:
+    PathDistancePercentage: 0.85
+    ScenarioPool: [Scenario_Travel_Silverwick, 100]

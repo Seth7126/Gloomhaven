@@ -1,0 +1,34 @@
+Parser: Village
+ID: TheBuriedTrenches
+LocalisedName: $TheBuriedTrenches$
+LocalisedDescription: $ADVENTURE_LOCATION_TheBuriedTrenches_Desc$
+Mesh: Ca24_BuriedTrenches_MAT
+MapLocation: [1242, 973]
+JobLocations: 
+    - [1338, 915]
+    - [1307, 1005]
+    - [1171, 921]
+UnlockCondition:
+    - Chapter: [4,1]
+    - CompletedQuest: Quest_Travel_TheBuriedTrenches
+Quests: 
+#TRAVEL
+    - Quest_Travel_TheShiftingSands
+
+#JOBS-CRYPT
+    - Quest_Job_Chapter_1_1_Undead_Crypt
+    - Quest_Job_Chapter_1_1_Undead_Bandit_Crypt 
+    - Quest_Job_Snakes_Undead_Crypt    
+    - Quest_Job_Mysterious_Maze
+    - Quest_Job_AnEyeForAnEye
+    - Quest_Job_DemonicDissent
+    - Quest_Job_TheVaultsOfPus    
+    - Quest_Job_DungeonOfMisfortune
+#JOBS-CAVE
+    - Quest_Job_Vermling_Cave
+    - Quest_Job_TwoTribes
+    - Quest_Job_CallOfTheWild
+    - Quest_Job_DemonAltars
+    - Quest_Job_FireCult
+    - Quest_Job_SavvasAid
+    - Quest_Job_SavvasInfighting  

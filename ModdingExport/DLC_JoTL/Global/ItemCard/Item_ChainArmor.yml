@@ -1,0 +1,19 @@
+Parser: ItemCard
+ID: 203
+StringID: ChainArmorID
+Name: $ITEM_NAME_ChainArmor$
+Art: Chain Armor
+TotalInGame: 2
+Cost: 30
+Slot: Body
+Rarity: Rare
+Usage: Spent
+Trigger: DuringOwnTurn
+Data: 
+    Abilities:
+        BShield:
+            Shield: 1
+            ActiveBonusDuration: Round
+            AnimOverload: PowerUpShield
+Layout: 
+    - Row: $Item_ChainArmor$

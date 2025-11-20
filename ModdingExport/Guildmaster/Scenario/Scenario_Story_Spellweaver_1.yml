@@ -1,0 +1,85 @@
+Parser: Scenario
+ID: Scenario_Story_Spellweaver_1
+BaseBiome: Forest
+BaseTone: ForestFairy
+MonsterFamily: ForestDenizens
+ScenarioMeshes: [DGN_Forest_12_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SPELLWEAVER_1_START_1
+          Character: Enchantress
+    DialogueLines:
+        - Text: SCENARIO_STORY_SPELLWEAVER_1_START_2
+          Character: Enchantress
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SPELLWEAVER_1_SUCCESS_1
+          Character: Narrator
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_SPELLWEAVER_1_SUCCESS_2
+          Character: Narrator
+ScenarioLayout:
+    ScenarioModifiers:
+        SM1:
+            Type: TriggerAbility
+            TriggerPhase: StartTurn
+            IsPositive: True
+            ScenarioAbilityID: ScenarioAbility_AttackBuffRanged1_Self
+            ApplyToEachActorOnce: True
+            ConditionDecrementTrigger: Never
+            Filter:
+                ActorType: [Player]                    
+                PlayerClasses: [SpellweaverID]
+        SM2:
+            Type: TriggerAbility
+            TriggerPhase: StartTurn
+            ScenarioAbilityID: ScenarioAbility_AttackBuffRanged1_Self
+            ApplyToEachActorOnce: True
+            ConditionDecrementTrigger: Never
+            Filter:
+                ActorType: [Enemy]                    
+                EnemyClasses: [ForestImpID, ForestImpEliteID]
+
+        SM3:
+            Type: SetElements
+            TriggerPhase: StartRound
+            StrongElements: Ice
+
+
+    Objectives:
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                PlayerClasses: [SpellweaverID]
+            ObjectiveDescription: Scenario_Story_Spellweaver_Character_Fail_Objective   
+    Rooms:
+        Room1:
+            Threat: 100
+            PossibleRooms:
+                - EmptyWindingCorridor:
+                    MonsterGroup: ImpsHoundsSnakesBears
+                    Theme: FungalWasteland
+                    Traps: [100,100]
+                     
+        Room2:
+            Threat: 100
+            PossibleRooms:
+                - LongEmptyCorridor: 
+                    MonsterGroup: ImpsHoundsSnakesBears
+                    Theme: DruidsGrove
+                    OneHexObstacles: [100, 100, 100] 
+                    Traps: [100,100]
+        Room3:
+            Threat: 100
+            PossibleRooms:
+                - MediumEmptyRoom: 
+                    MonsterGroup: ImpsHoundsSnakesBears
+                    Theme: DruidsGrove
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100,100]

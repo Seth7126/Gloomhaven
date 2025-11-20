@@ -1,0 +1,8 @@
+Parser: VisibilitySphere
+ID: VisSphere_Eastgrove~Eaglecrest
+UnlockCondition:
+    - UnlockedVillage: Eastgrove
+    - UnlockedVillage: Eaglecrest
+SphereDefinitions:
+    - MapLocation: [1229,124]
+      Radius: 18

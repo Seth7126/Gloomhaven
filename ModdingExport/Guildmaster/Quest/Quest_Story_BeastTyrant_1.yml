@@ -1,0 +1,37 @@
+Parser: Quest
+ID: Quest_Story_BeastTyrant_1
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+UnlockDialogueLines:
+    - Text: Message_Complete_Achievement_1_1_BeastTyrantReachLevel2_1
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_BeastTyrantReachLevel2_2
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_BeastTyrantReachLevel2_3
+      Character: Merchant
+    - Text: Message_Complete_Achievement_1_1_BeastTyrantReachLevel2_4
+      Character: Trainer
+      CameraLocation: [1338, 791]      
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_BeastTyrant_1_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_BeastTyrant_1_2
+      Character: Trainer
+      CameraLocation: [1566, 754]
+CompletionRewards: TT_Quest_Story_BeastTyrant_1
+LoadoutImageId: SE_Rot_01
+UnlockRevealFoWSphere:
+    - MapLocation: [1338, 791]
+      Radius: 14
+UnlockCondition:
+    - Chapter: [1,1]
+    - CompletedAchievement: Achievement_1_1_BeastTyrantReachLevel2    
+RequiredCharacters:
+  - Character: BeastTyrantID
+    Level: 2
+StartingVillage: Sweetwater
+EndingVillage: Sweetwater
+Scenario:
+    MapLocation: [1338, 791]
+    ScenarioPool: [Scenario_Story_BeastTyrant_1, 100]

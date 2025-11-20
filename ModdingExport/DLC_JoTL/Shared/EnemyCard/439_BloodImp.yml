@@ -1,0 +1,14 @@
+Parser: EnemyCard
+ID: 11439
+Initiative: 42
+Shuffle: False
+Data:
+    Abilities:
+        Move1:
+            Move: 1
+        Heal1:
+            Heal: 2
+            Range: 3
+            RangeIsBase: True
+            Filter: [Self, Ally]
+            AnimOverload: Heal

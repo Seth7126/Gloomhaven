@@ -1,0 +1,6 @@
+Parser: TreasureTable
+TT_Quest_Story_Scoundrel_3:
+  Group:
+    PerkPoint: 1
+    GiveToCharacter: ScoundrelID    
+  

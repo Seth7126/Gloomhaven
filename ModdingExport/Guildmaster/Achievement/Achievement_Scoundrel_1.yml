@@ -1,0 +1,24 @@
+Parser: Achievement
+ID: Achievement_Scoundrel_1
+LocalisedName: $ADVENTURE_ACHIEVEMENT_Scoundrel_1$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_Scoundrel_1_Desc$
+ 
+UnlockCondition:
+    - Chapter: [1,1]
+    - RequiredHeroes:  
+        ScoundrelID: 1  
+AchievementCondition:
+    
+    - Targets:
+        CharacterIDs: ScoundrelID    
+        Filter: UseAbility
+        AbilityTypes: [Loot]
+        Value: 30
+   
+
+
+TreasureTables: [TT_Achievement_Scoundrel]
+AchievementType: Mercenaries
+AchievementLevel: 0 
+AchievementOrderId: 284
+ 

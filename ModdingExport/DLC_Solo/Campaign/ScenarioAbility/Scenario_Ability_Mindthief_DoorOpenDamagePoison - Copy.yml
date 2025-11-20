@@ -1,0 +1,9 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_Mindthief_DoorOpenDamagePoison
+ScenarioAbility:
+    TDamage:
+        Damage: 5
+        Filter: Self
+        AutoTrigger: True
+        SkipAnim: True
+        Conditions: Poison

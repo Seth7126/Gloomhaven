@@ -1,0 +1,25 @@
+Parser: Quest
+ID: Quest_Relic_DrakescaleArmor
+Chapter: 2
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_DrakescaleArmor_Unlock_1
+      Character: Trainer
+    - Text: QUEST_RELIC_DrakescaleArmor_Unlock_2
+      Character: Trainer
+    - Text: QUEST_RELIC_DrakescaleArmor_Unlock_3
+      Character: Trainer
+      CameraLocation: [1760, 644] 
+LoadoutImageId: LA_CryptRuin_01
+UnlockRevealFoWSphere:
+    - MapLocation: [1760, 644]
+      Radius: 14
+UnlockCondition:
+    - CompletedAchievement: Achievement_2_1_HealPoisonWound
+StartingVillage: TheHole
+EndingVillage: TheHole
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1760, 644]
+    ScenarioPool: [Scenario_Relic_DrakescaleArmor, 100]

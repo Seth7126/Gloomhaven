@@ -1,0 +1,15 @@
+Parser: BattleGoal
+ID: BattleGoal_Pickpocket
+LocalisedName: BATTLEGOAL_Pickpocket
+LocalisedDescription: BATTLEGOAL_Pickpocket_Desc
+#Collect one or more money tokens by performing a Loot action while you are adjacent to two or more monsters.
+PerkPoints: 1
+BattleGoalCondition:
+    - Targets:
+        Filter: LootAdjacent
+        LootType: MoneyToken
+        AdjacentTo: Enemy
+        Targets: 2
+        Value: 1
+        SubFilter: Scenario
+TreasureTables: [TT_Battle_Goals_1]

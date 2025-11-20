@@ -1,0 +1,71 @@
+Parser: Scenario
+ID: Scenario_Story_InoxBodyguard
+BaseBiome: Dungeon
+MonsterFamily: Demon_SunNight
+ScenarioMeshes: [GUI_MapIcon_BossLairs-B6_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_INOXBODYGUARD_START_1
+          Character: Narrator
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_STORY_INOXBODYGUARD_SUCCESS_1
+          Character: Narrator
+ScenarioLayout:
+    ScenarioModifiers:
+        SM1:
+            Type: SetElements
+            TriggerPhase: StartRound
+            StrongElements: Dark
+    Objectives:
+        KillAllEnemies: Win      
+        XCharactersDie:
+            Result: Lose
+            KillAmount: [1,1,1,1]               
+            Filter:
+                ActorType: Player            
+                PlayerClasses: [BruteID, ScoundrelID]
+            ObjectiveDescription: Scenario_Story_InoxBodyguard_Fail_Objective 
+    Rooms:
+        Room1:
+            Threat: 150
+            PossibleRooms:
+                - HugeEmptyRoom:
+                    MonsterGroup: NightDemons_PlusInox
+                    Theme: Torture
+                    Traps: [100,100]
+        Room2:
+            Threat: 100
+            PossibleRooms:
+                - LongEmptyCorridor: 
+                    MonsterGroup: NightDemons_PlusInox
+                    Theme: Torture
+                    OneHexObstacles: [100, 100, 100] 
+                    Traps: [100,100]
+        Room3:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_STORY_INOXBODYGUARD_ROOM_3_1
+                      Character: Narrator           
+                    - Text: SCENARIO_STORY_INOXBODYGUARD_ROOM_3_2
+                      Character: InoxBodyguard            
+            Threat: 100
+            PossibleRooms:
+                - LargeEmptyRoom: 
+                    MonsterGroup: NightDemons
+                    Theme: Torture
+                    TwoHexObstacles: [100]
+                    GoldPiles: [100,100]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                                - SpawnClasses: [InoxBodyguardID, InoxBodyguardID, InoxBodyguardID, InoxBodyguardID]
+                    

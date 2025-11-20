@@ -1,0 +1,34 @@
+Parser: RoadEvent
+ID: TheWomanOftheWoodsID
+LocKey: $ROAD_EVENT_THE_WOMAN_OF_THE_WOODS$
+Screens:
+    Decision:
+        Text: EVENT_The WomanoftheWoods
+        Options:
+            A:
+                Text: EVENT_The WomanoftheWoods_A
+                TreasureTables: SmallGold
+                Next: GotGold
+            B:
+                Text: EVENT_The WomanoftheWoods_B
+                TreasureTables: SmallXP
+                Next: GotXP
+            C:
+                Text: EVENT_The WomanoftheWoods_C
+                TreasureTables: TheWomanOfTheWoods_Power
+                Next: GotPower
+            D:
+                Text: EVENT_The WomanoftheWoods_D
+                Next: Leave
+    GotGold:
+        Text: EVENT_The WomanoftheWoods_GotGold
+        End: True
+    GotXP:
+        Text: EVENT_The WomanoftheWoods_GotXP
+        End: True
+    GotPower:
+        Text: EVENT_The WomanoftheWoods_GotPower
+        End: True
+    Leave:
+        Text: EVENT_The WomanoftheWoods_Leave
+        End: True

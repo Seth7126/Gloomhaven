@@ -1,0 +1,27 @@
+Parser: Quest
+ID: Quest_SOLO_Cragheart_StoneDefense
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+LoadoutImageId: SOLO_Cragheart_StoneDefense
+NarrativeTextImageOverride:
+    - [Quest_SOLO_Cragheart_StoneDefense_INTRO_GH_1, SOLO_Cragheart_StoneDefense_INTRO_GH_1]
+    - [Quest_SOLO_Cragheart_StoneDefense_INTRO_GH_2, SOLO_Cragheart_StoneDefense_INTRO_GH_2]
+    - [Quest_SOLO_Cragheart_StoneDefense_INTRO_GH_3, SOLO_Cragheart_StoneDefense_INTRO_GH_3]
+    - [Quest_SOLO_Cragheart_StoneDefense_INTRO_GH_4, SOLO_Cragheart_StoneDefense_INTRO_GH_4]
+UnlockCondition:
+    - RequiredHeroes: 
+        CragheartID: 5
+RequiredCharacters:
+  - Character: CragheartID
+    Level: 5
+    CharacterCount: 1
+CompletionRewards: TT_Quest_SOLO_Cragheart_StoneDefense  
+
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+Scenario:
+    MapLocation: [1306, 607]
+
+    ScenarioPool: 
+      - [Scenario_SOLO_Cragheart_StoneDefense, 100]

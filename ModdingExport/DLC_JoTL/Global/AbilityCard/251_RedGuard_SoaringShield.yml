@@ -1,0 +1,75 @@
+Parser: AbilityCard
+Name: $ABILITY_CARD_SoaringShield$
+Character: RedGuardID
+ID: 11251
+Level: 9
+Initiative: 11
+Discard: [Lost,Discard]
+Data:
+    Top:
+        Abilities:
+            TMove:
+                Move:
+                    Amount: 3
+                    Jump: True
+            TAttack:
+                Attack: 4
+                Target: -1
+                Condition: Stun
+                MultiPassAttack: False
+                AnimOverload: RadialAttack
+        Infuse: Fire
+        XP: 1
+    Bottom:
+        Abilities:
+            BMove:
+                Move:
+                    Amount: 3
+                    Jump: True
+            BShield:
+                Shield:
+                    Amount: 2
+                    Enhancements: 1
+                Filter: Self
+                ActiveBonusDuration: Round
+                AnimOverload: PowerUp
+        Consumes:
+            BCAir:
+                Elements: Air
+                AbilityOverrides:
+                    BCAirBuff:
+                        ParentName: BShield
+                        Strength: 1
+                XP: 1
+Layout:
+    Top:
+        - Row: "<size=10%> "
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *TMove*"
+        - Row: "$Jump$ <sprite name=Jump>"
+        - Row: "<size=50%> "
+        - Row: "<b><size=130%>$Attack$ <sprite name=Attack> *TAttack*"
+        - Row: "$Stun$ <sprite name=Stun>"
+        - Row: "$Target_AllAdjacentEnemies$"
+        - Row: "<size=50%> "
+        - Row:
+            - ColumnWidths: "30,20,20"
+            - Column:
+            - Column:
+                - Infuse: Fire
+            - Column:
+                - XP: 1
+    Bottom:
+        - Row: "<b><size=130%>$Move$ <sprite name=Move> *BMove*"
+        - Row: "$Jump$ <sprite name=Jump>"
+        - Row: "<size=50%> "
+        - Active:
+            Ability: BShield
+            ListLayout: "<b><size=130%>$Shield$ <sprite name=Shield> *BShield*"
+            Layout: "<b><size=130%>$Shield$ <sprite name=Shield> *BShield* <size=100%><voffset=1>@BShield@"
+            Icon: "Shield"
+        - Row: "<size=20%> "
+        - Consume:
+            Name: BCAir
+            Text: "<nobr>+1 $Shield$ <sprite name=Shield></nobr>, <sprite name=XP1>"
+        - Row: "<size=20%> "
+        - Duration: Round

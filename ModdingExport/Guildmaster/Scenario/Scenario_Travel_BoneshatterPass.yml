@@ -1,0 +1,106 @@
+Parser: Scenario
+ID: Scenario_Travel_BoneshatterPass
+BaseBiome: Cave
+#BaseSubBiome: Ruined
+BaseTheme: Volcanic
+BaseTone: LavaLamp
+MonsterFamily: Bandit
+ScenarioMeshes: [DGN_Cave_Lava_MAT]
+ChestTreasureTables: [DefaultChest]
+ScenarioStartMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_BONESHATTERPASS_START_1
+          Character: Narrator
+        - Text: SCENARIO_TRAVEL_BONESHATTERPASS_START_2
+          Character: Trainer
+ScenarioCompleteMessage:
+    MessageLayoutType: 4
+    DialogueLines:
+        - Text: SCENARIO_TRAVEL_BONESHATTERPASS_SUCCESS_1
+          Character: Narrator
+        - Text: SCENARIO_TRAVEL_BLACKROCKASYLUM_SUCCESS_2
+          Character: Enchantress
+ScenarioLayout:
+    Objectives:
+        DestroyXObjects:
+            Result: Win        
+            DestroyAmount: [4,4,4,4]               
+            Filter:
+                ObjectClasses: [CrystalAltarID]
+            ObjectiveDescription: Scenario_Destroy_All_Crystal_Altars                   
+        
+    Rooms:
+        Room1:
+            Threat: 38
+            PossibleRooms:
+                - SmallEmptyRoom: 
+                    MonsterGroup: Demon_EarthFlame
+                    TerrainRubble: [100] 
+                    TerrainHotCoals: [100]
+        Room2:
+            RoomRevealedMessage:
+                MessageLayoutType: 4
+                DialogueLines:
+                    - Text: SCENARIO_TRAVEL_BONESHATTERPASS_ROOM_2_1
+                      Character: Narrator
+                    - Text: SCENARIO_TRAVEL_BONESHATTERPASS_ROOM_2_2
+                      Character: SavvasLavaflowElite
+                    - Text: SCENARIO_TRAVEL_BONESHATTERPASS_ROOM_2_3
+                      Character: SavvasLavaflowElite
+                    - Text: SCENARIO_TRAVEL_BONESHATTERPASS_ROOM_2_4
+                      Character: SavvasLavaflowElite
+                    - Text: SCENARIO_TRAVEL_BONESHATTERPASS_ROOM_2_5
+                      Character: Enchantress
+        
+            Threat: 38
+            PossibleRooms:
+                - EmptyRoomTileM:
+                    MonsterGroup: Demon_EarthFlame
+                    TerrainRubble: [100, 100, 100]
+                    TerrainHotCoals: [100, 100, 100, 100]
+                    Spawners:
+                        - SpawnerTriggerType: StartRound
+                          SpawnerActivationType: RoomRevealed
+                          LoopSpawnPattern: False
+                          SpawnRoundInterval: [1, 1, 1, 1]
+                          SpawnRoundEntries:
+                            Default:
+                              - SpawnClasses: [SavvasLavaflowEliteID,   SavvasLavaflowEliteID, SavvasLavaflowEliteID, SavvasLavaflowEliteID]
+        Room3:
+            ParentRoom: Room2        
+            Threat: 38
+            PossibleRooms:
+                - SmallEmptyRoom: 
+                    MonsterGroup: Demon_EarthOnly                 
+                    TerrainRubble: [100, 100]
+                    Objects:
+                        - [CrystalAltarID, 1, 1, 1, 1]
+        Room4:
+            ParentRoom: Room2        
+            Threat: 38
+            PossibleRooms:
+                - SmallEmptyRoom: 
+                    MonsterGroup: Demon_FlameOnly                
+                    TerrainHotCoals: [100, 100]
+                    Objects:
+                        - [CrystalAltarID, 1, 1, 1, 1]
+        Room5:
+            ParentRoom: Room2        
+            Threat: 38
+            PossibleRooms:
+                - SmallEmptyRoom: 
+                    MonsterGroup: FlameDemonsPlusEarth                 
+                    TerrainHotCoals: [100, 100]
+                    Objects:
+                        - [CrystalAltarID, 1, 1, 1, 1]
+        Room6:
+            ParentRoom: Room2        
+            Threat: 38
+            PossibleRooms:
+                - SmallEmptyRoom: 
+                    MonsterGroup: EarthDemonsPlusFlame                 
+                    TerrainRubble: [100, 100]
+                    Objects:
+                        - [CrystalAltarID, 1, 1, 1, 1]
+

@@ -1,0 +1,14 @@
+Parser: EnemyCard
+ID: 11374
+Initiative: 59
+Shuffle: False
+Data:
+    Abilities:
+        Attack1:
+            Attack: 0
+            Range: 3
+            Target: 2
+            RangeIsBase: True
+            TargetIsBase: True
+            Filter: Enemy
+            AnimOverload: RangedAttack  

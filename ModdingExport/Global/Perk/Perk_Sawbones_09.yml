@@ -1,0 +1,8 @@
+Parser: Perk
+ID: Sawbones09
+Name: PERK_Sawbones_09
+Description: PERK_Sawbones_09_Desc
+CharacterID: SawbonesID
+Available: 1
+CardsToAdd: [AMC_RefreshItem]
+

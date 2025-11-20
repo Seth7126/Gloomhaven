@@ -1,0 +1,12 @@
+Parser: EnemyCard
+ID: 640
+Initiative: 83
+Shuffle: False
+Data:
+    Abilities: 
+        Move1:
+            Move: -1
+        Attack1:
+            Attack: 1
+            Filter: Enemy
+    Infuse: Earth

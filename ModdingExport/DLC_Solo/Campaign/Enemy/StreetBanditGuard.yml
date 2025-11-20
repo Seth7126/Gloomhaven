@@ -1,0 +1,58 @@
+Parser: Enemy
+ID: StreetBanditGuardID
+LocKey: $BanditGuard$
+MonsterType: Monster
+StandeeLimit: 6
+Model: Bandit Guard
+PredominantlyMelee: True
+AbilityCards: [527606]
+# Base Stats
+Level0:
+    Health: 3
+    Move: 2
+    Attack: 1
+    Range: 1
+    Target: 1
+Level1:
+    Health: 4
+    Move: 2
+    Attack: 1
+    Range: 1
+    Target: 1
+Level2:
+    Health: 5
+    Move: 2
+    Attack: 2
+    Range: 1
+    Target: 1
+Level3:
+    Health: 6
+    Move: 3
+    Attack: 2
+    Range: 1
+    Target: 1
+Level4:
+    Health: 6
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+Level5:
+    Health: 9
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+Level6:
+    Health: 10
+    Move: 4
+    Attack: 3
+    Range: 1
+    Target: 1
+Level7:
+    Health: 11
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+

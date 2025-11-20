@@ -1,0 +1,70 @@
+Parser: TreasureTable
+TT_Chapter_1_1_Chest:
+    Group:
+        Gold:
+            Chance: 1
+            MinAmount: 10
+            MaxAmount: 25
+        Group: #Subgroup with 34 chance
+          Chance: 99
+          Item: SteelRingID # 20gp
+          Item: CircletOfElementsID # 20gp
+          Item: FrigidBladeID # 30gp
+          Item: StormBladeID # 30gp
+          Item: InfernoBladeID # 30gp
+          Item: TremorBladeID # 30gp
+          Item: BrilliantBladeID # 30gp
+          Item: NightBladeID # 30gp
+          Item: WandOfFrostID # 30gp
+          Item: WandOfStormsID # 30gp
+          Item: WandOfInfernosID # 30gp
+          Item: WandOfTremorsID # 30gp
+          Item: WandOfBrillianceID # 30gp
+          Item: WandOfDarknessID # 30gp
+          Item: ScrollOfHealingID # 30gp
+        
+          Item:
+              Name: SwordedgeArmorID # 40gp
+              ChapterFilter: 1
+              SubChapterFilter: 3
+          Item:
+              Name: BloodyAxeID # 40gp
+              ChapterFilter: 1
+              SubChapterFilter: 3
+          Item:
+              Name: RobesOfSummoningID # 40gp
+              ChapterFilter: 1
+              SubChapterFilter: 3
+
+          Item:
+              Name: BlinkingCapeID # 50gp
+              ChapterFilter: 1
+              SubChapterFilter: 4
+          Item:
+              Name: ScrollOfStaminaID # 50gp
+              ChapterFilter: 1
+              SubChapterFilter: 4
+          Item:
+              Name: ShoesOfHappinessID # 50gp
+              ChapterFilter: 1
+              SubChapterFilter: 4
+          Item:
+              Name: GiantRemoteSpiderID # 60gp
+              ChapterFilter: 1
+              SubChapterFilter: 4
+          Item:
+              Name: RocketBootsID # 80gp
+              ChapterFilter: 1
+              SubChapterFilter: 4
+          Item:
+              Name: BlackCardID # 80gp
+              ChapterFilter: 1
+              SubChapterFilter: 4             
+          Item:
+              Name: HeartOfTheBetrayerID # 80gp
+              ChapterFilter: 1
+              SubChapterFilter: 4                           
+          Item:
+              Name: MagmaWadersID # 80gp
+              ChapterFilter: 1
+              SubChapterFilter: 4                                          

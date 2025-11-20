@@ -1,0 +1,15 @@
+Parser: HeroSummon
+ID: SwampLizardID
+LocKey: $SwampLizard$
+Model: SwampLizard
+Health:
+    Amount: 5
+    Enhancements: 1
+Move:
+    Amount: 2
+    Enhancements: 1
+Attack:
+    Amount: 3
+    Enhancements: 1
+Range: 1
+OnAttackCondition: Immobilize

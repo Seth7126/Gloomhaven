@@ -1,0 +1,21 @@
+Parser: ItemCard
+ID: 165
+StringID: OccultDagerID
+Name: $ITEM_NAME_OccultDagger$
+Art: Occult Dagger
+TotalInGame: 1
+Cost: 50
+Slot: QuestItem
+Rarity: Rare
+Usage: Unrestricted
+Trigger: EntireAction
+Data:     
+    Overrides:
+        OABuff:
+            Pierce: 4
+    CompareAbility:
+        AbilityType: Attack
+        Filter:
+            EnemyClasses: HarvesterID
+Layout: 
+    - Row: $Item_OccultDagger$

@@ -1,0 +1,14 @@
+Parser: Character
+ID: SunkeeperID
+LocKey: $Sunkeeper$
+Model: Sunkeeper
+DefaultSkin: 1
+# PlayerLevel:    [  1,   2,   3,   4,   5,   6,   7,   8,   9 ]
+HealthTable:      [  10,  12,  14, 16,  18,  20,  22,  24,  26 ]
+NumberAbilityCardsInBattle: 11
+Role: $Sunkeeper_ROLE$
+Description: $Sunkeeper_DESCRIPTION$
+Difficulty: $DIFFICULTY_LOW$
+Strengths: $Sunkeeper_STRENGTHS$
+Weaknesses: $Sunkeeper_WEAKNESSES$
+Adventure_Description: $Sunkeeper_ADVENTURE_DESCRIPTION$

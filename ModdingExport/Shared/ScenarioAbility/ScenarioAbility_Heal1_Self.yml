@@ -1,0 +1,7 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_Heal1_Self
+ScenarioAbility:
+    ADamage:
+        Heal: 1
+        Filter: Self
+        AutoTrigger: True

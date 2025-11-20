@@ -1,0 +1,31 @@
+Parser: RoadEvent
+ID: Event_Road_JOTL_09ID
+LocKey: $ROAD_EVENT$
+Expansion: JOTL
+RequiredClass: None
+Screens:
+    Decision:
+        Text: "Event_Road_JOTL_09_INTRO"
+        Options:
+            A:
+                Text: "Event_Road_JOTL_09_OPTION_A"
+                TreasureTables: TT_Event_Road_JOTL_09_OPTION_A
+                Next: Event_Road_JOTL_09_OPTION_A
+            B:
+                Text: "Event_Road_JOTL_09_OPTION_B"
+                TreasureTables: TT_Event_Road_JOTL_09_OPTION_B
+                Next: Event_Road_JOTL_09_OPTION_B
+            C:
+                Text: "Event_Road_JOTL_09_OPTION_C"
+                TreasureTables: TT_Event_Road_JOTL_09_OPTION_A
+                Next: Event_Road_JOTL_09_OPTION_A
+            D:
+                Text: "Event_Road_JOTL_09_OPTION_D"
+                TreasureTables: TT_Event_Road_JOTL_09_OPTION_A
+                Next: Event_Road_JOTL_09_OPTION_A
+    Event_Road_JOTL_09_OPTION_A:
+        Text: "Event_Road_JOTL_09_RESULT_A"
+        End: True
+    Event_Road_JOTL_09_OPTION_B:
+        Text: "Event_Road_JOTL_09_RESULT_B"
+        End: True

@@ -1,0 +1,197 @@
+Parser: RoadEvent
+ID: Event_Road_JOTL_11ID
+LocKey: $ROAD_EVENT$
+Expansion: JOTL
+RequiredClass: None
+Screens:
+    Decision:
+        Text: "Event_Road_JOTL_11_INTRO"
+        Options:
+            A:
+                Text: "Event_Road_JOTL_11_OPTION_A"
+                RollForEach: 100
+                Next: Event_Road_JOTL_11_OPTION_A
+            B:
+                Text: "Event_Road_JOTL_11_OPTION_B"
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_D
+                Next: Event_Road_JOTL_11_OPTION_B
+                
+    Event_Road_JOTL_11_OPTION_A:
+        RollResult:
+            Player: 1
+            MinValue: 1
+            MaxValue: 65
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_A"
+                Player: 1
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_A
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A2
+        RollResult:
+            Player: 1
+            MinValue: 66
+            MaxValue: 95
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_B"
+                Player: 1
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_B
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A2
+        RollResult:
+            Player: 1
+            MinValue: 96
+            MaxValue: 100
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_C"
+                Player: 1
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_C
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A2
+        Text: "Event_Road_JOTL_11_END"
+        End: True
+        
+    Event_Road_JOTL_11_OPTION_A2:
+        RollResult:
+            Player: 2
+            MinValue: 1
+            MaxValue: 65
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_A"
+                Player: 2
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_A
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A3
+        RollResult:
+            Player: 2
+            MinValue: 66
+            MaxValue: 95
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_B"
+                Player: 2
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_B
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A3
+        RollResult:
+            Player: 2
+            MinValue: 96
+            MaxValue: 100
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_C"
+                Player: 2
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_C
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A3
+        Text: "Event_Road_JOTL_11_END"
+        End: True
+        
+    Event_Road_JOTL_11_OPTION_A3:
+        RollResult:
+            Player: 3
+            MinValue: 1
+            MaxValue: 65
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_A"
+                Player: 3
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_A
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A4
+        RollResult:
+            Player: 3
+            MinValue: 66
+            MaxValue: 95
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_B"
+                Player: 3
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_B
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A4
+        RollResult:
+            Player: 3
+            MinValue: 96
+            MaxValue: 100
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_C"
+                Player: 3
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_C
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_OPTION_A4
+        Text: "Event_Road_JOTL_11_END"
+        End: True
+        
+    Event_Road_JOTL_11_OPTION_A4:
+        RollResult:
+            Player: 4
+            MinValue: 1
+            MaxValue: 65
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_A"
+                Player: 4
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_A
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_END
+        RollResult:
+            Player: 4
+            MinValue: 66
+            MaxValue: 95
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_B"
+                Player: 4
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_B
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_END
+        RollResult:
+            Player: 4
+            MinValue: 96
+            MaxValue: 100
+            Screen:
+                Header: "Event_Road_JOTL_11_ROLLRESULT"
+                Text: "Event_Road_JOTL_11_RESULT_C"
+                Player: 4
+                TreasureTables: TT_Event_Road_JOTL_11_OPTION_C
+                Options:
+                    A:
+                        Text: Event_Road_JOTL_11_NEXT
+                        Next: Event_Road_JOTL_11_END
+        Text: "Event_Road_JOTL_11_END"
+        End: True
+        
+    Event_Road_JOTL_11_OPTION_B:
+        Text: "Event_Road_JOTL_11_RESULT_D"
+        End: True
+        
+    Event_Road_JOTL_11_END:
+        Text: "Event_Road_JOTL_11_END"
+        End: True

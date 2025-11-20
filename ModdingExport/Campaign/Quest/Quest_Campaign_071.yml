@@ -1,0 +1,23 @@
+Parser: Quest
+ID: Quest_Campaign_071
+Chapter: 1
+QuestType: Story
+CompletionRewards: TT_Quest_Campaign_071
+LoadoutImageId: FO_DF_Ice_Lava
+NarrativeTextImageOverride:
+    - [Quest_Campaign_071_INTRO_GH_1, 071_INTRO_GH_1_Art]
+    - [Quest_Campaign_071_INTRO_GH_2, 071_INTRO_GH_2_Art]
+    - [Quest_Campaign_071_INTRO_GH_3, 071_INTRO_GH_3_Art]
+    - [Quest_Campaign_071_OUTRO_GH_1, 071_OUTRO_GH_1_Art]
+    - [Quest_Campaign_071_OUTRO_GH_2, 071_OUTRO_GH_2_Art]
+UnlockCondition:
+    - CompletedAchievement: Achievement_Campaign_RandomScenario71
+StartingVillage: Gloomhaven
+EndingVillage: Gloomhaven
+LocationArea: UnnamedLocation
+IconType: Side
+
+Scenario:
+    MapLocation: [811, 1406]
+    ScenarioPool: 
+      - [Scenario_Campaign_071, 100]

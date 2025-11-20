@@ -1,0 +1,30 @@
+Parser: Quest
+ID: Quest_Relic_RingOfSkulls
+Chapter: 1
+QuestType: Relic
+UnlockDialogueLines:
+    - Text: QUEST_RELIC_RingOfSkulls_Unlock_1
+      Character: Priestess
+    - Text: QUEST_RELIC_RingOfSkulls_Unlock_2
+      Character: Priestess
+    - Text: QUEST_RELIC_RingOfSkulls_Unlock_3
+      Character: Priestess
+      CameraLocation: [826, 790] 
+CompleteDialogueLines:
+    - Text: QUEST_RELIC_RingOfSkulls_Complete_1
+      Character: Priestess
+    - Text: QUEST_RELIC_RingOfSkulls_Complete_2
+      Character: Merchant
+#CompletionRewards: TT_Quest_Travel_TheCityOfSlate
+LoadoutImageId: CR_NE_03
+UnlockRevealFoWSphere:
+    - MapLocation: [826, 790]
+      Radius: 14
+UnlockCondition:
+#    - UnlockedVillage: Shaderest
+    - CompletedAchievement: Achievement_1_1_KillSummonLivingBones
+StartingVillage: Shaderest
+EndingVillage: Shaderest
+Scenario:
+    MapLocation: [826, 790]
+    ScenarioPool: [Scenario_Relic_RingOfSkulls, 100]

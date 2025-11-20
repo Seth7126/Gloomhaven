@@ -1,0 +1,18 @@
+Parser: Achievement
+ID: Achievement_1_3_DisarmTrap
+LocalisedName: $ADVENTURE_ACHIEVEMENT_1_3_DisarmTrap$
+LocalisedDescription: $ADVENTURE_ACHIEVEMENT_1_3_DisarmTrap_Desc$
+
+       
+UnlockCondition:
+    - Chapter: [1,3]
+AchievementCondition:
+    - Targets:
+        Filter: UseAbility
+        AbilityTypes: [DisarmTrap]
+        Amount: 20
+TreasureTables: [TT_Achievement_1_3_DisarmTrap]
+AchievementType: Relics
+
+AchievementLevel: 2
+AchievementOrderId: 425

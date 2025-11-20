@@ -1,0 +1,12 @@
+Parser: Achievement
+ID: Achievement_Retirement_Tinkerer
+LocalisedName: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+LocalisedDescription: $CAMPAIGN_ACHIEVEMENT_TownRecords_Chapter_01$
+UnlockCondition:
+    - Retirement: TinkererID
+AchievementCondition:
+    - Retirement: TinkererID
+TreasureTables: [TT_Achievement_Retirement_Tinkerer]
+AchievementType: Campaign
+AchievementLevel: 0  
+AchievementOrderId: 2116

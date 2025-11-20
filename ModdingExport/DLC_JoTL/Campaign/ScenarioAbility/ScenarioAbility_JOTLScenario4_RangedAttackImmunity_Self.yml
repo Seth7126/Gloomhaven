@@ -1,0 +1,10 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_JOTLScenario4_RangedAttackImmunity_Self
+ScenarioAbility:
+    AImmunity:
+        ImmunityToAttackTypes: Ranged
+        Filter: Self
+        ActiveBonus:
+            Duration: Persistent
+            ListLayoutOverride: [$Scenario_JOTL_004_ARitualInStone_Modifier_1$, Immune]
+        AutoTrigger: True

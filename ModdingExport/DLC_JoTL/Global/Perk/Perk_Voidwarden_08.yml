@@ -1,0 +1,7 @@
+Parser: Perk
+ID: Voidwarden08
+Name: PERK_Voidwarden_08
+Description: PERK_Voidwarden_08_Desc
+CharacterID: VoidwardenID
+Available: 2
+CardsToAdd: [AMC_Curse_P1]

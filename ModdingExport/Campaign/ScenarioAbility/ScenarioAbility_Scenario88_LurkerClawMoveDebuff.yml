@@ -1,0 +1,16 @@
+Parser: ScenarioAbility
+ID: ScenarioAbility_88_LurkerClawMoveDebuff
+ScenarioAbility:
+    AMoveDebuff:
+        Move: -2
+        Filter: [Self]
+        ActiveBonus:
+            Behaviour: BuffMove
+            Duration: Persistent
+            IsAura: True
+            AuraTargeting: All
+            AuraFilter:
+                CarryingQuestItem: True
+            ListLayoutOverride: [$ScenarioAbility_88_LurkerClawMoveDebuff$, Move]
+        AnimOverload: None
+        AutoTrigger: True

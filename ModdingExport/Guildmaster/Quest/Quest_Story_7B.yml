@@ -1,0 +1,34 @@
+Parser: Quest
+ID: Quest_Story_7B
+Chapter: 1
+QuestType: Story
+CharacterIcon: MindthiefID
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_7B_1 
+      Character: Trainer
+    - Text: Message_End_Quest_Story_7B_2 
+      Character: Trainer
+    - Text: Message_End_Quest_Story_7B_3 
+      Character: Trainer
+      CameraLocation: [1100, 580]      
+    - Text: Message_End_Quest_Story_7B_4 
+      Character: Trainer
+      CameraLocation: [1100, 580]  
+    - Text: Message_End_Quest_Story_7B_5 
+      Character: Trainer
+CompletionRewards: TT_Quest_Story_7B
+LoadoutImageId: CR_DF_02_Undead
+UnlockCondition:
+    - CompletedQuest: Quest_Story_7A  
+StartingVillage: TheMarches
+EndingVillage: TheMarches
+EventChance: [0, 0, 0, 0, 0, 0, 0, 0]
+
+
+EventPool:
+ - [AbandonedCartID, 100]
+
+Scenario:
+    MapLocation: [1415, 442]
+    ScenarioPool: 
+      - [7B, 100]

@@ -1,0 +1,29 @@
+Parser: Quest
+ID: Quest_Story_BanditCommander
+Chapter: 1
+QuestType: Story
+IconType: Boss
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_BanditCommander_1
+      Character: Narrator
+    - Text: Message_End_Quest_Story_BanditCommander_2
+      Character: Merchant
+CompletionRewards: TT_Quest_Story_BanditCommander
+LoadoutImageId: FO_DF_03_Bandit
+UnlockRevealFoWSphere:
+    - MapLocation: [913, 155]
+      Radius: 14
+UnlockCondition:
+    - CompletedQuest: Quest_Story_Cragheart_3
+    - CompletedQuest: Quest_Story_Mindthief_3
+
+RequiredCharacters:
+  - Character: CragheartID   
+    Level: 6
+  - Character: MindthiefID    
+    Level: 6
+StartingVillage: Wildspire
+EndingVillage: Wildspire
+Scenario:
+    MapLocation: [913, 155]
+    ScenarioPool: [Scenario_Story_BanditCommander, 100]

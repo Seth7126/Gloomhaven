@@ -1,0 +1,57 @@
+Parser: Enemy
+ID: WeakBanditGuardID
+LocKey: $BanditGuard$
+MonsterType: Monster
+StandeeLimit: 6
+Model: Bandit Guard
+PredominantlyMelee: True
+AbilityCards: [524,525,526,527,528,529,530,531]
+# Base Stats
+Level0:
+    Health: 4
+    Move: 2
+    Attack: 1
+    Range: 1
+    Target: 1
+Level1:
+    Health: 5
+    Move: 2
+    Attack: 2
+    Range: 1
+    Target: 1
+Level2:
+    Health: 6
+    Move: 3
+    Attack: 2
+    Range: 1
+    Target: 1
+Level3:
+    Health: 6
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+Level4:
+    Health: 9
+    Move: 3
+    Attack: 3
+    Range: 1
+    Target: 1
+Level5:
+    Health: 10
+    Move: 4
+    Attack: 3
+    Range: 1
+    Target: 1
+Level6:
+    Health: 11
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1
+Level7:
+    Health: 14
+    Move: 4
+    Attack: 4
+    Range: 1
+    Target: 1

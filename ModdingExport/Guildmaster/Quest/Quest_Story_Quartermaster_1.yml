@@ -1,0 +1,43 @@
+Parser: Quest
+ID: Quest_Story_Quartermaster_1
+Chapter: 1
+QuestType: Story
+IconType: RequiredCharacter
+UnlockDialogueLines:
+    - Text: Message_Complete_Achievement_1_1_QuartermasterReachLevel2_1
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_QuartermasterReachLevel2_2
+      Character: Merchant
+    - Text: Message_Complete_Achievement_1_1_QuartermasterReachLevel2_3
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_QuartermasterReachLevel2_4
+      Character: Trainer
+    - Text: Message_Complete_Achievement_1_1_QuartermasterReachLevel2_5
+      Character: Merchant
+      CameraLocation: [1429,698]
+CompleteDialogueLines:
+    - Text: Message_End_Quest_Story_Quartermaster_1_1
+      Character: Trainer
+    - Text: Message_End_Quest_Story_Quartermaster_1_2
+      Character: Merchant
+    - Text: Message_End_Quest_Story_Quartermaster_1_3
+      Character: Trainer
+      CameraLocation: [1084, 578]
+CompletionRewards: TT_Quest_Story_Quartermaster_1
+LoadoutImageId: CA_DF_01
+UnlockRevealFoWSphere:
+    - MapLocation: [1429,698]
+      Radius: 14
+UnlockCondition:
+    - Chapter: [1,1]
+    - CompletedAchievement: Achievement_1_1_QuartermasterReachLevel2    
+RequiredCharacters:
+  - Character: QuartermasterID    
+    Level: 2
+StartingVillage: LowTown
+EndingVillage: LowTown
+# EventChance:
+# EventPool:
+Scenario:
+    MapLocation: [1429,698]
+    ScenarioPool: [Scenario_Story_Quartermaster_1, 100]
