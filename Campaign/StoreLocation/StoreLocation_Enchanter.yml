@@ -1,9 +1,0 @@
-Parser: StoreLocation
-ID: Enchanter
-LocalisedName: $Enchantress$
-LocalisedDescription: $Enchanter_Desc$
-Mesh: Gloomhaven_Shop_Icon_004
-MapLocation: [1158,307]
-UnlockCondition:
-    - UnlockedVillage: Gloomhaven
-StoreType: Enhancer

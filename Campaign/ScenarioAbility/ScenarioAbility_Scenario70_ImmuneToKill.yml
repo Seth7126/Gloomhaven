@@ -1,9 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_70_ImmuneToKill
-ScenarioAbility:
-    AImmune:
-        ImmunityTo: [Kill]
-        Filter: Self
-        ActiveBonus:
-            Duration: Persistent
-            ListLayoutOverride: [$ScenarioAbility_70_ImmuneToKill$, Immune]

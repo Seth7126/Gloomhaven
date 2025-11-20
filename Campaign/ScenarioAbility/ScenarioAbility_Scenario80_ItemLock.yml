@@ -1,8 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_80_ItemLock
-ScenarioAbility:
-    AItemLock80:
-        ItemLock: True
-        Filter: Self
-        ActiveBonus:
-            Duration: Persistent

@@ -1,6 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_49_ControlCannon
-ScenarioAbility:
-    ANull:
-        Null: True
-        TriggeredScenarioModifiers: CannonFire

@@ -1,9 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_68_ImmuneToAllExceptHeal
-ScenarioAbility:
-    AImmune:
-        ImmunityTo: [Attack, Damage, Shield, Retaliate, Invisible, Poison, Wound, Muddle, Immobilize, Disarm, Curse, Stun, Strengthen, Bless, Advantage, Teleport, Kill, Push, Pull, ControlActor, StopFlying, Swap, Immovable, Fear, Sleep]
-        Filter: Self
-        ActiveBonus:
-            Duration: Persistent
-            ListLayoutOverride: [$ScenarioAbility_68_ImmuneToAllExceptHeal$, Heal]

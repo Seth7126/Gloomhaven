@@ -1,8 +1,0 @@
-Parser: ScenarioAbility
-ID: ScenarioAbility_22_Heal
-ScenarioAbility:
-    BHeal:
-        Heal: 4
-        Filter: Self        
-        AnimOverload: None
-        AutoTrigger: True

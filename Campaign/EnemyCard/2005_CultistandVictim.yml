@@ -1,8 +1,0 @@
-Parser: EnemyCard
-ID: 2005
-Initiative: 99
-Shuffle: True
-Data:
-    Abilities: 
-        Move1:
-            Move: 0 # Move at same init as normal Cultists, move to altar.
